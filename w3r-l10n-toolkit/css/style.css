@@ -166,6 +166,13 @@ h2 { font-size: 17px; margin-bottom: 24px; color: var(--text); }
   margin-bottom: 16px;
 }
 
+.form-group-header { display: flex; align-items: center; justify-content: space-between; }
+.form-group-header label { margin-bottom: 0; }
+.db-status         { font-size: 11px; font-weight: 500; padding: 2px 9px; border-radius: 10px; }
+.db-status--ok      { background: rgba(76,175,80,0.14);  color: var(--success); }
+.db-status--err     { background: rgba(255,152,0,0.14);  color: var(--warn); }
+.db-status--loading { color: var(--muted); }
+
 textarea:disabled {
   opacity: 0.4;
   cursor: not-allowed;
@@ -283,6 +290,8 @@ tbody td { padding: 10px 12px; vertical-align: top; }
 .mono { font-family: 'Consolas', 'Fira Code', monospace; font-size: 12px; }
 .dim  { color: var(--muted); }
 .source-text { color: var(--text); max-width: 300px; }
+mark.diff-rem { background: rgba(255, 152, 0, 0.18); color: var(--warn);    border-radius: 2px; padding: 0 2px; font-style: normal; }
+mark.diff-add { background: rgba(76, 175, 80, 0.18); color: var(--success); border-radius: 2px; padding: 0 2px; font-style: normal; }
 
 .preview-more { color: var(--muted); font-size: 13px; margin-top: 10px; }
 

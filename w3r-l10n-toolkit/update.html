@@ -23,11 +23,13 @@
 
     <div class="form-row">
       <div class="form-group">
-        <label>Database</label>
+        <div class="form-group-header">
+          <label>Database</label>
+          <span id="fetch-status" class="db-status hidden"></span>
+        </div>
         <select id="db-select">
           <option value="">— select database —</option>
         </select>
-        <div id="fetch-status" class="form-hint hidden"></div>
       </div>
       <div class="form-group">
         <label>New WTS file (.wts)</label>

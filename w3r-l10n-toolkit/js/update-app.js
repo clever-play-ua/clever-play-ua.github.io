@@ -1,8 +1,21 @@
 // ─── Database list ────────────────────────────────────────────────────────────
-// Add entries here as new map databases are generated.
+// Each entry: { file: 'RoA_A01_M01_EN_1781635020', label: 'RoA · Act 1 · Map 01' }
+// file = filename without .json extension; Unix timestamp suffix is parsed for display.
 const DATABASES = [
-  { id: 'RoA_A01_M01', label: 'RoA · Act 1 · Map 01' },
+  { file: 'RoA_A01_M01_EN', label: 'RoA · Act 1 · Map 01' },
 ];
+
+const MONTHS = ['JANUARY','FEBRUARY','MARCH','APRIL','MAY','JUNE','JULY','AUGUST','SEPTEMBER','OCTOBER','NOVEMBER','DECEMBER'];
+
+function formatFileLabel(db) {
+  const m = db.file.match(/_(\d{9,})$/);
+  if (!m) return db.label;
+  const d = new Date(parseInt(m[1]) * 1000);
+  const hh = String(d.getHours()).padStart(2, '0');
+  const mm = String(d.getMinutes()).padStart(2, '0');
+  const ss = String(d.getSeconds()).padStart(2, '0');
+  return `${db.label}  ·  ${d.getDate()} ${MONTHS[d.getMonth()]} ${d.getFullYear()} ${hh}:${mm}:${ss}`;
+}
 
 let dbJSON  = null;
 let wtsRaw  = null;
@@ -16,8 +29,8 @@ const formHint    = document.getElementById('form-hint');
 // ─── Populate select ──────────────────────────────────────────────────────────
 for (const db of DATABASES) {
   const opt = document.createElement('option');
-  opt.value       = db.id;
-  opt.textContent = db.label;
+  opt.value       = db.file;
+  opt.textContent = formatFileLabel(db);
   dbSelect.appendChild(opt);
 }
 
@@ -26,28 +39,25 @@ dbSelect.addEventListener('change', async () => {
   dbJSON = null;
   updateCheckBtn();
 
-  const id = dbSelect.value;
-  if (!id) { setFetchStatus(''); return; }
+  const file = dbSelect.value;
+  if (!file) { setFetchStatus(''); return; }
 
   setFetchStatus('Loading...');
   try {
-    const res = await fetch(`database/${id}_EN.json`);
+    const res = await fetch(`database/${file}.json`);
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     dbJSON = await res.json();
     const count = Object.keys(dbJSON.strings || {}).length;
-    setFetchStatus(`Loaded: ${count} rows`, 'ok');
+    setFetchStatus(`✓ ${count} rows`, 'ok');
   } catch (err) {
-    setFetchStatus(`Load error: ${err.message}`, 'err');
+    setFetchStatus(`✕ ${err.message}`, 'err');
   }
   updateCheckBtn();
 });
 
 function setFetchStatus(msg, type) {
   fetchStatus.textContent = msg;
-  fetchStatus.className   = 'form-hint' + (msg ? '' : ' hidden');
-  if (type === 'ok')  fetchStatus.style.color = 'var(--success)';
-  else if (type === 'err') fetchStatus.style.color = 'var(--warn)';
-  else fetchStatus.style.color = 'var(--muted)';
+  fetchStatus.className   = msg ? `db-status db-status--${type || 'loading'}` : 'db-status hidden';
 }
 
 // ─── WTS drop zone ────────────────────────────────────────────────────────────
@@ -139,7 +149,7 @@ function runCheck(db, wtsMap) {
     claimed.add(sn);
     // Use wts_source baseline if present (set by a previous update run), otherwise fall back to source
     const baseline = entry.wts_source ?? entry.source;
-    if (wtsMap[sn] === baseline) {
+    if (normalizeWS(wtsMap[sn]) === normalizeWS(baseline)) {
       ok.push(key);
     } else {
       updated.push({ key, sn, oldSource: baseline, newSource: wtsMap[sn] });
@@ -238,13 +248,46 @@ function renderSection(sectionId, tbodyId, html) {
 
 function renderUpdatedRows(items) {
   if (!items.length) return '';
-  return items.map(item => `
+  return items.map(item => {
+    const { oldHtml, newHtml } = diffWords(item.oldSource, item.newSource);
+    return `
     <tr>
       <td class="mono">${esc(item.key)}</td>
       <td class="mono dim">${item.sn}</td>
-      <td class="source-text dim">${esc(trim80(item.oldSource))}</td>
-      <td class="source-text">${esc(trim80(item.newSource))}</td>
-    </tr>`).join('');
+      <td class="source-text">${oldHtml}</td>
+      <td class="source-text">${newHtml}</td>
+    </tr>`;
+  }).join('');
+}
+
+function diffWords(oldText, newText) {
+  const a = (oldText || '').split(/(\s+)/);
+  const b = (newText || '').split(/(\s+)/);
+  const m = a.length, n = b.length;
+
+  const dp = Array.from({ length: m + 1 }, () => new Uint16Array(n + 1));
+  for (let i = 1; i <= m; i++)
+    for (let j = 1; j <= n; j++)
+      dp[i][j] = a[i-1] === b[j-1] ? dp[i-1][j-1] + 1 : Math.max(dp[i-1][j], dp[i][j-1]);
+
+  const aParts = [], bParts = [];
+  let i = m, j = n;
+  while (i > 0 || j > 0) {
+    if (i > 0 && j > 0 && a[i-1] === b[j-1]) {
+      aParts.unshift({ t: a[i-1], ch: false });
+      bParts.unshift({ t: b[j-1], ch: false });
+      i--; j--;
+    } else if (j > 0 && (i === 0 || dp[i][j-1] >= dp[i-1][j])) {
+      bParts.unshift({ t: b[j-1], ch: true }); j--;
+    } else {
+      aParts.unshift({ t: a[i-1], ch: true }); i--;
+    }
+  }
+
+  const render = (parts, cls) =>
+    parts.map(p => (p.ch && p.t.trim()) ? `<mark class="${cls}">${esc(p.t)}</mark>` : esc(p.t)).join('');
+
+  return { oldHtml: render(aParts, 'diff-rem'), newHtml: render(bParts, 'diff-add') };
 }
 
 function renderReassignedRows(items) {
@@ -254,8 +297,8 @@ function renderReassignedRows(items) {
       <td><input type="checkbox" class="reassign-cb" data-idx="${idx}" checked></td>
       <td class="mono">${esc(item.key)}</td>
       <td class="mono dim">${item.oldSN} → ${item.newSN}</td>
-      <td class="source-text dim">${esc(trim80(item.oldSource))}</td>
-      <td class="source-text">${esc(trim80(item.newSource))}</td>
+      <td class="source-text dim">${esc(item.oldSource)}</td>
+      <td class="source-text">${esc(item.newSource)}</td>
       <td class="mono dim">${Math.round(item.score * 100)}%</td>
     </tr>`).join('');
 }
@@ -266,7 +309,7 @@ function renderNotFoundRows(items) {
     <tr>
       <td class="mono">${esc(item.key)}</td>
       <td class="mono dim">${item.entry.string_number ?? '—'}</td>
-      <td class="source-text">${esc(trim80(item.entry.source))}</td>
+      <td class="source-text">${esc(item.entry.source)}</td>
     </tr>`).join('');
 }
 
@@ -301,7 +344,8 @@ document.getElementById('btn-download').addEventListener('click', async () => {
   }
 
   const { campaign, act, map } = newDB.meta;
-  const filename = `${campaign}_${act}_${map}_EN.json`;
+  const ts = Math.floor(Date.now() / 1000);
+  const filename = `${campaign}_${act}_${map}_EN_${ts}.json`;
   const blob = new Blob([JSON.stringify(newDB, null, 2)], { type: 'application/json' });
   const url  = URL.createObjectURL(blob);
   const a    = document.createElement('a');
@@ -310,6 +354,7 @@ document.getElementById('btn-download').addEventListener('click', async () => {
 });
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
+function normalizeWS(s) { return (s || '').split(/\s+/).join(' ').trim(); }
 function trim80(str) { return str && str.length > 80 ? str.slice(0, 80) + '…' : str; }
 function esc(str)    { return (str || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
 function showHint(msg) { formHint.textContent = msg; formHint.classList.remove('hidden'); }

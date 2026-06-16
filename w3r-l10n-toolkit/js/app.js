@@ -81,7 +81,7 @@ async function buildDatabase(rows, voCount, textCount) {
 
   // Meta: derive campaign/act/map from first key (type excluded — file is mixed)
   const firstKey  = Object.keys(strings)[0] || '';
-  const metaMatch = firstKey.match(/^([A-Za-z]+)_(A\d+)_(M\d+)_/);
+  const metaMatch = firstKey.match(/^([A-Za-z]+)_(A\d+)_([A-Za-z0-9]+)_/);
 
   generatedJSON = {
     meta: {
@@ -155,7 +155,8 @@ function renderPreview(strings) {
 document.getElementById('btn-download').addEventListener('click', () => {
   if (!generatedJSON) return;
   const { campaign, act, map } = generatedJSON.meta;
-  const filename = `${campaign}_${act}_${map}_EN.json`;
+  const ts = Math.floor(Date.now() / 1000);
+  const filename = `${campaign}_${act}_${map}_EN_${ts}.json`;
   const blob = new Blob([JSON.stringify(generatedJSON, null, 2)], { type: 'application/json' });
   const url  = URL.createObjectURL(blob);
   const a    = document.createElement('a');
