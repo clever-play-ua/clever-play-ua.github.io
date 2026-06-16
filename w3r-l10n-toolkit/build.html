@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Build .wts — WTS L10n Toolkit</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <h1>WTS L10n Toolkit</h1>
+      <p class="subtitle">Warcraft III · .wts Localization Manager</p>
+    </header>
+
+    <nav class="page-nav">
+      <a href="index.html"  class="page-nav-link">Create DB</a>
+      <a href="update.html" class="page-nav-link">Update DB</a>
+    </nav>
+
+    <h2>Build localized .wts</h2>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label>База данных <span class="required">*</span></label>
+        <select id="db-select">
+          <option value="" disabled selected>— выбери базу —</option>
+          <option value="RoA_A01_CNMC1">RoA · Act 1 · Cinematic 1</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Язык <span class="required">*</span></label>
+        <select id="lang-select" disabled>
+          <option value="" disabled selected>— сначала выбери базу —</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="fetch-status" class="form-hint hidden"></div>
+
+    <div class="form-group form-group--full" style="margin-bottom: 24px">
+      <label>Файл .wts от разраба <span class="required">*</span></label>
+      <div class="drop-zone" id="wts-drop">
+        <p>Перетащи .wts сюда или</p>
+        <label class="btn btn-ghost" for="wts-input" style="cursor:pointer">Выбрать файл</label>
+        <input type="file" id="wts-input" accept=".wts" style="display:none">
+        <p class="hint" id="wts-filename">файл не выбран</p>
+      </div>
+    </div>
+
+    <div id="form-hint" class="form-hint hidden"></div>
+
+    <div class="textarea-actions">
+      <button id="btn-build" class="btn btn-primary" disabled>Build .wts</button>
+    </div>
+
+    <div id="result-section" class="hidden" style="margin-top: 28px">
+      <div class="stats">
+        <span id="stat-translated" class="stat success">0 переведено</span>
+        <span id="stat-untranslated" class="stat warn">0 без перевода</span>
+        <span id="stat-total" class="stat">0 всего в .wts</span>
+      </div>
+      <div class="actions">
+        <button id="btn-download" class="btn btn-primary">⬇ Скачать .wts</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="js/build-app.js"></script>
+</body>
+</html>

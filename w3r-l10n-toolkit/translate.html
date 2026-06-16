@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generate Translation — WTS L10n Toolkit</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <h1>WTS L10n Toolkit</h1>
+      <p class="subtitle">Warcraft III · .wts Localization Manager</p>
+    </header>
+
+    <nav class="page-nav">
+      <a href="index.html"  class="page-nav-link">Create DB</a>
+      <a href="update.html" class="page-nav-link">Update DB</a>
+    </nav>
+
+    <h2>Generate translation.json</h2>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label>Campaign</label>
+        <select id="campaign-name">
+          <option value="RoA" selected>Rise of the Alliance</option>
+          <option value="ToD">Tides of Darkness</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Map <span class="required">*</span></label>
+        <select id="map-name">
+          <option value="" disabled selected>— выбери карту —</option>
+          <option value="WC2HumanAct1">WC2HumanAct1</option>
+          <option value="WC2Human01">WC2Human01</option>
+          <option value="WC2Human02">WC2Human02</option>
+          <option value="WC2Human03">WC2Human03</option>
+          <option value="WC2Human04">WC2Human04</option>
+        </select>
+      </div>
+      <div class="form-group form-group--full">
+        <label>Version date <span class="required">*</span></label>
+        <div class="date-row">
+          <button id="btn-today" class="btn btn-ghost" type="button">Today</button>
+          <div class="date-picker-wrap" id="date-wrap">
+            <span id="date-display" class="date-display">Select date...</span>
+            <input type="date" id="map-version">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label>Language code <span class="required">*</span></label>
+        <input type="text" id="lang-code" value="ukUA" maxlength="10" placeholder="ukUA">
+      </div>
+    </div>
+
+    <div id="form-hint" class="form-hint hidden"></div>
+
+    <div class="input-section">
+      <label class="input-label">Вставь строки с переводом:</label>
+      <div class="format-options">
+        <div class="format-option">
+          <span class="format-badge">Sheets</span>
+          Скопируй колонки <b>KEY → ;" → TRANSLATION → ;"</b> и вставь
+        </div>
+        <div class="format-option">
+          <span class="format-badge">Простой</span>
+          <code>KEY [tab] Текст перевода</code>
+        </div>
+      </div>
+      <textarea
+        id="lines-input"
+        placeholder="Сначала выбери карту, дату и язык..."
+        rows="12"
+        spellcheck="false"
+        disabled
+      ></textarea>
+      <div class="textarea-actions">
+        <button id="btn-parse" class="btn btn-primary">Parse & Preview</button>
+        <button id="btn-reset" class="btn btn-ghost">Сбросить</button>
+      </div>
+    </div>
+
+    <div id="error-section" class="error-section hidden">
+      <p class="error-title">⚠ Ошибки парсинга:</p>
+      <ul id="error-list"></ul>
+    </div>
+
+    <div id="result-section" class="hidden">
+      <div class="stats">
+        <span id="stat-total" class="stat success">0 строк</span>
+      </div>
+      <div class="actions">
+        <button id="download-translation" class="btn btn-primary">⬇ Скачать translation.json</button>
+      </div>
+    </div>
+
+    <div id="preview-section" class="preview-section hidden">
+      <h3>Превью</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Key</th>
+            <th>Translation</th>
+          </tr>
+        </thead>
+        <tbody id="preview-body"></tbody>
+      </table>
+      <p class="preview-more" id="preview-more"></p>
+    </div>
+
+  </div>
+
+  <script src="js/csv-parser.js"></script>
+  <script src="js/translate-app.js"></script>
+</body>
+</html>

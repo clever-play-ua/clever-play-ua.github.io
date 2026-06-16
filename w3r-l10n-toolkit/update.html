@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Update DB — WTS L10n Toolkit</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <h1>WTS L10n Toolkit</h1>
+      <p class="subtitle">Warcraft III · .wts Localization Manager</p>
+    </header>
+
+    <nav class="page-nav">
+      <a href="index.html"  class="page-nav-link">Create DB</a>
+      <a href="update.html" class="page-nav-link active">Update DB</a>
+    </nav>
+
+    <h2>Update database from new WTS</h2>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label>Database</label>
+        <select id="db-select">
+          <option value="">— select database —</option>
+        </select>
+        <div id="fetch-status" class="form-hint hidden"></div>
+      </div>
+      <div class="form-group">
+        <label>New WTS file (.wts)</label>
+        <div class="drop-zone drop-zone--compact" id="drop-wts">
+          <p id="label-wts">Drop .wts or click</p>
+          <input type="file" id="wts-file" accept=".wts" style="display:none">
+        </div>
+      </div>
+    </div>
+
+    <div id="form-hint" class="form-hint hidden"></div>
+
+    <div class="textarea-actions">
+      <button id="btn-check" class="btn btn-primary" disabled>Run check</button>
+    </div>
+
+    <!-- Results -->
+    <div id="results" class="hidden">
+
+      <div class="stats" style="margin-top: 24px;">
+        <span id="stat-ok"         class="stat">0 unchanged</span>
+        <span id="stat-updated"    class="stat">0 updated</span>
+        <span id="stat-reassigned" class="stat">0 renumbered</span>
+        <span id="stat-notfound"   class="stat">0 not found</span>
+      </div>
+
+      <!-- In-place text changes -->
+      <div id="section-updated" class="result-section hidden">
+        <h3 class="result-section-title">Text changed (same STRING #)</h3>
+        <p class="result-section-hint">Applied automatically on download.</p>
+        <table>
+          <thead>
+            <tr><th>Key</th><th>String #</th><th>Old text</th><th>New text</th></tr>
+          </thead>
+          <tbody id="body-updated"></tbody>
+        </table>
+      </div>
+
+      <!-- Reassigned via fuzzy match -->
+      <div id="section-reassigned" class="result-section hidden">
+        <h3 class="result-section-title">STRING # changed (fuzzy ≥ 95%)</h3>
+        <p class="result-section-hint">Uncheck to reject this match.</p>
+        <table>
+          <thead>
+            <tr><th></th><th>Key</th><th>Old → New #</th><th>Old text</th><th>New text</th><th>%</th></tr>
+          </thead>
+          <tbody id="body-reassigned"></tbody>
+        </table>
+      </div>
+
+      <!-- Not found -->
+      <div id="section-notfound" class="result-section hidden">
+        <h3 class="result-section-title">Not found — manual review</h3>
+        <table>
+          <thead>
+            <tr><th>Key</th><th>String #</th><th>Source text</th></tr>
+          </thead>
+          <tbody id="body-notfound"></tbody>
+        </table>
+      </div>
+
+      <div class="actions" style="margin-top: 24px;">
+        <button id="btn-download" class="btn btn-primary" disabled>⬇ Download updated JSON</button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="js/keygen.js"></script>
+  <script src="js/update-app.js"></script>
+</body>
+</html>
