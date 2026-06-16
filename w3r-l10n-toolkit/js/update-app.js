@@ -1,10 +1,4 @@
-// ─── Database list ────────────────────────────────────────────────────────────
-// Each entry: { file: 'RoA_A01_M01_EN_1781635020', label: 'RoA · Act 1 · Map 01' }
-// file = filename without .json extension; Unix timestamp suffix is parsed for display.
-const DATABASES = [
-  { file: 'RoA_A01_M01_EN', label: 'RoA · Act 1 · Map 01' },
-];
-
+// ─── Database list (loaded from database/manifest.json) ───────────────────────
 const MONTHS = ['JANUARY','FEBRUARY','MARCH','APRIL','MAY','JUNE','JULY','AUGUST','SEPTEMBER','OCTOBER','NOVEMBER','DECEMBER'];
 
 function formatFileLabel(db) {
@@ -26,13 +20,22 @@ const fetchStatus = document.getElementById('fetch-status');
 const btnCheck    = document.getElementById('btn-check');
 const formHint    = document.getElementById('form-hint');
 
-// ─── Populate select ──────────────────────────────────────────────────────────
-for (const db of DATABASES) {
-  const opt = document.createElement('option');
-  opt.value       = db.file;
-  opt.textContent = formatFileLabel(db);
-  dbSelect.appendChild(opt);
-}
+// ─── Populate select from manifest ────────────────────────────────────────────
+fetch('database/manifest.json')
+  .then(r => r.ok ? r.json() : Promise.reject(r.status))
+  .then(list => {
+    for (const db of list) {
+      const opt = document.createElement('option');
+      opt.value       = db.file;
+      opt.textContent = formatFileLabel(db);
+      dbSelect.appendChild(opt);
+    }
+  })
+  .catch(() => {
+    const opt = document.createElement('option');
+    opt.textContent = '⚠ manifest.json not found';
+    dbSelect.appendChild(opt);
+  });
 
 // ─── Fetch DB on select change ────────────────────────────────────────────────
 dbSelect.addEventListener('change', async () => {
