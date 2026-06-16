@@ -137,17 +137,12 @@ function runCheck(db, wtsMap) {
     if (sn == null || !(sn in wtsMap)) continue;
 
     claimed.add(sn);
-
-    if (entry.wts_source != null) {
-      // Has WTS baseline from a previous run — compare original-language text
-      if (wtsMap[sn] === entry.wts_source) {
-        ok.push({ key, sn, text: wtsMap[sn] });
-      } else {
-        updated.push({ key, sn, oldSource: entry.wts_source, newSource: wtsMap[sn] });
-      }
+    // Use wts_source baseline if present (set by a previous update run), otherwise fall back to source
+    const baseline = entry.wts_source ?? entry.source;
+    if (wtsMap[sn] === baseline) {
+      ok.push(key);
     } else {
-      // No WTS baseline yet (DB built from CSV only) — treat current WTS as baseline
-      ok.push({ key, sn, text: wtsMap[sn] });
+      updated.push({ key, sn, oldSource: baseline, newSource: wtsMap[sn] });
     }
   }
 
@@ -156,16 +151,15 @@ function runCheck(db, wtsMap) {
     const sn = entry.string_number;
     if (sn == null || sn in wtsMap) continue;
 
-    // Prefer original-language baseline; fall back to English source
-    const compareText = entry.wts_source ?? entry.source;
-    const match = fuzzySearch(compareText, wtsMap, claimed);
+    const baseline = entry.wts_source ?? entry.source;
+    const match = fuzzySearch(baseline, wtsMap, claimed);
     if (match) {
       claimed.add(match.sn);
       reassigned.push({
         key,
         oldSN:     sn,
         newSN:     match.sn,
-        oldSource: compareText,
+        oldSource: baseline,
         newSource: match.text,
         score:     match.score,
         accepted:  true,
@@ -231,7 +225,7 @@ function renderResults(ch) {
   renderSection('section-reassigned', 'body-reassigned', renderReassignedRows(ch.reassigned));
   renderSection('section-notfound',   'body-notfound',   renderNotFoundRows(ch.notFound));
 
-  document.getElementById('btn-download').disabled = !(ch.ok.length > 0 || ch.updated.length > 0 || ch.reassigned.length > 0);
+  document.getElementById('btn-download').disabled = !(ch.updated.length > 0 || ch.reassigned.length > 0);
   document.getElementById('results').classList.remove('hidden');
 }
 
@@ -283,28 +277,27 @@ document.getElementById('body-reassigned').addEventListener('change', (e) => {
 });
 
 // ─── Download ─────────────────────────────────────────────────────────────────
-document.getElementById('btn-download').addEventListener('click', () => {
+document.getElementById('btn-download').addEventListener('click', async () => {
   if (!dbJSON || !changes) return;
 
   const newDB = JSON.parse(JSON.stringify(dbJSON));
   newDB.meta.generated = new Date().toISOString().split('T')[0];
 
-  // Save current WTS text as baseline for all unchanged strings (bootstrap or refresh)
-  for (const item of changes.ok) {
-    newDB.strings[item.key].wts_source = item.text;
-  }
-
-  // For updated strings: record new WTS text as baseline; English source stays for manual review
   for (const item of changes.updated) {
-    newDB.strings[item.key].wts_source = item.newSource;
+    const entry  = newDB.strings[item.key];
+    entry.source = item.newSource;
+    entry.hash   = await computeHash(item.newSource);
+    // If the DB previously had a wts_source baseline, keep tracking it in sync
+    if (entry.wts_source != null) entry.wts_source = item.newSource;
   }
 
-  // For renumbered strings: update string_number and record new WTS text as baseline
   for (const item of changes.reassigned) {
     if (!item.accepted) continue;
     const entry         = newDB.strings[item.key];
     entry.string_number = item.newSN;
-    entry.wts_source    = item.newSource;
+    entry.source        = item.newSource;
+    entry.hash          = await computeHash(item.newSource);
+    if (entry.wts_source != null) entry.wts_source = item.newSource;
   }
 
   const { campaign, act, map } = newDB.meta;
