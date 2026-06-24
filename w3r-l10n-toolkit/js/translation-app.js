@@ -4,7 +4,6 @@ let generatedJSON = null;
 
 const formHint = document.getElementById('form-hint');
 
-// --- Drop zones ---
 setupDrop('drop-vo',   'file-vo',   'label-vo',   (content) => { rawVO   = content; });
 setupDrop('drop-text', 'file-text', 'label-text',  (content) => { rawText = content; });
 
@@ -35,83 +34,42 @@ function readFile(file, labelId, onLoad) {
   reader.readAsText(file, 'UTF-8');
 }
 
-// --- Parse ---
 document.getElementById('btn-parse').addEventListener('click', () => {
   hideHint();
   if (!rawVO && !rawText) return showHint('Upload at least one CSV file');
   processCSVs();
 });
 
-async function processCSVs() {
+function processCSVs() {
   ['result-section', 'preview-section', 'warn-section'].forEach(id =>
     document.getElementById(id).classList.add('hidden'));
 
-  const voRes   = rawVO   ? parseVoCSV(rawVO)     : { results: [], warnings: [] };
-  const textRes = rawText ? parseTextCSV(rawText)  : { results: [], warnings: [] };
+  const voRes   = rawVO   ? parseVoCSVTranslation(rawVO)    : { results: [], warnings: [] };
+  const textRes = rawText ? parseTextCSVTranslation(rawText) : { results: [], warnings: [] };
 
-  const allResults  = [...voRes.results,   ...textRes.results];
-  const allWarnings = [...voRes.warnings,  ...textRes.warnings];
+  const allResults  = [...voRes.results,  ...textRes.results];
+  const allWarnings = [...voRes.warnings, ...textRes.warnings];
 
   if (allResults.length === 0) {
-    showHint('No rows found. Check CSV format — requires ENGLISH and VARIABLE NAME columns.');
+    showHint('No IMPLIMENTED rows with translations found.');
     return;
   }
 
-  await buildDatabase(allResults, voRes.results.length, textRes.results.length);
+  buildTranslation(allResults, voRes.results.length, textRes.results.length);
   if (allWarnings.length) showWarnings(allWarnings);
 }
 
-// --- Build JSON ---
-async function buildDatabase(rows, voCount, textCount) {
-  let unitsRegistry = {};
-  try {
-    const res = await fetch('database/units.json');
-    if (res.ok) unitsRegistry = await res.json();
-  } catch (_) {}
-
-  const strings = {};
-
+function buildTranslation(rows, voCount, textCount) {
+  generatedJSON = {};
   for (const row of rows) {
-    if (strings[row.key]) continue;
-
-    const hash  = await computeHash(row.source);
-    const entry = { hash };
-
-    if (row.stringNumber !== null) entry.string_number = row.stringNumber;
-    if (row.type)                  entry.type           = row.type;
-
-    if (row.unit_id) {
-      entry.unit_id   = row.unit_id;
-      const reg       = unitsRegistry[row.unit_id];
-      entry.unit_name = reg ? reg.en : (row.unit_name || null);
-    } else if (row.unit_name) {
-      entry.unit_name = row.unit_name;
-    }
-
-    entry.source = row.source;
-    strings[row.key] = entry;
+    if (generatedJSON[row.key]) continue;
+    generatedJSON[row.key] = row.translation;
   }
 
-  // Meta: derive campaign/act/map from first key (type excluded — file is mixed)
-  const firstKey  = Object.keys(strings)[0] || '';
-  const metaMatch = firstKey.match(/^([A-Za-z]+)_(A\d+)_([A-Za-z0-9]+)_/);
-
-  generatedJSON = {
-    meta: {
-      campaign:    metaMatch ? metaMatch[1] : '?',
-      act:         metaMatch ? metaMatch[2] : '?',
-      map:         metaMatch ? metaMatch[3] : '?',
-      source_lang: 'en',
-      generated:   new Date().toISOString().split('T')[0],
-    },
-    strings,
-  };
-
-  showStats(voCount, textCount, Object.keys(strings).length);
-  renderPreview(strings);
+  showStats(voCount, textCount, Object.keys(generatedJSON).length);
+  renderPreview(generatedJSON);
 }
 
-// --- UI ---
 function showStats(voCount, textCount, total) {
   document.getElementById('stat-vo').textContent    = `${voCount} VO`;
   document.getElementById('stat-text').textContent  = `${textCount} Text`;
@@ -125,22 +83,19 @@ function showWarnings(warnings) {
   document.getElementById('warn-section').classList.remove('hidden');
 }
 
-function renderPreview(strings) {
-  const keys  = Object.keys(strings);
+function renderPreview(data) {
+  const keys  = Object.keys(data);
   const tbody = document.getElementById('preview-body');
   tbody.innerHTML = '';
 
   function appendRows(ks) {
     ks.forEach(key => {
-      const s   = strings[key];
-      const src = s.source.length > 60 ? s.source.slice(0, 60) + '…' : s.source;
-      const tr  = document.createElement('tr');
+      const text = data[key];
+      const preview = text.length > 70 ? text.slice(0, 70) + '…' : text;
+      const tr = document.createElement('tr');
       tr.innerHTML = `
         <td class="mono">${key}</td>
-        <td class="mono dim">${s.type || '—'}</td>
-        <td>${s.unit_name || s.unit_id || '—'}</td>
-        <td class="source-text">${src}</td>
-        <td class="mono dim">${s.string_number ?? '—'}</td>
+        <td class="source-text">${preview}</td>
       `;
       tbody.appendChild(tr);
     });
@@ -164,12 +119,15 @@ function renderPreview(strings) {
   document.getElementById('preview-section').classList.remove('hidden');
 }
 
-// --- Download ---
 document.getElementById('btn-download').addEventListener('click', () => {
   if (!generatedJSON) return;
-  const { campaign, act, map } = generatedJSON.meta;
+  const firstKey = Object.keys(generatedJSON)[0] || '';
+  const m = firstKey.match(/^([A-Za-z]+)_(A\d+)_([A-Za-z0-9]+)_/);
+  const campaign = m ? m[1] : 'UNKNOWN';
+  const act      = m ? m[2] : '?';
+  const map      = m ? m[3] : '?';
   const ts = Math.floor(Date.now() / 1000);
-  const filename = `${campaign}_${act}_${map}_EN_${ts}.json`;
+  const filename = `${campaign}_${act}_${map}_UA_${ts}.json`;
   const blob = new Blob([JSON.stringify(generatedJSON, null, 2)], { type: 'application/json' });
   const url  = URL.createObjectURL(blob);
   const a    = document.createElement('a');
@@ -177,7 +135,6 @@ document.getElementById('btn-download').addEventListener('click', () => {
   URL.revokeObjectURL(url);
 });
 
-// --- Reset ---
 document.getElementById('btn-reset').addEventListener('click', () => {
   rawVO = rawText = generatedJSON = null;
   document.getElementById('label-vo').textContent   = 'Drop CSV or click';
@@ -189,6 +146,5 @@ document.getElementById('btn-reset').addEventListener('click', () => {
   hideHint();
 });
 
-// --- Helpers ---
 function showHint(msg) { formHint.textContent = msg; formHint.classList.remove('hidden'); }
 function hideHint()    { formHint.classList.add('hidden'); }

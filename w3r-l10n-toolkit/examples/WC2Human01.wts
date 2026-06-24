@@ -650,110 +650,110 @@ Kul'Tiras Expedition
 
 STRING 3777
 {
-Щит для короля
+Shield the King
 }
 
 STRING 3778
 {
-Орда пробила стіни палацу, і тронна зала зараз в облозі. Король Теренас не повинен загинути. Збирайте свої сили, тримайте оборону і відкиньте загарбників, перш ніж вони дістануться до Його Величності.
+The orcish horde has breached the palace walls, and the throne room lies under siege. King Terenas must not fall. Rally your forces, hold the line, and drive back the invaders before they reach His Majesty.
 }
 
 STRING 3779
 {
-Королівський спадкоємець
+The King’s Heir
 }
 
 STRING 3780
 {
-Орки вже всередині палацу, спадкоємний принц Артас у смертельній небезпеці. Знайдіть і виведіть його в безпечне місце, королівська династія має бути захищена!
+Orcs are inside the palace, placing Crown Prince Arthas in grave danger. Locate the Prince and lead him to safety, the royal line must be protected!
 }
 
 STRING 3781
 {
-Очистити місто
+Retake the city
 }
 
 STRING 3782
 {
-Час настав вигнати цю мерзоту з нашого міста. Очищайте ділянку за ділянкою від орчої зарази! Стоїмо пліч-о-пліч і повернемо нашу столицю!
+The time has come to drive these vermin out of our city. Purge the orc infestation district by district! Stand united and reclaim the capital!
 }
 
 STRING 3785
 {
-Звільнення острова Фенріс
+Liberation of Fenris Isl
 }
 
 STRING 3786
 {
-Острів Фенріс — це остання твердиня Орди на озері Лордамер. Розбийте їхні сили на острові,звільніть острів та закінчіть облогу Лордерону. Не знайте жалю до них і нехай всі загарбники падуть від мечів та стріл Альянсу!
+Fenris Isle is the last Horde stronghold on Lordamere Lake. Crush their forces there and lift the siege. Show no mercy and put them all to the sword!
 }
 
 STRING 3787
 {
-Багряна загроза
+Dark Wings
 }
 
 STRING 3788
 {
-Підконтрольні Орді багряні дракони атакують палац, ставлячи під загрозу всю оборону міста. Відбийте їх напад за допомогою лучників, відновлюйте їх здоров'я за допомогою сцілення паладинів.
+Dragons are attacking the palace! threatening its defenses. Recruit archers to bring them down, and support your troops with the healing power of your paladins.
 }
 
 STRING 3791
 {
-Король Теренас має вижити
+Terenas must survive
 }
 
 STRING 3792
 {
-Утер Світлоносець має вижити
+Uther must survive
 }
 
 STRING 3793
 {
-Знайдіть принца Артаса
+Find prince Arthas
 }
 
 STRING 3794
 {
-Король Теренас має вижити
+Terenas must survive
 }
 
 STRING 3795
 {
-Утер Світлоносець має вижити
+Uther must survive
 }
 
 STRING 3797
 {
-Очистіть СХІДНЕ крило
+Retake East wing
 }
 
 STRING 3798
 {
-Очистіть ЗАХІДНЕ крило
+Retake West wing
 }
 
 STRING 3801
 {
-Не дайте драконам знищити палац
+Don’t let the dragons destroy the palace
 }
 
 STRING 3804
 {
-Знищіть ворожий табір
+Destroy Enemy Camp
 }
 
 STRING 3805
 {
-Всі герої мають вижити
+All Heroes must survive
 }
 
 STRING 3806
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ|r
-Щит для короля
- - Король Теренас має вижити
- - Утер Світлоносець має вижити
+|cffffcc00MAIN QUEST|r
+Shield the King
+ - Terenas must survive
+ - Uther must survive
 }
 
 STRING 3807
@@ -778,141 +778,142 @@ Shield the King
 
 STRING 3810
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ|r
-Королівський спадкоємець
-- Знайдіть принца Артаса
-- Король Теренас має вижити
-- Утер Світлоносець має вижити
+|cffffcc00MAIN QUEST|r
+The King's Heir
+- Find prince Arthas 
+- Terenas must survive
+- Uther must survive
 }
 
 STRING 3811
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ ПРОВАЛЕНО|r
-Королівський спадкоємець
-- |cffff0000Утер Світлоносець має вижити (Провалено)|r
+|cffffcc00MAIN QUEST FAILED|r
+The King's Heir
+ - |cffff0000Uther must survive (failed)|r
 }
 
 STRING 3812
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ ПРОВАЛЕНО|r
-Королівський спадкоємець
-- |cffff0000Король Теренас має вижити (Провалено)|r
+|cffffcc00MAIN QUEST FAILED|r
+The King's Heir
+ - |cffff0000Terenas must survive (failed)|r
 }
 
 STRING 3813
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ ПРОВАЛЕНО|r
-Королівський спадкоємець
-- |cffff0000Принц Артас має вижити (Провалено)|r
+|cffffcc00MAIN QUEST FAILED|r
+The King's Heir
+ - |cffff0000Arthas must survive (failed)|r
 }
 
 STRING 3814
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ ВИКОНАНО|r
-Королівський спадкоємець
+|cffffcc00MAIN QUEST COMPLETED|r
+The King's Heir
 }
 
 STRING 3815
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ ОНОВЛЕНО|r
-Королівський спадкоємець
-- |cff808080Знайдіть принца Артаса (Виконано)|r
-- Король Теренас має вижити
-- Утер Світлоносець має вижити
-- Принц Артас має вижити
-- Покиньте палац
+|cffffcc00MAIN QUEST UPDATED|r
+TheKing's Heir
+ - |cff808080Find prince Arthas (Completed)|r
+ - Terenas must survive
+ - Uther must survive
+ - Arthas must survive
+ - Leave the palace
 }
 
 STRING 3817
 {
-Принц Артас має вижити
+Arthas must survive
 }
 
 STRING 3818
 {
-Покиньте палац
+Leave the Palace
 }
 
 STRING 3819
-// Units: nAck (Принц Артас), Name (Name)
+// Units: nAck (Arthas), Name (Name)
 {
-Принц Артас
+Arthas
 }
 
 STRING 3820
-// Units: nAck (Принц Артас), EditorSuffix (Name - Editor Suffix)
+// Units: nAck (Arthas), EditorSuffix (Name - Editor Suffix)
 {
 (kid)
 }
 
 STRING 3821
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ|r
-Очистити місто
-- Очистіть СХІДНЕ крило
-- Всі герої мають вижити
+|cffffcc00MAIN QUEST|r
+Retake the city
+ - Retake East wing
+ - All Heroes must survive
 }
 
 STRING 3825
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ ВИКОНАНО|r
-Очистити місто
+|cffffcc00MAIN QUEST COMPLETED|r
+Retake the city
 }
 
 STRING 3827
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ|r
-Звільнення острова Фенріс
- - Знищіть ворожий табір
- - Всі герої мусять вижити
+|cffffcc00MAIN QUEST|r
+Liberation of Fenris Isle
+ - Destroy Enemy Camp
+ - All Heroes must survive
 }
 
 STRING 3829
 {
-|cffffcc00ДОДАТКОВЕ ЗАВДАННЯ|r
-Багряна загроза
- - Не дайте драконам знищити палац
+|cffffcc00OPTIONAL QUEST|r
+Dark Wings
+ - Don’t let dragons destroy the palace
 }
 
 STRING 3833
 {
-|cffffcc00ДОДАТКОВЕ ЗАВДАННЯ ВИКОНАНО|r
-Багряна загроза
+|cffffcc00OPTIONAL QUEST COMPLETED|r
+Dark Wings
 }
 
 STRING 3834
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ ВИКОНАНО|r
-Звільнення острова Фенріс
+|cffffcc00MAIN QUEST COMPLETED|r
+Liberation of Fenris Isle
 }
 
 STRING 3836
 {
-|cffffcc00ДОДАТКОВЕ ЗАВДАННЯ ПРОВАЛЕНО|r
-Багряна загроза
- - Не дайте драконам знищити палац (Провалено)|r
+|cffffcc00OPTIONAL QUEST FAILED|r
+Dark Wings
+ - |cffff0000Don’t let dragons destroy the palace (failed)|r
+
 }
 
 STRING 3837
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ ПРОВАЛЕНО|r
-Звільнення острова Фенріс
- - |cffff0000Всі герої мусять вижити (Провалено)|r
+|cffffcc00MAIN QUEST FAILED|r
+Liberation of Fenris Isle
+ - |cffff0000All Heroes must survive (failed)|r
 }
 
 STRING 3838
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ ОНОВЛЕНО|r
-Звільнення острова Фенріс
- - |cff808080Знищіть ворожий табір (Виконано)|r
- - Здолайте Ординського генерала
- - Як мінімум один герой мусить вижити
+|cffffcc00MAIN QUEST UPDATED|r
+Liberation of Fenris Isle
+ - |cff808080Destroy Enemy Camp (Completed)|r
+ - Defeat the Horde General
+ - At least one hero must survive
 }
 
 STRING 3845
 // Items: IL01 (WC2Human01Terenas01), Tip (Tooltip - Basic)
 {
-Теренас Менетіл II
+Terenas Menethil II
 }
 
 STRING 3847
@@ -924,19 +925,19 @@ WC2Human01Terenas01
 STRING 3848
 // Items: IL01 (WC2Human01Terenas01), Description (Description)
 {
-Вартові, до мене!…
+Guards, to me!….
 }
 
 STRING 3849
 // Items: IL02 (WC2Human01Uther01), Tip (Tooltip - Basic)
 {
-Утер Світлоносець
+Uther Lightbringer
 }
 
 STRING 3850
 // Items: IL02 (WC2Human01Uther01), Description (Description)
 {
-Воїни Лордерону, захищайте короля!
+Soldiers of Lordaeron, protect the king!
 }
 
 STRING 3851
@@ -948,7 +949,7 @@ WC2Human01Uther01
 STRING 3852
 // Items: IL03 (WC2Human01Terenas02), Tip (Tooltip - Basic)
 {
-Теренас Менетіл II
+Terenas Menethil II
 }
 
 STRING 3854
@@ -960,7 +961,7 @@ WC2Human01Terenas02
 STRING 3855
 // Items: IL04 (WC2Human01Terenas03), Tip (Tooltip - Basic)
 {
-Теренас Менетіл II
+Terenas Menethil II
 }
 
 STRING 3857
@@ -972,13 +973,13 @@ WC2Human01Terenas03
 STRING 3858
 // Items: IL05 (WC2Human01Uther02), Tip (Tooltip - Basic)
 {
-Утер Світлоносець
+Uther Lightbringer
 }
 
 STRING 3859
 // Items: IL05 (WC2Human01Uther02), Description (Description)
 {
-Ваша Величносте, ми маємо залишити палац і відступити у внутрішній двір. Там у нас більше шансів дати ворогу бій і зміцнити оборону.
+Your Majesty, we must abandon the palace and retreat to the courtyard. There, we can make our final stand and fortify our defenses.
 }
 
 STRING 3860
@@ -990,7 +991,7 @@ WC2Human01Uther02
 STRING 3861
 // Items: IL06 (WC2Human01Terenas04), Tip (Tooltip - Basic)
 {
-Теренас Менетіл II
+Terenas Menethil II
 }
 
 STRING 3863
@@ -1002,13 +1003,13 @@ WC2Human01Terenas04
 STRING 3864
 // Items: IL07 (WC2Human01Arthas01), Tip (Tooltip - Basic)
 {
-Принц Артас
+Arthas
 }
 
 STRING 3865
 // Items: IL07 (WC2Human01Arthas01), Description (Description)
 {
-Батьку!
+Father!
 }
 
 STRING 3866
@@ -1020,7 +1021,7 @@ WC2Human01Arthas01
 STRING 3867
 // Items: IL08 (WC2Human01Terenas05), Tip (Tooltip - Basic)
 {
-Теренас Менетіл II
+Terenas Menethil II
 }
 
 STRING 3869
@@ -1032,7 +1033,7 @@ WC2Human01Terenas05
 STRING 3870
 // Items: IL09 (WC2Human01Muradin01), Tip (Tooltip - Basic)
 {
-Мурадін Бронзобородий
+Muradin Bronzebeard
 }
 
 STRING 3872
@@ -1044,7 +1045,7 @@ WC2Human01Muradin01
 STRING 3873
 // Items: IL10 (WC2Human01Muradin02), Tip (Tooltip - Basic)
 {
-Мурадін Бронзобородий
+Muradin Bronzebeard
 }
 
 STRING 3875
@@ -1056,7 +1057,7 @@ WC2Human01Muradin02
 STRING 3876
 // Items: IL11 (WC2Human01Muradin03), Tip (Tooltip - Basic)
 {
-Мурадін Бронзобородий
+Muradin Bronzebeard
 }
 
 STRING 3878
@@ -1068,13 +1069,13 @@ WC2Human01Muradin03
 STRING 3879
 // Items: IL12 (WC2Human01Uther03), Tip (Tooltip - Basic)
 {
-Утер Світлоносець
+Uther Lightbringer
 }
 
 STRING 3880
 // Items: IL12 (WC2Human01Uther03), Description (Description)
 {
-Мій королю, тут ви будете в безпеці. Я посилю оборону міста.
+My King, you'll be safe here. I'll reinforce the city's defenses.
 }
 
 STRING 3881
@@ -1086,13 +1087,13 @@ WC2Human01Uther03
 STRING 3882
 // Items: IL13 (WC2Human01Arthas02), Tip (Tooltip - Basic)
 {
-Принц Артас
+Arthas
 }
 
 STRING 3883
 // Items: IL13 (WC2Human01Arthas02), Description (Description)
 {
-Батьку, ці істоти нас уб'ють?
+Father, are those creatures going to kill us?
 }
 
 STRING 3884
@@ -1104,7 +1105,7 @@ WC2Human01Arthas02
 STRING 3885
 // Items: IL14 (WC2Human01Terenas06), Tip (Tooltip - Basic)
 {
-Теренас Менетіл II
+Terenas Menethil II
 }
 
 STRING 3887
@@ -1116,7 +1117,7 @@ WC2Human01Terenas06
 STRING 3888
 // Items: IL15 (WC2Human01Muradin04), Tip (Tooltip - Basic)
 {
-Мурадін Бронзобородий
+Muradin Bronzebeard
 }
 
 STRING 3890
@@ -1128,7 +1129,7 @@ WC2Human01Muradin04
 STRING 3891
 // Items: IL16 (WC2Human01Turalyon01), Tip (Tooltip - Basic)
 {
-Тураліон
+Turalyon
 }
 
 STRING 3893
@@ -1140,7 +1141,7 @@ WC2Human01Turalyon01
 STRING 3894
 // Items: IL17 (WC2Human01Terenas07), Tip (Tooltip - Basic)
 {
-Теренас Менетіл II
+Terenas Menethil II
 }
 
 STRING 3896
@@ -1152,13 +1153,13 @@ WC2Human01Terenas07
 STRING 3897
 // Items: IL18 (WC2Human01Uther04), Tip (Tooltip - Basic)
 {
-Утер Світлоносець
+Uther Lightbringer
 }
 
 STRING 3898
 // Items: IL18 (WC2Human01Uther04), Description (Description)
 {
-Ти дуже вчасно, брате. У нас повно роботи.
+Just in time, brother. We have much to do.
 }
 
 STRING 3899
@@ -1170,7 +1171,7 @@ WC2Human01Uther04
 STRING 3900
 // Items: IL19 (WC2Human01Turalyon02), Tip (Tooltip - Basic)
 {
-Тураліон
+Turalyon
 }
 
 STRING 3902
@@ -1182,7 +1183,7 @@ WC2Human01Turalyon02
 STRING 3903
 // Items: IL20 (WC2Human01Uther05), Tip (Tooltip - Basic)
 {
-Утер Світлоносець
+Uther Lightbringer
 }
 
 STRING 3905
@@ -1194,13 +1195,13 @@ WC2Human01Uther05
 STRING 3906
 // Items: IL21 (WC2Human01Turalyon03), Tip (Tooltip - Basic)
 {
-Тураліон
+Turalyon
 }
 
 STRING 3907
 // Items: IL21 (WC2Human01Turalyon03), Description (Description)
 {
-У нас вийшло! Орки відступають!
+We've done it! The orcs are falling back!
 }
 
 STRING 3908
@@ -1212,13 +1213,13 @@ WC2Human01Turalyon03
 STRING 3909
 // Items: IL22 (WC2Human01Uther06), Tip (Tooltip - Basic)
 {
-Утер Світлоносець
+Uther Lightbringer
 }
 
 STRING 3910
 // Items: IL22 (WC2Human01Uther06), Description (Description)
 {
-Не святкуй завчасно... Поглянь, дракони атакують палац!
+Don't celebrate just yet... Look, the dragons are attacking the palace!
 }
 
 STRING 3911
@@ -1230,7 +1231,7 @@ WC2Human01Uther06
 STRING 3912
 // Items: IL23 (WC2Human01Turalyon04), Tip (Tooltip - Basic)
 {
-Тураліон
+Turalyon
 }
 
 STRING 3914
@@ -1242,7 +1243,7 @@ WC2Human01Turalyon04
 STRING 3915
 // Items: IL24 (WC2Human01Uther07), Tip (Tooltip - Basic)
 {
-Утер Світлоносець
+Uther Lightbringer
 }
 
 STRING 3917
@@ -1254,7 +1255,7 @@ WC2Human01Uther07
 STRING 3918
 // Items: IL25 (WC2Human01Turalyon05), Tip (Tooltip - Basic)
 {
-Тураліон
+Turalyon
 }
 
 STRING 3920
@@ -1266,7 +1267,7 @@ WC2Human01Turalyon05
 STRING 3921
 // Items: IL26 (WC2Human01Muradin05), Tip (Tooltip - Basic)
 {
-Мурадін Бронзобородий
+Muradin Bronzebeard
 }
 
 STRING 3923
@@ -1278,7 +1279,7 @@ WC2Human01Muradin05
 STRING 3924
 // Items: IL27 (WC2Human01Kurdran01), Tip (Tooltip - Basic)
 {
-Курдран Дикий Молот
+Kurdran Wildhammer
 }
 
 STRING 3926
@@ -1290,13 +1291,13 @@ WC2Human01Kurdran01
 STRING 3927
 // Items: IL28 (WC2Human01Uther08), Tip (Tooltip - Basic)
 {
-Утер Світлоносець
+Uther Lightbringer
 }
 
 STRING 3928
 // Items: IL28 (WC2Human01Uther08), Description (Description)
 {
-Ви прибули якраз вчасно, мій дворфійський друже. Якби не ваша допомога, від міста залишився б лише попіл.
+You arrived just in time, my dwarven friend. The city would have been reduced to ashes if not for your aid.
 }
 
 STRING 3929
@@ -1308,7 +1309,7 @@ WC2Human01Uther08
 STRING 3930
 // Items: IL29 (WC2Human01Kurdran02), Tip (Tooltip - Basic)
 {
-Курдран Дикий Молот
+Kurdran Wildhammer
 }
 
 STRING 3932
@@ -1320,13 +1321,13 @@ WC2Human01Kurdran02
 STRING 3933
 // Items: IL30 (WC2Human01Turalyon06), Tip (Tooltip - Basic)
 {
-Тураліон
+Turalyon
 }
 
 STRING 3934
 // Items: IL30 (WC2Human01Turalyon06), Description (Description)
 {
-Як далеко лорд Лотар від міста?
+How far is Lord Lothar from the city?
 }
 
 STRING 3935
@@ -1338,13 +1339,13 @@ WC2Human01Turalyon06
 STRING 3936
 // Items: IL31 (WC2Human01Kurdran03), Tip (Tooltip - Basic)
 {
-Курдран Дикий Молот
+Kurdran Wildhammer
 }
 
 STRING 3937
 // Items: IL31 (WC2Human01Kurdran03), Description (Description)
 {
-Він то прямує не сюди. Його армія йде через Гіллзбрад, щоб визволит Даларан і вдарит по орках з тилу. Як усе піде за планом, Орда опинит си в пастці їкраз між нашими військами тут і його силами на півдні.
+He's not heading here. His army is marching through Hillsbrad to relieve Dalaran and attack the orcs from the rear. If all goes as planned, the Horde will be caught between our forces here and his forces down south.
 }
 
 STRING 3938
@@ -1356,7 +1357,7 @@ WC2Human01Kurdran03
 STRING 3939
 // Items: IL32 (WC2Human01Uther09), Tip (Tooltip - Basic)
 {
-Утер Світлоносець
+Uther Lightbringer
 }
 
 STRING 3941
@@ -1368,7 +1369,7 @@ WC2Human01Uther09
 STRING 3942
 // Items: IL33 (WC2Human01Turalyon07), Tip (Tooltip - Basic)
 {
-Тураліон
+Turalyon
 }
 
 STRING 3944
@@ -1380,7 +1381,7 @@ WC2Human01Turalyon07
 STRING 3945
 // Items: IL34 (WC2Human01Kurdran04), Tip (Tooltip - Basic)
 {
-Курдран Дикий Молот
+Kurdran Wildhammer
 }
 
 STRING 3947
@@ -1392,13 +1393,13 @@ WC2Human01Kurdran04
 STRING 3948
 // Items: IL35 (WC2Human01Uther10), Tip (Tooltip - Basic)
 {
-Утер Світлоносець
+Uther Lightbringer
 }
 
 STRING 3949
 // Items: IL35 (WC2Human01Uther10), Description (Description)
 {
-Тоді нам варто зосередити зусилля у нижній частнині міста.
+In that case, we should concentrate our efforts on the lower city.
 }
 
 STRING 3950
@@ -1410,13 +1411,13 @@ WC2Human01Uther10
 STRING 3951
 // Items: IL36 (WC2Human01Muradin06), Tip (Tooltip - Basic)
 {
-Мурадін Бронзобородий
+Muradin Bronzebeard
 }
 
 STRING 3952
 // Items: IL36 (WC2Human01Muradin06), Description (Description)
 {
-Я вже файно відновив си. Час розтрощити кілька орчих черепів.
+I've had enough rest. It's time to crush some orcish skulls.
 }
 
 STRING 3953
@@ -1428,7 +1429,7 @@ WC2Human01Muradin06
 STRING 3954
 // Items: IL37 (WC2Human01Kurdran05), Tip (Tooltip - Basic)
 {
-Курдран Дикий Молот
+Kurdran Wildhammer
 }
 
 STRING 3955
@@ -1446,7 +1447,7 @@ WC2Human01Kurdran05
 STRING 3957
 // Items: IL38 (WC2Human01Muradin07), Tip (Tooltip - Basic)
 {
-Мурадін Бронзобородий
+Muradin Bronzebeard
 }
 
 STRING 3959
@@ -1458,13 +1459,13 @@ WC2Human01Muradin07
 STRING 3960
 // Items: IL39 (WC2Human01Kurdran06), Tip (Tooltip - Basic)
 {
-Курдран Дикий Молот
+Kurdran Wildhammer
 }
 
 STRING 3961
 // Items: IL39 (WC2Human01Kurdran06), Description (Description)
 {
-Ха-ха, то просто!
+Ha-ha, that can be done!
 }
 
 STRING 3962
@@ -1476,7 +1477,7 @@ WC2Human01Kurdran06
 STRING 3963
 // Items: IL40 (WC2Human01Derek01), Tip (Tooltip - Basic)
 {
-Дерек Праудмур
+Derek Proudmoore
 }
 
 STRING 3965
@@ -1488,7 +1489,7 @@ WC2Human01Derek01
 STRING 3966
 // Items: IL41 (WC2Human01Derek02), Tip (Tooltip - Basic)
 {
-Дерек Праудмур
+Derek Proudmoore
 }
 
 STRING 3968
@@ -1500,7 +1501,7 @@ WC2Human01Derek02
 STRING 3969
 // Items: IL42 (WC2Human01Uther11), Tip (Tooltip - Basic)
 {
-Утер Світлоносець
+Uther Lightbringer
 }
 
 STRING 3971
@@ -1512,13 +1513,13 @@ WC2Human01Uther11
 STRING 3972
 // Items: IL43 (WC2Human01Turalyon08), Tip (Tooltip - Basic)
 {
-Тураліон
+Turalyon
 }
 
 STRING 3973
 // Items: IL43 (WC2Human01Turalyon08), Description (Description)
 {
-Аби остаточно розбити їхнізалшики, ми маємо перетнути озеро, взяти штурмом острів Фенріс і схопити їхніх генералів.
+To achieve final victory over their remaining forces, we must cross the lake, assault Fenris Isle, and capture their generals.
 }
 
 STRING 3974
@@ -1530,13 +1531,13 @@ WC2Human01Turalyon08
 STRING 3975
 // Items: IL44 (WC2Human01Muradin08), Tip (Tooltip - Basic)
 {
-Мурадін Бронзобородий
+Muradin Bronzebeard
 }
 
 STRING 3976
 // Items: IL44 (WC2Human01Muradin08), Description (Description)
 {
-Ох, за всієв повагов до майстра Праудмура та його морських воїнів, дворфи ніколи не почуватимуть си затишно на будь-якому човні. Хоча, з іншого боку, то все ж май краще, ніж летіти на грифоні.n.
+Ah, with all due respect to Master Proudmoore and his sea warriors, dwarves can never feel comfortable on any kind of boat. But then again, it's better than to ride a gryphon.
 }
 
 STRING 3977
@@ -1548,13 +1549,13 @@ WC2Human01Muradin08
 STRING 3978
 // Items: IL45 (WC2Human01Uther12), Tip (Tooltip - Basic)
 {
-Утер Світлоносець
+Uther Lightbringer
 }
 
 STRING 3979
 // Items: IL45 (WC2Human01Uther12), Description (Description)
 {
-Твоїм ранам треба більше часу, аби затягнутись, мій друже. Ти й так зробив чимало, задля нашої перемоги тут.
+Your wounds need more time to heal, my friend. You've already done a lot to ensure our victory here.
 }
 
 STRING 3980
@@ -1566,7 +1567,7 @@ WC2Human01Uther12
 STRING 3981
 // Items: IL46 (WC2Human01Muradin09), Tip (Tooltip - Basic)
 {
-Мурадін Бронзобородий
+Muradin Bronzebeard
 }
 
 STRING 3983
@@ -1578,7 +1579,7 @@ WC2Human01Muradin09
 STRING 3984
 // Items: IL47 (WC2Human01Uther13), Tip (Tooltip - Basic)
 {
-Утер Світлоносець
+Uther Lightbringer
 }
 
 STRING 3986
@@ -1590,7 +1591,7 @@ WC2Human01Uther13
 STRING 3987
 // Items: IL48 (WC2Human01Kurdran07), Tip (Tooltip - Basic)
 {
-Курдран Дикий Молот
+Kurdran Wildhammer
 }
 
 STRING 3989
@@ -1602,13 +1603,13 @@ WC2Human01Kurdran07
 STRING 3990
 // Items: IL49 (WC2Human01Utok01), Tip (Tooltip - Basic)
 {
-Уток Дряпач
+Utok Scratcher
 }
 
 STRING 3991
 // Items: IL49 (WC2Human01Utok01), Description (Description)
 {
-Вождю, люди повернули місто! Що нам робити?
+Warchief, the humans have retaken the city! What do we do?
 }
 
 STRING 3992
@@ -1620,13 +1621,13 @@ WC2Human01Utok01
 STRING 3993
 // Items: IL50 (WC2Human01Tharbek01), Tip (Tooltip - Basic)
 {
-Капітан Тарбер
+Tharbek
 }
 
 STRING 3994
 // Items: IL50 (WC2Human01Tharbek01), Description (Description)
 {
-Ми маємо продовжувати наступ! Ці собаки не заслуговують на передишку!
+We must press the attack! Those dogs deserve no reprieve!
 }
 
 STRING 3995
@@ -1638,7 +1639,7 @@ WC2Human01Tharbek01
 STRING 3996
 // Items: IL51 (WC2Human01Orgrim01), Tip (Tooltip - Basic)
 {
-Орґрім Молот Згуби
+Orgrim Doomhammer
 }
 
 STRING 3998
@@ -1650,7 +1651,7 @@ WC2Human01Orgrim01
 STRING 3999
 // Items: IL52 (WC2Human01Tharbek02), Tip (Tooltip - Basic)
 {
-Капітан Тарбер
+Tharbek
 }
 
 STRING 4001
@@ -1662,7 +1663,7 @@ WC2Human01Tharbek02
 STRING 4002
 // Items: IL53 (WC2Human01Orgrim02), Tip (Tooltip - Basic)
 {
-Орґрім Молот Згуби
+Orgrim Doomhammer
 }
 
 STRING 4004
@@ -1674,13 +1675,13 @@ WC2Human01Orgrim02
 STRING 4005
 // Items: IL54 (WC2Human01Utok02), Tip (Tooltip - Basic)
 {
-Уток Дряпач
+Utok Scratcher
 }
 
 STRING 4006
 // Items: IL54 (WC2Human01Utok02), Description (Description)
 {
-Так, Вождю.
+Yes, Warchief.
 }
 
 STRING 4007
@@ -1692,13 +1693,13 @@ WC2Human01Utok02
 STRING 4008
 // Items: IL55 (WC2Human01Tharbek03), Tip (Tooltip - Basic)
 {
-Капітан Тарбер
+Tharbek
 }
 
 STRING 4009
 // Items: IL55 (WC2Human01Tharbek03), Description (Description)
 {
-Так, Вождю. Але що робити з нашим табором тут?
+Yes, Warchief. But what of our base here?
 }
 
 STRING 4010
@@ -1710,7 +1711,7 @@ WC2Human01Tharbek03
 STRING 4011
 // Items: IL56 (WC2Human01Orgrim03), Tip (Tooltip - Basic)
 {
-Орґрім Молот Згуби
+Orgrim Doomhammer
 }
 
 STRING 4013
@@ -1722,7 +1723,7 @@ WC2Human01Orgrim03
 STRING 4014
 // Items: IL57 (WC2Human01Turalyon09), Tip (Tooltip - Basic)
 {
-Тураліон
+Turalyon
 }
 
 STRING 4016
@@ -1734,13 +1735,13 @@ WC2Human01Turalyon09
 STRING 4017
 // Items: IL58 (WC2Human01Ogre01), Tip (Tooltip - Basic)
 {
-Ґрумак Залізошкір
+Korkron Orge Guard
 }
 
 STRING 4018
 // Items: IL58 (WC2Human01Ogre01), Description (Description)
 {
-Жалюгідні людські істоти, ви надто дурні. Вождь сказав ви помрете — тож помріть.
+Puny humans, too stupid. Warchief said you die, so you die.
 }
 
 STRING 4019
@@ -1752,7 +1753,7 @@ WC2Human01Ogre01
 STRING 4020
 // Items: IL59 (WC2Human01Uther14), Tip (Tooltip - Basic)
 {
-Утер Світлоносець
+Uther Lightbringer
 }
 
 STRING 4022
@@ -1764,7 +1765,7 @@ WC2Human01Uther14
 STRING 4023
 // Items: IL60 (WC2Human01Terenas08), Tip (Tooltip - Basic)
 {
-Теренас Менетіл II
+Terenas Menethil II
 }
 
 STRING 4025
@@ -1776,7 +1777,7 @@ WC2Human01Terenas08
 STRING 4026
 // Items: IL61 (WC2Human01Uther15), Tip (Tooltip - Basic)
 {
-Утер Світлоносець
+Uther Lightbringer
 }
 
 STRING 4028
@@ -1788,7 +1789,7 @@ WC2Human01Uther15
 STRING 4029
 // Items: IL62 (WC2Human01Derek03), Tip (Tooltip - Basic)
 {
-Дерек Праудмур
+Derek Proudmoore
 }
 
 STRING 4031
@@ -1800,7 +1801,7 @@ WC2Human01Derek03
 STRING 4032
 // Items: IL63 (WC2Human01Kurdran08), Tip (Tooltip - Basic)
 {
-Курдран Дикий Молот
+Kurdran Wildhammer
 }
 
 STRING 4034
@@ -1812,7 +1813,7 @@ WC2Human01Kurdran08
 STRING 4035
 // Items: IL64 (WC2Human01Terenas09), Tip (Tooltip - Basic)
 {
-Теренас Менетіл II
+Terenas Menethil II
 }
 
 STRING 4037
@@ -1824,7 +1825,7 @@ WC2Human01Terenas09
 STRING 4038
 // Items: IL65 (WC2Human01Turalyon10), Tip (Tooltip - Basic)
 {
-Тураліон
+Turalyon
 }
 
 STRING 4040
@@ -1836,7 +1837,7 @@ WC2Human01Turalyon10
 STRING 4041
 // Items: IL66 (WC2Human01Terenas10), Tip (Tooltip - Basic)
 {
-Теренас Менетіл II
+Terenas Menethil II
 }
 
 STRING 4043
@@ -1848,13 +1849,13 @@ WC2Human01Terenas10
 STRING 4047
 // Items: IL68 (WC2Human01Terenas11), Tip (Tooltip - Basic)
 {
-Теренас Менетіл II
+Terenas Menethil II
 }
 
 STRING 4048
 // Items: IL68 (WC2Human01Terenas11), Description (Description)
 {
-Мурадіне, я хочу, аби ти теж залишився зі мною. Ти вже пролив достатньо крові за Лордерон, і я не хочу накликати на себе гнів твого брата-короля, якщо з тобою щось станеться.
+Muradin, I want you to stay with me. You've shed enough blood for Lordaeron already, and I don't want to face the wrath of your brother-king if something were to happen to you.
 }
 
 STRING 4049
@@ -1866,13 +1867,13 @@ WC2Human01Terenas11
 STRING 4050
 // Items: IL69 (WC2Human01Muradin10), Tip (Tooltip - Basic)
 {
-Мурадін Бронзобородий
+Muradin Bronzebeard
 }
 
 STRING 4051
 // Items: IL69 (WC2Human01Muradin10), Description (Description)
 {
-Ваше словов то гет розчулит моє серце, королю Теренасе.
+Your words warm my heart, King Terenas.
 }
 
 STRING 4052
@@ -1974,145 +1975,145 @@ STRING 4067
 STRING 4070
 // Items: IL09 (WC2Human01Muradin01), Description (Description)
 {
-Я розколю ваші черепи! Дикі тварі, гет!
+I’ll crack yer skulls! Savage beasts!
 }
 
 STRING 4071
 // Items: IL11 (WC2Human01Muradin03), Description (Description)
 {
-Хлопаки! Не давайте їм пройти далі, стійте стіною!
+Lads! Do not let them advance further!
 }
 
 STRING 4073
 // Items: IL03 (WC2Human01Terenas02), Description (Description)
 {
-Вартові, на мене напали!
+Guards, I’m under attack!
 }
 
 STRING 4074
 // Items: IL04 (WC2Human01Terenas03), Description (Description)
 {
-Люди Лордерону, допоможіть мені!
+Men of Lordaeron, aid me!
 }
 
 STRING 4075
 // Items: IL06 (WC2Human01Terenas04), Description (Description)
 {
-Згоден. Але спершу ми маємо забрати мого сина з його покоїв!
+Agreed. But first, we must get my son from his chambers!
 }
 
 STRING 4076
 // Items: IL08 (WC2Human01Terenas05), Description (Description)
 {
-Артасе, сину мій, дякувати світлу, ти в безпеці. Ми залишаємо палац.  
+Arthas, my son, thank the Light you are safe. We're leaving the palace.
 }
 
 STRING 4077
 // Items: IL10 (WC2Human01Muradin02), Description (Description)
 {
-Могутність гір то знищить вас!
+The might of the mountains shall destroy ye! 
 }
 
 STRING 4078
 // Items: IL14 (WC2Human01Terenas06), Description (Description)
 {
-Не бійся, Артасе. Наразі ми в безпеці. Але якщо оборона паде , ти маєш піти до катакомб і знайти принца Варіана в укритті.
+Fear not, Arthas. We are safe, for now. But if we are overrun, seek out the catacombs and join Prince Varian in the hideout.
 }
 
 STRING 4080
 // Items: IL17 (WC2Human01Terenas07), Description (Description)
 {
-Якби ви не встигли вчасно, боюся, все було б утрачено, молодий паладине. Ваша допомога нам вкрай необхідна.
+If you hadn’t reached us in time, I’m afraid all would’ve been lost, young Paladin. Your aid is sorely needed.
 }
 
 STRING 4081
 // Items: IL19 (WC2Human01Turalyon02), Description (Description)
 {
-Наказуйте, що робити, лорде Утере.
+Tell us what to do, Lord Uther.
 }
 
 STRING 4082
 // Items: IL23 (WC2Human01Turalyon04), Description (Description)
 {
-Лучники! Луки до бою!
+Archers! Ready your bows!
 }
 
 STRING 4083
 // Items: IL25 (WC2Human01Turalyon05), Description (Description)
 {
-Ці крилаті тварюки занадто люті... нам їх усіх не здолати...
+Those winged beasts are too formidable... we can't vanquish them all...
 }
 
 STRING 4084
 // Items: IL29 (WC2Human01Kurdran02), Description (Description)
 {
-Андуїн Лотар свого часу помічов си нам з захистом нашого краю від орчец.Тож їкраз тепер ми повернет борг і очистим місто від зеленошкірих виродків, гет!
+Anduin Lothar helped us defend our homeland against the orcish scum. Now we’ll return the favor by ridding the city of greenskin mongrels.
 }
 
 STRING 4085
 // Items: IL32 (WC2Human01Uther09), Description (Description)
 {
-Гарний план. Тепер ми маємо бути певними, що втримаємо оборону тут.
+A solid plan. Now we must ensure we hold our defense here.
 }
 
 STRING 4086
 // Items: IL33 (WC2Human01Turalyon07), Description (Description)
 {
-Спершу нам треба очистити останні два квартали міста від цих нечестивих тварин. До бою!
+First, we need to cleanse the last two city districts of those unholy creatures. March on!
 }
 
 STRING 4087
 // Items: IL34 (WC2Human01Kurdran04), Description (Description)
 {
-Проклятє, їхня морська армада то запотужнет для моїх грифонів. Я не можу бити си з ними в лоб кораблів гет забагато!
+Blast it, their armada is too formidable for my gryphon pack. I can't take them all head on; there are too many ships!
 }
 
 STRING 4088
 // Items: IL38 (WC2Human01Muradin07), Description (Description)
 {
-Можеш іти за мнов, як наздоженеш.
+You can follow if you can keep up.
 }
 
 STRING 4090
 // Items: IL41 (WC2Human01Derek02), Description (Description)
 {
-Лорд-адмірал відправив мене з північною морською армадою, щойно він отримав донесення про облогу. Хвала морюморе, ми встигли вчасно.
+The Lord Admiral sent me with the northern armada as soon as he received reports of the siege. Blessed be the sea; we have arrived in time.
 }
 
 STRING 4091
 // Items: IL42 (WC2Human01Uther11), Description (Description)
 {
-Ми надзвичайно вдячні за допомогу. Без сил Кул-Тіраса ця морська блокада могла б тривати казна-скільки.
+Your help is much appreciated. Without the might of Kul Tiras, this naval blockade could have held on for who knows how long.
 }
 
 STRING 4095
 // Items: IL51 (WC2Human01Orgrim01), Description (Description)
 {
-Ні. Наші сили занадто розпорошені між Далараном та Альтераком. До того ж до Альянсу підтягується підкріплення. Нам потрібно оголосити тактичний відступ, відійти та перегрупуватися.
+No. Between Dalaran and Alterac, our forces are stretched too thin. And the Alliance has further reinforcements on the way. We need to sound a tactical retreat, fall back, and regroup.
 }
 
 STRING 4096
 // Items: IL52 (WC2Human01Tharbek02), Description (Description)
 {
-Але, Вождю…
+But Warchief…
 }
 
 STRING 4097
 // Items: IL56 (WC2Human01Orgrim03), Description (Description)
 {
-Нам його не втримати, без залучення додаткових військ, які ми просто не маємо права втрачати. Проте ми можемо залишити людям сюрприз…
+We can’t hope to hold it. Not without committing troops we can’t spare right now. But we can leave the humans a surprise…
 }
 
 STRING 4102
 // Items: IL62 (WC2Human01Derek03), Description (Description)
 {
-Мої кораблі, що вціліли, у вашому розпорядженні, Ваша Величносте.
+My remaining ships are at your disposal, Your Majesty.
 }
 
 STRING 4104
 // Items: IL65 (WC2Human01Turalyon10), Description (Description)
 {
-Як накажете, Ваша Величносте.
+As you command, Your Majesty.
 }
 
 STRING 4105
@@ -2180,43 +2181,43 @@ Revive Prince
 STRING 4119
 // Items: IL20 (WC2Human01Uther05), Description (Description)
 {
-Ми маємо повернути всі квартали міста і вибити орків. Я займуся західним крилом, а ти — східним.
+We must reclaim the city's districts and drive out the orcs. I'll handle the western district, and you handle the eastern one.
 }
 
 STRING 4121
 // Items: IL46 (WC2Human01Muradin09), Description (Description)
 {
-Але ж... я то пропущу все май веселіше...
+But… ah, I'll miss all the fun…
 }
 
 STRING 4122
 // Items: IL53 (WC2Human01Orgrim02), Description (Description)
 {
-Досить! Це наказ! Тарбеку, ти простежиш, щоб наш відступ був організованим. Утоку, ти вирушиш до нашого табору в Зул'Дарі та переконаєшся, що наші західні шляхи постачання в безпеці. Зрозуміло?
+Enough! That’s a command! Tharbek, you will oversee that our retreat is orderly. Utok, you will travel to our base at Zul’Dare and make sure our western supply lines remain intact. Is that clear?
 }
 
 STRING 4123
 // Items: IL59 (WC2Human01Uther14), Description (Description)
 {
-Так, мій воладарю. Моє серце теж сповнено смутку, але ми повинні діяти і негайно рушати за ним на південь.
+Yes, my liege. Grief fills my heart as well, but we must act and follow him south immediately.
 }
 
 STRING 4125
 // Items: IL61 (WC2Human01Uther15), Description (Description)
 {
-У ваших словах є мудрість… Як накажете, мій королю.
+There is wisdom in your words… I will obey, my king.
 }
 
 STRING 4126
 // Items: IL70 (WC2Human01Terenas12), Tip (Tooltip - Basic)
 {
-Теренас Менетіл II
+Terenas Menethil II
 }
 
 STRING 4127
 // Items: IL70 (WC2Human01Terenas12), Description (Description)
 {
-Ах, моя скарбниця. Колись вона була повна золота…  
+Ah, my treasury. It used to be full of gold…
 }
 
 STRING 4128
@@ -2228,13 +2229,13 @@ WC2Human01Terenas12
 STRING 4129
 // Items: IL71 (WC2Human01Terenas13), Tip (Tooltip - Basic)
 {
-Теренас Менетіл II
+Terenas Menethil II
 }
 
 STRING 4130
 // Items: IL71 (WC2Human01Terenas13), Description (Description)
 {
-Я не лишу палац без свого сина...
+I cannot leave without my son...
 }
 
 STRING 4131
@@ -2246,7 +2247,7 @@ WC2Human01Terenas13
 STRING 4132
 // Items: IL72 (WC2Human01Uther16), Tip (Tooltip - Basic)
 {
-Утер Світлоносець
+Uther Lightbringer
 }
 
 STRING 4134
@@ -2287,223 +2288,224 @@ Rose Petals Falling Cinematic
 
 STRING 4140
 {
-|cffffcc00ЗАВДАННЯ ПРОВАЛЕНО|r
+|cffffcc00MISSION FAILED|r
 }
 
 STRING 4141
 {
-Декільки хвилин потому...
+A few moments later...
 }
 
 STRING 4147
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ ОНОВЛЕНО|r
-Очистити місто
-- |cff808080Очистіть ЗАХІДНЕ крило (Виконано)|r
-- Очистіть СХІДНЕ крило
-- Всі герої мають вижити
+|cffffcc00MAIN QUEST UPDATED|r
+Retake the city
+ - |cff808080Retake West wing (Completed)|r
+ - Retake East wing
+ - All Heroes must survive
+
 }
 
 STRING 4153
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ ОНОВЛЕНО|r
-Очистити місто
-- Очистіть ЗАХІДНЕ крило
-- |cff808080Очистіть СХІДНЕ крило (Виконано)|r
-- Всі герої мають вижити
+|cffffcc00MAIN QUEST UPDATED|r
+Retake the city
+ - Retake West wing 
+ - |cff808080Retake East wing (Completed)|r
+ - All Heroes must survive
 }
 
 STRING 4160
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ ОНОВЛЕНО|r
-Очистити місто
-- |cff808080Очистіть ЗАХІДНЕ крило (Виконано)|r
-- |cff808080Очистіть СХІДНЕ крило (Виконано)|r
-- Всі герої мають вижити
+|cffffcc00MAIN QUEST UPDATED|r
+Retake the city
+ - |cff808080Retake East wing (Completed)|r
+ - |cff808080Retake West wing (Completed)|r
+ - All Heroes must survive
 }
 
 STRING 4161
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ ОНОВЛЕНО|r
-Очистити місто
-- |cff808080Очистіть ЗАХІДНЕ крило (Виконано)|r
-- |cff808080Очистіть СХІДНЕ крило (Виконано)|r
-- Всі герої мають вижити
+|cffffcc00MAIN QUEST UPDATED|r
+Retake the city
+ - |cff808080Retake West wing (Completed)|r
+ - |cff808080Retake East wing (Completed)|r
+ - All Heroes must survive
 }
 
 STRING 4162
 {
-|cff8080ffНОВИЙ ГЕРОЙ|r
-Тураліон — один із перших жерців Лордерону, якого Утер Світлоносець тренував як паладина. Він палко вірить у порядок через сувору військову дисципліну.
+|cff8080ffNEW HEROES|r
+Turalyon - One of the first Priests of Lordaeron trained as a Paladin by Uther the Lightbringer. He is a staunch believer in maintaining order through strict martial discipline.
 }
 
 STRING 4163
 {
-|cff8080ffНОВИЙ НАПІВ ГЕРОЙ|r
-Вільгельм — один із досвідчених ветеранів Азероту, який служив капітаном під керівництвом Андуїна Лотара.
+|cff8080ffNEW SEMI HERO|r
+Wilhelm - One of the seasoned veterans of Azeroth, who served as Captain under Anduin Lothar.
 }
 
 STRING 4164
 {
-|cffffcc00НОВИЙ ТИП ВІЙСЬК|r
-Лордеронський лучник - досвідчений стрілець армії Лордерону. Хоч він і поступається у вправності ельфійським лучникам, усе одно смертельно небезпечний для піхоти Орди.
+|cffffcc00TECHTREE UNLOCKED|r
+Lordaeron Archer - a skilled marksman of the Lordaeron army. Though not as elegant as elven archers, still lethal against Horde infantry.
 }
 
 STRING 4165
 {
-|cff87ceebПІДКРІПЛЕННЯ|r
-Королівська варта — елітні солдати Лордерону, навчені битися алебардами, що забезпечує їм більшу дальність атаки, ніж у піхотинців. Для захисту вони також носять щити.
+|cff87ceebREINFORCEMENT|r
+Royal Guard - elite soldiers of Lordaeron, trained to fight with halberds, giving them greater attack range than footmen. They also carry shields for defense.
 }
 
 STRING 4166
 // Items: ILtb (WC2Human01Terenas14), Tip (Tooltip - Basic)
 {
-Теренас Менетіл II
+Terenas Menethil II
 }
 
 STRING 4167
 // Items: ILtb (WC2Human01Terenas14), Description (Description)
 {
-Скористайтеся казармами, щоб поновити своє військо!
+Use barracks to replenish your troops!
 }
 
 STRING 4168
 {
-Цілі завдання
+Quest objectives
 }
 
 STRING 4169
 {
-Лишилося ворогів:
+Remaining enemies:
 }
 
 STRING 4170
 {
-|cffff0000Не дайте драконам знищити палац (Провалено)|r
+|cffff0000Don’t let the dragons destroy the palace (Failed)|r
 }
 
 STRING 4171
 {
-Захищайте палац ще:
+Protect the Palace for:
 }
 
 STRING 4172
 {
-|cff87ceebПІДКРІПЛЕННЯ|r
-Захисники — громадяни Лордерону, які відгукнулися на заклик захисту батьківщини. Вони екіпіровані обладунками та довгими мечами, а також рухаються й завдають ударів швидше за звичайних піхотинців.
+|cff87ceebREINFORCEMENT|r
+Defenders - Lordaeron citizens who answered the call of duty to protect both cities and towns, equipped with armor and longswords. They move and strike faster than regular footmen.
 }
 
 STRING 4173
 {
-|cff87ceebПІДКРІПЛЕННЯ|r
-Захисники віри — солдати Ордену Срібної Десниці, озброєні довгими списами. Вони можуть захищатися від ворожої магії, ціною зниження швидкості пересування.
+|cff87ceebREINFORCEMENT|r
+Defender of Faith - Soldiers of the Silver Hand Order armed with long spears. They can defend against enemy magic, though at the cost of reduced movement speed.
 }
 
 STRING 4174
 {
-|cffffcc00НОВИЙ ТИП ВІЙСЬК|r
-Піхотинці Лордерону — одягнені в обладунки із загартованої сталі, вони відважно орудують мечами та щитами в ближньому бою проти своїх мерзенних оркських ворогів.
+|cffffcc00TECHTREE UNLOCKED|r
+Lordaeron Footmen - arrayed in hardened steel armor, they courageously wield broadsword and shield in hand-to-hand combat against their vile orcish foes.
 }
 
 STRING 4175
 {
-Оберіть напрямок першої атаки.
+Choose place of first strike.
 }
 
 STRING 4176
 {
-ЗАХІДНЕ крило (Утер)
+West Wing (Uther)
 }
 
 STRING 4177
 {
-Східне крило (Тураліон)
+East Wing (Turalyon)
 }
 
 STRING 4178
 {
-Цілісність палацу %
+Palace Durability %
 }
 
 STRING 4179
 {
-|cff8080ffНОВИЙ ГЕРОЙ|r
-Курдран, це Тан(командуючий) клану Диких Молотів, верхи на своєму вірному грифоні Скай’рі, він є одним із найвідоміших союзників людської раси.
-Коли Скай’рі |cffffcc00в небі|r - вони |cff32cd32можуть атакувати повітряні одиниці|r, але |cffff0000НЕ можуть земні|r.
-Коли Скай’рі |cffffcc00на землі|r - вони |cff32cd32можуть атакувати одиниці на землі|r але |cffff0000НЕ можуть повітряні|r.
-Курдран може використовувати свої здібності як герої як на замлі так і в повітрі.
+|cff8080ffNEW HEROES|r
+Kurdran, the Thane of the Wildhammer Clan, mounted on his loyal gryphon Sky'ree, is one of the most renowned allies of the human race.
+When Sky’ree is |cffffcc00airborne|r - they |cff32cd32can engage air units|r, but |cffff0000cannot attack ground targets|r.
+When Sky’ree is |cffffcc00on the ground|r - they |cff32cd32can attack ground units|r but |cffff0000cannot engage flying ones|r.
+Kurdran can use his hero abilities on any units regardless of stance.
 }
 
 STRING 4180
 {
-|cff8080ffНОВИЙ ГЕРОЙ|r
-Дерек Праудмур — командир Третього флоту Кул-Тіраса та старший син верховного адмірала Деліна Праудмура. Спритний воїн, він рухається стрімко і може закидувати ворогів гранатами.
+|cff8080ffNEW HEROES|r
+Derek Proudmoore - commander of the Third Fleet of Kul Tiras and the eldest son of Grand Admiral Daelin Proudmoore. An agile warrior, he moves swiftly and can throw grenades at enemies.
 }
 
 STRING 4182
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ ОНОВЛЕНО|r
-Очистити місто
-- |cff808080Очистіть ЗАХІДНЕ крило (Виконано)|r
-- |cff808080Очистіть СХІДНЕ крило (Виконано)|r
-- Очистіть королівський квартал
-- Всі герої мають вижити
+|cffffcc00MAIN QUEST UPDATED|r
+Retake the city
+ - |cff808080Retake East wing (Completed)|r
+ - |cff808080Retake West wing (Completed)|r
+ - Retake Palace district
+ - All Heroes must survive
 }
 
 STRING 4183
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ ОНОВЛЕНО|r
-Очистити місто
-- |cff808080Очистіть ЗАХІДНЕ крило (Виконано)|r
-- |cff808080Очистіть СХІДНЕ крило (Виконано)|r
-- |cff808080Очистіть королівський квартал (Виконано)|r
-- Всі герої мають вижити
+|cffffcc00MAIN QUEST UPDATED|r
+Retake the city
+ - |cff808080Retake East wing (Completed)|r
+ - |cff808080Retake West wing (Completed)|r
+ - |cff808080Retake Palace district (Completed)|r
+ - All Heroes must survive
 }
 
 STRING 4190
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ ОНОВЛЕНО|r
-Очистити місто
-- |cff808080Очистіть ЗАХІДНЕ крило (Виконано)|r
-- |cff808080Очистіть СХІДНЕ крило (Виконано)|r
-- |cff808080Очистіть королівський квартал (Виконано)|r
-- Очистіть нижню частину міста
-- Всі герої мають вижити
+|cffffcc00MAIN QUEST UPDATED|r
+Retake the city
+ - |cff808080Retake East wing (Completed)|r
+ - |cff808080Retake West wing (Completed)|r
+ - |cff808080Retake Palace district (Completed)|r
+ - Retake Lower City
+ - All Heroes must survive
 }
 
 STRING 4191
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ|r
-Очистити місто
-- Очистіть ЗАХІДНЕ крило
-- Всі герої мають вижити
+|cffffcc00MAIN QUEST|r
+Retake the city
+ - Retake West wing
+ - All Heroes must survive
 }
 
 STRING 4192
 {
-Очистіть королівський квартал
+Retake Palace district
 }
 
 STRING 4193
 {
-Очистіть нижню частину міста
+Retake Lower city
 }
 
 STRING 4194
 {
-Лишилося ворогів:
+Remaining enemies:
 }
 
 STRING 4196
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ ПРОВАЛЕНО|r
-Очистити місто
-- |cffff0000Всі герої мають вижити (Провалено)|r
+|cffffcc00MAIN QUEST FAILED|r
+Retake the city
+ - |cffff0000All Heroes must survive (failed)|r
 }
 
 STRING 4198
 {
-Всі герої мають вижити
+All Heroes must survive
 }
 
 STRING 4201
@@ -2518,12 +2520,12 @@ Lordaeron Citizens
 
 STRING 4203
 {
-Лишилося ворогів:
+Remaining enemies:
 }
 
 STRING 4205
 {
-Лишилося ворогів:
+Remaining enemies:
 }
 
 STRING 4207
@@ -2535,7 +2537,7 @@ Ogre Korkron
 STRING 4208
 // Units: Okoh (Ogre Korkron), Propernames (Proper Names)
 {
-Ґрумак Залізошкір
+Grumak Ironhide
 }
 
 STRING 4209
@@ -2564,17 +2566,17 @@ STRING 4212
 
 STRING 4213
 {
-Вцілілі
+Survivors
 }
 
 STRING 4214
 {
-Деякі городяни опинилися під завалами, розчистіть їх аби врятувати цивільних.
+Some civilians are buried under the rubble, help them to get out of their traps.
 }
 
 STRING 4215
 {
-Врятуйте мирних жителів з-під завалів
+Rescue civilians from the rubble piles
 }
 
 STRING 4216
@@ -2633,67 +2635,67 @@ High Elven Manor
 
 STRING 4225
 {
-|cffffcc00ДОДАТКОВЕ ЗАВДАННЯ|r
-Вцілілі
-- Розберіть завали (0 / 12 розібрано)
+|cffffcc00OPTIONAL QUEST|r
+Survivors
+- Rescue civilians from the rubble piles (0 / 12 piles)
 }
 
 STRING 4227
 {
-Лишилося розібрати завалів
+Remaining Rubble Piles
 }
 
 STRING 4228
 {
-Цілі завдання
+Quest objectives
 }
 
 STRING 4229
 {
-|cffffcc00ДОДАТКОВЕ ЗАВДАННЯ ВИКОНАНО|r
-Вцілілі
+|cffffcc00OPTIONAL QUEST COMPLETED|r
+Survivors
 }
 
 STRING 4230
 // Items: ILWq (WC2Human01Wilhelm01), Tip (Tooltip - Basic)
 {
-Вільгельм
+Wilhelm
 }
 
 STRING 4231
 // Items: ILWq (WC2Human01Wilhelm01), Description (Description)
 {
-Ми маємо розібрати завали житлових будинків, хтось із городян міг вижити.
+We must dig out the rubble of the residential buildings, some citizens could have survived.
 }
 
 STRING 4232
 {
-|cffffcc00ДОДАТКОВЕ ЗАВДАННЯ ПРОВАЛЕНО|r
-Вцілілі
+|cffffcc00OPTIONAL QUEST  FAILED|r
+Survivors
 }
 
 STRING 4233
 // Items: IL24 (WC2Human01Uther07), Description (Description)
 {
-Ми маємо допогти лучникам збивати цих драконів!
+We must support our archers and bring down those dragons!
 }
 
 STRING 4234
 // Items: ILMx (WC2Human01Muradin05a), Tip (Tooltip - Basic)
 {
-Мурадін Бронзобородий
+Muradin Bronzebeard
 }
 
 STRING 4235
 // Items: ILMx (WC2Human01Muradin05a), Description (Description)
 {
-Га?
+Huh?
 }
 
 STRING 4236
 {
-|cff87ceebПІДКРІПЛЕННЯ|r
-Вершник на грифоні - могутні бойові звірі клану Дикого Молота. Грифон та його дворф-вершник панують у небесах, розтрощуючи всіх ворогів Альянсу. 
+|cff87ceebREINFORCEMENT|r
+Gryphon Riders - mighty war beasts of the Wildhammer Clan. The gryphon and its dwarf rider dominate the skies, crushing all enemies of the Alliance.
 }
 
 STRING 4237
@@ -2705,13 +2707,13 @@ Cinematic Orc Mini Flying
 STRING 4238
 // Items: ILoP (WC2Human01OrcPirate01), Tip (Tooltip - Basic)
 {
-Орк пірат
+Orc Pirate
 }
 
 STRING 4239
 // Items: ILoP (WC2Human01OrcPirate01), Description (Description)
 {
-Курячий суп знову в меню, хлопці!
+Chicken soup is back on the menu, boys!
 }
 
 STRING 4240
@@ -2723,25 +2725,25 @@ Cinematic Orc Pirate Mini Flying
 STRING 4241
 // Items: ILa0 (WC2Human01Derek02a), Tip (Tooltip - Basic)
 {
-Дерек Праудмур
+Derek Proudmoore
 }
 
 STRING 4242
 // Items: IL40 (WC2Human01Derek01), Description (Description)
 {
-Нумо, моряки, наші союзники в місті потребують допомоги! Розібратися з тими орчими кораблями було легкою справою, але тепер доведеться добряче попотіти.
+C'mon sailors, our allies in the city need help, dealing with those orcish ships was easy task, but now we need to work with some sweat and blood.
 }
 
 STRING 4244
 // Items: ILa1 (WC2Human01Derek01a), Tip (Tooltip - Basic)
 {
-Дерек Праудмур
+Derek Proudmoore
 }
 
 STRING 4245
 // Items: ILa1 (WC2Human01Derek01a), Description (Description)
 {
-Нам щастить  хлопці, туман приховав нас. Рознесемо вщент орочу армаду!
+We're in luck boys, the fog concealed our presence, lets break this armada.
 }
 
 STRING 4246
@@ -2759,7 +2761,7 @@ Cinematic Derek Mini Flying
 STRING 4249
 // Items: ILa0 (WC2Human01Derek02a), Description (Description)
 {
-Мої кораблі до ващих послуг...
+My ships are at your disposal...
 }
 
 STRING 4250
@@ -2776,20 +2778,20 @@ STRING 4251
 
 STRING 4252
 {
-|cff87ceebПІДКРІПЛЕННЯ|r
-Кул-тіраські кораблі — адмірал Праудмур відправив свій Третій флот, щоб витягти Лордерону з облоги. Використовуйте ці кораблі, щоб дістатися острова Фенріс і знищити залишки оркського флоту.
+|cff87ceebREINFORCEMENT|r
+Kul'Tiran Ships - Admiral Proudmoore has dispatched his Third Fleet to break the siege of Lordaeron. Use these ships to reach Fenris Isle and destroy the remaining orcish navy.
 }
 
 STRING 4253
 // Items: IL47 (WC2Human01Uther13), Description (Description)
 {
-Острів знову наш.
+The island is ours once again.
 }
 
 STRING 4254
 // Items: IL60 (WC2Human01Terenas08), Description (Description)
 {
-Сьогоднішня перемога далася нам дорогою ціною… Багато відважних воїнів віддало свої життя, щоб ми могли жити. Ми маємо подбати про їхні тіла та їхні родини… Проте Молотзгуби втік, тож ми не можемо зволікати.
+Today's victory came at a heavy price… Many brave souls have died so that we might live. We should take care of their bodies and their families… Yet Doomhammer has escaped, so we can't delay.
 }
 
 STRING 4257
@@ -2813,7 +2815,7 @@ WC2Human01OrcPirate01
 STRING 4264
 // Items: IL26 (WC2Human01Muradin05), Description (Description)
 {
-От якби цей клятий Дикиймот підтягнув си дупов і завчасно!
+Maybe if those blasted Wildhammers were here to get off their asses!
 }
 
 STRING 4267
@@ -2837,19 +2839,19 @@ WC2Human01Muradin05a
 STRING 4278
 // Items: IL15 (WC2Human01Muradin04), Description (Description)
 {
-Я то розберу си з ними, хлопче. Виконуй свій обов'їзок.
+I'll take care of them, lad. You do your duty.
 }
 
 STRING 4279
 // Items: IL16 (WC2Human01Turalyon01), Description (Description)
 {
-Ваша Величносте, лорд Лотар відправив нас тієї ж миті, як ми дізналися про облогу міста. Слава Світлу, ви і ваша родина в безпеці.
+Your Majesty, Lord Lothar dispatched us the moment we heard the city had been besieged, Thank the Light you and your family are safe.
 }
 
 STRING 4281
 // Items: IL66 (WC2Human01Terenas10), Description (Description)
 {
-Утере, я хочу, щоб ти залишився тут і подбав про поранених. Твої вміння та милосердя зможуть урятувати більше життів тут, ніж на передовій.
+Uther, I want you to stay here and take care of the wounded. Your skills and compassion can save more lives here than on the front line.
 }
 
 STRING 4282
@@ -2861,7 +2863,7 @@ Jannes the Healer
 STRING 4283
 // Items: IL63 (WC2Human01Kurdran08), Description (Description)
 {
-Моїм грифонам то потрібно си кілька годин на одпочинок, а після того ми файно підтримаємо ваш похід із неба, гет!
+My gryphons need a few hours to rest, but afterward, we can support your offensive from the sky.
 }
 
 STRING 4284
@@ -2873,7 +2875,7 @@ Drowning Grunt
 STRING 4287
 // Items: IL99 (WC2Human01Ogre02), Tip (Tooltip - Basic)
 {
-Ґрумак Залізошкір
+Korkron Orge Guard
 }
 
 STRING 4289
@@ -2885,7 +2887,7 @@ WC2Human01Ogre02
 STRING 4290
 // Items: IL98 (WC2Human01Ogre03), Tip (Tooltip - Basic)
 {
-Ґрумак Залізошкір
+Korkron Orge Guard
 }
 
 STRING 4292
@@ -2897,7 +2899,7 @@ WC2Human01Ogre03
 STRING 4293
 // Items: IL97 (WC2Human01Ogre04), Tip (Tooltip - Basic)
 {
-Ґрумак Залізошкір
+Korkron Orge Guard
 }
 
 STRING 4295
@@ -2908,85 +2910,85 @@ WC2Human01Ogre04
 
 STRING 4299
 {
-Як мінімум один герой має вижити
+At least one Hero must survive
 }
 
 STRING 4300
 {
-Здолайте Ординського генерала
+Defeat the Horde General
 }
 
 STRING 4301
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ ПРОВАЛЕНО|r
-Звільнення острова Фенріс
- - |cffff0000Як мінімум один герой мусить вижити (Провалено)|r
+|cffffcc00MAIN QUEST FAILED|r
+Liberation of Fenris Isle
+ - |cffff0000At least onbe hero must survive (failed)|r
 }
 
 STRING 4302
 // Items: IL57 (WC2Human01Turalyon09), Description (Description)
 {
-Це засідка, в укриття!
+It’s an ambush, take cover!
 }
 
 STRING 4303
 // Items: IL99 (WC2Human01Ogre02), Description (Description)
 {
-Ха-ха! Я сьогодні гнома на сніданок з'їв.
+Ha-ha! Today I ate a gnome for a breakfast.
 }
 
 STRING 4304
 // Items: IL98 (WC2Human01Ogre03), Description (Description)
 {
-Важко дихати, га? Скоро взагалі перестанете!
+Hard to breathe, eh? Soon you will stop breathing!
 }
 
 STRING 4305
 // Items: IL97 (WC2Human01Ogre04), Description (Description)
 {
-Вже тікаєш? Без ніг далеко не втечеш!
+You run now? Not with no feet!
 }
 
 STRING 4306
 // Items: IL27 (WC2Human01Kurdran01), Description (Description)
 {
-Хах, що ти там нарікаш, Бронзобороде? Чули, хлопці? Нумо вполюємо цих летючих їщірок, га?! Ха-ха-ха-ха-ха! 
+Hah, what was that Bronzebeard? Hear that lads, let's hunt us some flying lizards, shall we?! Ha-ha-ha-ha-ha!
 }
 
 STRING 4307
 {
-|cff32cd32ПІДКАЗКА|r
-Курдран НЕ може використовувати Magical orbs.
+|cff32cd32HINT|r
+Kurdran cannot carry magical orbs.
 }
 
 STRING 4308
 {
-|cff32cd32ПІДКАЗКА|r
-Знайдіть ключ або знайдіть важіль, що відкриє зачинені двері.
+|cff32cd32HINT|r
+Find a key or pull a lever to open locked doors.
 }
 
 STRING 4309
 {
-|cff32cd32ПІДКАЗКА|r
-Magical Orbs дозволяють героям атакувати повітряні одиниці.
+|cff32cd32HINT|r
+Magical Orbs can allow heroes attack flying units.
 }
 
 STRING 4311
 // Items: IL72 (WC2Human01Uther16), Description (Description)
 {
-Двері зачинено! Треба знайти спосіб їх відкрити!
+The door is locked! We'll need to find a way to open it!
 }
 
 STRING 4312
 // Items: IL48 (WC2Human01Kurdran07), Description (Description)
 {
-Хлопак то правий, майстре Бронзобороде. Маю визнац, ти то вже добряц повоював си. Але зараз тобі треба відпочити
+The lad's right, Master Bronzebeard. You already put up good fight, I have to admit. But now, ya need to rest.
 }
 
 STRING 4314
 {
-|cff32cd32ПІДКАЗКА|r
-Король Теренас може допомогти вам переносити предмети. Але майте на увазі: деякі з них він може використати, щоб зцілитися.
+|cff32cd32HINT|r
+Terenas can help you carry items. But be warned, he can use some of them to heal himself.
 }
 
 STRING 4315
@@ -3011,8 +3013,8 @@ STRING 4318
 
 STRING 4319
 {
-|cff32cd32ПІДКАЗКА|r
-Мурадін йтиме за Курданом і вступатиме в бій із ворогами, але ви НЕ його контролювати.
+|cff32cd32HINT|r
+Muradin will follow Kurdran and engage in fights with enemies, but you cannot control him.
 }
 
 STRING 4320
@@ -3024,7 +3026,7 @@ DummyBombThrower
 STRING 4321
 // Items: IL64 (WC2Human01Terenas09), Description (Description)
 {
-Тураліоне, збирай усіх лицарів Срібної Длані та всіх солдатів, здатних тримати зброю. Вони зможуть відпочити на кораблях, поки ми перетинатимемо озеро.
+Turalyon, gather all Knights of the Silver Hand and all soldiers able to fight. They will have time to rest on the ships while crossing the lake.
 }
 
 STRING 4322

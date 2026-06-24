@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Map Translation — WTS L10n Toolkit</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .mapping-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px;
+      margin-bottom: 20px;
+    }
+    .mapping-hint {
+      font-size: 12px;
+      color: var(--muted);
+      margin-bottom: 14px;
+    }
+    .mapping-table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+    }
+    .mapping-table-wrap table {
+      min-width: max-content;
+    }
+    #mapping-table thead th {
+      vertical-align: top;
+      padding: 10px 12px;
+      min-width: 170px;
+      background: var(--surface2);
+      border-bottom: 1px solid var(--border);
+      font-weight: normal;
+      text-transform: none;
+      letter-spacing: 0;
+      font-size: 13px;
+    }
+    .col-name {
+      font-family: 'Consolas', 'Fira Code', monospace;
+      font-size: 11px;
+      color: var(--muted);
+      margin-bottom: 7px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .col-map-select {
+      width: 100%;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      color: var(--text);
+      padding: 5px 28px 5px 8px;
+      font-size: 12px;
+      outline: none;
+      cursor: pointer;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='7' viewBox='0 0 10 7'%3E%3Cpath fill='%237070a0' d='M5 7L0 0h10z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 9px center;
+      transition: border-color 0.15s;
+    }
+    .col-map-select:focus          { border-color: var(--accent); }
+    .col-map-select.mapped-key     { border-color: var(--accent);  color: var(--accent); }
+    .col-map-select.mapped-trans   { border-color: var(--success); color: var(--success); }
+    .col-map-select.mapped-stat    { border-color: #8888ff;        color: #8888ff; }
+
+    #mapping-table td {
+      padding: 8px 12px;
+      vertical-align: top;
+      max-width: 220px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    #mapping-table td.col-key         { background: rgba(245,166,35,0.07); }
+    #mapping-table td.col-translation { background: rgba(76,175,80,0.07); }
+    #mapping-table td.col-status      { background: rgba(136,136,255,0.07); }
+
+    .status-filter-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 14px;
+      flex-wrap: wrap;
+    }
+    .status-filter-row label {
+      font-size: 12px;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+    .status-filter-row input {
+      width: 200px;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      color: var(--text);
+      padding: 6px 10px;
+      font-size: 13px;
+      outline: none;
+    }
+    .status-filter-row input:focus { border-color: var(--accent); }
+
+    .csv-badge {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 5px 12px;
+      font-size: 12px;
+      color: var(--muted);
+      display: inline-block;
+      margin-bottom: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <h1>WTS L10n Toolkit</h1>
+      <p class="subtitle">Warcraft III · .wts Localization Manager</p>
+    </header>
+
+    <nav class="page-nav">
+      <a href="index.html"              class="page-nav-link">Create DB</a>
+      <a href="update.html"             class="page-nav-link">Update DB</a>
+      <a href="create-translation.html" class="page-nav-link">Create Translation DB</a>
+      <a href="update-translation.html"  class="page-nav-link">Update Translation</a>
+    </nav>
+
+    <h2>Build translation file — flexible CSV mapping</h2>
+    <p class="subtitle" style="margin-bottom:16px;">Any CSV layout · assign columns manually · output: <code>key → translation</code></p>
+
+    <!-- Drop zone -->
+    <div class="drop-zone drop-zone--compact" id="drop-csv">
+      <p id="label-csv">Drop any CSV file or click to choose</p>
+      <span class="hint">Any column layout — assign fields below after upload</span>
+      <input type="file" id="file-csv" accept=".csv,text/csv" style="display:none">
+    </div>
+
+    <div id="form-hint" class="form-hint hidden"></div>
+
+    <!-- Mapping section -->
+    <div id="mapping-section" class="hidden">
+
+      <span class="csv-badge" id="csv-info"></span>
+
+      <div class="mapping-card">
+        <p class="mapping-hint">
+          Assign each column to a field. Required: <strong>Variable Name</strong> and <strong>Translation</strong>.
+          Add <strong>Status filter</strong> to export only specific rows (e.g. IMPLIMENTED).
+        </p>
+
+        <div class="mapping-table-wrap">
+          <table id="mapping-table"></table>
+        </div>
+
+        <div id="status-filter-row" class="status-filter-row hidden">
+          <label>Keep rows where Status =</label>
+          <input type="text" id="status-filter-value" placeholder="e.g. IMPLIMENTED">
+          <span style="font-size:11px;color:var(--muted)">(case-insensitive, partial match)</span>
+        </div>
+      </div>
+
+      <div class="textarea-actions">
+        <button id="btn-build" class="btn btn-primary" disabled>Build Translation</button>
+        <button id="btn-reset" class="btn btn-ghost">Reset</button>
+      </div>
+    </div>
+
+    <!-- Warnings -->
+    <div id="warn-section" class="error-section hidden" style="margin-top:16px;">
+      <p class="error-title">Warnings:</p>
+      <ul id="warn-list"></ul>
+    </div>
+
+    <!-- Stats + download -->
+    <div id="result-section" class="hidden" style="margin-top:24px;">
+      <div class="stats">
+        <span id="stat-total"   class="stat success">0 entries</span>
+        <span id="stat-skipped" class="stat">0 skipped</span>
+      </div>
+      <div class="actions">
+        <button id="btn-download" class="btn btn-primary">⬇ Download UA JSON</button>
+      </div>
+    </div>
+
+    <!-- Preview -->
+    <div id="preview-section" class="preview-section hidden">
+      <h3>Preview</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Variable Name</th>
+            <th>Translation</th>
+          </tr>
+        </thead>
+        <tbody id="preview-body"></tbody>
+      </table>
+      <p class="preview-more" id="preview-more"></p>
+    </div>
+
+  </div>
+
+  <script src="js/csv-parser.js"></script>
+  <script src="js/map-translation-app.js"></script>
+</body>
+</html>

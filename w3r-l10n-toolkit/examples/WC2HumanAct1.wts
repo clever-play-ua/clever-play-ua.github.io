@@ -50,7 +50,7 @@ Basic long-ranged attacker. Can learn the Marksmanship, Improved Bows and Hippog
 STRING 274
 // Units: htow (Town Hall), Ubertip (Tooltip - Extended)
 {
-Highest Initiation of Mages (|cffffcc00O|r)
+Высшее посвящение магов (|cffffcc00O|r)
 }
 
 STRING 275
@@ -68,19 +68,19 @@ S
 STRING 277
 // Units: nefm (High Elven Farm), Tip (Tooltip - Basic)
 {
-Increasing mana and health reserves, attack power and mana regeneration speed of magicians, as well as teaching them the ''Slow'' spell.
+Увеличение запасов маны и здоровья, силы атаки и скорости регенерации маны магов, а также обучение их заклинанию ''Замедление''.
 }
 
 STRING 278
 // Units: nefm (High Elven Farm), Ubertip (Tooltip - Extended)
 {
-Increasing mana and health reserves, attack power and mana regeneration speed of magicians, as well as teaching them the ''Slow'' spell.
+Увеличение запасов маны и здоровья, силы атаки и скорости регенерации маны магов, а также обучение их заклинанию ''Замедление''.
 }
 
 STRING 279
 // Units: hgra (Gryphon Aviary), Ubertip (Tooltip - Extended)
 {
-Increasing mana and health reserves, attack power and mana regeneration speed of magicians, as well as teaching them the ''Slow'' spell.
+Увеличение запасов маны и здоровья, силы атаки и скорости регенерации маны магов, а также обучение их заклинанию ''Невидимость''.
 }
 
 STRING 280
@@ -1324,7 +1324,7 @@ Lordaeron
 STRING 4018
 // Items: IL01 (WC2HumanAct01Alonsus01), Tip (Tooltip - Basic)
 {
-Алонс Фаол
+Alonsus Faol
 }
 
 STRING 4020
@@ -1336,7 +1336,7 @@ WC2HumanAct01Alonsus01
 STRING 4022
 // Items: IL02 (WC2HumanAct01Antonidas01), Description (Description)
 {
-Тоді ми можемо припустити, що у них є засоби для перетину океану.
+We can assume, then, that they have the means to cross the ocean.
 }
 
 STRING 4023
@@ -1348,7 +1348,7 @@ WC2HumanAct01Antonidas01
 STRING 4025
 // Items: IL03 (WC2HumanAct01Antonidas02), Description (Description)
 {
-Орден Кірін-Тор згоден. Це питання не військової сили чи політичного впливу, нам потрібна постать, що об'єднує. Постать, яка має досвід боротьби з такою загрозою.
+The Kirin Tor agrees. This is not a matter of military might or political influence, we need a unifying presence. A presence experienced with this sort of threat.
 }
 
 STRING 4026
@@ -1360,7 +1360,7 @@ WC2HumanAct01Antonidas02
 STRING 4028
 // Items: IL04 (WC2HumanAct01Antonidas03), Description (Description)
 {
-Мудре рішення. Кірін-Тор з вами.
+A wise decision. The Kirin Tor stands behind you.
 }
 
 STRING 4029
@@ -1372,7 +1372,7 @@ WC2HumanAct01Antonidas03
 STRING 4030
 // Items: IL05 (WC2HumanAct01DaelinProudmoore01), Tip (Tooltip - Basic)
 {
-Адмірал Дейлін Праудмур
+Admiral Proudmoore
 }
 
 STRING 4032
@@ -1384,13 +1384,13 @@ WC2HumanAct01DaelinProudmoore01
 STRING 4033
 // Items: IL06 (WC2HumanAct01DaelinProudmoore02), Tip (Tooltip - Basic)
 {
-Адмірал Дейлін Праудмур
+Admiral Proudmoore
 }
 
 STRING 4034
 // Items: IL06 (WC2HumanAct01DaelinProudmoore02), Description (Description)
 {
-Ви мудро кажете, лорде Антонідасе. Кул-Тірас володіє морями, і я готовий вести наші флоти в бій, якщо знадобиться, але командувати…
+There’s wisdom to your words, Lord Antonidas. Kul Tiras owns the seas, and I am ready to lead our fleets into battle if need be, but to command…
 }
 
 STRING 4035
@@ -1402,13 +1402,13 @@ WC2HumanAct01DaelinProudmoore02
 STRING 4036
 // Items: IL07 (WC2HumanAct01DaelinProudmoore03), Tip (Tooltip - Basic)
 {
-Адмірал Дейлін Праудмур
+Admiral Proudmoore
 }
 
 STRING 4037
 // Items: IL07 (WC2HumanAct01DaelinProudmoore03), Description (Description)
 {
-Кул-Тірас згоден із цією оцінкою. Сір Лотар — ідеальний вибір.
+Kul Tiras agrees with this assessment. Sir Lothar is the perfect choice.
 }
 
 STRING 4038
@@ -1420,13 +1420,13 @@ WC2HumanAct01DaelinProudmoore03
 STRING 4039
 // Items: IL08 (WC2HumanAct01Danath01), Tip (Tooltip - Basic)
 {
-Данат Тролебій
+Danath Trollbane
 }
 
 STRING 4040
 // Items: IL08 (WC2HumanAct01Danath01), Description (Description)
 {
-Навіщо йти на південь, якщо сили Орди зосереджені між столицею та Далараном?
+Why move south if the Horde is concentrated between the capital and Dalaran?
 }
 
 STRING 4041
@@ -1438,7 +1438,7 @@ WC2HumanAct01Danath01
 STRING 4042
 // Items: IL09 (WC2HumanAct01Danath02), Tip (Tooltip - Basic)
 {
-Данат Тролебій
+Danath Trollbane
 }
 
 STRING 4044
@@ -1450,13 +1450,13 @@ WC2HumanAct01Danath02
 STRING 4045
 // Items: IL10 (WC2HumanAct01Danath03), Tip (Tooltip - Basic)
 {
-Данат Тролебій
+Danath Trollbane
 }
 
 STRING 4046
 // Items: IL10 (WC2HumanAct01Danath03), Description (Description)
 {
-Зрозуміло, командире. Ми вирушимо до Південнобережжя вже сьогодні.
+Understood, Commander. We will march to Southshore today.
 }
 
 STRING 4047
@@ -1468,13 +1468,13 @@ WC2HumanAct01Danath03
 STRING 4048
 // Items: IL11 (WC2HumanAct01Gavinrad01), Tip (Tooltip - Basic)
 {
-Ґавінрад Безжальний
+Gavinrad the Dire
 }
 
 STRING 4049
 // Items: IL11 (WC2HumanAct01Gavinrad01), Description (Description)
 {
-Я не підведу вас, командире Лотаре.
+I won’t fail you, Commander Lothar.
 }
 
 STRING 4050
@@ -1486,13 +1486,13 @@ WC2HumanAct01Gavinrad01
 STRING 4051
 // Units: HGrF (King of Gilneas), Propernames (Proper Names)
 {
-Ґенн Сивогрив
+Genn Graymane
 }
 
 STRING 4052
 // Items: IL12 (WC2HumanAct01Graymane01), Description (Description)
 {
-То ви кажете нам готуватися до війни?!
+You are telling us to prepare for war then?!
 }
 
 STRING 4053
@@ -1504,13 +1504,13 @@ WC2HumanAct01Graymane01
 STRING 4054
 // Items: IL12 (WC2HumanAct01Graymane01), Tip (Tooltip - Basic)
 {
-Ґенн Сивогрив
+Genn Graymane
 }
 
 STRING 4055
 // Items: IL13 (WC2HumanAct01Graymane02), Description (Description)
 {
-Наші береги довго стояли вартою над цим континентом, і ми відкидали всіляких піратів назад у море. Я певен, що ми зможемо зробити це знову. Не бачу потреби об'єднувати наші армії в єдину силу.
+Our shores have long stood vigil over this continent, and we’ve thrown all sorts of pirates back into the sea. I am certain we can do so again. I don’t see the necessity of unifying our armies into a single force.
 }
 
 STRING 4056
@@ -1522,13 +1522,13 @@ WC2HumanAct01Graymane02
 STRING 4057
 // Items: IL13 (WC2HumanAct01Graymane02), Tip (Tooltip - Basic)
 {
-Ґенн Сивогрив
+Genn Graymane
 }
 
 STRING 4058
 // Items: IL14 (WC2HumanAct01Graymane03), Description (Description)
 {
-То ви прийшли, щоб заявити про свою верховну владу над нами?
+So, you have come to claim sovereignty over us?
 }
 
 STRING 4059
@@ -1540,13 +1540,13 @@ WC2HumanAct01Graymane03
 STRING 4060
 // Items: IL14 (WC2HumanAct01Graymane03), Tip (Tooltip - Basic)
 {
-Ґенн Сивогрив
+Genn Graymane
 }
 
 STRING 4061
 // Items: IL15 (WC2HumanAct01Graymane04), Description (Description)
 {
-Ґілнеас дотримається пакту, лорде Лотаре. Ми надамо будь-які війська, обладунки, зброю та провізую, які зможемо виділити.
+Gilneas shall honor the pact, Lord Lothar. We will provide any troops, armor, weaponry, food we can spare.
 }
 
 STRING 4062
@@ -1558,13 +1558,13 @@ WC2HumanAct01Graymane04
 STRING 4063
 // Items: IL16 (WC2HumanAct01Guard01), Tip (Tooltip - Basic)
 {
-Вартовий короля
+Kings Guard
 }
 
 STRING 4064
 // Items: IL16 (WC2HumanAct01Guard01), Description (Description)
 {
-Ваша Світлосте, уцілілі зі Штормовія.
+Your Grace, the survivors of Stormwind.
 }
 
 STRING 4065
@@ -1576,7 +1576,7 @@ WC2HumanAct01Guard01
 STRING 4066
 // Items: IL17 (WC2HumanAct01Khadgar01), Tip (Tooltip - Basic)
 {
-Кадґар
+Khadgar
 }
 
 STRING 4068
@@ -1588,13 +1588,13 @@ WC2HumanAct01Khadgar01
 STRING 4069
 // Items: IL18 (WC2HumanAct01Khadgar02), Tip (Tooltip - Basic)
 {
-Кадґар
+Khadgar
 }
 
 STRING 4070
 // Items: IL18 (WC2HumanAct01Khadgar02), Description (Description)
 {
-Володарю, я відправив воронів до Даларана та Лордерона. Лорд Антонідас вже знає про масштаби загрози, і я вірю, що він переконає короля Теренаса скликати правителів решти королівств.
+My lord. I have sent ravens to Dalaran and Lordaeron. Lord Antonidas is already aware of the scale of the threat, and I believe he will convince King Terenas to summon the lords of the remaining kingdoms.
 }
 
 STRING 4071
@@ -1606,7 +1606,7 @@ WC2HumanAct01Khadgar02
 STRING 4072
 // Items: IL19 (WC2HumanAct01Khadgar03), Tip (Tooltip - Basic)
 {
-Кадґар
+Khadgar
 }
 
 STRING 4074
@@ -1616,9 +1616,9 @@ WC2HumanAct01Khadgar03
 }
 
 STRING 4075
-// Units: HLPA (Supreme Commander), Propernames (Proper Names)
+// Items: IL20 (WC2HumanAct01Lothar01), Tip (Tooltip - Basic)
 {
-Андуїн Лотар
+Anduin Lothar
 }
 
 STRING 4077
@@ -1628,15 +1628,15 @@ WC2HumanAct01Lothar01
 }
 
 STRING 4078
-// Items: IL20 (WC2HumanAct01Lothar01), Tip (Tooltip - Basic)
+// Items: IL21 (WC2HumanAct01Lothar02), Tip (Tooltip - Basic)
 {
-Андуїн Лотар
+Anduin Lothar
 }
 
 STRING 4079
 // Items: IL21 (WC2HumanAct01Lothar02), Description (Description)
 {
-Дякую, мере Маркусе. Я розумію, що ви не маєте зайвого, але ми вдячні за будь-яку допомогу.
+Thank you, Mayor Marcus. I understand you can’t spare much, but we are grateful for any aid.
 }
 
 STRING 4080
@@ -1646,9 +1646,9 @@ WC2HumanAct01Lothar02
 }
 
 STRING 4081
-// Items: IL21 (WC2HumanAct01Lothar02), Tip (Tooltip - Basic)
+// Items: IL22 (WC2HumanAct01Lothar03), Tip (Tooltip - Basic)
 {
-Андуїн Лотар
+Anduin Lothar
 }
 
 STRING 4083
@@ -1658,15 +1658,15 @@ WC2HumanAct01Lothar03
 }
 
 STRING 4084
-// Items: IL22 (WC2HumanAct01Lothar03), Tip (Tooltip - Basic)
+// Items: IL23 (WC2HumanAct01Lothar04), Tip (Tooltip - Basic)
 {
-Андуїн Лотар
+Anduin Lothar
 }
 
 STRING 4085
 // Items: IL23 (WC2HumanAct01Lothar04), Description (Description)
 {
-Не можна зволікати, Кадґаре. Я маю негайно поговорить із королем. Не можна дати Орді час для нового наступу.
+We must not delay, Khadgar. I must speak with the king at once. We dare not give the Horde time to move again.
 }
 
 STRING 4086
@@ -1676,15 +1676,15 @@ WC2HumanAct01Lothar04
 }
 
 STRING 4087
-// Items: IL23 (WC2HumanAct01Lothar04), Tip (Tooltip - Basic)
+// Items: IL24 (WC2HumanAct01Lothar05), Tip (Tooltip - Basic)
 {
-Андуїн Лотар
+Anduin Lothar
 }
 
 STRING 4088
 // Items: IL24 (WC2HumanAct01Lothar05), Description (Description)
 {
-Дякую вам, пане мер. Меріне!
+Thank you, Mayor. Meryn!
 }
 
 STRING 4089
@@ -1694,9 +1694,9 @@ WC2HumanAct01Lothar05
 }
 
 STRING 4090
-// Items: IL24 (WC2HumanAct01Lothar05), Tip (Tooltip - Basic)
+// Items: IL25 (WC2HumanAct01Lothar06), Tip (Tooltip - Basic)
 {
-Андуїн Лотар
+Anduin Lothar
 }
 
 STRING 4092
@@ -1706,15 +1706,15 @@ WC2HumanAct01Lothar06
 }
 
 STRING 4093
-// Items: IL25 (WC2HumanAct01Lothar06), Tip (Tooltip - Basic)
+// Items: IL26 (WC2HumanAct01Lothar07), Tip (Tooltip - Basic)
 {
-Андуїн Лотар
+Anduin Lothar
 }
 
 STRING 4094
 // Items: IL26 (WC2HumanAct01Lothar07), Description (Description)
 {
-Ваша Величносте, я — Андуїн Лотар, лицар-захисник Азероту та близький друг покійного короля Ллейна. А це мої супутники
+Your Majesty, I am Anduin Lothar, Knight-Champion of Azeroth and a close friend to the late King Llane. And these are my companions…
 }
 
 STRING 4095
@@ -1724,15 +1724,15 @@ WC2HumanAct01Lothar07
 }
 
 STRING 4096
-// Items: IL26 (WC2HumanAct01Lothar07), Tip (Tooltip - Basic)
+// Items: IL27 (WC2HumanAct01Lothar08), Tip (Tooltip - Basic)
 {
-Андуїн Лотар
+Anduin Lothar
 }
 
 STRING 4097
 // Items: IL27 (WC2HumanAct01Lothar08), Description (Description)
 {
-…ми прийшли до вас, аби обговорити справу надзвичайної та невідкладної важливості!
+…we come before you to discuss a matter of grave and urgent importance!
 }
 
 STRING 4098
@@ -1742,9 +1742,9 @@ WC2HumanAct01Lothar08
 }
 
 STRING 4099
-// Items: IL27 (WC2HumanAct01Lothar08), Tip (Tooltip - Basic)
+// Items: IL28 (WC2HumanAct01Lothar09), Tip (Tooltip - Basic)
 {
-Андуїн Лотар
+Anduin Lothar
 }
 
 STRING 4101
@@ -1754,15 +1754,15 @@ WC2HumanAct01Lothar09
 }
 
 STRING 4102
-// Items: IL28 (WC2HumanAct01Lothar09), Tip (Tooltip - Basic)
+// Items: IL29 (WC2HumanAct01Lothar10), Tip (Tooltip - Basic)
 {
-Андуїн Лотар
+Anduin Lothar
 }
 
 STRING 4103
 // Items: IL29 (WC2HumanAct01Lothar10), Description (Description)
 {
-Вночі воно пало перед цілою Ордою істот, відомих як орки.
+It fell before a Horde of creatures known as orcs.
 }
 
 STRING 4104
@@ -1772,9 +1772,9 @@ WC2HumanAct01Lothar10
 }
 
 STRING 4105
-// Items: IL29 (WC2HumanAct01Lothar10), Tip (Tooltip - Basic)
+// Items: IL30 (WC2HumanAct01Lothar11), Tip (Tooltip - Basic)
 {
-Андуїн Лотар
+Anduin Lothar
 }
 
 STRING 4107
@@ -1784,15 +1784,15 @@ WC2HumanAct01Lothar11
 }
 
 STRING 4108
-// Items: IL30 (WC2HumanAct01Lothar11), Tip (Tooltip - Basic)
+// Items: IL31 (WC2HumanAct01Lothar12), Tip (Tooltip - Basic)
 {
-Андуїн Лотар
+Anduin Lothar
 }
 
 STRING 4109
 // Items: IL31 (WC2HumanAct01Lothar12), Description (Description)
 {
-Я не знаю, але навіть якщо раніше у них не було кораблів, вони точно з'являться незабаром — вони здійснили набіги по всьому нашому узбережжю та захопили наші корабельні. Вони можуть і будуть використовувати їх, щоб побудувати більше кораблів.
+I do not know, but even if they did not have ships before, they certainly will have them soon — they raided all along our coastline and captured our wharfs. They can and will use them to build more ships.
 }
 
 STRING 4110
@@ -1802,15 +1802,15 @@ WC2HumanAct01Lothar12
 }
 
 STRING 4111
-// Items: IL31 (WC2HumanAct01Lothar12), Tip (Tooltip - Basic)
+// Items: IL32 (WC2HumanAct01Lothar13), Tip (Tooltip - Basic)
 {
-Андуїн Лотар
+Anduin Lothar
 }
 
 STRING 4112
 // Items: IL32 (WC2HumanAct01Lothar13), Description (Description)
 {
-Так, до війни за саме виживання нашої раси.
+Yes, a war for the very survival of our race.
 }
 
 STRING 4113
@@ -1820,15 +1820,15 @@ WC2HumanAct01Lothar13
 }
 
 STRING 4114
-// Items: IL32 (WC2HumanAct01Lothar13), Tip (Tooltip - Basic)
+// Items: IL33 (WC2HumanAct01Lothar14), Tip (Tooltip - Basic)
 {
-Андуїн Лотар
+Anduin Lothar
 }
 
 STRING 4115
 // Items: IL33 (WC2HumanAct01Lothar14), Description (Description)
 {
-Ми маємо розпочати масштабні приготування до війни.
+We need to begin massive war preparations.
 }
 
 STRING 4116
@@ -1838,15 +1838,15 @@ WC2HumanAct01Lothar14
 }
 
 STRING 4117
-// Items: IL33 (WC2HumanAct01Lothar14), Tip (Tooltip - Basic)
+// Items: IL34 (WC2HumanAct01Lothar15), Tip (Tooltip - Basic)
 {
-Андуїн Лотар
+Anduin Lothar
 }
 
 STRING 4118
 // Items: IL34 (WC2HumanAct01Lothar15), Description (Description)
 {
-Ваші Величності, ми ж казали вам, це не якісь звичайні нападники, це смерть, що несеться на темних хвилях! Ви не зможете вистояти проти них самотужки — тільки разом, усі ми!
+Your Majesties, we’ve told you, these are no mere raiders, this is death riding on dark tides! You will not be able to withstand them on your own, only together, all of us!
 }
 
 STRING 4119
@@ -1856,9 +1856,9 @@ WC2HumanAct01Lothar15
 }
 
 STRING 4120
-// Items: IL34 (WC2HumanAct01Lothar15), Tip (Tooltip - Basic)
+// Items: IL35 (WC2HumanAct01Lothar16), Tip (Tooltip - Basic)
 {
-Андуїн Лотар
+Anduin Lothar
 }
 
 STRING 4122
@@ -1868,9 +1868,9 @@ WC2HumanAct01Lothar16
 }
 
 STRING 4123
-// Items: IL35 (WC2HumanAct01Lothar16), Tip (Tooltip - Basic)
+// Items: IL36 (WC2HumanAct01Lothar17), Tip (Tooltip - Basic)
 {
-Андуїн Лотар
+Anduin Lothar
 }
 
 STRING 4125
@@ -1880,9 +1880,9 @@ WC2HumanAct01Lothar17
 }
 
 STRING 4126
-// Items: IL36 (WC2HumanAct01Lothar17), Tip (Tooltip - Basic)
+// Items: IL37 (WC2HumanAct01Lothar18), Tip (Tooltip - Basic)
 {
-Андуїн Лотар
+Anduin Lothar
 }
 
 STRING 4128
@@ -1892,9 +1892,9 @@ WC2HumanAct01Lothar18
 }
 
 STRING 4129
-// Items: IL37 (WC2HumanAct01Lothar18), Tip (Tooltip - Basic)
+// Items: IL38 (WC2HumanAct01Lothar19), Tip (Tooltip - Basic)
 {
-Андуїн Лотар
+Anduin Lothar
 }
 
 STRING 4131
@@ -1904,15 +1904,15 @@ WC2HumanAct01Lothar19
 }
 
 STRING 4132
-// Items: IL38 (WC2HumanAct01Lothar19), Tip (Tooltip - Basic)
+// Items: IL39 (WC2HumanAct01Lothar20), Tip (Tooltip - Basic)
 {
-Андуїн Лотар
+Anduin Lothar
 }
 
 STRING 4133
 // Items: IL39 (WC2HumanAct01Lothar20), Description (Description)
 {
-Данате, мені потрібно, щоб ти вирушив на південь із невеликим загоном своїх військ. Перевір ситуацію в Південнобережжі.
+Danath, I need you to travel south with a small squad of your troops. Check the situation in Southshore. 
 }
 
 STRING 4134
@@ -1922,9 +1922,9 @@ WC2HumanAct01Lothar20
 }
 
 STRING 4135
-// Items: IL39 (WC2HumanAct01Lothar20), Tip (Tooltip - Basic)
+// Items: IL40 (WC2HumanAct01Lothar21), Tip (Tooltip - Basic)
 {
-Андуїн Лотар
+Anduin Lothar
 }
 
 STRING 4137
@@ -1934,15 +1934,15 @@ WC2HumanAct01Lothar21
 }
 
 STRING 4138
-// Items: IL40 (WC2HumanAct01Lothar21), Tip (Tooltip - Basic)
+// Items: IL41 (WC2HumanAct01Lothar22), Tip (Tooltip - Basic)
 {
-Андуїн Лотар
+Anduin Lothar
 }
 
 STRING 4139
 // Items: IL41 (WC2HumanAct01Lothar22), Description (Description)
 {
-Довірся мені, Данате. Я вже готую необхідні дії, щоб допомогти їм і убезпечити їх.
+Trust me, Danath. I am already preparing necessary actions to aid and secure them.
 }
 
 STRING 4140
@@ -1952,9 +1952,9 @@ WC2HumanAct01Lothar22
 }
 
 STRING 4141
-// Items: IL41 (WC2HumanAct01Lothar22), Tip (Tooltip - Basic)
+// Items: IL42 (WC2HumanAct01Lothar23), Tip (Tooltip - Basic)
 {
-Андуїн Лотар
+Anduin Lothar
 }
 
 STRING 4143
@@ -1966,13 +1966,13 @@ WC2HumanAct01Lothar23
 STRING 4144
 // Items: IL43 (WC2HumanAct01Marcus01), Tip (Tooltip - Basic)
 {
-Мер Маркус
+Mayor Marcus
 }
 
 STRING 4145
 // Items: IL43 (WC2HumanAct01Marcus01), Description (Description)
 {
-Звісно, лорде Лотаре. Ми б не залишили жінок та дітей помирати з голоду. Скажіть мені, чому саме, ви та ваші люди втекли так далеко через море? Що сталося в Азероті?
+Of course, Lord Lothar. We wouldn’t let women and children starve. But tell me now, why have you and your people fled across the sea? What happened in Azeroth?
 }
 
 STRING 4146
@@ -1984,13 +1984,13 @@ WC2HumanAct01Marcus01
 STRING 4147
 // Items: IL44 (WC2HumanAct01Marcus02), Tip (Tooltip - Basic)
 {
-Мер Маркус
+Mayor Marcus
 }
 
 STRING 4148
 // Items: IL44 (WC2HumanAct01Marcus02), Description (Description)
 {
-До столиці Лордерону шлях чималий! Я вишлю когось вперед на швидкому коні, щоб попередити їх про ваше скоре прибуття.
+Lordaeron City is no short distance! I will send someone ahead on a fast horse to warn them of your approach.
 }
 
 STRING 4149
@@ -2002,13 +2002,13 @@ WC2HumanAct01Marcus02
 STRING 4150
 // Items: IL45 (WC2HumanAct01Marcus03), Tip (Tooltip - Basic)
 {
-Мер Маркус
+Mayor Marcus
 }
 
 STRING 4151
 // Items: IL45 (WC2HumanAct01Marcus03), Description (Description)
 {
-А щодо ваших людей тут — ми подбаємо про них, поки ви не повернетеся.
+And as for your people here, we will take care of them until you return.
 }
 
 STRING 4152
@@ -2020,13 +2020,13 @@ WC2HumanAct01Marcus03
 STRING 4153
 // Items: IL46 (WC2HumanAct01Meryn01), Tip (Tooltip - Basic)
 {
-Мерін
+Meryn
 }
 
 STRING 4154
 // Items: IL46 (WC2HumanAct01Meryn01), Description (Description)
 {
-Так, сір?!
+Yes, sire!
 }
 
 STRING 4155
@@ -2038,7 +2038,7 @@ WC2HumanAct01Meryn01
 STRING 4156
 // Items: IL47 (WC2HumanAct01Meryn02), Tip (Tooltip - Basic)
 {
-Мерін
+Meryn
 }
 
 STRING 4158
@@ -2050,13 +2050,13 @@ WC2HumanAct01Meryn02
 STRING 4159
 // Units: HAPF (King of Alterac), Propernames (Proper Names)
 {
-Ейден Перенольд
+Aiden Perenolde
 }
 
 STRING 4160
 // Items: IL48 (WC2HumanAct01Perenolde01), Description (Description)
 {
-Такий поспіх задля зустрічі, якого не бачили вже десятиліттями. У вас справді мають бути вагомі причини, адже я пропустив королівське полювання.
+Such a haste for a gathering unseen in decades. You better have important reasons indeed, I missed a royal hunt.
 }
 
 STRING 4161
@@ -2068,7 +2068,7 @@ WC2HumanAct01Perenolde01
 STRING 4162
 // Items: IL48 (WC2HumanAct01Perenolde01), Tip (Tooltip - Basic)
 {
-Ейден Перенольд
+Aiden Perenolde
 }
 
 STRING 4164
@@ -2080,13 +2080,13 @@ WC2HumanAct01Perenolde02
 STRING 4165
 // Items: IL49 (WC2HumanAct01Perenolde02), Tip (Tooltip - Basic)
 {
-Ейден Перенольд
+Aiden Perenolde
 }
 
 STRING 4166
 // Items: IL50 (WC2HumanAct01Perenolde03), Description (Description)
 {
-Якщо більшість згодна, то і я теж.
+If the majority agrees, so do I.
 }
 
 STRING 4167
@@ -2096,15 +2096,15 @@ WC2HumanAct01Perenolde03
 }
 
 STRING 4168
-// Units: nVwP (Варіан Рінн), Name (Name)
+// Units: nVwP (Varian Wrynn), Name (Name)
 {
-Варіан Рінн
+Varian Wrynn
 }
 
 STRING 4169
 // Items: IL51 (WC2HumanAct01Varian01), Description (Description)
 {
-Дякую, Ваша Величносте.
+Thank you, your Majesty.
 }
 
 STRING 4170
@@ -2116,13 +2116,13 @@ WC2HumanAct01Varian01
 STRING 4171
 // Items: IL52 (WC2HumanAct01Wilhelm01), Tip (Tooltip - Basic)
 {
-Вільгельм
+Wilhelm
 }
 
 STRING 4172
 // Items: IL52 (WC2HumanAct01Wilhelm01), Description (Description)
 {
-You seem discouraged, my lord… What happened?Ви виглядаєте обескураженим, мій лорде… Що сталося?
+You seem discouraged, my lord… What happened?
 }
 
 STRING 4173
@@ -2134,13 +2134,13 @@ WC2HumanAct01Wilhelm01
 STRING 4174
 // Items: IL53 (WC2HumanAct01Wilhelm02), Tip (Tooltip - Basic)
 {
-Вільгельм
+Wilhelm
 }
 
 STRING 4175
 // Items: IL53 (WC2HumanAct01Wilhelm02), Description (Description)
 {
-Проте нам вдалося врятувати Десниця Тиру. І Андорал.
+Yet we managed to save Tyr's Hand. And Andorhal.
 }
 
 STRING 4176
@@ -2152,13 +2152,13 @@ WC2HumanAct01Wilhelm02
 STRING 4177
 // Items: IL54 (WC2HumanAct01Wilhelm03), Tip (Tooltip - Basic)
 {
-Вільгельм
+Wilhelm
 }
 
 STRING 4178
 // Items: IL54 (WC2HumanAct01Wilhelm03), Description (Description)
 {
-Слухаюсь, мій владарю.
+Yes, my liege.
 }
 
 STRING 4179
@@ -2170,13 +2170,13 @@ WC2HumanAct01Wilhelm03
 STRING 4180
 // Items: IL55 (WC2HumanAct01Terenas01), Tip (Tooltip - Basic)
 {
-Теренас Менетіл II
+Terenas Menethil
 }
 
 STRING 4181
 // Items: IL55 (WC2HumanAct01Terenas01), Description (Description)
 {
-Ваша Величносте. Як володар цих земель, я пропоную вам свою гостинність і захист. Спадкоємець Азероту заслуговує не меншого.
+Your Majesty. As lord of this land, I offer my hospitality and protection to you. The heir of Azeroth deserves no less.
 }
 
 STRING 4182
@@ -2188,13 +2188,13 @@ WC2HumanAct01Terenas01
 STRING 4183
 // Items: IL56 (WC2HumanAct01Terenas02), Tip (Tooltip - Basic)
 {
-Теренас Менетіл II
+Terenas Menethil
 }
 
 STRING 4184
 // Items: IL56 (WC2HumanAct01Terenas02), Description (Description)
 {
-Ви маєте знати: я дуже засмутився, коли дізнався звістку про смерть вашого шляхетного батька. Король Ллейн був доброю людиною, і ми вважали його другом та союзником. Знайте, що ми зробимо все, що в наших силах, аби повернути Вас на Ваш престол.
+You must know, I grieved when I learned the news of your noble father’s death. King Llane was a good man and we counted him as a friend and an ally. Know that we shall do all in our power to restore you to your throne.
 }
 
 STRING 4185
@@ -2206,13 +2206,13 @@ WC2HumanAct01Terenas02
 STRING 4186
 // Items: IL57 (WC2HumanAct01Terenas03), Tip (Tooltip - Basic)
 {
-Теренас Менетіл II
+Terenas Menethil
 }
 
 STRING 4187
 // Items: IL57 (WC2HumanAct01Terenas03), Description (Description)
 {
-Ви носите королівський знак Азероту, проте я не знаю, хто ви. Ви захисник принца?
+You bear the royal sigil of Azeroth, yet I do not know who you are. Are you the prince’s protector?
 }
 
 STRING 4188
@@ -2224,13 +2224,13 @@ WC2HumanAct01Terenas03
 STRING 4189
 // Items: IL58 (WC2HumanAct01Terenas04), Tip (Tooltip - Basic)
 {
-Теренас Менетіл II
+Terenas Menethil
 }
 
 STRING 4190
 // Items: IL58 (WC2HumanAct01Terenas04), Description (Description)
 {
-О, лорде Лотаре… ви походите з шляхетного й давнього роду, і ваша слава випереджає вас. Ви отримаєте свою авдієнцію.
+Ah, Lord Lothar… you are of a proud and ancient bloodline, and your reputation precedes you. You shall have your audience.
 }
 
 STRING 4191
@@ -2242,13 +2242,13 @@ WC2HumanAct01Terenas04
 STRING 4192
 // Items: IL60 (WC2HumanAct01Terenas05), Tip (Tooltip - Basic)
 {
-Теренас Менетіл II
+Terenas Menethil
 }
 
 STRING 4193
 // Items: IL60 (WC2HumanAct01Terenas05), Description (Description)
 {
-Ви, мабуть, втомилися, Ваша Величносте. Запрошую вас відпочити в палаці.
+You must be tired, your Majesty. Let’s take rest in the palace.
 }
 
 STRING 4194
@@ -2260,13 +2260,13 @@ WC2HumanAct01Terenas05
 STRING 4195
 // Items: IL61 (WC2HumanAct01Terenas06), Tip (Tooltip - Basic)
 {
-Теренас Менетіл II
+Terenas Menethil
 }
 
 STRING 4196
 // Items: IL61 (WC2HumanAct01Terenas06), Description (Description)
 {
-Дякую всім, що прийшли. Я знаю, що це прохання було раптовим, але ми маємо обговорити вкрай важливі справи, і час, схоже, має вирішальне значення.
+Thank you all for coming, I know the request seemed sudden, but we have matters of grave importance to discuss and time seems to be of the essence.
 }
 
 STRING 4197
@@ -2278,7 +2278,7 @@ WC2HumanAct01Terenas06
 STRING 4198
 // Items: IL62 (WC2HumanAct01Terenas07), Tip (Tooltip - Basic)
 {
-Теренас Менетіл II
+Terenas Menethil
 }
 
 STRING 4200
@@ -2290,13 +2290,13 @@ WC2HumanAct01Terenas07
 STRING 4201
 // Items: IL63 (WC2HumanAct01Terenas08), Tip (Tooltip - Basic)
 {
-Теренас Менетіл II
+Terenas Menethil
 }
 
 STRING 4202
 // Items: IL63 (WC2HumanAct01Terenas08), Description (Description)
 {
-Мої лорди! Лорде Лотаре, будь ласка, продовжуйте. Я бував у Штормовії раніше і захоплювався його величчю та міццю. Що могло знищити таке місто?
+My lords! Lord Lothar, please continue. I have been to Stormwind before, and I admired its grandness and strength. What could destroy such a city?
 }
 
 STRING 4203
@@ -2308,13 +2308,13 @@ WC2HumanAct01Terenas08
 STRING 4204
 // Items: IL64 (WC2HumanAct01Terenas09), Tip (Tooltip - Basic)
 {
-Теренас Менетіл II
+Terenas Menethil
 }
 
 STRING 4205
 // Items: IL64 (WC2HumanAct01Terenas09), Description (Description)
 {
-Поки королівства збирають свої армії, я відправлю невеликий розвідувальний загін до острова Зул'Дар, аби перевірити, чи не намагалася Орда вже перетнути Велике море.
+While the kingdoms are assembling their armies, I will send a small scouting force to the island of Zul’Dare, to evaluate if the Horde has made any attempts to cross the Great Sea yet.
 }
 
 STRING 4206
@@ -2326,7 +2326,7 @@ WC2HumanAct01Terenas09
 STRING 4207
 // Items: IL65 (WC2HumanAct01Terenas10), Tip (Tooltip - Basic)
 {
-Теренас Менетіл II
+Terenas Menethil
 }
 
 STRING 4209
@@ -2338,13 +2338,13 @@ WC2HumanAct01Terenas10
 STRING 4210
 // Items: IL66 (WC2HumanAct01Terenas11), Tip (Tooltip - Basic)
 {
-Теренас Менетіл II
+Terenas Menethil
 }
 
 STRING 4211
 // Items: IL66 (WC2HumanAct01Terenas11), Description (Description)
 {
-Звісно ні. Я лише кажу, що командування нашими об'єднаними силами не повинно вирішуватися легковажно.
+Of course not. I am merely saying the command of our unified forces should not be decided lightly.
 }
 
 STRING 4212
@@ -2356,13 +2356,13 @@ WC2HumanAct01Terenas11
 STRING 4213
 // Items: IL67 (WC2HumanAct01Terenas12), Tip (Tooltip - Basic)
 {
-Теренас Менетіл II
+Terenas Menethil
 }
 
 STRING 4214
 // Items: IL67 (WC2HumanAct01Terenas12), Description (Description)
 {
-Саме так… Я згоден. Як захисник Азероту, лорд Лотар роками боровся з оркськими ордами. Один лише його досвід є безцінним.
+Indeed… I agree. As the champion of Azeroth, Lord Lothar spent years battling the orcish hordes. His experience alone is invaluable.
 }
 
 STRING 4215
@@ -2374,7 +2374,7 @@ WC2HumanAct01Terenas12
 STRING 4216
 // Items: IL68 (WC2HumanAct01Terenas13), Tip (Tooltip - Basic)
 {
-Теренас Менетіл II
+Terenas Menethil
 }
 
 STRING 4218
@@ -2386,7 +2386,7 @@ WC2HumanAct01Terenas13
 STRING 4219
 // Items: IL69 (WC2HumanAct01Terenas14), Tip (Tooltip - Basic)
 {
-Теренас Менетіл II
+Terenas Menethil
 }
 
 STRING 4221
@@ -2398,13 +2398,13 @@ WC2HumanAct01Terenas14
 STRING 4222
 // Items: IL70 (WC2HumanAct01Terenas15), Tip (Tooltip - Basic)
 {
-Теренас Менетіл II
+Terenas Menethil
 }
 
 STRING 4223
 // Items: IL70 (WC2HumanAct01Terenas15), Description (Description)
 {
-Ми, королі Альянсу, цим призначаємо лорда Андуїна Лотара, захисника Азероту, нашим Верховним Головнокомандувачем!
+We the kings of the Alliance do hereby appoint Lord Anduin Lothar, Champion of Azeroth, as our Supreme Commander!
 }
 
 STRING 4224
@@ -2416,7 +2416,7 @@ WC2HumanAct01Terenas15
 STRING 4226
 // Items: IL71 (WC2HumanAct01Thoras01), Description (Description)
 {
-Орки? Це якийсь різновид тролів? І звідки взялася ця Орда? Наскільки мені відомо, раніше ви вже мали справу з тролями південних джунглів.
+Orcs? Are they some kind of trolls? And where did this horde come from? As far as I know, you have dealt with the trolls of the southern jungles before.
 }
 
 STRING 4227
@@ -2434,7 +2434,7 @@ WC2HumanAct01Thoras02
 STRING 4232
 // Items: IL73 (WC2HumanAct01Thoras03), Description (Description)
 {
-З цим я згоден, сіре Лотаре. Проте, якщо ми маємо заснувати цей союз, я вважаю за доречне, щоб саме я вів його в бій!
+On that I agree Sir Lothar. However, if we are to establish this union, I only see fit that I lead it to battle!
 }
 
 STRING 4233
@@ -2452,76 +2452,76 @@ WC2HumanAct01Thoras04
 STRING 4237
 // Items: IL09 (WC2HumanAct01Danath02), Description (Description)
 {
-Я визнаю, що це мудрий вибір, але Лордерон і Даларан потребують нашої допомоги просто зараз.
+I admit that is a wise choice, but Lordaeron and Dalaran require our help right now.
 }
 
 STRING 4241
 // Items: IL25 (WC2HumanAct01Lothar06), Description (Description)
 {
-Ти будеш відповідати на себе турботу про розселення наших людй в цьому регіоні. Переконайся, що все буде належним чином, поки ми не повернемося.
+You will take charge of settling our people in this region. Make sure everything is in order until we return.
 }
 
 STRING 4242
 // Items: IL28 (WC2HumanAct01Lothar09), Description (Description)
 {
-Ваші Величності, я дякую вам за те, що ви відвідали цю зустріч і вислухали те, що я маю сказати. Я не поет і не дипломат, а воїн, тому мої слова будуть короткими й прямими. Я мушу сказати вам, що мого дому, міста Штормовій, більше немає.
+Your Majesties, I thank you for attending this meeting, and for listening to what I have to say. I am no poet or diplomat but a warrior, so I will keep my words brief and blunt. I must tell you that my home, Stormwind, is no more.
 }
 
 STRING 4246
 // Items: IL37 (WC2HumanAct01Lothar18), Description (Description)
 {
-Так, але ми втратили Штормовій, Тол-Барад, Стратгольм і значно, значно більше…
+Yes, but we have lost Stromgarde, Tol Barad, Stratholme and much, much more…
 }
 
 STRING 4247
 // Items: IL38 (WC2HumanAct01Lothar19), Description (Description)
 {
-Але зараз не час для роздумів. Вільгельме, вирушай на північ, розшукай командира Тураліона. Вкрай необхідно, щоб він якомога швидше посилив оборону столиці.
+But this is no time to ponder. Willhelm, travel north, reach Commander Turalyon. It’s imperative he reinforces the capital’s defenses as soon as possible.
 }
 
 STRING 4249
 // Items: IL47 (WC2HumanAct01Meryn02), Description (Description)
 {
-Я зроблю все, що в моїх силах, лорде Лотаре.
+I will do my best, Lord Lothar.
 }
 
 STRING 4250
 // Items: IL62 (WC2HumanAct01Terenas07), Description (Description)
 {
-Я представляю вам Андуїна Лотара, захисника Штормовія. Він прибув сюди як посланець. Думаю, буде краще, якщо я дозволю йому особисто розповісти вам про те, що він побачив, і про те, чого ми самі невдовзі можемо чекати.
+I present to you Anduin Lothar, Champion of Stormwind. He has come here as a messenger. I think it best if I let him tell you himself what he has seen and what we may soon expect ourselves.
 }
 
 STRING 4251
 // Items: IL65 (WC2HumanAct01Terenas10), Description (Description)
 {
-Чи треба мені нагадувати, за чиїм велінням ми тут зібралися? Хто фінансував цю раду від самого початку? Нам потрібен не просто бойовий командир, нам потрібен той, хто зможе нас об'єднати.
+Do I need to remind at whose behest are we here? Who sponsored this council from the beginning? We need more than a mere battle commander, we need someone who can unite us.
 }
 
 STRING 4253
 // Items: IL74 (WC2HumanAct01Thoras04), Description (Description)
 {
-І його рід. Мої предки вже воювали пліч-о-пліч із Торадіном, для мене було б великою честю зробити це знову, пішовши за його нащадком.
+And his bloodline. My ancestors fought beside Thoradin before, it would be a great honor to do so again by following his descendant.
 }
 
 STRING 4257
 {
-Чому віддаєете перевагу?
+What do you prefer?
 }
 
 STRING 4258
 {
-Переглянути історію формування Альянсу
+Watch story of Alliance formation
 }
 
 STRING 4259
 {
-Пропустити до останніх подій
+Skip to the latest events
 }
 
 STRING 4260
-// Units: nVWF (Варіан Рінн), Name (Name)
+// Units: nVWF (Varian Wrynn), Name (Name)
 {
-Варіан Рінн
+Varian Wrynn
 }
 
 STRING 4261
@@ -2560,13 +2560,13 @@ Gilneas
 }
 
 STRING 4268
-// Units: HAFC (Антонідас), Name (Name)
+// Units: HAFC (Antonidas), Name (Name)
 {
-Антонідас
+Antonidas
 }
 
 STRING 4269
-// Units: HAFC (Антонідас), EditorSuffix (Name - Editor Suffix)
+// Units: HAFC (Antonidas), EditorSuffix (Name - Editor Suffix)
 {
 (Dismounted) Flying Cinematic
 }
@@ -2622,7 +2622,7 @@ STRING 4277
 STRING 4278
 // Units: HTCF (King of Stromgarde), Propernames (Proper Names)
 {
-Торас Тролебій
+Thoras Trollbane
 }
 
 STRING 4279
@@ -2686,7 +2686,7 @@ King of Gilneas
 }
 
 STRING 4289
-// Units: nVWF (Варіан Рінн), EditorSuffix (Name - Editor Suffix)
+// Units: nVWF (Varian Wrynn), EditorSuffix (Name - Editor Suffix)
 {
 (Flying)
 }
@@ -2694,47 +2694,47 @@ STRING 4289
 STRING 4290
 // Items: IL15 (WC2HumanAct01Graymane04), Tip (Tooltip - Basic)
 {
-Ґенн Сивогрив
+Genn Graymane
 }
 
 STRING 4291
 // Items: IL50 (WC2HumanAct01Perenolde03), Tip (Tooltip - Basic)
 {
-Ейден Перенольд
+Aiden Perenolde
 }
 
 STRING 4292
 // Items: IL51 (WC2HumanAct01Varian01), Tip (Tooltip - Basic)
 {
-Варіан Рінн
+Varian Wrynn
 }
 
 STRING 4293
 {
-Тиждень потом — Місто Лордерон, столиця одноіменного королівства.
+One week later — Capital City of Lordaeron.
 }
 
 STRING 4294
 {
-Пропустити все
+Skip Everything
 }
 
 STRING 4295
 // Items: IL02 (WC2HumanAct01Antonidas01), Tip (Tooltip - Basic)
 {
-Антонідас
+Antonidas
 }
 
 STRING 4296
 // Items: IL03 (WC2HumanAct01Antonidas02), Tip (Tooltip - Basic)
 {
-Антонідас
+Antonidas
 }
 
 STRING 4297
 // Items: IL04 (WC2HumanAct01Antonidas03), Tip (Tooltip - Basic)
 {
-Антонідас
+Antonidas
 }
 
 STRING 4298
@@ -2757,7 +2757,7 @@ Ship 4
 
 STRING 4301
 {
-Південнобережжя, місяць після падіння Фортеці Штормовій.
+Southshore, one month after the fall of Stormwind Keep.
 }
 
 STRING 4302
@@ -2859,52 +2859,52 @@ Cleric
 STRING 4318
 // Items: IL71 (WC2HumanAct01Thoras01), Tip (Tooltip - Basic)
 {
-Торас Тролебій
+Thoras Trollbane
 }
 
 STRING 4319
 // Items: IL72 (WC2HumanAct01Thoras02), Tip (Tooltip - Basic)
 {
-Торас Тролебій
+Thoras Trollbane
 }
 
 STRING 4320
 // Items: IL73 (WC2HumanAct01Thoras03), Tip (Tooltip - Basic)
 {
-Торас Тролебій
+Thoras Trollbane
 }
 
 STRING 4321
 // Items: IL74 (WC2HumanAct01Thoras04), Tip (Tooltip - Basic)
 {
-Торас Тролебій
+Thoras Trollbane
 }
 
 STRING 4322
 // Items: IL22 (WC2HumanAct01Lothar03), Description (Description)
 {
-Штормовій...
+Stormwind...
 }
 
 STRING 4323
 {
-Три роки кривавої війни спустошили Східні Королівства. Стальгорн перебуває в облозі, ліси Квел'Таласу палають від драконячого вогню, а незліченні міста лежать у руїнах.
+Three years of bloody war have devastated the Eastern Kingdoms. Ironforge is under siege, the forests of Quel'Thalas burn with dragonfire, and countless cities lie in ruins.
 }
 
 STRING 4327
 {
-Війська Кул-Тірасу та Ґілнеасу залишаються ізольованими у своїх прибережних анклавах. Столиця Лордерону та Даларан в облозі у  Орди.
+Kul Tiran and Gilnean forces remain isolated in their coastal enclaves. The capitals of Lordaeron and Dalaran are besieged by the Horde.
 }
 
 STRING 4328
 {
-Тим часом Андуїн Лотар збирає свої сили в Андоралі, гуртуючи їх після запеклої битви з оркськими нападниками…
+Meanwhile, Anduin Lothar gathers his forces in Andorhal, rallying after a fierce battle with orcish raiders…
 }
 
 STRING 4329
-// Items: IL42 (WC2HumanAct01Lothar23), Tip (Tooltip - Basic)
+// Units: HLPA (Supreme Commander), Propernames (Proper Names)
 {
-Андуїн Лотар
+Sir Anduin Lothar
 }
 
 STRING 4330
@@ -2922,73 +2922,73 @@ STRING 4331
 STRING 4332
 // Items: IL17 (WC2HumanAct01Khadgar01), Description (Description)
 {
-Авжеж. Містечко Південнобережжя, між Далараном та Альтераком.
+Indeed. The township of Soutshore, between Dalaran and Alterac.
 }
 
 STRING 4334
 // Items: IL72 (WC2HumanAct01Thoras02), Description (Description)
 {
-Що за бюрократичні дурниці, Ейдене! Якщо ти не можеш узяти на себе відповідальність, то залиш це тим, хто може.
+What bureaucratic nonsense, Aiden! If you can't take responsibility, then leave it to those who can.
 }
 
 STRING 4335
 // Items: IL49 (WC2HumanAct01Perenolde02), Description (Description)
 {
-Я визнаю, що ситуація серйозна, але мені потрібно порадитися зі своїми законодавцями та міністрами, перш ніж я зможу погодитися на будь-яку війну. Саме так усе робиться в цивілізованих королівствах.
+I admit that the situation is serious, but I need to consult with my lawmakers and ministers before I can subscribe to any kind of war. This is how things are done in civilized kingdoms.
 }
 
 STRING 4336
 // Items: IL01 (WC2HumanAct01Alonsus01), Description (Description)
 {
-Я бачу, до чого ви клоните… Якщо дозволите, великі правителі. Коли Північнокрай був винищений мерзенною магією оркських чорнокнижників, ми зневірилися. А коли поліг король Ллейн і згорів Штормовій, ми втратили будь-яку надію.
+I see where you are going…If I may, great leaders. When Northshire was decimated by the foul magic of orcish warlocks, we despaired. And when King Llane fell and Stormwind burned, we lost all hope.
 }
 
 STRING 4337
 // Items: IL19 (WC2HumanAct01Khadgar03), Description (Description)
 {
-Ні, не тролі, Ваша Світлосте. Вони — раса чужинців, яка вдерлася на наші землі через магічний розлом, прихований десь на південних окраїнах Чорного Болота.
+No trolls, Your Grace. They are an alien race, who have invaded our lands through a magical rift hidden somewhere within the southern fringes of the Black Morass.
 }
 
 STRING 4338
 // Items: IL30 (WC2HumanAct01Lothar11), Description (Description)
 {
-Знайте що — Орда не зупиниться на Штормовії. Вони хочуть підкорити весь цей світ, і вони для цього мають і силу і кількість. В тому числі магічну.
+Know this — the Horde will not stop at Stormwind. They mean to claim the entire world, and they have the might and the numbers to do so. Nor do they lack magical powers.
 }
 
 STRING 4339
 // Items: IL36 (WC2HumanAct01Lothar17), Description (Description)
 {
-Я щойно отримав повідомлення, що Хрестовий остів пав. Це означає, що Орда дісталася озера Лордамер. Схоже, війська Альтераку більше не можуть захищати свої кордони… Від самого початку цієї війни фортуна була проти нас.
+I just received a message that the Cross Island has fallen. It means that the Horde has reached Lordamere Lake. Seems like Alterac forces cannot defend their borders anymore… Since the beginning of this war, fortune has been against us.
 }
 
 STRING 4340
 // Items: IL40 (WC2HumanAct01Lothar21), Description (Description)
 {
-Ми захистимо містечко Гіллзбрад і перекриємо оркські шляхи постачання з моря. Тоді ми вдаримо по армії Молота Згуби з тилу.
+We will secure Hillsbrad and cut orcish supply lines from the sea. Then we will hit Doomhammer’s army from the rear.
 }
 
 STRING 4341
 // Items: IL68 (WC2HumanAct01Terenas13), Description (Description)
 {
-Що ж, ми всі погодилися, що час має вирішальне значення, якщо ми хочемо зібрати наші об'єднані сили й зустріти Орду, коли вона прибуде.
+Now then, we have all agreed that time is of the essence if we are to marshal our united forces and meet the Horde when it arrives.
 }
 
 STRING 4342
 // Items: IL69 (WC2HumanAct01Terenas14), Description (Description)
 {
-Тоді цим я оголошую про заснування Великого Альянсу Лордерону!
+Then I hereby declare the founding of the Grand Alliance of Lordaeron!
 }
 
 STRING 4343
 // Items: IL75 (WC2HumanAct01Khadgar03A), Tip (Tooltip - Basic)
 {
-Кадґар
+Khadgar
 }
 
 STRING 4344
 // Items: IL75 (WC2HumanAct01Khadgar03A), Description (Description)
 {
-Вони — жахливі вороги, розміром з людину, але набагато сильніші,наче звірі ,з зеленою шкірою та червоними очима.
+They are terrible foes, as tall as a man and far stronger, with bestial features, green skin, and red eyes.
 }
 
 STRING 4345
@@ -3000,13 +3000,13 @@ WC2HumanAct01Khadgar03A
 STRING 4346
 // Items: IL76 (WC2HumanAct01Lothar11A), Tip (Tooltip - Basic)
 {
-Андуїн Лотар
+Anduin Lothar
 }
 
 STRING 4347
 // Items: IL76 (WC2HumanAct01Lothar11A), Description (Description)
 {
-Щойно вони покінчать із моєю батьківщиною, вони знайдуть спосіб перетнути океан і прийдуть за всіма вами.
+Once they have finished with my homeland, they will find a way to cross the ocean and come for the rest of you.
 }
 
 STRING 4348
@@ -3018,13 +3018,13 @@ WC2HumanAct01Lothar11A
 STRING 4349
 // Items: IL77 (WC2HumanAct01Alonsus01A), Tip (Tooltip - Basic)
 {
-Алонс Фаол
+Alonsus Faol
 }
 
 STRING 4350
 // Items: IL77 (WC2HumanAct01Alonsus01A), Description (Description)
 {
-Проте знайшлася одна людина, яка згуртувала нас і провела крізь темряву. Андуїн Лотар.
+Yet there was one man who rallied us and led us through darkness. Anduin Lothar.
 }
 
 STRING 4351
@@ -3036,13 +3036,13 @@ WC2HumanAct01Alonsus01A
 STRING 4352
 // Items: IL78 (WC2HumanAct01Terenas14A), Tip (Tooltip - Basic)
 {
-Теренас Менетіл II
+Terenas Menethil
 }
 
 STRING 4353
 // Items: IL78 (WC2HumanAct01Terenas14A), Description (Description)
 {
-Ми стоятимемо разом як один, як колись давно робили наші предки в Аратійській Імперії. І цілком доречно, що наш командир походить саме з того давнього правлячого роду.
+We shall stand together as one, as our ancestors did long ago, in the Arathi Empire. And it is only fitting, then, that our commander should hail from that ancient ruling stock.
 }
 
 STRING 4354
@@ -3054,13 +3054,13 @@ WC2HumanAct01Terenas14A
 STRING 4355
 // Items: IL79 (WC2HumanAct01Terenas13A), Tip (Tooltip - Basic)
 {
-Теренас Менетіл II
+Terenas Menethil
 }
 
 STRING 4356
 // Items: IL79 (WC2HumanAct01Terenas13A), Description (Description)
 {
-Чи згодні ми також щодо нашого плану дій?
+Do we also agree upon our course of action?
 }
 
 STRING 4357
@@ -3072,13 +3072,13 @@ WC2HumanAct01Terenas13A
 STRING 4358
 // Items: IL80 (WC2HumanAct01Lothar17A), Tip (Tooltip - Basic)
 {
-Андуїн Лотар
+Anduin Lothar
 }
 
 STRING 4359
 // Items: IL80 (WC2HumanAct01Lothar17A), Description (Description)
 {
-Ми переслідували Молота Згуби по всьому континенту, але жодного разу не встигли вчасно…
+We have been chasing Doomhammer across the continent, never to arrive in time… 
 }
 
 STRING 4360
@@ -3090,13 +3090,13 @@ WC2HumanAct01Lothar17A
 STRING 4361
 // Items: IL81 (WC2HumanAct01Lothar21A), Tip (Tooltip - Basic)
 {
-Андуїн Лотар
+Anduin Lothar
 }
 
 STRING 4362
 // Items: IL81 (WC2HumanAct01Lothar21A), Description (Description)
 {
-Цього разу ми не гратимемо в його гру. Замість того, щоб гнатися за ним, ми затягнемо петлю на шиї його проклятої Орди… і повісимо їх всіх цій петлі.
+This time, we will not play his game. Instead of chasing him, we’ll place a noose around the neck of his blasted Horde… and hang them with it.
 }
 
 STRING 4363
@@ -3108,24 +3108,24 @@ WC2HumanAct01Lothar21A
 STRING 4364
 // Items: IL20 (WC2HumanAct01Lothar01), Description (Description)
 {
-Вдале місце для висадки…. Ми в Лордероні?
+A proper landing site…. Are we in Lordaeron?
 }
 
 STRING 4365
 // Items: IL42 (WC2HumanAct01Lothar23), Description (Description)
 {
-Ґавінраде. Ти вирушиш на південь із капітаном Данатом і надаси підтримку його військам. Після цього ти залишишся там і наглядатимеш за регіоном на випадок, якщо Орда спробує втекти на схід через Альтерак. Якщо помітиш їх — не проявляй милосердя.
+Gavinrad. You will travel south with Captain Danath and provide support to his forces. After that, you will remain there and oversee the region in case the Horde attempts to flee east through Alterac. If you spot them - show no mercy.
 }
 
 STRING 4366
 // Items: IL35 (WC2HumanAct01Lothar16), Description (Description)
 {
-Це велика честь для мене. Я приймаю це доручення. З вашою допомогою, шляхетні королі, ви здолаємо Орду і вбережемо ваші народи від жахливої долі Штормовія!
+This is great honor for me. I accept this charge. With your aid, noble kings, we will vanquish the Horde and spare your people from the gruesome fate of Stormwind!
 }
 
 STRING 4367
 // Items: IL05 (WC2HumanAct01DaelinProudmoore01), Description (Description)
 {
-Ви кажете, що вони йдуть сюди. Чи мають вони кораблі?
+You say they are coming here. Do they have ships?
 }
 

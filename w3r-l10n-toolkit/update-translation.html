@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Update Translation — WTS L10n Toolkit</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .csv-block {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px;
+      margin-bottom: 16px;
+      background: var(--surface);
+    }
+    .csv-block-label {
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+
+    /* full-width mapping table */
+    .mapping-table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      margin-top: 12px;
+    }
+    .mapping-table-wrap table { min-width: max-content; width: 100%; }
+    .mapping-table-wrap thead th {
+      vertical-align: top;
+      padding: 10px 14px;
+      min-width: 160px;
+      background: var(--surface2);
+      border-bottom: 1px solid var(--border);
+      font-weight: normal;
+      text-transform: none;
+      letter-spacing: 0;
+      font-size: 13px;
+    }
+    .col-name {
+      font-family: 'Consolas', 'Fira Code', monospace;
+      font-size: 11px;
+      color: var(--muted);
+      margin-bottom: 6px;
+      white-space: nowrap;
+    }
+    .col-map-select {
+      width: 100%;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      color: var(--text);
+      padding: 5px 28px 5px 8px;
+      font-size: 12px;
+      outline: none;
+      cursor: pointer;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='7' viewBox='0 0 10 7'%3E%3Cpath fill='%237070a0' d='M5 7L0 0h10z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 9px center;
+      transition: border-color 0.15s;
+    }
+    .col-map-select:focus        { border-color: var(--accent); }
+    .col-map-select.mapped-key   { border-color: var(--accent);  color: var(--accent); }
+    .col-map-select.mapped-trans { border-color: var(--success); color: var(--success); }
+
+    .mapping-table-wrap tbody td {
+      padding: 8px 14px;
+      max-width: 260px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      border-bottom: 1px solid var(--border);
+    }
+    .mapping-table-wrap tbody tr:last-child td { border-bottom: none; }
+    .mapping-table-wrap tbody td.col-key         { background: rgba(245,166,35,0.07); }
+    .mapping-table-wrap tbody td.col-translation  { background: rgba(76,175,80,0.07); }
+
+    .csv-info-badge {
+      display: inline-block;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 3px 10px;
+      font-size: 11px;
+      color: var(--muted);
+    }
+
+    /* mapped output preview */
+    .src-preview {
+      margin-top: 12px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    .src-preview-title {
+      font-size: 11px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      padding: 7px 14px;
+      background: var(--surface2);
+      border-bottom: 1px solid var(--border);
+    }
+    .src-preview table { width: 100%; }
+    .src-preview td { padding: 7px 14px; border-bottom: 1px solid var(--border); }
+    .src-preview tr:last-child td { border-bottom: none; }
+    .src-preview td:first-child { width: 38%; color: var(--accent); font-family: 'Consolas','Fira Code',monospace; font-size: 11px; }
+    .src-preview td:last-child  { color: var(--text); font-size: 13px; }
+
+    .tag-new     { font-size: 10px; background: rgba(76,175,80,0.2);  color: var(--success); border-radius: 3px; padding: 1px 6px; white-space: nowrap; }
+    .tag-updated { font-size: 10px; background: rgba(245,166,35,0.2); color: var(--accent);  border-radius: 3px; padding: 1px 6px; white-space: nowrap; }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <h1>WTS L10n Toolkit</h1>
+      <p class="subtitle">Warcraft III · .wts Localization Manager</p>
+    </header>
+
+    <nav class="page-nav">
+      <a href="index.html"               class="page-nav-link">Create DB</a>
+      <a href="update.html"              class="page-nav-link">Update DB</a>
+      <a href="create-translation.html"  class="page-nav-link">Create Translation DB</a>
+      <a href="update-translation.html"  class="page-nav-link active">Update Translation</a>
+    </nav>
+
+    <h2>Update translation file</h2>
+
+    <!-- DB select -->
+    <div class="form-group" style="margin-bottom:16px;">
+      <div class="form-group-header">
+        <label>Database</label>
+        <span id="fetch-status" class="db-status hidden"></span>
+      </div>
+      <select id="db-select">
+        <option value="">— select database —</option>
+      </select>
+    </div>
+
+    <!-- Base translation preview -->
+    <div id="base-preview" class="src-preview hidden" style="margin-bottom:24px;">
+      <div class="src-preview-title" id="base-preview-title">Current translation</div>
+      <table id="base-preview-table"></table>
+    </div>
+
+    <div id="form-hint" class="form-hint hidden"></div>
+
+    <!-- CSV files (shown after DB loaded) -->
+    <div id="csv-section" class="hidden">
+
+      <!-- CSV 1 -->
+      <div class="csv-block">
+        <div class="csv-block-label">CSV file 1 <span style="font-weight:400;text-transform:none;letter-spacing:0">(optional)</span></div>
+        <div class="drop-zone drop-zone--compact" id="drop-src-0">
+          <p id="label-src-0">Drop CSV or click</p>
+          <span class="hint">Assign columns after upload</span>
+          <input type="file" id="file-src-0" accept=".csv,text/csv" style="display:none">
+        </div>
+        <div id="mapping-block-0" class="hidden">
+          <span class="csv-info-badge" id="info-src-0"></span>
+          <div class="mapping-table-wrap">
+            <table id="maptable-0"></table>
+          </div>
+        </div>
+      </div>
+
+      <!-- CSV 2 -->
+      <div class="csv-block">
+        <div class="csv-block-label">CSV file 2 <span style="font-weight:400;text-transform:none;letter-spacing:0">(optional)</span></div>
+        <div class="drop-zone drop-zone--compact" id="drop-src-1">
+          <p id="label-src-1">Drop CSV or click</p>
+          <span class="hint">Assign columns after upload</span>
+          <input type="file" id="file-src-1" accept=".csv,text/csv" style="display:none">
+        </div>
+        <div id="mapping-block-1" class="hidden">
+          <span class="csv-info-badge" id="info-src-1"></span>
+          <div class="mapping-table-wrap">
+            <table id="maptable-1"></table>
+          </div>
+        </div>
+      </div>
+
+      <div class="textarea-actions">
+        <button id="btn-merge" class="btn btn-primary" disabled>Check Translation</button>
+        <button id="btn-reset-csv" class="btn btn-ghost">Reset CSV</button>
+      </div>
+    </div>
+
+    <!-- Warnings -->
+    <div id="warn-section" class="error-section hidden" style="margin-top:16px;">
+      <p class="error-title">Warnings:</p>
+      <ul id="warn-list"></ul>
+    </div>
+
+    <!-- Stats + download -->
+    <div id="result-section" class="hidden" style="margin-top:24px;">
+      <div class="stats">
+        <span id="stat-base"    class="stat">0 base</span>
+        <span id="stat-new"     class="stat success">0 new</span>
+        <span id="stat-updated" class="stat">0 updated</span>
+        <span id="stat-total"   class="stat">0 total</span>
+      </div>
+      <div id="no-changes-msg" class="hidden" style="margin-top:12px;font-size:14px;color:var(--success);">
+        ✓ Translation is up to date — nothing to download
+      </div>
+      <div class="actions" id="download-actions" style="display:none;">
+        <button id="btn-download" class="btn btn-primary">⬇ Download UA JSON</button>
+      </div>
+    </div>
+
+    <!-- Preview -->
+    <div id="preview-section" class="preview-section hidden">
+      <h3>Changes</h3>
+      <table>
+        <thead>
+          <tr><th>Variable Name</th><th></th><th>Was</th><th>Now</th></tr>
+        </thead>
+        <tbody id="preview-body"></tbody>
+      </table>
+      <p class="preview-more" id="preview-more"></p>
+    </div>
+
+    <style>
+      .cell-was  { color: var(--accent); max-width: 260px; }
+      .cell-now  { color: var(--success); max-width: 260px; }
+      .cell-dash { color: var(--muted); }
+    </style>
+
+  </div>
+
+  <script src="js/csv-parser.js"></script>
+  <script src="js/update-translation-app.js"></script>
+</body>
+</html>

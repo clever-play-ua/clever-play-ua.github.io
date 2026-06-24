@@ -1,4 +1,7 @@
 [
-  { "file": "RoA_A01_M01_EN",              "label": "RoA · Act 1 · Map 01"    },
-  { "file": "RoA_A01_CNMC1_EN_1781633390", "label": "RoA · Act 1 · Cinematic" }
+    { "file": "RoA_A01_CNMC1_EN_1782056201", "label": "RoA · Act 1 · Cinematic 1", "translation": "RoA_A01_CNMC1_UA_1782325734" },
+    { "file": "RoA_A01_M01_EN_1782056647",   "label": "RoA · Act 1 · Mission 01",  "translation": "RoA_A01_M01_UA_1782325709" },
+    { "file": "RoA_A01_M02_EN_1782056723",   "label": "RoA · Act 1 · Mission 02",  "translation": "RoA_A01_M02_UA_1782325651" },
+    { "file": "RoA_A01_M03_EN_1782325467",   "label": "RoA · Act 1 · Mission 03",  "translation": "RoA_A01_M03_UA_1782325625" },
+    { "file": "RoA_A01_M04_EN_1782325548",   "label": "RoA · Act 1 · Mission 04",  "translation": "RoA_A01_M04_UA_1782325588" }
 ]

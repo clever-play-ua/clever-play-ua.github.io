@@ -4,567 +4,646 @@
     "act": "A01",
     "map": "M01",
     "source_lang": "en",
-    "generated": "2026-06-16"
+    "generated": "2026-06-21"
   },
   "strings": {
-    "RoA_A01_M01_VO_S001_001_TME": {
+    "RoA_A01_M01_VO_S001_001": {
       "hash": "dc72fc6a80",
       "string_number": 3848,
       "type": "VO",
-      "unit": "Terenas Menethil II",
+      "unit_id": "TME",
+      "unit_name": "Terenas Menethil II",
       "source": "Guards, to me!…."
     },
-    "RoA_A01_M01_VO_S001_002_ULI": {
+    "RoA_A01_M01_VO_S001_002": {
       "hash": "f99342c4af",
       "string_number": 3850,
       "type": "VO",
-      "unit": "Uther Lightbringer",
+      "unit_id": "UTL",
+      "unit_name": "Uther the Lightbringer",
       "source": "Soldiers of Lordaeron, protect the king!"
     },
-    "RoA_A01_M01_VO_S001_003_TME": {
+    "RoA_A01_M01_VO_S001_003": {
       "hash": "8f48eb29cb",
       "string_number": 4073,
       "type": "VO",
-      "unit": "Terenas Menethil II",
+      "unit_id": "TME",
+      "unit_name": "Terenas Menethil II",
       "source": "Guards, I’m under attack!"
     },
-    "RoA_A01_M01_VO_S001_004_TME": {
+    "RoA_A01_M01_VO_S001_004": {
       "hash": "6057f22960",
       "string_number": 4074,
       "type": "VO",
-      "unit": "Terenas Menethil II",
+      "unit_id": "TME",
+      "unit_name": "Terenas Menethil II",
       "source": "Men of Lordaeron, aid me!"
     },
-    "RoA_A01_M01_VO_S002_001_SYS": {
+    "RoA_A01_M01_VO_S002_001": {
       "hash": "904d25852f",
       "string_number": 4141,
       "type": "VO",
-      "unit": "Storyline text",
+      "unit_id": "SYS",
+      "unit_name": "SYSTEM",
       "source": "A few moments later..."
     },
-    "RoA_A01_M01_VO_S002_002_ULI": {
+    "RoA_A01_M01_VO_S002_002": {
       "hash": "86cbb9b9da",
       "string_number": 3859,
       "type": "VO",
-      "unit": "Uther Lightbringer",
+      "unit_id": "UTL",
+      "unit_name": "Uther the Lightbringer",
       "source": "Your Majesty, we must abandon the palace and retreat to the courtyard. There, we can make our final stand and fortify our defenses."
     },
-    "RoA_A01_M01_VO_S002_003_TME": {
+    "RoA_A01_M01_VO_S002_003": {
       "hash": "3bc653a9a3",
       "string_number": 4075,
       "type": "VO",
-      "unit": "Terenas Menethil II",
+      "unit_id": "TME",
+      "unit_name": "Terenas Menethil II",
       "source": "Agreed. But first, we must get my son from his chambers!"
     },
-    "RoA_A01_M01_VO_S003_001_ULI": {
+    "RoA_A01_M01_VO_S003_001": {
       "hash": "72787552d5",
       "string_number": 4311,
       "type": "VO",
-      "unit": "Uther Lightbringer",
+      "unit_id": "UTL",
+      "unit_name": "Uther the Lightbringer",
       "source": "The door is locked! We'll need to find a way to open it!"
     },
-    "RoA_A01_M01_VO_S004_001_TME": {
+    "RoA_A01_M01_VO_S004_001": {
       "hash": "47ee84a132",
       "string_number": 4130,
       "type": "VO",
-      "unit": "Terenas Menethil II",
+      "unit_id": "TME",
+      "unit_name": "Terenas Menethil II",
       "source": "I cannot leave without my son..."
     },
-    "RoA_A01_M01_VO_S004_002_AME": {
+    "RoA_A01_M01_VO_S004_002": {
       "hash": "3a93e7fc9c",
       "string_number": 3865,
       "type": "VO",
-      "unit": "Arthas",
+      "unit_id": "ART",
+      "unit_name": "Arthas",
       "source": "Father!"
     },
-    "RoA_A01_M01_VO_S004_003_TME": {
+    "RoA_A01_M01_VO_S004_003": {
       "hash": "0934cc6c4c",
       "string_number": 4076,
       "type": "VO",
-      "unit": "Terenas Menethil II",
+      "unit_id": "TME",
+      "unit_name": "Terenas Menethil II",
       "source": "Arthas, my son, thank the Light you are safe. We're leaving the palace."
     },
-    "RoA_A01_M01_VO_S004_004_TME": {
+    "RoA_A01_M01_VO_S004_004": {
       "hash": "a9131907ea",
       "string_number": 4127,
       "type": "VO",
-      "unit": "Terenas Menethil II",
+      "unit_id": "TME",
+      "unit_name": "Terenas Menethil II",
       "source": "Ah, my treasury. It used to be full of gold…"
     },
-    "RoA_A01_M01_VO_S005_001_MBR": {
+    "RoA_A01_M01_VO_S005_001": {
       "hash": "b02fe36731",
       "string_number": 4077,
       "type": "VO",
-      "unit": "Muradin Bronzebeard",
+      "unit_id": "MBR",
+      "unit_name": "Muradin Bronzebeard",
       "source": "The might of the mountains shall destroy ye!"
     },
-    "RoA_A01_M01_VO_S005_002_MBR": {
+    "RoA_A01_M01_VO_S005_002": {
       "hash": "531b6efccb",
       "string_number": 4070,
       "type": "VO",
-      "unit": "Muradin Bronzebeard",
+      "unit_id": "MBR",
+      "unit_name": "Muradin Bronzebeard",
       "source": "I’ll crack yer skulls! Savage beasts!"
     },
-    "RoA_A01_M01_VO_S005_003_MBR": {
+    "RoA_A01_M01_VO_S005_003": {
       "hash": "fcec1f5e81",
       "string_number": 4071,
       "type": "VO",
-      "unit": "Muradin Bronzebeard",
+      "unit_id": "MBR",
+      "unit_name": "Muradin Bronzebeard",
       "source": "Lads! Do not let them advance further!"
     },
-    "RoA_A01_M01_VO_S006_001_ULI": {
+    "RoA_A01_M01_VO_S006_001": {
       "hash": "4685194a32",
       "string_number": 3880,
       "type": "VO",
-      "unit": "Uther Lightbringer",
+      "unit_id": "UTL",
+      "unit_name": "Uther the Lightbringer",
       "source": "My King, you'll be safe here. I'll reinforce the city's defenses."
     },
-    "RoA_A01_M01_VO_S006_002_AME": {
+    "RoA_A01_M01_VO_S006_002": {
       "hash": "3ae2a971d0",
       "string_number": 3883,
       "type": "VO",
-      "unit": "Arthas",
+      "unit_id": "ART",
+      "unit_name": "Arthas",
       "source": "Father, are those creatures going to kill us?"
     },
-    "RoA_A01_M01_VO_S006_003_TME": {
+    "RoA_A01_M01_VO_S006_003": {
       "hash": "ed0a90d8d6",
       "string_number": 4078,
       "type": "VO",
-      "unit": "Terenas Menethil II",
+      "unit_id": "TME",
+      "unit_name": "Terenas Menethil II",
       "source": "Fear not, Arthas. We are safe, for now. But if we are overrun, seek out the catacombs and join Prince Varian in the hideout."
     },
-    "RoA_A01_M01_VO_S006_004_TME": {
+    "RoA_A01_M01_VO_S006_004": {
       "hash": "d088e6cefd",
       "string_number": 4278,
       "type": "VO",
-      "unit": "Muradin Bronzebeard",
+      "unit_id": "MBR",
+      "unit_name": "Muradin Bronzebeard",
       "source": "I'll take care of them, lad. You do your duty."
     },
-    "RoA_A01_M01_VO_S007_001_TUR": {
+    "RoA_A01_M01_VO_S007_001": {
       "hash": "c7a95f127c",
       "string_number": 4279,
       "type": "VO",
-      "unit": "Turalyon",
+      "unit_id": "TUR",
+      "unit_name": "Turalyon",
       "source": "Your Majesty, Lord Lothar dispatched us the moment we heard the city had been besieged, Thank the Light you and your family are safe."
     },
-    "RoA_A01_M01_VO_S007_002_TME": {
+    "RoA_A01_M01_VO_S007_002": {
       "hash": "fc735c1637",
       "string_number": 4080,
       "type": "VO",
-      "unit": "Terenas Menethil II",
+      "unit_id": "TME",
+      "unit_name": "Terenas Menethil II",
       "source": "If you hadn’t reached us in time, I’m afraid all would’ve been lost, young Paladin. Your aid is sorely needed."
     },
-    "RoA_A01_M01_VO_S007_003_ULI": {
+    "RoA_A01_M01_VO_S007_003": {
       "hash": "ae079d94d8",
       "string_number": 3898,
       "type": "VO",
-      "unit": "Uther Lightbringer",
+      "unit_id": "UTL",
+      "unit_name": "Uther the Lightbringer",
       "source": "Just in time, brother. We have much to do."
     },
-    "RoA_A01_M01_VO_S007_004_TUR": {
+    "RoA_A01_M01_VO_S007_004": {
       "hash": "fbb1a79f6f",
       "string_number": 4081,
       "type": "VO",
-      "unit": "Turalyon",
+      "unit_id": "TUR",
+      "unit_name": "Turalyon",
       "source": "Tell us what to do, Lord Uther."
     },
-    "RoA_A01_M01_VO_S007_005_ULI": {
+    "RoA_A01_M01_VO_S007_005": {
       "hash": "aea078fc2c",
       "string_number": 4119,
       "type": "VO",
-      "unit": "Uther Lightbringer",
+      "unit_id": "UTL",
+      "unit_name": "Uther the Lightbringer",
       "source": "We must reclaim the city's districts and drive out the orcs. I'll handle the western district, and you handle the eastern one."
     },
-    "RoA_A01_M01_VO_S008_001_TME": {
+    "RoA_A01_M01_VO_S008_001": {
       "hash": "b5c9da5040",
       "string_number": 4167,
       "type": "VO",
-      "unit": "Terenas Menethil II",
+      "unit_id": "TME",
+      "unit_name": "Terenas Menethil II",
       "source": "Use barracks to replenish your troops!"
     },
-    "RoA_A01_M01_VO_S008_002_WIL": {
+    "RoA_A01_M01_VO_S008_002": {
       "hash": "f9e14f4d4e",
       "string_number": 4231,
       "type": "VO",
-      "unit": "Wilhelm",
+      "unit_id": "WIL",
+      "unit_name": "Wilhelm",
       "source": "We must dig out the rubble of the residential buildings, some citizens could have survived."
     },
-    "RoA_A01_M01_VO_S009_001_TUR": {
+    "RoA_A01_M01_VO_S009_001": {
       "hash": "78f7cdfaa6",
       "string_number": 3907,
       "type": "VO",
-      "unit": "Turalyon",
+      "unit_id": "TUR",
+      "unit_name": "Turalyon",
       "source": "We've done it! The orcs are falling back!"
     },
-    "RoA_A01_M01_VO_S009_002_ULI": {
+    "RoA_A01_M01_VO_S009_002": {
       "hash": "29bd28067e",
       "string_number": 3910,
       "type": "VO",
-      "unit": "Uther Lightbringer",
+      "unit_id": "UTL",
+      "unit_name": "Uther the Lightbringer",
       "source": "Don't celebrate just yet... Look, the dragons are attacking the palace!"
     },
-    "RoA_A01_M01_VO_S010_001_TUR": {
+    "RoA_A01_M01_VO_S010_001": {
       "hash": "34a2cc1752",
       "string_number": 4082,
       "type": "VO",
-      "unit": "Turalyon",
+      "unit_id": "TUR",
+      "unit_name": "Turalyon",
       "source": "Archers! Ready your bows!"
     },
-    "RoA_A01_M01_VO_S010_002_ULI": {
+    "RoA_A01_M01_VO_S010_002": {
       "hash": "d2081b6c68",
       "string_number": 4233,
       "type": "VO",
-      "unit": "Uther Lightbringer",
+      "unit_id": "UTL",
+      "unit_name": "Uther the Lightbringer",
       "source": "We must support our archers and bring down those dragons!"
     },
-    "RoA_A01_M01_VO_S011_001_TUR": {
+    "RoA_A01_M01_VO_S011_001": {
       "hash": "df798d0401",
       "string_number": 4083,
       "type": "VO",
-      "unit": "Turalyon",
+      "unit_id": "TUR",
+      "unit_name": "Turalyon",
       "source": "Those winged beasts are too formidable... we can't vanquish them all..."
     },
-    "RoA_A01_M01_VO_S011_002_MBR": {
+    "RoA_A01_M01_VO_S011_002": {
       "hash": "e5bc56af2c",
       "string_number": 4264,
       "type": "VO",
-      "unit": "Muradin Bronzebeard",
+      "unit_id": "MBR",
+      "unit_name": "Muradin Bronzebeard",
       "source": "Maybe if those blasted Wildhammers were here to get off their asses!"
     },
-    "RoA_A01_M01_VO_S011_003_MBR": {
+    "RoA_A01_M01_VO_S011_003": {
       "hash": "55c3e5daec",
       "string_number": 4235,
       "type": "VO",
-      "unit": "Muradin Bronzebeard",
+      "unit_id": "MBR",
+      "unit_name": "Muradin Bronzebeard",
       "source": "Huh?"
     },
-    "RoA_A01_M01_VO_S011_004_KWI": {
+    "RoA_A01_M01_VO_S011_004": {
       "hash": "bada3a7907",
       "string_number": 4306,
       "type": "VO",
-      "unit": "Kurdran Wildhammer",
+      "unit_id": "KWI",
+      "unit_name": "Kurdran Wildhammer",
       "source": "Hah, what was that Bronzebeard? Hear that lads, let's hunt us some flying lizards, shall we?! Ha-ha-ha-ha-ha!"
     },
-    "RoA_A01_M01_VO_S012_001_ULI": {
+    "RoA_A01_M01_VO_S012_001": {
       "hash": "691aaabc3b",
       "string_number": 3928,
       "type": "VO",
-      "unit": "Uther Lightbringer",
+      "unit_id": "UTL",
+      "unit_name": "Uther the Lightbringer",
       "source": "You arrived just in time, my dwarven friend. The city would have been reduced to ashes if not for your aid."
     },
-    "RoA_A01_M01_VO_S012_002_KWI": {
+    "RoA_A01_M01_VO_S012_002": {
       "hash": "7d951cc2f8",
       "string_number": 4084,
       "type": "VO",
-      "unit": "Kurdran Wildhammer",
+      "unit_id": "KWI",
+      "unit_name": "Kurdran Wildhammer",
       "source": "Anduin Lothar helped us defend our homeland against the orcish scum. Now we’ll return the favor by ridding the city of greenskin mongrels."
     },
-    "RoA_A01_M01_VO_S012_003_TUR": {
+    "RoA_A01_M01_VO_S012_003": {
       "hash": "24a0f20c2b",
       "string_number": 3934,
       "type": "VO",
-      "unit": "Turalyon",
+      "unit_id": "TUR",
+      "unit_name": "Turalyon",
       "source": "How far is Lord Lothar from the city?"
     },
-    "RoA_A01_M01_VO_S012_004_KWI": {
+    "RoA_A01_M01_VO_S012_004": {
       "hash": "d0ff77b003",
       "string_number": 3937,
       "type": "VO",
-      "unit": "Kurdran Wildhammer",
+      "unit_id": "KWI",
+      "unit_name": "Kurdran Wildhammer",
       "source": "He's not heading here. His army is marching through Hillsbrad to relieve Dalaran and attack the orcs from the rear. If all goes as planned, the Horde will be caught between our forces here and his forces down south."
     },
-    "RoA_A01_M01_VO_S012_005_ULI": {
+    "RoA_A01_M01_VO_S012_005": {
       "hash": "347d945bf4",
       "string_number": 4085,
       "type": "VO",
-      "unit": "Uther Lightbringer",
+      "unit_id": "UTL",
+      "unit_name": "Uther the Lightbringer",
       "source": "A solid plan. Now we must ensure we hold our defense here."
     },
-    "RoA_A01_M01_VO_S012_006_TUR": {
+    "RoA_A01_M01_VO_S012_006": {
       "hash": "8ad16f68e8",
       "string_number": 4086,
       "type": "VO",
-      "unit": "Turalyon",
+      "unit_id": "TUR",
+      "unit_name": "Turalyon",
       "source": "First, we need to cleanse the last two city districts of those unholy creatures. March on!"
     },
-    "RoA_A01_M01_VO_S013_001_OPI": {
+    "RoA_A01_M01_VO_S013_001": {
       "hash": "2a09132c2a",
       "string_number": 4239,
       "type": "VO",
-      "unit": "Orc Pirate",
+      "unit_name": "Orc Pirate",
       "source": "Chicken soup is back on the menu, boys!"
     },
-    "RoA_A01_M01_VO_S013_002_KWI": {
+    "RoA_A01_M01_VO_S013_002": {
       "hash": "f6863c8b0c",
       "string_number": 4087,
       "type": "VO",
-      "unit": "Kurdran Wildhammer",
+      "unit_id": "KWI",
+      "unit_name": "Kurdran Wildhammer",
       "source": "Blast it, their armada is too formidable for my gryphon pack. I can't take them all head on; there are too many ships!"
     },
-    "RoA_A01_M01_VO_S013_003_ULI": {
+    "RoA_A01_M01_VO_S013_003": {
       "hash": "68e3076e50",
       "string_number": 3949,
       "type": "VO",
-      "unit": "Uther Lightbringer",
+      "unit_id": "UTL",
+      "unit_name": "Uther the Lightbringer",
       "source": "In that case, we should concentrate our efforts on the lower city."
     },
-    "RoA_A01_M01_VO_S013_004_MBR": {
+    "RoA_A01_M01_VO_S013_004": {
       "hash": "7ea7245c9b",
       "string_number": 3952,
       "type": "VO",
-      "unit": "Muradin Bronzebeard",
+      "unit_id": "MBR",
+      "unit_name": "Muradin Bronzebeard",
       "source": "I've had enough rest. It's time to crush some orcish skulls."
     },
-    "RoA_A01_M01_VO_S013_005_MBR": {
+    "RoA_A01_M01_VO_S013_005": {
       "hash": "fd0df141b3",
       "string_number": 4088,
       "type": "VO",
-      "unit": "Muradin Bronzebeard",
+      "unit_id": "MBR",
+      "unit_name": "Muradin Bronzebeard",
       "source": "You can follow if you can keep up."
     },
-    "RoA_A01_M01_VO_S013_006_KWI": {
+    "RoA_A01_M01_VO_S013_006": {
       "hash": "4473a0cbed",
       "string_number": 3961,
       "type": "VO",
-      "unit": "Kurdran Wildhammer",
+      "unit_id": "KWI",
+      "unit_name": "Kurdran Wildhammer",
       "source": "Ha-ha, that can be done!"
     },
-    "RoA_A01_M01_VO_S014_001_DPO": {
+    "RoA_A01_M01_VO_S014_001": {
       "hash": "397c7bdf0e",
       "string_number": 4245,
       "type": "VO",
-      "unit": "Derek Proudmoore",
+      "unit_id": "DPR",
+      "unit_name": "Derek Proudmoore",
       "source": "We're in luck boys, the fog concealed our presence, lets break this armada."
     },
-    "RoA_A01_M01_VO_S014_002_DPO": {
+    "RoA_A01_M01_VO_S014_002": {
       "hash": "bc5fac19e3",
       "string_number": 4242,
       "type": "VO",
-      "unit": "Derek Proudmoore",
+      "unit_id": "DPR",
+      "unit_name": "Derek Proudmoore",
       "source": "C'mon sailors, our allies in the city need help, dealing with those orcish ships was easy task, but now we need to work with some sweat and blood."
     },
-    "RoA_A01_M01_VO_S015_001_DPO": {
+    "RoA_A01_M01_VO_S015_001": {
       "hash": "896e1119c8",
       "string_number": 4090,
       "type": "VO",
-      "unit": "Derek Proudmoore",
+      "unit_id": "DPR",
+      "unit_name": "Derek Proudmoore",
       "source": "The Lord Admiral sent me with the northern armada as soon as he received reports of the siege. Blessed be the sea; we have arrived in time."
     },
-    "RoA_A01_M01_VO_S015_002_ULI": {
+    "RoA_A01_M01_VO_S015_002": {
       "hash": "d7cc0d58ad",
       "string_number": 4091,
       "type": "VO",
-      "unit": "Uther Lightbringer",
+      "unit_id": "UTL",
+      "unit_name": "Uther the Lightbringer",
       "source": "Your help is much appreciated. Without the might of Kul Tiras, this naval blockade could have held on for who knows how long."
     },
-    "RoA_A01_M01_VO_S015_003_TUR": {
+    "RoA_A01_M01_VO_S015_003": {
       "hash": "2e48a3d26c",
       "string_number": 3973,
       "type": "VO",
-      "unit": "Turalyon",
+      "unit_id": "TUR",
+      "unit_name": "Turalyon",
       "source": "To achieve final victory over their remaining forces, we must cross the lake, assault Fenris Isle, and capture their generals."
     },
-    "RoA_A01_M01_VO_S015_004_MBR": {
+    "RoA_A01_M01_VO_S015_004": {
       "hash": "f5167eb710",
       "string_number": 3976,
       "type": "VO",
-      "unit": "Muradin Bronzebeard",
+      "unit_id": "MBR",
+      "unit_name": "Muradin Bronzebeard",
       "source": "Ah, with all due respect to Master Proudmoore and his sea warriors, dwarves can never feel comfortable on any kind of boat. But then again, it's better than to ride a gryphon."
     },
-    "RoA_A01_M01_VO_S015_005_ULI": {
+    "RoA_A01_M01_VO_S015_005": {
       "hash": "534537c7d3",
       "string_number": 3979,
       "type": "VO",
-      "unit": "Uther Lightbringer",
+      "unit_id": "UTL",
+      "unit_name": "Uther the Lightbringer",
       "source": "Your wounds need more time to heal, my friend. You've already done a lot to ensure our victory here."
     },
-    "RoA_A01_M01_VO_S015_006_MBR": {
+    "RoA_A01_M01_VO_S015_006": {
       "hash": "5afb67fcf9",
       "string_number": 4121,
       "type": "VO",
-      "unit": "Muradin Bronzebeard",
+      "unit_id": "MBR",
+      "unit_name": "Muradin Bronzebeard",
       "source": "But… ah, I'll miss all the fun…"
     },
-    "RoA_A01_M01_VO_S015_007_KWI": {
+    "RoA_A01_M01_VO_S015_007": {
       "hash": "ae68eb2851",
       "string_number": 4312,
       "type": "VO",
-      "unit": "Kurdran Wildhammer",
+      "unit_id": "KWI",
+      "unit_name": "Kurdran Wildhammer",
       "source": "The lad's right, Master Bronzebeard. You already put up good fight, I have to admit. But now, ya need to rest."
     },
-    "RoA_A01_M01_VO_S015_008_DPO": {
+    "RoA_A01_M01_VO_S015_008": {
       "hash": "e17221f379",
       "string_number": 4249,
       "type": "VO",
-      "unit": "Derek Proudmoore",
+      "unit_id": "DPR",
+      "unit_name": "Derek Proudmoore",
       "source": "My ships are at your disposal..."
     },
-    "RoA_A01_M01_VO_S016_001_USC": {
+    "RoA_A01_M01_VO_S016_001": {
       "hash": "f943caa625",
       "string_number": 3991,
       "type": "VO",
-      "unit": "Utok Scratcher",
+      "unit_id": "USC",
+      "unit_name": "Utok Scratcher",
       "source": "Warchief, the humans have retaken the city! What do we do?"
     },
-    "RoA_A01_M01_VO_S016_002_THA": {
+    "RoA_A01_M01_VO_S016_002": {
       "hash": "3d34d9de54",
       "string_number": 3994,
       "type": "VO",
-      "unit": "Tharbek",
+      "unit_id": "THA",
+      "unit_name": "Tharbek",
       "source": "We must press the attack! Those dogs deserve no reprieve!"
     },
-    "RoA_A01_M01_VO_S016_003_ODO": {
+    "RoA_A01_M01_VO_S016_003": {
       "hash": "aaba02446f",
       "string_number": 4095,
       "type": "VO",
-      "unit": "Orgrim Doomhammer",
+      "unit_id": "ODO",
+      "unit_name": "Orgrim Doomhammer",
       "source": "No. Between Dalaran and Alterac, our forces are stretched too thin. And the Alliance has further reinforcements on the way. We need to sound a tactical retreat, fall back, and regroup."
     },
-    "RoA_A01_M01_VO_S016_004_THA": {
+    "RoA_A01_M01_VO_S016_004": {
       "hash": "070dcd7d60",
       "string_number": 4096,
       "type": "VO",
-      "unit": "Tharbek",
+      "unit_id": "THA",
+      "unit_name": "Tharbek",
       "source": "But Warchief…"
     },
-    "RoA_A01_M01_VO_S016_005_ODO": {
+    "RoA_A01_M01_VO_S016_005": {
       "hash": "802dcc1876",
       "string_number": 4122,
       "type": "VO",
-      "unit": "Orgrim Doomhammer",
+      "unit_id": "ODO",
+      "unit_name": "Orgrim Doomhammer",
       "source": "Enough! That’s a command! Tharbek, you will oversee that our retreat is orderly. Utok, you will travel to our base at Zul’Dare and make sure our western supply lines remain intact. Is that clear?"
     },
-    "RoA_A01_M01_VO_S016_006_USC": {
+    "RoA_A01_M01_VO_S016_006": {
       "hash": "b44aeb3841",
       "string_number": 4006,
       "type": "VO",
-      "unit": "Utok Scratcher",
+      "unit_id": "USC",
+      "unit_name": "Utok Scratcher",
       "source": "Yes, Warchief."
     },
-    "RoA_A01_M01_VO_S016_007_THA": {
+    "RoA_A01_M01_VO_S016_007": {
       "hash": "c006186c70",
       "string_number": 4009,
       "type": "VO",
-      "unit": "Tharbek",
+      "unit_id": "THA",
+      "unit_name": "Tharbek",
       "source": "Yes, Warchief. But what of our base here?"
     },
-    "RoA_A01_M01_VO_S016_008_ODO": {
+    "RoA_A01_M01_VO_S016_008": {
       "hash": "29a050f618",
       "string_number": 4097,
       "type": "VO",
-      "unit": "Orgrim Doomhammer",
+      "unit_id": "ODO",
+      "unit_name": "Orgrim Doomhammer",
       "source": "We can’t hope to hold it. Not without committing troops we can’t spare right now. But we can leave the humans a surprise…"
     },
-    "RoA_A01_M01_VO_S017_001_TUR": {
+    "RoA_A01_M01_VO_S017_001": {
       "hash": "df3532612b",
       "string_number": 4302,
       "type": "VO",
-      "unit": "Turalyon",
+      "unit_id": "TUR",
+      "unit_name": "Turalyon",
       "source": "It’s an ambush, take cover!"
     },
     "RoA_A01_M01_VO_S017_002": {
       "hash": "e22c987da8",
       "string_number": 4018,
       "type": "VO",
-      "unit": "Korkron Orge Guard",
+      "unit_id": "KOG",
+      "unit_name": "Korkron Orge Guard",
       "source": "Puny humans, too stupid. Warchief said you die, so you die."
     },
-    "RoA_A01_M01_VO_S018_001_GIR": {
+    "RoA_A01_M01_VO_S018_001": {
       "hash": "b1674cba58",
       "string_number": 4305,
       "type": "VO",
-      "unit": "Korkron Orge Guard",
+      "unit_id": "KOG",
+      "unit_name": "Korkron Orge Guard",
       "source": "You run now? Not with no feet!"
     },
-    "RoA_A01_M01_VO_S018_002_GIR": {
+    "RoA_A01_M01_VO_S018_002": {
       "hash": "b4c95b72d0",
       "string_number": 4304,
       "type": "VO",
-      "unit": "Korkron Orge Guard",
+      "unit_id": "KOG",
+      "unit_name": "Korkron Orge Guard",
       "source": "Hard to breathe, eh? Soon you will stop breathing!"
     },
-    "RoA_A01_M01_VO_S018_003_GIR": {
+    "RoA_A01_M01_VO_S018_003": {
       "hash": "23dab68c1f",
       "string_number": 4303,
       "type": "VO",
-      "unit": "Korkron Orge Guard",
+      "unit_id": "KOG",
+      "unit_name": "Korkron Orge Guard",
       "source": "Ha-ha! Today I ate a gnome for a breakfast."
     },
-    "RoA_A01_M01_VO_S018_004_ULI": {
+    "RoA_A01_M01_VO_S018_004": {
       "hash": "0cba937c3c",
       "string_number": 4253,
       "type": "VO",
-      "unit": "Uther Lightbringer",
+      "unit_id": "UTL",
+      "unit_name": "Uther the Lightbringer",
       "source": "The island is ours once again."
     },
-    "RoA_A01_M01_VO_S019_001_TME": {
+    "RoA_A01_M01_VO_S019_001": {
       "hash": "aba02b05ae",
       "string_number": 4254,
       "type": "VO",
-      "unit": "Terenas Menethil II",
+      "unit_id": "TME",
+      "unit_name": "Terenas Menethil II",
       "source": "Today's victory came at a heavy price… Many brave souls have died so that we might live. We should take care of their bodies and their families… Yet Doomhammer has escaped, so we can't delay."
     },
-    "RoA_A01_M01_VO_S019_002_ULI": {
+    "RoA_A01_M01_VO_S019_002": {
       "hash": "7ad93567b3",
       "string_number": 4123,
       "type": "VO",
-      "unit": "Uther Lightbringer",
+      "unit_id": "UTL",
+      "unit_name": "Uther the Lightbringer",
       "source": "Yes, my liege. Grief fills my heart as well, but we must act and follow him south immediately."
     },
-    "RoA_A01_M01_VO_S019_003_DPO": {
+    "RoA_A01_M01_VO_S019_003": {
       "hash": "ab978630fc",
       "string_number": 4102,
       "type": "VO",
-      "unit": "Derek Proudmoore",
+      "unit_id": "DPR",
+      "unit_name": "Derek Proudmoore",
       "source": "My remaining ships are at your disposal, Your Majesty."
     },
-    "RoA_A01_M01_VO_S019_004_KWI": {
+    "RoA_A01_M01_VO_S019_004": {
       "hash": "8cc1b20829",
       "string_number": 4283,
       "type": "VO",
-      "unit": "Kurdran Wildhammer",
+      "unit_id": "KWI",
+      "unit_name": "Kurdran Wildhammer",
       "source": "My gryphons need a few hours to rest, but afterward, we can support your offensive from the sky."
     },
-    "RoA_A01_M01_VO_S019_005_TME": {
+    "RoA_A01_M01_VO_S019_005": {
       "hash": "a6ceb30aff",
       "string_number": 4321,
       "type": "VO",
-      "unit": "Terenas Menethil II",
+      "unit_id": "TME",
+      "unit_name": "Terenas Menethil II",
       "source": "Turalyon, gather all Knights of the Silver Hand and all soldiers able to fight. They will have time to rest on the ships while crossing the lake."
     },
-    "RoA_A01_M01_VO_S019_006_TUR": {
+    "RoA_A01_M01_VO_S019_006": {
       "hash": "0fa4e492c7",
       "string_number": 4104,
       "type": "VO",
-      "unit": "Turalyon",
+      "unit_id": "TUR",
+      "unit_name": "Turalyon",
       "source": "As you command, Your Majesty."
     },
-    "RoA_A01_M01_VO_S019_007_TME": {
+    "RoA_A01_M01_VO_S019_007": {
       "hash": "1cef993f7b",
       "string_number": 4281,
       "type": "VO",
-      "unit": "Terenas Menethil II",
+      "unit_id": "TME",
+      "unit_name": "Terenas Menethil II",
       "source": "Uther, I want you to stay here and take care of the wounded. Your skills and compassion can save more lives here than on the front line."
     },
-    "RoA_A01_M01_VO_S019_008_ULI": {
+    "RoA_A01_M01_VO_S019_008": {
       "hash": "d2ff09e6d2",
       "string_number": 4125,
       "type": "VO",
-      "unit": "Uther Lightbringer",
+      "unit_id": "UTL",
+      "unit_name": "Uther the Lightbringer",
       "source": "There is wisdom in your words… I will obey, my king."
     },
-    "RoA_A01_M01_VO_S019_009_TME": {
+    "RoA_A01_M01_VO_S019_009": {
       "hash": "e5e236d53e",
       "string_number": 4048,
       "type": "VO",
-      "unit": "Terenas Menethil II",
+      "unit_id": "TME",
+      "unit_name": "Terenas Menethil II",
       "source": "Muradin, I want you to stay with me. You've shed enough blood for Lordaeron already, and I don't want to face the wrath of your brother-king if something were to happen to you."
     },
-    "RoA_A01_M01_VO_S019_010_MBR": {
+    "RoA_A01_M01_VO_S019_010": {
       "hash": "3e84e498f1",
       "string_number": 4051,
       "type": "VO",
-      "unit": "Muradin Bronzebeard",
+      "unit_id": "MBR",
+      "unit_name": "Muradin Bronzebeard",
       "source": "Your words warm my heart, King Terenas."
     },
     "RoA_A01_M01_OBJE_001": {

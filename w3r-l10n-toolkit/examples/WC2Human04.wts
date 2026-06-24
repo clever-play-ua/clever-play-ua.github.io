@@ -38,19 +38,19 @@ S
 STRING 268
 // Units: ndfl (Железные метательные топоры), Description (Description)
 {
-A mighty human warship, effective in both naval combat and coastal assaults. |n|cffffcc00Can attack ground targets.|r
+Грозный корабль людей, эффективный как в морских сражениях, так и при штурме береговых построек. |n|cffffcc00Может атаковать наземные цели.|r
 }
 
 STRING 269
 // Units: ndfl (Железные метательные топоры), Name (Name)
 {
-Iron Throwing Axes
+Железные метательные топоры
 }
 
 STRING 270
 // Units: ndfl (Железные метательные топоры), EditorSuffix (Name - Editor Suffix)
 {
-Fragmentation Catapult Shells (|cffffcc00G|r)
+Осколочные ядра катапульт (|cffffcc00G|r)
 }
 
 STRING 272
@@ -499,7 +499,7 @@ Banner Wall Blackrock
 
 STRING 2442
 {
-Клан Кривавого Літопису
+Bloodscribe Clan
 }
 
 STRING 2443
@@ -517,13 +517,13 @@ Banner Bloodscribe
 STRING 2445
 // Items: IL01 (WC2Human04Wilhelm_Intro01), Tip (Tooltip - Basic)
 {
-Вільгельм
+Wilhelm
 }
 
 STRING 2446
 // Items: IL01 (WC2Human04Wilhelm_Intro01), Description (Description)
 {
-Наближаємось до Гіллзбраду, мілорде.
+We are approaching Hillsbrad, my lord.
 }
 
 STRING 2447
@@ -535,7 +535,7 @@ WC2Human04Wilhelm_Intro01
 STRING 2448
 // Items: IL02 (WC2Human04Danath_Intro01), Tip (Tooltip - Basic)
 {
-Данат Тролебій
+Danath Trollbane
 }
 
 STRING 2450
@@ -553,7 +553,7 @@ WC2Human04Gavinrad_Intro01
 STRING 2454
 // Items: IL04 (WC2Human04Milan_Intro01), Tip (Tooltip - Basic)
 {
-Мілан Ліпописець
+Milan The Scribe
 }
 
 STRING 2456
@@ -565,7 +565,7 @@ WC2Human04Milan_Intro01
 STRING 2457
 // Items: IL05 (WC2Human04Lothar_Intro01), Tip (Tooltip - Basic)
 {
-Андуїн Лотар
+Anduin Lothar
 }
 
 STRING 2459
@@ -577,7 +577,7 @@ WC2Human04Lothar_Intro01
 STRING 2460
 // Items: IL06 (WC2Human04Danath_Intro02), Tip (Tooltip - Basic)
 {
-Данат Тролебій
+Danath Trollbane
 }
 
 STRING 2462
@@ -589,7 +589,7 @@ WC2Human04Danath_Intro02
 STRING 2463
 // Items: IL07 (WC2Human04Crowley_Appears01), Tip (Tooltip - Basic)
 {
-Lord Лорд Даріус Кроулі
+Lord Darius Crowley
 }
 
 STRING 2465
@@ -601,13 +601,13 @@ WC2Human04Crowley_Appears01
 STRING 2466
 // Items: IL08 (WC2Human04Wilhelm_Hillsbrad01), Tip (Tooltip - Basic)
 {
-Вільгельм
+Wilhelm
 }
 
 STRING 2467
 // Items: IL08 (WC2Human04Wilhelm_Hillsbrad01), Description (Description)
 {
-Мілорде, сили орків знищено. Містечко в безпеці…
+My lord, the orc forces have been destroyed. The town is secured…
 }
 
 STRING 2468
@@ -619,7 +619,7 @@ WC2Human04Wilhelm_Hillsbrad01
 STRING 2469
 // Items: IL09 (WC2Human04Lothar_Hillsbrad01), Tip (Tooltip - Basic)
 {
-Андуїн Лотар
+Anduin Lothar
 }
 
 STRING 2471
@@ -631,7 +631,7 @@ WC2Human04Lothar_Hillsbrad01
 STRING 2472
 // Items: IL10 (WC2Human04Crowley_Hillsbrad01), Tip (Tooltip - Basic)
 {
-Лорд Даріус Кроулі
+Lord Darius Crowley
 }
 
 STRING 2474
@@ -643,7 +643,7 @@ WC2Human04Crowley_Hillsbrad01
 STRING 2475
 // Items: IL11 (WC2Human04Lothar_Hillsbrad02), Tip (Tooltip - Basic)
 {
-Андуїн Лотар
+Anduin Lothar
 }
 
 STRING 2477
@@ -655,13 +655,13 @@ WC2Human04Lothar_Hillsbrad02
 STRING 2478
 // Items: IL12 (WC2Human04Wilhelm_Zombies01), Tip (Tooltip - Basic)
 {
-Вільгельм
+Wilhelm
 }
 
 STRING 2479
 // Items: IL12 (WC2Human04Wilhelm_Zombies01), Description (Description)
 {
-Сіре Лотаре, мертві атакують нас!
+Sir Lothar, the dead are attacking us!
 }
 
 STRING 2480
@@ -673,13 +673,13 @@ WC2Human04Wilhelm_Zombies01
 STRING 2481
 // Items: IL13 (WC2Human04Milan_Zombies01), Tip (Tooltip - Basic)
 {
-Мілан Літописець
+Milan the Scribe
 }
 
 STRING 2482
 // Items: IL13 (WC2Human04Milan_Zombies01), Description (Description)
 {
-Яке паскудство. Звідки взялися ці потвори?
+How deplorable. Where did these wretches come from?
 }
 
 STRING 2483
@@ -691,7 +691,7 @@ WC2Human04Milan_Zombies01
 STRING 2484
 // Items: IL03 (WC2Human04Gavinrad_Intro01), Tip (Tooltip - Basic)
 {
-Ґавінрад Безжальний
+Gavinrad the Dire
 }
 
 STRING 2486
@@ -703,7 +703,7 @@ WC2Human04Gavinrad_Zombies01
 STRING 2487
 // Items: IL14 (WC2Human04Lothar_Zombies01), Tip (Tooltip - Basic)
 {
-Андуїн Лотар
+Anduin Lothar
 }
 
 STRING 2489
@@ -715,13 +715,13 @@ WC2Human04Lothar_Zombies01
 STRING 2490
 // Items: IL15 (WC2Human04Gavinrad_Zombies01), Tip (Tooltip - Basic)
 {
-Ґавінрад Безжальний
+Gavinrad the Dire
 }
 
 STRING 2491
 // Items: IL16 (WC2Human04Gavinrad_Zombies02), Description (Description)
 {
-Я займуся цим особисто. В ім'я Світла!
+I’ll see to it personally. For the Light!
 }
 
 STRING 2492
@@ -733,7 +733,7 @@ WC2Human04Gavinrad_Zombies02
 STRING 2493
 // Items: IL16 (WC2Human04Gavinrad_Zombies02), Tip (Tooltip - Basic)
 {
-Ґавінрад Безжальний
+Gavinrad the Dire
 }
 
 STRING 2495
@@ -745,13 +745,13 @@ WC2Human04Gavinrad_Zombies03
 STRING 2496
 // Items: IL18 (WC2Human04Lothar_Meryn01), Tip (Tooltip - Basic)
 {
-Андуїн Лотар
+Anduin Lothar
 }
 
 STRING 2497
 // Items: IL18 (WC2Human04Lothar_Meryn01), Description (Description)
 {
-Ох Меріне...
+Oh Meryn…
 }
 
 STRING 2498
@@ -763,13 +763,13 @@ WC2Human04Lothar_Meryn01
 STRING 2499
 // Items: IL19 (WC2Human04Crowley_Ships01), Tip (Tooltip - Basic)
 {
-Лорд Даріус Кроулі
+Lord Darious Crowley
 }
 
 STRING 2500
 // Items: IL19 (WC2Human04Crowley_Ships01), Description (Description)
 {
-Командире, розвідники підтверджують, що орочі судна патрулюють узбережжя.
+Commander, our scouts confirm that orcish vessels are patrolling the coastline.
 }
 
 STRING 2501
@@ -781,13 +781,13 @@ WC2Human04Crowley_Ships01
 STRING 2502
 // Items: IL21 (WC2Human04Crowley_Ships02), Tip (Tooltip - Basic)
 {
-Лорд Даріус Кроулі
+Lord Darious Crowley
 }
 
 STRING 2503
 // Items: IL21 (WC2Human04Crowley_Ships02), Description (Description)
 {
-Ви чули командира! Підняти вітрила!
+You heard the man! Ready the sails!
 }
 
 STRING 2504
@@ -799,7 +799,7 @@ WC2Human04Crowley_Ships02
 STRING 2505
 // Items: IL20 (WC2Human04Lothar_Ships01), Tip (Tooltip - Basic)
 {
-Андуїн Лотар
+Anduin Lothar
 }
 
 STRING 2507
@@ -811,13 +811,13 @@ WC2Human04Lothar_Ships01
 STRING 2508
 // Items: IL22 (WC2Human04Wilhelm_Prepare01), Tip (Tooltip - Basic)
 {
-Вільгельм
+Wilhelm
 }
 
 STRING 2509
 // Items: IL22 (WC2Human04Wilhelm_Prepare01), Description (Description)
 {
-Мілорде, всі приготування завершено. Наші війська готові.
+My lord, preparations have been made. Our forces are ready.
 }
 
 STRING 2510
@@ -829,7 +829,7 @@ WC2Human04Wilhelm_Prepare01
 STRING 2511
 // Items: IL23 (WC2Human04Lothar_Prepare01), Tip (Tooltip - Basic)
 {
-Андуїн Лотар
+Anduin Lothar
 }
 
 STRING 2513
@@ -841,13 +841,13 @@ WC2Human04Lothar_Prepare01
 STRING 2514
 // Items: IL17 (WC2Human04Gavinrad_Zombies03), Tip (Tooltip - Basic)
 {
-Ґавінрад Безжальний
+Gavinrad the Dire
 }
 
 STRING 2515
 // Items: IL24 (WC2Human04Gavinrad_Prepare01), Description (Description)
 {
-Я подбаю про безпеку Гіллзбраду, мілорд командувач.
+I’ll keep Hillsbrad safe, my lord commander.
 }
 
 STRING 2516
@@ -859,13 +859,13 @@ WC2Human04Gavinrad_Prepare01
 STRING 2517
 // Items: IL25 (WC2Human04Milan_Prepare01), Tip (Tooltip - Basic)
 {
-Мілан Літописець
+Milan the Scribe
 }
 
 STRING 2518
 // Items: IL25 (WC2Human04Milan_Prepare01), Description (Description)
 {
-Хіба я не доєднаюсь до штурму?
+Am I not to join the final assault?
 }
 
 STRING 2519
@@ -877,7 +877,7 @@ WC2Human04Milan_Prepare01
 STRING 2520
 // Items: IL26 (WC2Human04Lothar_Prepare02), Tip (Tooltip - Basic)
 {
-Андуїн Лотар
+Anduin Lothar
 }
 
 STRING 2522
@@ -889,13 +889,13 @@ WC2Human04Lothar_Prepare02
 STRING 2523
 // Items: IL27 (WC2Human04Lothar_Prepare03), Tip (Tooltip - Basic)
 {
-Андуїн Лотар
+Anduin Lothar
 }
 
 STRING 2524
 // Items: IL27 (WC2Human04Lothar_Prepare03), Description (Description)
 {
-Данате, ти очолиш авангард. Вільгельме, ти залишишся зі мною. Лорде Кровлі…
+Danath, you will lead the vanguard. Wilhelm, you’ll remain at my side. Lord Crowley…
 }
 
 STRING 2525
@@ -907,13 +907,13 @@ WC2Human04Lothar_Prepare03
 STRING 2526
 // Items: IL28 (WC2Human04Crowley_Prepare01), Tip (Tooltip - Basic)
 {
-Лорд Даріус Кроулі
+Lord Darius Crowley
 }
 
 STRING 2527
 // Items: IL28 (WC2Human04Crowley_Prepare01), Description (Description)
 {
-Так, я подбаю про те, щоб ми дісталися Зул'Дара цілими.
+Yes, I’ll see to it we reach Zul’Dare in one piece.
 }
 
 STRING 2528
@@ -925,13 +925,13 @@ WC2Human04Crowley_Prepare01
 STRING 2529
 // Items: IL29 (WC2Human04Danath_Prepare01), Tip (Tooltip - Basic)
 {
-Данат Тролебій
+Danath Trollbane
 }
 
 STRING 2530
 // Items: IL29 (WC2Human04Danath_Prepare01), Description (Description)
 {
-Час розтрощити ще кілька зеленошкірих черепів.
+Time to bash more greenskin skulls.
 }
 
 STRING 2531
@@ -943,7 +943,7 @@ WC2Human04Danath_Prepare01
 STRING 2532
 // Items: IL30 (WC2Human04Crowley_Landing01), Tip (Tooltip - Basic)
 {
-Лорд Даріус Кроулі
+Darius Crowley
 }
 
 STRING 2534
@@ -955,7 +955,7 @@ WC2Human04Crowley_Landing01
 STRING 2535
 // Items: IL31 (WC2Human04Lothar_Landing01), Tip (Tooltip - Basic)
 {
-Андуїн Лотар
+Anduin Lothar
 }
 
 STRING 2537
@@ -967,7 +967,7 @@ WC2Human04Lothar_Landing01
 STRING 2538
 // Items: IL32 (WC2Human04Lothar_Landing02), Tip (Tooltip - Basic)
 {
-Андуїн Лотар
+Anduin Lothar
 }
 
 STRING 2540
@@ -979,13 +979,13 @@ WC2Human04Lothar_Landing02
 STRING 2541
 // Items: IL33 (WC2Human04Lothar_Zuldare01), Tip (Tooltip - Basic)
 {
-Андуїн Лотар
+Anduin Lothar
 }
 
 STRING 2542
 // Items: IL33 (WC2Human04Lothar_Zuldare01), Description (Description)
 {
-Ти! Я пам'ятаю тебе.
+You! I remember you.
 }
 
 STRING 2543
@@ -997,7 +997,7 @@ WC2Human04Lothar_Zuldare01
 STRING 2544
 // Items: IL34 (WC2Human04Utok_Zuldare01), Tip (Tooltip - Basic)
 {
-Уток Дряпач
+Utok Scratcher
 }
 
 STRING 2546
@@ -1009,7 +1009,7 @@ WC2Human04Utok_Zuldare01
 STRING 2547
 // Items: IL35 (WC2Human04Wilhelm_Zuldare01), Tip (Tooltip - Basic)
 {
-Вільгельм
+Wilhelm
 }
 
 STRING 2549
@@ -1021,7 +1021,7 @@ WC2Human04Wilhelm_Zuldare01
 STRING 2550
 // Items: IL36 (WC2Human04Lothar_Zuldare03), Tip (Tooltip - Basic)
 {
-Андуїн Лотар
+Anduin Lothar
 }
 
 STRING 2552
@@ -1033,7 +1033,7 @@ WC2Human04Lothar_Zuldare02
 STRING 2553
 // Items: IL37 (WC2Human04Utok_Bossfight01), Tip (Tooltip - Basic)
 {
-Уток Дряпач
+Utok Scratcher
 }
 
 STRING 2555
@@ -1045,13 +1045,13 @@ WC2Human04Utok_Bossfight01
 STRING 2556
 // Items: IL38 (WC2Human04Utok_Bossfight02), Tip (Tooltip - Basic)
 {
-Уток Дряпач
+Utok Scratcher
 }
 
 STRING 2557
 // Items: IL38 (WC2Human04Utok_Bossfight02), Description (Description)
 {
-За Молота Згуби! За клан Кривавого Літопису!
+For Doomhammer! For the Bloodscribe Clan!
 }
 
 STRING 2558
@@ -1063,7 +1063,7 @@ WC2Human04Utok_Bossfight02
 STRING 2559
 // Items: IL39 (WC2Human04Utok_Bossfight03), Tip (Tooltip - Basic)
 {
-Уток Дряпач
+Utok Scratcher
 }
 
 STRING 2561
@@ -1075,7 +1075,7 @@ WC2Human04Utok_Bossfight03
 STRING 2562
 // Items: IL40 (WC2Human04Danath_Zuldare01), Tip (Tooltip - Basic)
 {
-Данат Тролебій
+Danath Trollbane
 }
 
 STRING 2564
@@ -1087,7 +1087,7 @@ WC2Human04Danath_Bossfight01
 STRING 2565
 // Items: IL41 (WC2Human04Lothar_Outro01), Tip (Tooltip - Basic)
 {
-Андуїн Лотар
+Anduin Lothar
 }
 
 STRING 2567
@@ -1099,13 +1099,13 @@ WC2Human04Lothar_Outro01
 STRING 2568
 // Items: IL42 (WC2Human04Utok_Outro01), Tip (Tooltip - Basic)
 {
-Уток Дряпач
+Utok Scratcher
 }
 
 STRING 2569
 // Items: IL42 (WC2Human04Utok_Outro01), Description (Description)
 {
-Ти думаєш, у мене немає честі? Що я зраджу свій народ?! Лок'тар оґар!
+You think I have no honor? That I would betray my people?! Lok’tar ogar!
 }
 
 STRING 2570
@@ -1117,13 +1117,13 @@ WC2Human04Utok_Outro01
 STRING 2571
 // Items: IL43 (WC2Human04Danath_Outro01), Tip (Tooltip - Basic)
 {
-Данат Тролебій
+Danath Trollbane
 }
 
 STRING 2572
 // Items: IL43 (WC2Human04Danath_Outro01), Description (Description)
 {
-Твої останні слова, тварюко?
+Any last words, beast?
 }
 
 STRING 2573
@@ -1135,7 +1135,7 @@ WC2Human04Danath_Outro01
 STRING 2574
 // Items: IL44 (WC2Human04Utok_Outro02), Tip (Tooltip - Basic)
 {
-Уток Дряпач
+Utok Scratcher
 }
 
 STRING 2576
@@ -1147,7 +1147,7 @@ WC2Human04Utok_Outro02
 STRING 2577
 // Items: IL45 (WC2Human04Danath_Outro02), Tip (Tooltip - Basic)
 {
-Данат Тролебій
+Danath Trollbane
 }
 
 STRING 2579
@@ -1159,13 +1159,13 @@ WC2Human04Danath_Outro02
 STRING 2580
 // Items: IL46 (WC2Human04Lothar_Outro02), Tip (Tooltip - Basic)
 {
-Андуїн Лотар
+Anduin Lothar
 }
 
 STRING 2581
 // Items: IL46 (WC2Human04Lothar_Outro02), Description (Description)
 {
-Нашу роботу тут скінчено. Зберіть поранених, і повертаймося до Гіллзбраду.
+Our work here is finished. Gather the wounded, and let us return to Hillsbrad.
 }
 
 STRING 2582
@@ -1177,7 +1177,7 @@ WC2Human04Lothar_Outro02
 STRING 2583
 // Items: IL24 (WC2Human04Gavinrad_Prepare01), Tip (Tooltip - Basic)
 {
-Ґавінрад Безжальний
+Gavinrad the Dire
 }
 
 STRING 2585
@@ -1189,7 +1189,7 @@ WC2Human04Gavinrad_Outro01
 STRING 2586
 // Items: IL48 (WC2Human04Lothar_Outro03), Tip (Tooltip - Basic)
 {
-Андуїн Лотар
+Anduin Lothar
 }
 
 STRING 2588
@@ -1201,13 +1201,13 @@ WC2Human04Lothar_Outro03
 STRING 2589
 // Items: IL50 (WC2Human04Danath_Outro03), Tip (Tooltip - Basic)
 {
-Данат Тролебій
+Danath Trolbane
 }
 
 STRING 2590
 // Items: IL50 (WC2Human04Danath_Outro03), Description (Description)
 {
-Що тепер, командире?
+What now, commander?
 }
 
 STRING 2591
@@ -1219,7 +1219,7 @@ WC2Human04Danath_Outro03
 STRING 2592
 // Items: IL49 (WC2Human04Lothar_Outro04), Tip (Tooltip - Basic)
 {
-Андуїн Лотар
+Anduin Lothar
 }
 
 STRING 2594
@@ -1237,7 +1237,7 @@ Whom?
 STRING 2598
 // Items: IL52 (WC2Human04Lothar_Outro05), Tip (Tooltip - Basic)
 {
-Андуїн Лотар
+Anduin Lothar
 }
 
 STRING 2601
@@ -1247,17 +1247,17 @@ Alliance Army
 
 STRING 2602
 {
-Повернути Гіллзбрад 
+Retake Hillsbrad
 }
 
 STRING 2603
 {
-Аби вибити Орду з західної частнини Лордерону, необхідно знищити їхній форпост, який на Островах каналу.Гіллзбрад містечко в якому вони закріпилися, поверніть його та ці землі загалом під контроль Альянсу!
+To drive the Horde from western Lordaeron, their stronghold on the Channel Islands must be destroyed. Retake Hillsbrad, the foothold that anchors their presence, and reclaim the land for the Alliance!
 }
 
 STRING 2604
 {
-Поверніть місто під контроль.
+Secure the town.
 }
 
 STRING 2639
@@ -1267,30 +1267,30 @@ STRING 2639
 
 STRING 2640
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ|r
-Повернути Гіллзбрад 
- - Поверніть місто під контроль
- - Данат має вижити
- - Лотар має вижит.
+|cffffcc00MAIN QUEST|r
+Retake Hillsbrad
+ - Secure the town
+ - Danath must survive
+ - Lothar must survive
 }
 
 STRING 2644
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ ВИКОНАНО|r
-Повернути Гіллзбрад 
+|cffffcc00MAIN QUEST COMPLETED|r
+Retake Hillsbrad
 }
 
 STRING 2645
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ ПРОВАЛЕНО|r
-Повернути Гіллзбрад 
- - |cffff0000Данат має вижити (Провалено)|r
+|cffffcc00MAIN QUEST FAILED|r
+Retake Hillsbrad
+ - |cffff0000Danath must Survive (Failed)|r
 }
 
 STRING 2683
 {
-|cffffcc00ДОСТУПНІ НОВІ СПОРУДИ|r
-Ливарня(Foundry). Одержимі ідеєю створити наймогутнішу силу в Альянсі, Лордеронські ремісники надали креслення Ливарні, у якій можна вдосконалювати кораблі.
+|cffffcc00TECHTREE UNLOCKED|r
+Foundry. Obsessed with creating the strongest force in the Alliance, human artisans provided Anduin Lothar with designs of the Foundry that can upgrade ships.
 }
 
 STRING 2685
@@ -1301,116 +1301,117 @@ WC2Human04Lothar_Outro05
 
 STRING 2686
 {
-Лотар має вижити.
+Lothar must survive.
 }
 
 STRING 2687
 {
-Данат має вижити.
+Danath must survive.
 }
 
 STRING 2688
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАНННЯ|r
-Підготовка штурму
- - Мати в наявності 12 лучників
- - Мати в наявності 12 солдатів
- - Мати в наявності 4 транспортних човни
- - Мати в наявності 8 ельфійських руйнівників
+|cffffcc00MAIN QUEST|r
+Preparations
+ - Maintain 12 Archers
+ - Maintain 12 Soldiers
+ - Maintain 4 Transport Ships
+ - Maintain 8 Destroyer Ships
+
 }
 
 STRING 2689
 {
-Підготовка штурму
+Field Preparations
 }
 
 STRING 2690
 {
-Зберіть достатні сили для атаки на Зул'Дар. Переконайтеся, що ваше військо гарно споряджене, і готове до битви за острів.
+Ready your forces for the coming assault on Zul’dare. Ensure your army is equipped, trained, and prepared for the battles that lie ahead.
 }
 
 STRING 2691
 {
-Мати в наявності 12 лучників.
+Maintain 12 Archers.
 }
 
 STRING 2692
 {
-Мати в наявності 12 солдатів.
+Maintain 12 Soldiers.
 }
 
 STRING 2693
 {
-Мати в наявності 4 транспортих човни.
+Maintain 4 Transport Ships.
 }
 
 STRING 2694
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ ОНОВЛЕНО|r
-Підготовка штурму
- - |cff808080Мати в наявності 12 солдатів (Виконано)|r
+|cffffcc00MAIN QUEST UPDATED|r
+Preparations
+ - |cff808080Maintain 12 Soldiers (Completed)|r
 }
 
 STRING 2695
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ ОНОВЛЕНО|r
-Підготовка штурму
- - |cff808080Мати в наявності 12 лучників (Виконано)|r
+|cffffcc00MAIN QUEST UPDATED|r
+Preparations
+ - |cff808080Maintain 12 Archers (Completed)|r
 }
 
 STRING 2696
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ ОНОВЛЕНО|r
-Підготовка штурму
- - |cff808080Мати в наявності 4 транспортих човни (Виконано)|r
+|cffffcc00MAIN QUEST UPDATED|r
+Preparations
+ - |cff808080Maintain 4 Transport Ships (Completed)|r
 }
 
 STRING 2697
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ ЗАВЕРШЕНО|r
-Підготовка штурму
+|cffffcc00MAIN QUEST COMPLETED|r
+Preparations
 }
 
 STRING 2698
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ|r
-Зул'Дар
- - Захопіть табір на острові Зул'Дар
- - Знищіть табір клану Кривавого Літопису
- - Лотар має вижити
- - Данат має вижити
+|cffffcc00MAIN QUEST|r
+Zul’dare
+ - Capture Zul'dare outposts
+ - Destroy Bloodscribe camp
+ - Lothar must survive
+ - Danath must survive
 }
 
 STRING 2699
 {
-Зул'Дар
+Zul’dare
 }
 
 STRING 2700
 {
-Морська база Орди, що на Зул'Дарі — це місце, звідки орки завдали свого першого удару по королівству. Ви очолюєте цей наступ і маєте продемонструвати їхньому «Вождю», що Альянс близько. Винищте всіх орків до останнього.
+The Horde’s naval base on Zul’dare marks the site of their first strike against the kingdom. Lead the attack and show their “Warchief” that the Alliance is coming for him. Leave no orc standing.
 }
 
 STRING 2701
 {
-Знищіть табір клану Кривавого Літопису.
+Destroy Bloodscribe camp.
 }
 
 STRING 2702
 {
-Лотар має вижити.
+Lothar must survive.
 }
 
 STRING 2703
 {
-Данат має вижити.
+Danath must survive.
 }
 
 STRING 2708
 {
-|cffffcc00ДОДАТКОВЕ ЗАВДАННЯ|r
-Привиди Гіллзбрада 
- - Знищте могильники (0/3)
+|cffffcc00OPTIONAL QUEST|r
+Ghosts of Hillsbrad
+ - Destroy the corpse piles (0/3)
 }
 
 STRING 2709
@@ -1420,68 +1421,68 @@ Corrupted Souls
 
 STRING 2710
 {
-|cffffcc00ДОДАТКОВЕ ЗАВДАННЯ ВИКОНАНО|r
-Привиди Гіллзбрада 
+|cffffcc00OPTIONAL QUEST COMPLETED|r
+Ghosts of Hillsbrad
 }
 
 STRING 2717
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ ПРОВАЛЕНО|r
-Повернути Гіллзбрад 
- - |cffff0000Лотар має вижити (Провалено)|r
+|cffffcc00MAIN QUEST FAILED|r
+Retake Hillsbrad
+ - |cffff0000Lothar must Survive (Failed)|r
 }
 
 STRING 2724
 {
-|cffffcc00ДОДАТКОВЕ ЗАВДАННЯ ОНОВЛЕНО|r
-Привиди Гіллзбрада 
- - Знищте могильники (1/3)
+|cffffcc00OPTIONAL QUEST UPDATED|r
+Ghosts of Hillsbrad
+ - Destroy the corpse piles (1/3)
 }
 
 STRING 2726
 {
-|cffffcc00ДОДАТКОВЕ ЗАВДАННЯ ОНОВЛЕНО|r
-Привиди Гіллзбрада 
- - Знищте могильники (2/3)
+|cffffcc00OPTIONAL QUEST UPDATED|r
+Ghosts of Hillsbrad
+ - Destroy the corpse piles (2/3)
 }
 
 STRING 2727
 {
-Зачистити море
+Secure the Sea
 }
 
 STRING 2728
 {
-Ороча морська ардама поблизу Гілзбрада перекриває дорогу до Зул'Дара. Знищіть їх флот і розчистіть ці води аби ваші сили могли безпечно пройти.
+The orcish armada near Hillsbrad blocks the path to Zul’dare. Destroy their fleet and clear the waters to allow your forces safe passage.
 }
 
 STRING 2729
 {
-Знайдіть та знищіть всі орочі корабельні.
+Find and Destory Orcish Shipyards.
 }
 
 STRING 2731
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ ЗАВЕРШЕНО|r
-Зачистити море
+|cffffcc00MAIN QUEST COMPLETED|r
+Secure the Sea
 }
 
 STRING 2733
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ ВИКОНАНО|r
-Зул'Дар
+|cffffcc00MAIN QUEST COMPLETED|r
+Zul’dare
 }
 
 STRING 2734
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ ПРОВАЛЕНО|r
-Зачистити море
+|cffffcc00MAIN QUEST FAILED|r
+Secure the Sea
 }
 
 STRING 2735
 {
-|cffffcc00ДАДОТКОВЕ ЗАВДАННЯ ПРОВАЛЕНО|r
-Привиди Гіллзбрада 
+|cffffcc00OPTIONAL QUEST FAILED|r
+Ghosts of Hillsbrad
 }
 
 STRING 2736
@@ -1491,73 +1492,73 @@ Coastal Raiders
 
 STRING 2737
 {
-|cffffcc00ДОСТУПНІ НОВІ ОДИНИЦІ|r
-Транспорті човни дають змогу транспортувати війська морем.
+|cffffcc00TECHTREE UNLOCKED|r
+Refineries serve as a drop off point for oil and provide tanker upgrades.
 }
 
 STRING 2738
 {
-|cffffcc00ДОСТУПНІ НОВІ ОДИНИЦІ|r
-Транспорті човни дають змогу транспортувати війська морем.
+|cffffcc00TECHTREE UNLOCKED|r
+Transports carry your forces across the sea.
 }
 
 STRING 2746
 {
-Цілі завдання
+Main Quest Objectives
 }
 
 STRING 2747
 {
-Лишилося ворожих одиниць:
+Remaining enemies:
 }
 
 STRING 2751
 {
-Наявні солдати:
+Maintained Soldiers:
 }
 
 STRING 2752
 {
-Наявні лучники:
+Maintained Archers:
 }
 
 STRING 2753
 {
-Наявний транспорт:
+Maintained Transports:
 }
 
 STRING 2755
 {
-Залишки клану Чорного Каменю
+Blackrock Remnants
 }
 
 STRING 2756
 {
-На східному півострові досі перебувають залшки орків з клану Чорного Каменю. Знищіть всіх та повнітю викорініть їхню присутність щоб остаточно убезпечити цей регіон.
+Orcish forces linger on the eastern peninsula. Leave none alive and eradicate their presence to secure the region.
 }
 
 STRING 2757
 {
-Знищіть всі залишки орків.
+Destroy all orcish forces.
 }
 
 STRING 2758
 {
-|cffffcc00ДОДАТКОВЕ ЗАВДАННЯ|r
-Залишки клану Чорного Каменю
- - Знищіть всі залишки орків
+|cffffcc00OPTIONAL QUEST|r
+Blackrock Remnants
+ - Destroy all orcish forces
 }
 
 STRING 2759
 {
-|cffffcc00ДОДАТКОВЕ ЗАВДАННЯ ПРОВАЛЕНО|r
-Залишки клану Чорного Каменю
+|cffffcc00OPTIONAL QUEST FAILED|r
+Blackrock Remnants
 }
 
 STRING 2760
 {
-|cffffcc00ДОДАТКОВЕ ЗАВДАННЯ ЗАВЕРШЕНО|r
-Залишки клану Чорного Каменю
+|cffffcc00OPTIONAL QUEST COMPLETED|r
+Blackrock Remnants
 }
 
 STRING 2761
@@ -1688,16 +1689,16 @@ STRING 2787
 
 STRING 2789
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ ПРОВАЛЕНО|r
-Зул'Дар
- - |cffff0000Данат має вижити. (Провалено)|r
+|cffffcc00MAIN QUEST FAILED|r
+Zul’dare
+ - |cffff0000Danath must Survive (Failed)|r
 }
 
 STRING 2790
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ ПРОВАЛЕНО|r
-Зул'Дар
- - |cffff0000Лотар має вижити. (Провалено)|r
+|cffffcc00MAIN QUEST FAILED|r
+Zul’dare
+ - |cffff0000Lothar must Survive (Failed)|r
 }
 
 STRING 2791
@@ -1732,8 +1733,8 @@ STRING 2801
 
 STRING 2805
 {
-|cff8080ffНОВИЙ НАПІВГЕРОЙ|r 
-Мілан, Літописець з дому писарів — вищий ельф, що вправно володіє мечем і луком. Може перемикатися між |cffff0000ближнім|r та |cff00ff00дальнім|r боєм задля тактичної переваги.
+|cff8080ffNEW SEMI HERO|r 
+Milan, Chronicler of the House of Scribes – A High Elf scribe skilled with sword and bow. Can switch between |cffff0000melee|r and |cff00ff00ranged|r combat for tactical advantage.
 }
 
 STRING 2806
@@ -1771,138 +1772,138 @@ Abilities: Poison Arrows - Marksmanship - Improved Ranged Weapons - Ensnare
 
 STRING 2811
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ ОНОВЛЕНО|r
-Повернути Гіллзбрад 
- - Візьміть під контроль узбережжя
- - Данат має вижити
- - Лотар має вижити
+|cffffcc00MAIN QUEST UPDATED|r
+Retake Hillsbrad
+ - Secure the coastline
+ - Danath must survive
+ - Lothar must survive
 }
 
 STRING 2812
 {
-|cffffcc00ГОЛОВНЕ ЗАВДДАННЯ ВИКОНАНО|r
-Повернути Гіллзбрад 
- - |cff808080Поверніть місто під контроль (Виконано)|r
+|cffffcc00MAIN QUEST UPDATED|r
+Retake Hillsbrad
+ - |cff808080Secure the town (Completed)|r
 }
 
 STRING 2814
 {
-Візьміть під контроль узбережжя
+Secure the coastline
 }
 
 STRING 2816
 {
-Лишилося ворожих одиниць:
+Remaining enemies:
 }
 
 STRING 2817
 {
-|cff8080ffНОВИЙ ГЕРОЙ|r
-Андуїн Лотар – Верховний головнокомандувач Великого Альянсу. Майстерний воїн, що неперевершено нищить та спустошує ворогів на полі бою.
+|cff8080ffNEW HERO|r
+Anduin Lothar – Supreme Commander of the Grand Alliance. A masterful warrior with devastating frontline prowess.
 }
 
 STRING 2818
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ|r
-Зачистити море
- - Знайдіть та знищіть всі орочі корабельні.
+|cffffcc00MAIN QUEST|r
+Secure the Sea
+ - Find and Destory Orcish Shipyards
 }
 
 STRING 2819
 {
-Захопіть табір на острові Зул'Дар.
+Capture Zul'dare outposts.
 }
 
 STRING 2820
 {
-Уток Дряпач
+Utok Scratcher
 }
 
 STRING 2821
 {
-Уток Дряпач, другий за рангом воєначальник Орди маэ бути ліквідований.Його смерть завдасть нищівного удару по Орді — здолайте його й переломіть  нарешті хід війни.
+Utok Scratcher, the Horde’s second-in-command warlord, must be struck down. His death will deal a shattering blow to the Horde, defeat him and turn the tide of battle.
 }
 
 STRING 2822
 {
-Як мінімум один з ваших героїв має вижити.
+At least one of your heroes must survive.
 }
 
 STRING 2824
 {
-Переможіть Утока Дряпача.
+Defeat Utok Scratcher.
 }
 
 STRING 2825
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ|r
-Уток Дряпач
- - Переможіть Утока Дряпача
- - Як мінімум один з ваших героїв має вижити
+|cffffcc00MAIN QUEST|r
+Utok Scratcher
+ - Defeat Utok Scratcher
+ - At least one of your heroes must survive
 }
 
 STRING 2826
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ ВИКОНАНО|r
-Уток Дряпач
+|cffffcc00MAIN QUEST COMPLETED|r
+Utok Scratcher
 }
 
 STRING 2827
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ ПРОВАЛЕНО|r
-Уток Дряпач
- - |cffff0000Як мінімум один з ваших героїв має вижити (Провалено)|r
+|cffffcc00MAIN QUEST FAILED|r
+Utok Scratcher
+ - |cffff0000At least one of your heroes must survive (Failed)|r
 }
 
 STRING 2829
 {
-Наступного ранку Андуїн Лотар і Данат Трольбайн дісталися Гіллзбраду.
+Next morning, Anduin Lothar and Danath Trollbane reached Hillsbrad.
 }
 
 STRING 2830
 {
-Вільгельма та Меріна поховали неподалік містечка, віддавши шану їхній самопожертві, щоб їхній героїзм пам'ятали наступні покоління.
+Wilhelm and Meryn were laid to rest near the town, their sacrifice honored so that their heroism would be remembered for generations.
 }
 
 STRING 2831
 // Items: IL53 (WC2Human04Lothar_Zuldare01A), Tip (Tooltip - Basic)
 {
-Андуїн Лотар
+Anduin Lothar
 }
 
 STRING 2832
 // Items: IL75 (WC2Human04Lothar_Outro02A), Description (Description)
 {
-Ти свій вибір зробив...
+So be it…
 }
 
 STRING 2838
 // Items: IL54 (WC2Human04Lothar_Zuldare02), Tip (Tooltip - Basic)
 {
-Андуїн Лотар
+Anduin Lothar
 }
 
 STRING 2840
 {
-Уток буде невразливим ще:
+Utok's sanctuary lasts for:
 }
 
 STRING 2842
 // Items: IL55 (WC2Human04Utok_Zuldare02), Tip (Tooltip - Basic)
 {
-Уток Дряпач
+Utok Scratcher
 }
 
 STRING 2843
 // Items: IL37 (WC2Human04Utok_Bossfight01), Description (Description)
 {
-Я був поруч із Вождем у всіх його битвах! Я знаю його стратегії — вам мене не подолати!
+I was at the Warchief’s side in all his battles! I know his strategies — you can’t outsmart me!
 }
 
 STRING 2844
 // Items: IL56 (WC2Human04Utok_Bossfight04), Tip (Tooltip - Basic)
 {
-Уток Дряпач
+Utok Scratcher
 }
 
 STRING 2848
@@ -1920,85 +1921,85 @@ Bloodscribe Banner
 STRING 2853
 // Items: IL56 (WC2Human04Utok_Bossfight04), Description (Description)
 {
-Ви думаєте, що мене так легко перемогти й вбити? Клан Криваваго Літопису — до бою!
+You think it’s easy to defeat and kill me? Bloodscribes — attack!
 }
 
 STRING 2854
 // Items: IL57 (WC2Human04Lothar_Bossfight01), Tip (Tooltip - Basic)
 {
-Андуїн Лотар
+Anduin Lothar
 }
 
 STRING 2855
 // Items: IL57 (WC2Human04Lothar_Bossfight01), Description (Description)
 {
-Я можу застрибнути до лучників на стіні. Данате, подбай про рубайл тут внизу.
+I can leap to the archers on the wall. Danath, take care of the grunts down here.
 }
 
 STRING 2860
 // Items: IL60 (WC2Human04Danath_Bossfight01), Tip (Tooltip - Basic)
 {
-Данат Тролебій
+Danath Trollbane
 }
 
 STRING 2861
 // Items: IL60 (WC2Human04Danath_Bossfight01), Description (Description)
 {
-Аргх... Мене серйозно поранено... Я не можу далі бутися, мілорде...
+Argh… I’m grievously wounded… I can’t continue the fight, my lord…
 }
 
 STRING 2862
 // Items: IL58 (WC2Human04Lothar_Bossfight02), Tip (Tooltip - Basic)
 {
-Андуїн Лотар
+Anduin Lothar
 }
 
 STRING 2863
 // Items: IL58 (WC2Human04Lothar_Bossfight02), Description (Description)
 {
-Я можу використати той флагшток, щоб зістрибнути зі стіни.
+I can use that flagpole to jump from the wall.
 }
 
 STRING 2864
 // Items: IL59 (WC2Human04Lothar_Bossfight03), Tip (Tooltip - Basic)
 {
-Андуїн Лотар
+Anduin Lothar
 }
 
 STRING 2865
 // Items: IL59 (WC2Human04Lothar_Bossfight03), Description (Description)
 {
-Я сильно поранений... Вам треба закінчити це без моє допомоги, хлопці...
+I’m badly wounded… You need to finish this without my aid, lad…
 }
 
 STRING 2866
 // Items: IL61 (WC2Human04Lothar_Outro01A), Tip (Tooltip - Basic)
 {
-Андуїн Лотар
+Anduin Lothar
 }
 
 STRING 2867
 // Items: IL53 (WC2Human04Lothar_Zuldare01A), Description (Description)
 {
-Іменем влади Альянсу Лордерону я наказую вам — відчиніть ці ворота і складіть зброю!
+By the authority of the Alliance of Lordaeron, I order you — open this gate and surrender your weapons!
 }
 
 STRING 2868
 // Items: IL62 (WC2Human04Lothar_Landing03), Tip (Tooltip - Basic)
 {
-Андуїн Лотар
+Anduin Lothar
 }
 
 STRING 2869
 // Items: IL54 (WC2Human04Lothar_Zuldare02), Description (Description)
 {
-Пусті слова, орку! Ми знищили всі ваші сили!
+Empty words, orc! We have destroyed your forces!
 }
 
 STRING 2871
 // Items: IL55 (WC2Human04Utok_Zuldare02), Description (Description)
 {
-Так… і ти розкидався своїми солдатами, наче трісками для згасаючого багаття. Ця жалюгідна шеренга за воротами? Вони не врятують тебе — особливо коли я стоятиму над твоїм розтрощеним черепом!
+Yes… and you’ve thrown away your soldiers like kindling on a dying fire. That pathetic line behind the gate? They won’t save you — not when I’m standing over your shattered skull!
 }
 
 STRING 2872
@@ -2024,29 +2025,29 @@ Corpse Pile
 
 STRING 2876
 {
-Встановлено прапорів:
+Flags to put in a circle:
 }
 
 STRING 2878
 {
-Встановлено прапорів:
+Flags to put in a circle:
 }
 
 STRING 2879
 {
-Знищіть табір Кривавого Літопису!
+Destroy Bloodscribe camp!
 }
 
 STRING 2884
 // Items: IL35 (WC2Human04Wilhelm_Zuldare01), Description (Description)
 {
-За Азерот!
+For Azeroth!
 }
 
 STRING 2885
 // Items: IL36 (WC2Human04Lothar_Zuldare03), Description (Description)
 {
-Браму зачинено. Вільгельме! Данате! До бою!
+The gates are shut. Wilhelm! Danath! Charge!
 }
 
 STRING 2886
@@ -2058,7 +2059,7 @@ WC2Human04Lothar_Zuldare03
 STRING 2889
 // Items: IL67 (WC2Human04Lothar_Prepare04), Tip (Tooltip - Basic)
 {
-Андуїн Лотар
+Anduin Lothar
 }
 
 STRING 2891
@@ -2070,7 +2071,7 @@ WC2Human04Lothar_Zuldare01A
 STRING 2892
 // Items: IL69 (WC2Human04Lothar_Remnants01), Tip (Tooltip - Basic)
 {
-Андуїн Лотар
+Anduin Lothar
 }
 
 STRING 2896
@@ -2088,7 +2089,7 @@ WC2Human04Utok_Bossfight04
 STRING 2900
 // Items: IL75 (WC2Human04Lothar_Outro02A), Tip (Tooltip - Basic)
 {
-Андуїн Лотар
+Anduin Lothar
 }
 
 STRING 2902
@@ -2112,13 +2113,13 @@ WC2Human04Lothar_Bossfight03
 STRING 2909
 // Items: IL65 (WC2Human04Danath_Landing01), Tip (Tooltip - Basic)
 {
-Данат Тролебій
+Danath Trollbane
 }
 
 STRING 2913
 // Items: IL61 (WC2Human04Lothar_Outro01A), Description (Description)
 {
-Вільгельме! Ні…
+Wilhelm! No…
 }
 
 STRING 2914
@@ -2136,13 +2137,13 @@ WC2Human04Lothar_Landing03
 STRING 2919
 // Items: IL62 (WC2Human04Lothar_Landing03), Description (Description)
 {
-Спаліть його вщент. Головне ороча фортеця лишиться без ресурсів.
+Burn it to the ground. The main orc in the fortress will be left without resources.
 }
 
 STRING 2921
 // Items: IL66 (WC2Human04Danath_Prepare02), Tip (Tooltip - Basic)
 {
-Данат Тролебій
+Danath Trollbane
 }
 
 STRING 2923
@@ -2154,13 +2155,13 @@ WC2Human04Danath_Landing01
 STRING 2924
 // Items: IL07 (WC2Human04Crowley_Appears01), Description (Description)
 {
-Солдати! Лев Азероту кличе! До бою!
+Soldiers! The Lion of Azeroth calls! To battle!
 }
 
 STRING 2925
 // Items: IL70 (WC2Human04Danath_Remnants01), Tip (Tooltip - Basic)
 {
-Данат Тролебій
+Danath Trollbane
 }
 
 STRING 2927
@@ -2178,7 +2179,7 @@ WC2Human04Lothar_Prepare04
 STRING 2931
 // Items: IL68 (WC2Human04Wilhelm_Prepare02), Tip (Tooltip - Basic)
 {
-Вільгельм
+Wilhelm
 }
 
 STRING 2933
@@ -2190,7 +2191,7 @@ WC2Human04Wilhelm_Prepare02
 STRING 2935
 // Items: IL69 (WC2Human04Lothar_Remnants01), Description (Description)
 {
-Тоді знищимо їх. Ми не можемо готувати наші сили до вторгнення, коли наш тил під загрозою.
+Then let’s destroy them. We cannot prepare our invasion force with our rear exposed.
 }
 
 STRING 2936
@@ -2202,7 +2203,7 @@ WC2Human04Lothar_Remnants01
 STRING 2937
 // Items: IL73 (WC2Human04Danath_Ambush01), Tip (Tooltip - Basic)
 {
-Данат Тролебій
+Danath Trollbane
 }
 
 STRING 2939
@@ -2220,13 +2221,13 @@ WC2Human04Gavinrad_Ambush01
 STRING 2943
 // Items: IL72 (WC2Human04Milan_Ambush01), Tip (Tooltip - Basic)
 {
-Мілан Ліпописець
+Milan The Scribe
 }
 
 STRING 2944
 // Items: IL72 (WC2Human04Milan_Ambush01), Description (Description)
 {
-Щось тут занадто тихо… Ми стикалися з розрізненими патрулями. Де решта їхніх сил?
+Too quiet… We've only faced scattered patrols. Where are the rest of their forces?
 }
 
 STRING 2945
@@ -2238,13 +2239,13 @@ WC2Human04Milan_Ambush01
 STRING 2946
 // Items: IL80 (WC2Human04Danath_Whisper_Outro02), Tip (Tooltip - Basic)
 {
-Данат Тролебій
+Danath Trollbane
 }
 
 STRING 2947
 // Items: IL73 (WC2Human04Danath_Ambush01), Description (Description)
 {
-Будьте пильними. Маємо бути готовими до всього.
+Stay vigilant. We must be ready for anything.
 }
 
 STRING 2948
@@ -2256,13 +2257,13 @@ WC2Human04Danath_Ambush01
 STRING 2949
 // Items: IL74 (WC2Human04Wilhelm_Ambush01), Tip (Tooltip - Basic)
 {
-Вільгельм
+Wilhelm
 }
 
 STRING 2950
 // Items: IL74 (WC2Human04Wilhelm_Ambush01), Description (Description)
 {
-Засідка!
+Ambush!
 }
 
 STRING 2951
@@ -2274,114 +2275,114 @@ WC2Human04Wilhelm_Ambush01
 STRING 2965
 // Items: IL70 (WC2Human04Danath_Remnants01), Description (Description)
 {
-Мілорде, частина орочих сил залишається на укріплених позиціях уздовж східного узбережжя.
+My lord, some orcish forces remain entrenched along the eastern shore.
 }
 
 STRING 2969
 // Items: IL31 (WC2Human04Lothar_Landing01), Description (Description)
 {
-Жодних слідів Молота Згуби. Але ці стяги… Я їх не впізнаю.
+No sign of Doomhammer. But these banners… I don’t recognize them.
 }
 
 STRING 2973
 // Items: IL32 (WC2Human04Lothar_Landing02), Description (Description)
 {
-Вони катували солдатів, яких ми відправили сюди рік тому… Ми змусимо їх заплатити за це.
+They tortured the soldiers we sent here a year ago… We will make them pay for this.
 }
 
 STRING 2977
 // Items: IL65 (WC2Human04Danath_Landing01), Description (Description)
 {
-Це їх головний табір!
+That’s their main camp.
 }
 
 STRING 2985
 // Items: IL71 (WC2Human04Gavinrad_Ambush01), Description (Description)
 {
-Так багато трупів... Усе містечко вирізали.
+So many corpses... The entire town has been slaughtered.
 }
 
 STRING 2986
 {
-Через деякий час кораблі Альянсу увійшли у води канальних островів.
+Some time later, Alliance ships entered the waters of the Channel Islands.
 }
 
 STRING 2988
 // Items: IL66 (WC2Human04Danath_Prepare02), Description (Description)
 {
-Це руйнівник тролів. Схоже, на нас чекає морський бій.
+A troll destroyer ship. Seems like we’re going to have a naval fight.
 }
 
 STRING 2990
 // Items: IL67 (WC2Human04Lothar_Prepare04), Description (Description)
 {
-Як добре, що нам вистачило розуму побудувати та підготувати власні кораблі, це ж так?
+Good thing we were wise enough to build and prepare our own ships — weren’t we?
 }
 
 STRING 2994
 // Items: IL68 (WC2Human04Wilhelm_Prepare02), Description (Description)
 {
-Капітане, ви маєте обидва ока на місці — скажіть, що це за коричнева пляма в тумані?
+Captain, you have both eyes in place — tell me, what's that brown spot in the fog?
 }
 
 STRING 2998
 // Items: IL30 (WC2Human04Crowley_Landing01), Description (Description)
 {
-Поки ми пробираємося крізь канальні острови, береги Зул'Дара стають усе ближчими. Наша ціль уже в межах видимості.
+As we navigate through the Channel Islands, the shores of Zul’Dare draw near. Our destination is within sight.
 }
 
 STRING 3000
 // Items: IL03 (WC2Human04Gavinrad_Intro01), Description (Description)
 {
-Лордерон… але для людства це вже не вперше. Орда — це скверна, яка прагне перетворити весь континент на попіл…
+Lordaeron… but not the first time for humanity. The Horde is a blight that seeks to turn the entire continent into burning cinders…
 }
 
 STRING 3001
 // Items: IL04 (WC2Human04Milan_Intro01), Description (Description)
 {
-Я готовий боротися з цими чудовиськами! Мій меч та мій лук прагнуть орочої крові!
+I am ready to face them! Both my sword and bow thirst for orcish blood!
 }
 
 STRING 3002
 // Items: IL06 (WC2Human04Danath_Intro02), Description (Description)
 {
-Солдати! Шикуйсь!
+Soldiers! Form a line!
 }
 
 STRING 3003
 // Items: IL10 (WC2Human04Crowley_Hillsbrad01), Description (Description)
 {
-Треба також налагодити видобуток нафти для будування кораблів. У цих водах можуть бути руйнівники тролів.
+We have to harvest and refine oil for our ships as well. There might be troll destroyers in the nearby waters.
 }
 
 STRING 3004
 // Items: IL15 (WC2Human04Gavinrad_Zombies01), Description (Description)
 {
-Я відчуваю слід якоїсь мерзенної некромантії. Жертви орочої різанини так і не знають спокою.
+I sense the vile stain of necromancy. The victims of the orcish slaughter find no rest.
 }
 
 STRING 3005
 // Items: IL17 (WC2Human04Gavinrad_Zombies03), Description (Description)
 {
-Нехай мерті нарешті знайдуть спокій.
+May the dead find solace in the hereafter.
 }
 
 STRING 3007
 // Items: IL34 (WC2Human04Utok_Zuldare01), Description (Description)
 {
-Ми — клан Кривавого Літопису! Вождь доручив нам захищати цей острів — і ми захистимо! Ваші смерті стануть гідною жертвою в його ім'я!
+We are the Bloodscribe Clan! The Warchief has tasked us with protecting this island — and we shall! Your deaths will be a fitting sacrifice in his name!
 }
 
 STRING 3009
 // Items: IL39 (WC2Human04Utok_Bossfight03), Description (Description)
 {
-Стормварт, Лордерон, Квел'Талас — я бачив, як вони всі палали! Які шанси у вас?!
+Stromgarde, Lordaeron, Quel’Thalas— I saw them all burn! What chance do you have?!
 }
 
 STRING 3010
 // Items: IL40 (WC2Human04Danath_Zuldare01), Description (Description)
 {
-Стулися, орку! Краще прибережи сили для нашого бою!
+Shut up, orc! You’d better save your breath for when we cross blades!
 }
 
 STRING 3011
@@ -2393,73 +2394,73 @@ WC2Human04Danath_Zuldare01
 STRING 3012
 // Items: IL44 (WC2Human04Utok_Outro02), Description (Description)
 {
-Цілуй мої чоботи, людино!
+Kiss my boots, human!
 }
 
 STRING 3022
 // Items: IL05 (WC2Human04Lothar_Intro01), Description (Description)
 {
-Лорд Кровлі підходить до Гіллзбраду із заходу. Він готовий приєднатися до нас, щойно ми дамо сигнал. Що б там на нас не чекало, ми мусимо відбити Гіллзбрад. Данате, труби атаку. Вільгельме, за мною!
+Lord Crowley is approaching Hillsbrad from the west. He’s ready to join us when we give the signal. Whatever awaits us there, we must retake Hillsbrad. Danath, sound the attack. Wilhelm, with me!
 }
 
 STRING 3023
 // Items: IL09 (WC2Human04Lothar_Hillsbrad01), Description (Description)
 {
-І в жахливому стані. Морські споруди взагалі зруйновані вщент. Ми мусимо відбудувати їх і приготувати штурмовий загін, перш ніж зможемо захопити Зул'Дар.
+And in bad shape. The naval facilities have been completely destroyed. We must rebuild them and prepare an assault force before Zul'Dare can be taken.
 }
 
 STRING 3024
 // Items: IL11 (WC2Human04Lothar_Hillsbrad02), Description (Description)
 {
-Саме так. Розвідайте ці води, та розбудуйте морську інфраструктуру і підготуйте наші війська до бою. Ви всі маєете накази, виконуйте!
+Aye. Scout the area for any enemy ships, build up our naval infrastructure, and ready our forces for battle. You have your orders, men!
 }
 
 STRING 3025
 // Items: IL14 (WC2Human04Lothar_Zombies01), Description (Description)
 {
-Тоді ми мусимо знайти їхні тіла, освятити їх і дарувати їм спокій, на який вони заслуговують.
+Then we must find their bodies, consecrate them, and grant them the peace they deserve.
 }
 
 STRING 3026
 // Items: IL20 (WC2Human04Lothar_Ships01), Description (Description)
 {
-Ці води необхідно зачистити, якщо ми хочемо взяти під контроль наш периметр.
+These waters must be cleansed if we are to secure our perimeter.
 }
 
 STRING 3027
 // Items: IL23 (WC2Human04Lothar_Prepare01), Description (Description)
 {
-Дуже добре. Ґавінраде, я хочу, щоб ти залишився і захищав Гіллзбрад від будь-якого можливого вторгнення — і наглядай за нашим ельфійским другом.
+Very well. Gavinrad, I want you to stay behind and defend Hillsbrad from any possible incursion — and keep an eye on our elven friend.
 }
 
 STRING 3028
 // Items: IL26 (WC2Human04Lothar_Prepare02), Description (Description)
 {
-Твої навички потрібні тут, у Гіллзбраді, ельфе. Ми всі знову зберемося, щойно наше завдання буде виконано.
+Your skills are needed here in Hillsbrad, elf. We shall reconvene once our task is done.
 }
 
 STRING 3031
 // Items: IL41 (WC2Human04Lothar_Outro01), Description (Description)
 {
-Тебе загнано немов пацюка, орку. Немає сенсу опиратися. Здавайся — і кажи, де Вождь?!!
+We have you cornered, orc. There’s no point in fighting back now. Surrender — and tell me, where’s your Warchief?!
 }
 
 STRING 3032
 // Items: IL48 (WC2Human04Lothar_Outro03), Description (Description)
 {
-Він поліг у бою… віддав життя за Азерот — за мене. Він був хоробрим хлопцем, здібним солдатом і вірною людиною. Багато в чому схожим на Меріна. Ми мусимо пам'ятати їх саме такими.
+He has fallen in battle… gave his life for Azeroth — for me. He was a brave lad, an able soldier, and a loyal man. Much like Meryn. We must remember them as such. 
 }
 
 STRING 3033
 // Items: IL49 (WC2Human04Lothar_Outro04), Description (Description)
 {
-Мені потрібно вирушити на північ — щоб зустрітися з Тураліоном і порадитися з Верховним командуванням. Хтось повинен провідати цих клятих монархів. І є один мій старий знайомий, із яким я маю зустрітися…
+I need to ride north — to rendezvous with Turalyon and confer with the High Command. Someone needs to check on those damned royals. And there’s an old acquaintance of mine I have to meet…
 }
 
 STRING 3034
 // Items: IL52 (WC2Human04Lothar_Outro05), Description (Description)
 {
-Не хвилюйся про це. Ти почуєш про мене досить скоро. А поки що збирай свої сили та трохи відпочинь. Тобі це знадобиться — попереду багато роботи…
+Don’t worry about it. You’ll hear from me soon enough. In the meantime, gather your forces and get some rest. You’ll need it — there’s a lot of work to do…
 }
 
 STRING 3042
@@ -2471,13 +2472,13 @@ WC2Human04Lothar_Outro02A
 STRING 3045
 // Items: IL76 (WC2Human02Prisoner02), Tip (Tooltip - Basic)
 {
-Полонений
+Prisoner
 }
 
 STRING 3046
 // Items: IL76 (WC2Human02Prisoner02), Description (Description)
 {
-Ці кляті орки змушували нас працювати вдень і вночі!
+These wretched orcs are forcing us to work day and night!
 }
 
 STRING 3047
@@ -2489,13 +2490,13 @@ WC2Human02Prisoner02
 STRING 3048
 // Items: IL77 (WC2Human02Prisoner04), Tip (Tooltip - Basic)
 {
-Полонений
+Prisoner
 }
 
 STRING 3049
 // Items: IL77 (WC2Human02Prisoner04), Description (Description)
 {
-Кляті орки!
+Damn the orcs!
 }
 
 STRING 3050
@@ -2507,13 +2508,13 @@ WC2Human02Prisoner04
 STRING 3051
 // Items: IL78 (WC2Human02Prisoner03), Tip (Tooltip - Basic)
 {
-Полонений
+Prisoner
 }
 
 STRING 3052
 // Items: IL78 (WC2Human02Prisoner03), Description (Description)
 {
-Дякую вам, сіре!
+Thank you, sire!
 }
 
 STRING 3053
@@ -2525,7 +2526,7 @@ WC2Human02Prisoner03
 STRING 3055
 // Items: IL79 (WC2Human02Defender01), Description (Description)
 {
-Мій меч до ваших послуг.
+My sword is yours!
 }
 
 STRING 3056
@@ -2537,19 +2538,19 @@ WC2Human02Defender01
 STRING 3057
 // Units: nwlt (Wolf), Name (Name)
 {
-Вовк
+Wolf
 }
 
 STRING 3058
 // Items: IL45 (WC2Human04Danath_Outro02), Description (Description)
 {
-Іменем короля Тролебоя та королівства Стормварт — за злочини, які ти вчинив проти мого народу… моєї родини… я засуджую тебе до страти.
+In the name of King Trollbane and the Kingdom of Stromgarde — for the crimes you committed against my people… my family… I hereby sentence you to die.
 }
 
 STRING 3060
 // Items: IL80 (WC2Human04Danath_Whisper_Outro02), Description (Description)
 {
-За мого батька…
+For my father…
 }
 
 STRING 3061
@@ -2561,13 +2562,13 @@ WC2Human04Danath_Whisper_Outro02
 STRING 3062
 // Items: IL81 (WC2Human04Lothar_Ambush01), Tip (Tooltip - Basic)
 {
-Андуїн Лотар
+Anduin Lothar
 }
 
 STRING 3063
 // Items: IL81 (WC2Human04Lothar_Ambush01), Description (Description)
 {
-Данате, труби сигнал нашим союзникам! Негайно!
+Danath, sound the signal to our allies!
 }
 
 STRING 3064
@@ -2597,7 +2598,7 @@ Blood Splat 1 No Pitch
 STRING 3068
 // Items: IL82 (WC2Human04Wilhelm_ReactCorpse01), Tip (Tooltip - Basic)
 {
-Вільгельм
+Wilhelm
 }
 
 STRING 3070
@@ -2609,23 +2610,23 @@ WC2Human04Wilhelm_ReactCorpse01
 STRING 3071
 // Items: IL82 (WC2Human04Wilhelm_ReactCorpse01), Description (Description)
 {
-Магістрат Гіллзбраду. Навіть золото не врятувало цього виродка, а його дурість коштувала Мерину життя.
+The Magistrate of Hillsbrad. Not even gold saved the bastard, and his folly cost Meryn his life.
 }
 
 STRING 3073
 // Items: IL02 (WC2Human04Danath_Intro01), Description (Description)
 {
-У цьому містечку, зеленошкірі показали які вони насправді чудовиська, саме з цього місця вони почали поширювати варватсво у землях Лордерону. Тут і досі тхне смертю і занепадом.
+This town marks the site where the greenskins first unleashed their true barbarity on the lands of Lordaeron. And it still reeks of death and decay.
 }
 
 STRING 3074
 {
-Далі буде...
+To be Continued...
 }
 
 STRING 3075
 {
-Акт II - Каз Модан вже в активній розробці. Слідкуйте за нашими соц мережами з приводу оновлень.
+Act II "Khaz Modan" currenlty in development. Stay tuned for upcoming acts!
 }
 
 STRING 3076
@@ -2640,7 +2641,7 @@ STRING 3077
 
 STRING 3078
 {
-Підтримайте нас, щоб наблизити вихід наступних актів і кампаній.
+Support us to fascilitate the release of the next acts and campaigns:
 }
 
 STRING 3079
@@ -2716,7 +2717,7 @@ Voice Actors
 
 STRING 3093
 {
-|cffffcc00DanielHodgeVA - Андуїн Лотар.|r|n|cffffcc00Kenn Nyström (Frozen Death Knight) - Terenas Menethil, Genn Graymane.|r|n|cffffcc00Luca Karaya (Nyte) - Meryn, Elven Destroyer.|r|n|cffffcc00(Aleksandrs Vlasenko) Avuaz - Drenden.|r
+|cffffcc00DanielHodgeVA - Anduin Lothar.|r|n|cffffcc00Kenn Nyström (Frozen Death Knight) - Terenas Menethil, Genn Graymane.|r|n|cffffcc00Luca Karaya (Nyte) - Meryn, Elven Destroyer.|r|n|cffffcc00(Aleksandrs Vlasenko) Avuaz - Drenden.|r
 }
 
 STRING 3094
@@ -2736,7 +2737,7 @@ Voice Actors
 
 STRING 3097
 {
-|cffffcc00Nikolaj Trankjær (Hamlet) - Khadgar.|r|n|cffffcc00AliceCry - Modera, Dark Iron priestess.|r|n|cffffcc00Gavaroc - Вільгельм, Krasus. |r|n|cffffcc00Jakub (Gibby) - Dwarven units.|r
+|cffffcc00Nikolaj Trankjær (Hamlet) - Khadgar.|r|n|cffffcc00AliceCry - Modera, Dark Iron priestess.|r|n|cffffcc00Gavaroc - Wilhelm, Krasus. |r|n|cffffcc00Jakub (Gibby) - Dwarven units.|r
 }
 
 STRING 3098
@@ -2746,7 +2747,7 @@ Voice Actors
 
 STRING 3099
 {
-|cffffcc00Veronnis - Elven units.|r|n|cffffcc00Soultice (Ethan) - Мілан Літописець, Muradin, Elven captain in Southshore.|r|n|cffffcc00Complete The Circuit (Alex Cain) - Turalyon, Mayor Marcus. |r|n|cffffcc00Christina Sherman - Alleria, Arthas (child).|r
+|cffffcc00Veronnis - Elven units.|r|n|cffffcc00Soultice (Ethan) - Milan the Scribe, Muradin, Elven captain in Southshore.|r|n|cffffcc00Complete The Circuit (Alex Cain) - Turalyon, Mayor Marcus. |r|n|cffffcc00Christina Sherman - Alleria, Arthas (child).|r
 }
 
 STRING 3100
@@ -2792,20 +2793,21 @@ Gabor Szabo, Agmon525 CZ, Xenoiide, Dianne Payette, Reiftyr, Schlimes, Flinn.
 
 STRING 3108
 {
-|cff87ceebПІДКРІПЛЕННЯ|r
-Ґілнеаські Фрегати стануть у пригоді для оборони берегової лінії, поки ви не побудуєте власні бойові кораблі.
+|cff87ceebREINFORCEMENT|r
+Gilnean Frigates can help you protect your coastline till you build your own destroyers.
 }
 
 STRING 3110
 {
-|cffffcc00ДОСТУПНІ НОВІ ОДИНИЦІ|r
-Ґілнеаські робітники допоможуть Андуїну Лотару відбудувати Гіллсбрад і підготувати військову інфраструктуру.
+|cffffcc00TECHTREE ALTERATION|r
+Gilnean labourers will help Anduin Lothar rebuild Hillsbrad and prepare military infrastructure.
 }
 
 STRING 3111
 {
-|cffffcc00ДОСТУПНІ НОВІ ОДИНИЦІ|r 
-Дружинники(Man at Arms). Досвідчені ветерани Азероту, що здатні наносити суттєвий урон після відповідних тренувань. Через серйозні втрати, що знесилили Альянс, Андуїн Лотар звернувся цих людей, прикликавши їх під свої знамена як найвідданіших соратників.
+|cffffcc00TECHTREE ALTERATION|r  
+Man at Arms. Seasoned Azerothian veterans capable of dealing multiplied damage when properly trained.  
+With the Alliance weakened by heavy losses, Anduin Lothar has called upon his reserves, drawing from his most trusted compatriots.
 }
 
 STRING 3112
@@ -2815,75 +2817,75 @@ STRING 3112
 
 STRING 3113
 {
-|cffffcc00ДОСТУПНІ НОВІ ЗДІБНОСТІ|r  
-Постріл із фронтальної гармати(Frontal Cannon Shot). Завдяки значним запасам нафти майстри Ливарні відтепер здатні виробити достатньо вибухових речовин, щоб оснастити ваші бойові кораблі фронтальними гарматами. 
+|cffffcc00TECHTREE UNLOCKED|r  
+Frontal Cannon Shot. With ample oil reserves, your Foundry artisans can now prepare enough explosives to equip your ships with frontal cannons.  
+
 }
 
 STRING 3114
 {
-Мати в наявності 8 ельфійських руйнівників.
+Maintain 8 Destroyer Ships.
 }
 
 STRING 3115
 {
-Привиди Гіллзбрада 
+Ghosts of Hillsbrad
 }
 
 STRING 3116
 {
-Орочі некроманти піднялі з могил мертвих жителів Гіллзбрада. Покладіть край їхнім стражданням та очистіть нарешті ці землі від нечестивої магії.
+The unholy presence of orcish necromancers has raised the slain people of Hillsbrad from their graves. Put an end to their suffering and cleanse the land of this dark magic.
 }
 
 STRING 3117
 {
-Знищте могильники (0/3)
+Destroy the corpse piles (0/3)
 }
 
 STRING 3118
 {
-Запаси нафти
+Oil Deposits
 }
 
 STRING 3119
 {
-Щоб підготувати флот до штурму Зул'дара, вам знадобиться величезна кількість нафти. Захопіть місцеві нафтові родовища та побуйте на них нафтові платформи.
+In order to prepare the navy for the assault at Zul'Dare, you will require massive amounts of Oil. Claim the local oil patches and build your Oil Platforms.
 }
 
 STRING 3120
 {
-Побудуйте 4 нафтові платфори.
+Build 4 Oil Plarforms.
 }
 
 STRING 3121
 {
-|cffffcc00ДОДАТКОВА ЗАВДАНННЯ ПРОВАЛЕНО|r
-Запаси нафти
+|cffffcc00OPTIONAL QUEST FAILED|r
+Oil Deposits
 }
 
 STRING 3122
 {
-|cffffcc00ДОДАТКОВЕ ЗАВДАННЯ|r
-Запаси нафти
- - Побудуйте 4 нафтові платформи
+|cffffcc00OPTIONAL QUEST COMPLETED|r
+Oil Deposits
 }
 
 STRING 3123
 {
-|cffffcc00ДОДАТКОВЕ ЗАВДАННЯ|r
-Запаси нафти
- - Побудуйте 4 нафтові платформи
+|cffffcc00OPTIONAL QUEST|r
+Oil Deposits
+ - Build 4 Oil Plarforms
 }
 
 STRING 3124
 {
-Наявних руйнівників:
+Maintained Destroyers:
 }
 
 STRING 3125
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ ОНОВЛЕНО|r
-Підготовка штурму
- - |cff808080 Мати в наявності 8 ельфійських руйнівників (Виконано)|r
+|cffffcc00MAIN QUEST UPDATED|r
+Preparations
+ - |cff808080Maintain 8 Destroyer Ships (Completed)|r
 }
 
 STRING 3126
@@ -2918,64 +2920,64 @@ STRING 3130
 
 STRING 3131
 {
-|cffffcc00ДОДАТКОВА ЗАВДАННЯ ОНОВЛЕНО|r
-Запаси нафти
- - Побудуйте 4 нафтові платформи (1 з 4 побудовано)
+|cffffcc00OPTIONAL QUEST UPDATED|r
+Oil Deposits
+ - Build 4 Oil Plarforms (1 of 4 built)
 }
 
 STRING 3132
 {
-|cffffcc00ДОДАТКОВА ЗАВДАННЯ ОНОВЛЕНО|r
-Запаси нафти
- - Побудуйте 4 нафтові платформи (2 з 4 побудовано)
+|cffffcc00OPTIONAL QUEST UPDATED|r
+Oil Deposits
+ - Build 4 Oil Plarforms (2 of 4 built)
 }
 
 STRING 3133
 {
-|cffffcc00ДОДАТКОВА ЗАВДАННЯ ОНОВЛЕНО|r
-Запаси нафти
- - Побудуйте 4 нафтові платформи (3 з 4 побудовано)
+|cffffcc00OPTIONAL QUEST UPDATED|r
+Oil Deposits
+ - Build 4 Oil Plarforms (3 of 4 built)
 }
 
 STRING 3135
 {
-Побудуйте 4 нафтові платформи (1 з 4 побудовано)
+Build 4 Oil Plarforms (1 of 4 built).
 }
 
 STRING 3136
 {
-Побудуйте 4 нафтові платформи (2 з 4 побудовано)
+Build 4 Oil Plarforms (2 of 4 built).
 }
 
 STRING 3137
 {
-Побудуйте 4 нафтові платформи (3 з 4 побудовано)
+Build 4 Oil Plarforms (3 of 4 built).
 }
 
 STRING 3138
 {
-Побудуйте 4 нафтові платфори.
+Build 4 Oil Plarforms.
 }
 
 STRING 3139
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ ПРОВАЛЕНО|r
-Підготовка штурму
- - |cffff0000Ваш табір було знищено!|r
+|cffffcc00MAIN QUEST FAILED|r
+Preparations
+ - |cffff0000Your camp is destroyed!|r
 }
 
 STRING 3147
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ ОНОВЛЕНО|r
-Зул'Дар
- - |cff808080Захопіть острів Зул'Дар (Виконано)|r
+|cffffcc00MAIN QUEST UPDATED|r
+Zul’dare
+ - |cff808080Capture Zul'dare outposts. (Completed)|r
 }
 
 STRING 3149
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ ОНОВЛЕНО|r
-Зул'Дар
- - |cff808080Знищіть табір клану Кривавого Літопису (Виконано)|r
+|cffffcc00MAIN QUEST UPDATED|r
+Zul’dare
+ - |cff808080Destroy Bloodscribe clan camp. (Completed)|r
 }
 
 STRING 3150
@@ -2985,21 +2987,22 @@ Player Coastal Raiders need more oil to build destroyer. |cffffcc00Haul more Oil
 
 STRING 3151
 {
-|cff87ceebПІДКРІПЛЕННЯ|r  
-Лорд Кровлі разом із військами Ґілнеаса виступить слідом за Андуїном Лотаром. Ви не зможете їми керувати, оскільки народ Ґілнеаса надто цінує власну незалежність. 
+|cff87ceebREINFORCEMENT|r  
+Lord Crowley and a squad of Gilnean forces will follow Anduin Lothar. You cannot control them directly, however, as the Gilneans value their independence.  
 
 }
 
 STRING 3152
 {
-|cff32cd32ПІДКАЗКА|r  
-Мілан Ліпописець єдиний напівгерой чий рівень збільшується після виконання побічних(додаткових) завдань. Кожен новий рівень розблокує нові здібності, покращує наявні та збільшує здоров'я та швидкість руху.
+|cff32cd32HINT|r  
+Milan is the only semi-hero whose rank increases after completing side quests. Each rank unlocks new abilities, enhances existing ones, and grants bonuses to health and movement speed.  
+
 }
 
 STRING 3153
 {
-|cff32cd32ПІДКАЗКА|r
-Тільки Лотар може нести цей прапор.
+|cff32cd32HINT|r
+Only Lothar can carry this flag.
 }
 
 STRING 3154
@@ -3017,13 +3020,13 @@ STRING 3155
 STRING 3156
 // Items: IL51 (WC2Human04Gavinrad_Outro01), Tip (Tooltip - Basic)
 {
-Ґавінрад Безжальний
+Gavinrad the Dire
 }
 
 STRING 3157
 // Items: IL71 (WC2Human04Gavinrad_Ambush01), Tip (Tooltip - Basic)
 {
-Ґавінрад Безжальний
+Gavinrad the Dire
 }
 
 STRING 3158

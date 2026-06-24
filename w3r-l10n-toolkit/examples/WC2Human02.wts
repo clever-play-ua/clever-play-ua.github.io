@@ -15,27 +15,27 @@ LoreCraft Designs
 
 STRING 8
 {
-Клан Чорного Каменю
+Blackrock Clan
 }
 
 STRING 9
 {
-Люди Лордерону
+Nation of Lordaeron
 }
 
 STRING 10
 {
-Люди Стормварту
+Nation of Stromgarde
 }
 
 STRING 11
 {
-Рейнджери Квел'Таласу
+Rangers of Quel’Thalas
 }
 
 STRING 13
 {
-Сили Орди
+Horde
 }
 
 STRING 14
@@ -111,13 +111,13 @@ Fence Short (Pathless)
 STRING 56
 // Items: IL01 (WC2Human02Danath01), Tip (Tooltip - Basic)
 {
-Данат Тролебій
+Danath Trollbane
 }
 
 STRING 57
 // Items: IL01 (WC2Human02Danath01), Description (Description)
 {
-Орда була тут… куди тільки ці виродки не ступали, вони сіяли смерть і руйнування… Я мавби бути Стромварті, коли його взяли в облогу… і мій батько б…
+The Horde was here… everywhere these bastards go, they spread death and destruction… I should’ve been in Stromgarde when they laid siege to it…and my father would’ve...
 }
 
 STRING 58
@@ -129,13 +129,13 @@ WC2Human02Danath01
 STRING 59
 // Items: IL02 (WC2Human02Danath02), Tip (Tooltip - Basic)
 {
-Данат Тролебій
+Danath Trollbane
 }
 
 STRING 60
 // Items: IL02 (WC2Human02Danath02), Description (Description)
 {
-Перевіримо цей підвал — можливо щось є.
+Let's check this cellar, maybe there is something.
 }
 
 STRING 61
@@ -147,13 +147,13 @@ WC2Human02Danath02
 STRING 62
 // Items: IL03 (WC2Human02Danath03), Tip (Tooltip - Basic)
 {
-Данат Тролебій
+Danath Trollbane
 }
 
 STRING 63
 // Items: IL03 (WC2Human02Danath03), Description (Description)
 {
-Так і чинять дикунські виродки. Навідаємось до них!
+That’s what savage mongrels do. Men, let’s pay them a visit!
 }
 
 STRING 64
@@ -165,13 +165,13 @@ WC2Human02Danath03
 STRING 65
 // Items: IL04 (WC2Human02Danath04), Tip (Tooltip - Basic)
 {
-Данат Тролебій
+Danath Trollbane
 }
 
 STRING 66
 // Items: IL04 (WC2Human02Danath04), Description (Description)
 {
-Брудна істото, мій меч тебе зробить тверезим!
+Filthy creature, my sword will sober you up!
 }
 
 STRING 67
@@ -183,13 +183,13 @@ WC2Human02Danath04
 STRING 68
 // Items: IL05 (WC2Human02Danath05), Tip (Tooltip - Basic)
 {
-Данат Тролебій
+Danath Trollbane
 }
 
 STRING 69
 // Items: IL05 (WC2Human02Danath05), Description (Description)
 {
-Я ніколи не втомлюся винищувати цю мерзоту!
+I’ll never get tired of killing this scum!
 }
 
 STRING 70
@@ -201,13 +201,13 @@ WC2Human02Danath05
 STRING 71
 // Items: IL06 (WC2Human02Danath06), Tip (Tooltip - Basic)
 {
-Данат Тролебій
+Danath Trollbane
 }
 
 STRING 72
 // Items: IL06 (WC2Human02Danath06), Description (Description)
 {
-Орки більше вас не потурбують вас, старий. Ми все зачистили навколо Південнобережжя.
+The orcs will bother you no more, old man. We have secured a perimeter around Southshore.
 }
 
 STRING 73
@@ -219,13 +219,13 @@ WC2Human02Danath06
 STRING 74
 // Items: IL07 (WC2Human02Danath07), Tip (Tooltip - Basic)
 {
-Данат Тролебій
+Danath Trollbane
 }
 
 STRING 75
 // Items: IL07 (WC2Human02Danath07), Description (Description)
 {
-У мене краща ідея. Дайте нам кількох сильних робітників — і ми разом відбудуємо ратушу. Це містечко стане відмінною базою для армії Альянсу, що прямує сюди.
+I have a better idea. Give us a couple of strong workers and we will rebuild the town hall together. This town can be a perfect base for the Alliance army that is marching in this direction.
 }
 
 STRING 76
@@ -237,13 +237,13 @@ WC2Human02Danath07
 STRING 77
 // Items: IL08 (WC2Human02Danath08), Tip (Tooltip - Basic)
 {
-Данат Тролебій
+Danath Trollbane
 }
 
 STRING 78
 // Items: IL08 (WC2Human02Danath08), Description (Description)
 {
-Так, так, загадкові ельфи з Срібномісяця. Який сюрприз бачити вас тут...
+Well, well, the mysterious elves of Silvermoon. What a surprise to see you here…
 }
 
 STRING 79
@@ -255,13 +255,13 @@ WC2Human02Danath08
 STRING 80
 // Items: IL09 (WC2Human02Danath09), Tip (Tooltip - Basic)
 {
-Данат Тролебій
+Danath Trollbane
 }
 
 STRING 81
 // Items: IL09 (WC2Human02Danath09), Description (Description)
 {
-Щоб дістатися до Таррен-Млина, треба плисти вгору по річці Дерроумер, а ви висадилися тут.
+To reach Tarren Mill, you have to sail up the Darrowmere River, yet you landed here.
 }
 
 STRING 82
@@ -273,13 +273,13 @@ WC2Human02Danath09
 STRING 83
 // Items: IL10 (WC2Human02Danath10), Tip (Tooltip - Basic)
 {
-Данат Тролебій
+Danath Trollbane
 }
 
 STRING 84
 // Items: IL10 (WC2Human02Danath10), Description (Description)
 {
-Тролі… добре, зрозуміло. Я можу допомогти, але за однієї умови, ельфе.
+Trolls…I see. I can help you, but on one condition, elf.
 }
 
 STRING 85
@@ -291,13 +291,13 @@ WC2Human02Danath10
 STRING 86
 // Items: IL11 (WC2Human02Danath11), Tip (Tooltip - Basic)
 {
-Данат Тролебій
+Danath Trollbane
 }
 
 STRING 87
 // Items: IL11 (WC2Human02Danath11), Description (Description)
 {
-Виключно я буду відповідальним за цю операцію.
+I will be the man in charge of this operation.
 }
 
 STRING 88
@@ -309,13 +309,13 @@ WC2Human02Danath11
 STRING 89
 // Items: IL12 (WC2Human02Danath12), Tip (Tooltip - Basic)
 {
-Данат Тролебій
+Danath Trollbane
 }
 
 STRING 90
 // Items: IL12 (WC2Human02Danath12), Description (Description)
 {
-Колись ці річки слугували торгівельними шляхами всім королівствам, а тепер вони отруєні смородом звірів та дикунів.
+These rivers used to bring commerce throughout the kingdoms, now they’re polluted with the stench of beasts and savages.
 }
 
 STRING 91
@@ -327,13 +327,13 @@ WC2Human02Danath12
 STRING 92
 // Items: IL13 (WC2Human02Danath13), Tip (Tooltip - Basic)
 {
-Данат Тролебій
+Danath Trollbane
 }
 
 STRING 93
 // Items: IL13 (WC2Human02Danath13), Description (Description)
 {
-Сподіваюся, ви, ельфи, так само вправно воюєте на морі, як і володієте магією, інакше я, мабуть, прирік себе і своїх людей на передчасну смерть.
+I hope you elves are as good battling on the sea as you are with magic, otherwise, I may have delivered me and my men an early death.
 }
 
 STRING 94
@@ -345,13 +345,13 @@ WC2Human02Danath13
 STRING 95
 // Items: IL14 (WC2Human02Danath14), Tip (Tooltip - Basic)
 {
-Данат Тролебій
+Danath Trollbane
 }
 
 STRING 96
 // Items: IL14 (WC2Human02Danath14), Description (Description)
 {
-Ми наближаємося до Таррен-Млину. Будьте обережні, закладаюся, тутешні орки підготувалися значно краще за тих, кого ми бачили в Південнобережжі.
+We are approaching Tarren Mill. Careful now, I bet the orcs there are much better prepared than the ones we saw in Southshore.
 }
 
 STRING 97
@@ -363,7 +363,7 @@ WC2Human02Danath14
 STRING 98
 // Items: IL15 (WC2Human02Danath15), Tip (Tooltip - Basic)
 {
-Данат Тролебій
+Danath Trollbane
 }
 
 STRING 100
@@ -375,13 +375,13 @@ WC2Human02Danath15
 STRING 101
 // Items: IL16 (WC2Human02Danath16), Tip (Tooltip - Basic)
 {
-Данат Тролебій
+Danath Trollbane
 }
 
 STRING 102
 // Items: IL16 (WC2Human02Danath16), Description (Description)
 {
-Кул-тіраські кораблі… Їх знищили дракони, коли адмірал Праудмур намагався відбити Південнобережжя…
+Kul'tiran ships… They were destroyed by the dragons when Admiral Proudmoore tried to retake Southshore…
 }
 
 STRING 103
@@ -393,13 +393,13 @@ WC2Human02Danath16
 STRING 104
 // Items: IL17 (WC2Human02Danath17), Tip (Tooltip - Basic)
 {
-Данат Тролебій
+Danath Trollbane
 }
 
 STRING 105
 // Items: IL17 (WC2Human02Danath17), Description (Description)
 {
-Я так не думаю!
+I don’t think so!
 }
 
 STRING 106
@@ -411,13 +411,13 @@ WC2Human02Danath17
 STRING 107
 // Items: IL18 (WC2Human02Danath18), Tip (Tooltip - Basic)
 {
-Данат Тролебій
+Danath Trollbane
 }
 
 STRING 108
 // Items: IL18 (WC2Human02Danath18), Description (Description)
 {
-Ха-ха, наступного разу вам варто взяти кращих розвідників, ельфе. На ваше щастя, тепер ви в хорошій компанії.
+Haha, you should bring better scouts next time, elf. Lucky you, you’re in good company now.
 }
 
 STRING 109
@@ -429,13 +429,13 @@ WC2Human02Danath18
 STRING 110
 // Items: IL19 (WC2Human02Danath19), Tip (Tooltip - Basic)
 {
-Данат Тролебій
+Danath Trollbane
 }
 
 STRING 111
 // Items: IL19 (WC2Human02Danath19), Description (Description)
 {
-Це звук надії.
+That is the sound of hope.
 }
 
 STRING 112
@@ -447,13 +447,13 @@ WC2Human02Danath19
 STRING 113
 // Items: IL20 (WC2Human02Gavinrad01), Tip (Tooltip - Basic)
 {
-Ґавінрад Безжальний
+Gavinrad the Dire
 }
 
 STRING 114
 // Items: IL20 (WC2Human02Gavinrad01), Description (Description)
 {
-Капітане, нам потрібно шукати припаси, у наших людей майже скінчились їжа та вода.
+Captain, we need to search for supplies, our men are running low on food and water.
 }
 
 STRING 115
@@ -465,13 +465,13 @@ WC2Human02Gavinrad01
 STRING 116
 // Items: IL21 (WC2Human02Gavinrad02), Tip (Tooltip - Basic)
 {
-Ґавінрад Безжальний
+Gavinrad the Dire
 }
 
 STRING 117
 // Items: IL21 (WC2Human02Gavinrad02), Description (Description)
 {
-Капітане Данате, у нас є вцілілі!
+Captain Danath, we have survivors!
 }
 
 STRING 118
@@ -483,7 +483,7 @@ WC2Human02Gavinrad02
 STRING 119
 // Items: IL22 (WC2Human02Gavinrad03), Tip (Tooltip - Basic)
 {
-Ґавінрад Безжальний
+Gavinrad the Dire
 }
 
 STRING 121
@@ -495,13 +495,13 @@ WC2Human02Gavinrad03
 STRING 122
 // Items: IL24 (WC2Human02Gavinrad04), Tip (Tooltip - Basic)
 {
-Ґавінрад Безжальний
+Gavinrad the Dire
 }
 
 STRING 123
 // Items: IL24 (WC2Human02Gavinrad04), Description (Description)
 {
-Так, капітане.
+Yes, captain.
 }
 
 STRING 124
@@ -513,13 +513,13 @@ WC2Human02Gavinrad04
 STRING 125
 // Items: IL25 (WC2Human02Gavinrad05), Tip (Tooltip - Basic)
 {
-Ґавінрад Безжальний
+Gavinrad the Dire
 }
 
 STRING 126
 // Items: IL25 (WC2Human02Gavinrad05), Description (Description)
 {
-Всіх в'язнів звільнено. Тепер — вперед до Таррен-Млину!
+The prisoners have been freed. Now, onto Tarren Mill!
 }
 
 STRING 127
@@ -531,7 +531,7 @@ WC2Human02Gavinrad05
 STRING 129
 // Items: IL26 (WC2Human02Nobbel01), Description (Description)
 {
-Вітаю вас! Ми ховалися тут від тих зеленошкірих чудовиськ. Вони пограбували Південнобережжя і поселилися у спустошених селах неподалік.
+Greetings! We’ve been hiding here from those greenskinned beasts. They plundered Southshore and have settled in ravaged villages nearby.
 }
 
 STRING 130
@@ -543,7 +543,7 @@ WC2Human02Nobbel01
 STRING 132
 // Items: IL27 (WC2Human02Nobbel02), Description (Description)
 {
-Постій трохи й послухай.
+Stay a while and listen.
 }
 
 STRING 133
@@ -555,7 +555,7 @@ WC2Human02Nobbel02
 STRING 135
 // Items: IL28 (WC2Human02Nobbel03), Description (Description)
 {
-Ніхто не слухає…
+No one ever listens…
 }
 
 STRING 136
@@ -567,7 +567,7 @@ WC2Human02Nobbel03
 STRING 138
 // Items: IL29 (WC2Human02Nobbel04), Description (Description)
 {
-Я можу написати про тебе історію.
+I can write a tale about you.
 }
 
 STRING 139
@@ -579,7 +579,7 @@ WC2Human02Nobbel04
 STRING 141
 // Items: IL30 (WC2Human02Nobbel05), Description (Description)
 {
-Дякуємо вам, відважний командире. Залишіться трохи і відпочиньте. У нас є деяка їжа та припаси якими ми можемо поділимося з вашими воїнами.
+Thank you, brave commander. Please stay a while and get some rest. We have some food and supplies that we can share with your soldiers.
 }
 
 STRING 142
@@ -591,7 +591,7 @@ WC2Human02Nobbel05
 STRING 144
 // Items: IL31 (WC2Human02Nobbel06), Description (Description)
 {
-Добре, усе, що потрібно, сір.
+Very well, everything you need, sir.
 }
 
 STRING 145
@@ -603,7 +603,7 @@ WC2Human02Nobbel06
 STRING 147
 // Items: IL32 (WC2Human02ElvenArcher01), Description (Description)
 {
-Вітаю, людино. Нас відправили сюди, щоб врятувати загін лучників, що прямував до Даларану. Наші шпигуни доповідають, що незабаром після проходу через поля Альтераку вони потрапили в засідку Орди. Ми вважаємо, що їх зараз тримають ув'язненими у невеликому таборі неподалік північно-західної частини Таррен-Млина.
+Greetings, human. We were sent here to rescue a contingent of archers headed to Dalaran. Our spies report that shortly after passing through the Alterac grasslands, they were ambushed by Horde troops. We believe that they are now held in a small prison camp near the northwest region of Tarren Mill.
 }
 
 STRING 148
@@ -621,7 +621,7 @@ WC2Human02ElvenArcher02
 STRING 153
 // Items: IL34 (WC2Human02ElvenArcher03), Description (Description)
 {
-Слухаю.
+I’m listening.
 }
 
 STRING 154
@@ -633,7 +633,7 @@ WC2Human02ElvenArcher03
 STRING 156
 // Items: IL35 (WC2Human02ElvenArcher04), Description (Description)
 {
-Як побажєете. Наш лісовий майстер(sylvan craftsman) побудує вам ельфійську лісопильню. Завдяки їй ви зможете побудувати більше кораблів.
+Very well. Our sylvan craftsman will build an elven lumber mill. With it, we can build more ships quickly.
 }
 
 STRING 157
@@ -645,7 +645,7 @@ WC2Human02ElvenArcher04
 STRING 158
 // Items: IL32 (WC2Human02ElvenArcher01), Tip (Tooltip - Basic)
 {
-Ельфійський капітан
+Elven Captain
 }
 
 STRING 160
@@ -657,7 +657,7 @@ WC2Human02ElvenCaptain01
 STRING 161
 // Items: IL33 (WC2Human02ElvenArcher02), Tip (Tooltip - Basic)
 {
-Ельфійський капітан
+Elven Captain
 }
 
 STRING 163
@@ -669,13 +669,13 @@ WC2Human02ElvenCaptain02
 STRING 164
 // Items: IL38 (WC2Human02Milan01), Tip (Tooltip - Basic)
 {
-Мілан Ліпописець
+Milan the Scribe
 }
 
 STRING 165
 // Items: IL38 (WC2Human02Milan01), Description (Description)
 {
-Дякую, сіре. Ми прямували до Даларана, щоб допомогти Кірін-Тору в битві з Ордою, але замість цього потрапили в полон.
+Thank you, sir. We were heading to Dalaran, to help the Kirin Tor battle the Horde, but we got captured instead.
 }
 
 STRING 166
@@ -687,13 +687,13 @@ WC2Human02Milan01
 STRING 167
 // Items: IL39 (WC2Human02Milan02), Tip (Tooltip - Basic)
 {
-Мілан Ліпописець
+Milan the Scribe
 }
 
 STRING 168
 // Items: IL39 (WC2Human02Milan02), Description (Description)
 {
-Що це?
+What's that?
 }
 
 STRING 169
@@ -705,13 +705,13 @@ WC2Human02Milan02
 STRING 170
 // Items: IL40 (WC2Human02OrcCaptain01), Tip (Tooltip - Basic)
 {
-Орочий капітан
+Orc Captain
 }
 
 STRING 171
 // Items: IL40 (WC2Human02OrcCaptain01), Description (Description)
 {
-Ха! Як і очікувалося, ельфійський сморід привабив людських комах! Вбити всіх!
+Hah! As expected, the elven stench has attracted the human insects! Kill them all warriors!
 }
 
 STRING 172
@@ -723,13 +723,13 @@ WC2Human02OrcCaptain01
 STRING 173
 // Items: IL41 (WC2Human02Prisoner01), Tip (Tooltip - Basic)
 {
-Полонений
+Prisoner
 }
 
 STRING 174
 // Items: IL41 (WC2Human02Prisoner01), Description (Description)
 {
-Допоможіть нам!
+Help us!
 }
 
 STRING 175
@@ -741,13 +741,13 @@ WC2Human02Prisoner01
 STRING 176
 // Items: IL42 (WC2Human02Prisoner02), Tip (Tooltip - Basic)
 {
-Полонений
+Prisoner
 }
 
 STRING 177
 // Items: IL42 (WC2Human02Prisoner02), Description (Description)
 {
-Ці мерзенні тварюки змушували нас працювати вдень і вночі!
+These wretched orcs are forcing us to work day and night!
 }
 
 STRING 178
@@ -759,13 +759,13 @@ WC2Human02Prisoner02
 STRING 179
 // Items: IL43 (WC2Human02Prisoner03), Tip (Tooltip - Basic)
 {
-Полонений
+Prisoner
 }
 
 STRING 180
 // Items: IL43 (WC2Human02Prisoner03), Description (Description)
 {
-Дякую вам, сіре!
+Thank you, sire!
 }
 
 STRING 181
@@ -777,13 +777,13 @@ WC2Human02Prisoner03
 STRING 182
 // Items: IL44 (WC2Human02Prisoner04), Tip (Tooltip - Basic)
 {
-Полонений
+Prisoner
 }
 
 STRING 183
 // Items: IL44 (WC2Human02Prisoner04), Description (Description)
 {
-Кляті орки!
+Damn the orcs!
 }
 
 STRING 184
@@ -801,7 +801,7 @@ Regional Defender
 STRING 186
 // Items: IL45 (WC2Human02Defender01), Description (Description)
 {
-Мій меч до ваших послуг!
+My sword is yours!
 }
 
 STRING 187
@@ -819,7 +819,7 @@ Regional Defender
 STRING 189
 // Items: IL46 (WC2Human02Defender02), Description (Description)
 {
-Час повернути цим проклятим оркам борг тією ж монетою!
+Time to repay those blasted orcs in kind!
 }
 
 STRING 190
@@ -837,7 +837,7 @@ Regional Defender
 STRING 192
 // Items: IL47 (WC2Human02Defender03), Description (Description)
 {
-Мерзенні орки, тепер вони побачать.
+Wretched orcs, now they’ll see.
 }
 
 STRING 193
@@ -849,13 +849,13 @@ WC2Human02Defender03
 STRING 194
 // Items: IL48 (WC2Human02Orc01), Tip (Tooltip - Basic)
 {
-Зп'янілий орк
+Drunk Orc
 }
 
 STRING 195
 // Items: IL48 (WC2Human02Orc01), Description (Description)
 {
-Люди… ікх, вбийте їх!
+Humanz… ehk, Kill them!
 }
 
 STRING 196
@@ -867,13 +867,13 @@ WC2Human02Orc01
 STRING 197
 // Items: IL49 (WC2Human02Orc02), Tip (Tooltip - Basic)
 {
-Рубайло
+Orc
 }
 
 STRING 198
 // Items: IL49 (WC2Human02Orc02), Description (Description)
 {
-Люди нападають! Вбийте їх!
+The humans are attacking! Kill them!
 }
 
 STRING 199
@@ -885,7 +885,7 @@ WC2Human02Orc02
 STRING 200
 // Items: IL50 (WC2Human02Peon01), Tip (Tooltip - Basic)
 {
-Батрак
+Peon
 }
 
 STRING 202
@@ -897,7 +897,7 @@ WC2Human02Peon01
 STRING 203
 // Items: IL51 (WC2Human02Peon02), Tip (Tooltip - Basic)
 {
-Батрак
+Peon
 }
 
 STRING 205
@@ -908,388 +908,388 @@ WC2Human02Peon02
 
 STRING 206
 {
-Люди Альтераку
+Nation of Alterac
 }
 
 STRING 207
 {
-Цілі завдання
+Quest Objectives
 }
 
 STRING 208
 {
-Лишилося ферм:
+Farms left to retake:
 }
 
 STRING 210
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ|r
-Допомогти селянам
- - Поверніть 7 ферм
- - Данат має вижити
+|cffffcc00MAIN QUEST|r
+Help the Villagers
+ - Retake 7 Farms
+ - Danath must survive
 }
 
 STRING 211
 {
-Допомогти селянам
+Help the Villagers
 }
 
 STRING 212
 {
-Вцілілі мешканці Південнобережжя все ще в небезпеці. Ви мусите зачистити навколишні села від орчих нападників, аби убезпечити ці землі.
+Southshore’s surviving citizens are still in danger. You must clear the nearby villages of orcish raiders to ensure their safety.
 }
 
 STRING 215
 {
-Поверніть 7 ферм (0 / 7)
+Retake 7 Farms (0 / 7)
 }
 
 STRING 216
 {
-Данат має вижити
+Danath must survive
 }
 
 STRING 217
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ ВИКОНАНО|r
-Допомогти селянам
+|cffffcc00MAIN QUEST COMPLETED|r
+Help the Villagers
 }
 
 STRING 218
 {
-Поверніть 7 ферм
+Retake 7 Farms
 }
 
 STRING 219
 {
-Поверніть 7 ферм (1 / 7)
+Retake 7 Farms (1 / 7)
 }
 
 STRING 220
 {
-Поверніть 7 ферм (2 / 7)
+Retake 7 Farms (2 / 7)
 }
 
 STRING 221
 {
-Поверніть 7 ферм (3 / 7)
+Retake 7 Farms (3 / 7)
 }
 
 STRING 222
 {
-Поверніть 7 ферм (4 / 7)
+Retake 7 Farms (4 / 7)
 }
 
 STRING 223
 {
-Поверніть 7 ферм  (5 / 7)
+Retake 7 Farms (5 / 7)
 }
 
 STRING 224
 {
-Поверніть 7 ферм  (6 / 7)
+Retake 7 Farms (6 / 7)
 }
 
 STRING 225
 {
-Південнобережжя
+Southshore
 }
 
 STRING 226
 {
-Місто лежить у руїнах після орчої навали. Відбудуйте його, аби воно стало твердинею для армії Андуїна Лотара, також вам необхідно підготувати ці землі до майбутніх битв.
+The town lies in ruins after the orcish onslaught. Restore it to serve as a stronghold for Anduin Lothar’s army, and prepare the land for the coming battles.
 }
 
 STRING 227
 {
-Полагодьте міську ратушу
+Repair Town Hall
 }
 
 STRING 228
 {
-Полагодьте казарми
+Repair Barracks
 }
 
 STRING 229
 {
-Підсилити флот
+Reinforce the Navy
 }
 
 STRING 230
 {
-Зниклі побратими ельфів, все ще в руках ворога, і лише за допомогою потужного флоту можна буде розраховувати на те щоб доправити їх у безпечне місце. Розбудуйте свій флот і готуйтеся піту у морський наступ.
+The elves’ brethren remain in enemy hands, and only a stronger fleet can bring them to safety. Expand your navy and prepare to strike across the waters.
 }
 
 STRING 231
 {
-Побудуйте Ельфійську лісопильню
+Build Lumber Mill
 }
 
 STRING 232
 {
-Побудуйте корабельню
+Build Shipyard
 }
 
 STRING 233
 {
-Побудуйте нафтову платформу
+Build Oil Rig
 }
 
 STRING 234
 {
-Знищіть ворожі кораблі
+Destroy enemy ships
 }
 
 STRING 235
 {
-Небезпечні води
+Dangerous River
 }
 
 STRING 236
 {
-Пливіть на північ до Таррен-Млина, але будьте уважні! Ці води пильно патрулює флот Орди. Рухайтеся обережно і тримайте гармати напоготові.
+Sail north toward Tarren Mill, but beware! The river may be patrolled by the Horde navy. Proceed with caution and keep your fleet ready for battle.
 }
 
 STRING 237
 {
-Допливіть до кола сили.
+Reach the circle of Power.
 }
 
 STRING 238
 {
-Як мінімум 1 корабель має вціліти.
+At least 1 ship must survive.
 }
 
 STRING 239
 {
-Ельфійські союзники
+Elven Allies
 }
 
 STRING 240
 {
-Полонені ельфи утримуються у таборі коло Таррен-Млина. Визволіть їх та виведіть у безпечне місце, їхня допомога безцінною в майбутніх битвах.
+Elven captives are held in a camp at Tarren Mill. Break their chains and bring them to safety, their aid will be invaluable in the battles to come.
 }
 
 STRING 241
 {
-Вбийте всіх вартових тюремників
+Kill all Prison camp Guards
 }
 
 STRING 242
 {
-Данат має вижити.
+Danath must Survive.
 }
 
 STRING 243
 {
-Тобори з полоненими
+Prison Camps
 }
 
 STRING 244
 {
-Місцевих селян, які пережили орчу навалу, ув'язнили для рабської праці. Звільніть їх, і вони стануть до ваших лав.
+Local villagers who survived the orcish assault have been imprisoned for slave labor. Free them from their chains, and they will join your cause.
 }
 
 STRING 245
 {
-Звільніть 4 полонених (0/4 звільнено)
+Free 4 prisoners (0/4 freed)
 }
 
 STRING 246
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ|r
-Південнобережжя
- - Полагодьте міську ратушу
- - Полагодьте казарми
+|cffffcc00MAIN QUEST|r
+Southshore
+ - Repair Town Hall
+ - Repair Barracks
 }
 
 STRING 248
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ ЗАВЕРШЕНО|r
-Південнобережжя
+|cffffcc00MAIN QUEST COMPLETED|r
+Southshore
 }
 
 STRING 249
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ ОНОВЛЕНО|r
-Південнобережжя
- - |cff808080Полагодьте міську ратушу (Завершено)|r
- - Полагодьте казарми
+|cffffcc00MAIN QUEST UPDATED|r
+Southshore
+ - |cff808080Repair Town Hall (Completed)|r
+ - Repair Barracks
 }
 
 STRING 254
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ ОНОВЛЕНО|r
-Південнобережжя
- - Полагодьте міську ратушу 
- - |cff808080Полагодьте казарми (Завершено)|r
+|cffffcc00MAIN QUEST UPDATED|r
+Southshore
+ - Repair Town Hall
+ - |cff808080Repair Barracks (Completed)|r
 }
 
 STRING 255
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ|r
-Підсилити флот
- - Побудуйте Ельфійську лісопильню
- - Побудуйте корабельню
- - Побудуйте нафтову платформу
- - Знищіть орочі корабельні
- - Знищіть ворожі кораблі
+|cffffcc00MAIN QUEST|r
+Reinforce the Navy
+ - Build Lumber Mill
+ - Build Shipyard
+ - Build Oil Rig
+ - Destroy orc shipyard
+ - Destroy enemy ships
 }
 
 STRING 256
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ ВИКОНАНО|r
-Підсилити флот
+|cffffcc00MAIN QUEST COMPLETED|r
+Reinforce the Navy
 }
 
 STRING 257
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ ВИКОНАНО|r
-Небезпечні води
+|cffffcc00MAIN QUEST COMPLETED|r
+Dangerous River
 }
 
 STRING 258
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ|r
-Небезпечні води
- - Допливіть до кола сили
- - Як мінімум 1 корабель має вціліти
+|cffffcc00MAIN QUEST|r
+Dangerous River
+ - Reach the circle of Power
+ - At least 1 ship must survive
 }
 
 STRING 259
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ|r
-Ельфійські союзники
- - Вбийте всіх вартових тюремників
- - Данат має вижити
+|cffffcc00MAIN QUEST|r
+Elven Allies
+ - Kill all Prison camp Guards
+ - Danath must Survive
 }
 
 STRING 260
 {
-|cffffcc00ДОДАТКОВЕ ЗАВДАННЯ|r
-Тобори з полоненими
- - Звілінть 4 полонених
+|cffffcc00OPTIONAL QUEST|r
+Prison Camps
+ - Free 4 prisoners
 }
 
 STRING 261
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ ВИКОНАНО|r
-Ельфійські союзники
+|cffffcc00MAIN QUEST COMPLETED|r
+Elven Allies
 }
 
 STRING 262
 {
-|cffffcc00ДОДАТКОВЕ ЗАВДАННЯ ВИКОНАНО|r
-Тобори з полоненими
+|cffffcc00OPTIONAL QUEST COMPLETED|r
+Prison Camps
 }
 
 STRING 264
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ ОНОВЛЕНО|r
-Підсилити флот
- - |cff808080Побудуйте корабельню (Виконано)|r
+|cffffcc00MAIN QUEST UPDATED|r
+Reinforce the Navy
+ - |cff808080Build Shipyard (Completed)|r
 }
 
 STRING 265
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ ОНОВЛЕНО|r
-Підсилити флот
- - |cff808080Побудуйте Ельфійську лісопильню (Виконано)|r
+|cffffcc00MAIN QUEST UPDATED|r
+Reinforce the Navy
+ - |cff808080Build Lumber Mill (Completed)|r
 }
 
 STRING 266
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ ОНОВЛЕНО|r
-Підсилити флот
- - |cff808080Побудуйте нафтову платформу (Виконано)|r
+|cffffcc00MAIN QUEST UPDATED|r
+Reinforce the Navy
+ - |cff808080Build Oil Rig (Completed)|r
 }
 
 STRING 267
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ ОНОВЛЕНО|r
-Підсилити флот
- - |cff808080Знищіть ворожі кораблі (Виконано)|r
+|cffffcc00MAIN QUEST UPDATED|r
+Reinforce the Navy
+ - |cff808080Destroy enemy ships (Completed)|r
 }
 
 STRING 269
 {
-Лишилося Руйнівників тролів:
+Troll Destroyers left:
 }
 
 STRING 271
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ ПРОВАЛЕНО|r
-Допомогти селянам
- - |cffff0000Данат має вижити (Провалено)|r
+|cffffcc00MAIN QUEST FAILED|r
+Help the Villagers
+ - |cffff0000Danath must Survive (Failed)|r
 }
 
 STRING 272
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ ПРОВАЛЕНО|r
-Небезпечні води
-  - |cffff0000Як мінімум 1 корабель має вціліти (Провалено)|r
+|cffffcc00MAIN QUEST FAILED|r
+Dangerous River
+ - |cffff0000At least 1 ship should survive (Failed)|r
 }
 
 STRING 273
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ ПРОВАЛЕНО|r
-Ельфійські союзники
- - |cffff0000Данат має вижити (Провалено)|r
+|cffffcc00MAIN QUEST FAILED|r
+Elven Allies
+ - |cffff0000Danath must Survive (Failed)|r
 }
 
 STRING 274
 {
-Лишилося полонених:
+Prisoners left:
 }
 
 STRING 284
 {
-Звільніть 4 полонених
+Free 4 prisoners
 }
 
 STRING 285
 {
-Звільніть 4 полонених (3/4 звільнено)
+Free 4 prisoners (3/4 freed)
 }
 
 STRING 286
 {
-Звільніть 4 полонених (2/4 звільнено)
+Free 4 prisoners (2/4 freed)
 }
 
 STRING 287
 {
-Звільніть 4 полонених (1/4 звільнено)
+Free 4 prisoners (1/4 freed)
 }
 
 STRING 288
 // Units: Nbbc (Blademaster), Propernames (Proper Names)
 {
-Орочий Капітан Карехт
+Captain of Blackrock Clan
 }
 
 STRING 289
 {
-|cffffcc00ДОСТУПНІ НОВІ СПОРУДИ|r
-Ельфійська лісопильня - Ельфи запропонували Альянсу свої навички та вміння, поділившись найбільш ефективним способом обробки деревини.
+|cffffcc00TECHTREE UNLOCKED|r
+Elven Lumber Mill - The Elves offered their superior skills in service to the Alliance, providing more efficient means for processing lumber.
 }
 
 STRING 290
 {
-|cffffcc00ДОСТУПНІ НОВІ ОДИНИЦІ|r
-Ельфійські лучники - Нащадки давньої раси високородних Квел'дорай, ці лісові мешканці не мають собі рівних у володінні луком.
+|cffffcc00TECHTREE UNLOCKED|r
+Elven Archers -  descendants of the elder race of Highbornes, these sylvan woodsmen are unmatched in their use of the bow.
 }
 
 STRING 291
 {
-|cffffcc00ДОСТУПНІ НОВІ СПОРУДИ|r
-Корабельні - Насамперед відповідальні за будівництво флоту Альянсу. А також слугують сховищами для видобутої нафти.
+|cffffcc00TECHTREE UNLOCKED|r
+Shipyards are primarily responsible for constructing various warships within the Alliance's naval forces. They also serve as depots for harvested oil.
 }
 
 STRING 292
 {
-|cffffcc00ДОСТУПНІ НОВІ ОДИНИЦІ|r
-Руйнівники ельфів — це потужні військові кораблі з флоту Квел'Таласу. Екіпаж цих швидкохідних суден складається з висококласних ельфійських мореплавців, які готові вступити в бій із ворогом, хоч би ким він не був.
+|cffffcc00TECHTREE UNLOCKED|r
+Elven Destroyers are powerful warships from the fleets of Quel'thalas. Crewed with highly-skilled Elven seafarers, these swift-sailing vessels are prepared to engage the enemy wherever they may be found.
 }
 
 STRING 293
@@ -1340,7 +1340,7 @@ Sylvan Craftsman
 
 STRING 302
 {
-|cffffcc00ЗАВДАННЯ ПРОВАЛЕНО|r
+|cffffcc00MISSION FAILED|r
 }
 
 STRING 303
@@ -1373,13 +1373,13 @@ STRING 306
 }
 
 STRING 307
-// Units: nEcC (Ельфійський капітан), Name (Name)
+// Units: nEcC (High Elf Captain), Name (Name)
 {
-Ельфійський капітан
+High Elf Captain
 }
 
 STRING 308
-// Units: nEcC (Ельфійський капітан), EditorSuffix (Name - Editor Suffix)
+// Units: nEcC (High Elf Captain), EditorSuffix (Name - Editor Suffix)
 {
 (Cinematic)
 }
@@ -1399,85 +1399,85 @@ STRING 310
 STRING 313
 // Items: IL33 (WC2Human02ElvenArcher02), Description (Description)
 {
-Це і було наше місце призначення, але руйнівники тролів стерегли гирло річки. Ми не переможемо їх без підкріплення.
+That was our destination, but troll destroyers are guarding the river mouth. We can’t defeat those without reinforcements.
 }
 
 STRING 314
-// Units: nchp (Ноббел Благочестивий), Name (Name)
+// Units: nchp (Nobbel the Pious), Name (Name)
 {
-Ноббел Благочестивий
+Nobbel the Pious
 }
 
 STRING 315
 // Items: IL26 (WC2Human02Nobbel01), Tip (Tooltip - Basic)
 {
-Ноббел Благочестивий
+Nobbel the Pious
 }
 
 STRING 316
 // Items: IL27 (WC2Human02Nobbel02), Tip (Tooltip - Basic)
 {
-Ноббел Благочестивий
+Nobbel the Pious
 }
 
 STRING 317
 // Items: IL28 (WC2Human02Nobbel03), Tip (Tooltip - Basic)
 {
-Ноббел Благочестивий
+Nobbel the Pious
 }
 
 STRING 318
 // Items: IL29 (WC2Human02Nobbel04), Tip (Tooltip - Basic)
 {
-Ноббел Благочестивий
+Nobbel the Pious
 }
 
 STRING 319
 // Items: IL30 (WC2Human02Nobbel05), Tip (Tooltip - Basic)
 {
-Ноббел Благочестивий
+Nobbel the Pious
 }
 
 STRING 320
 // Items: IL34 (WC2Human02ElvenArcher03), Tip (Tooltip - Basic)
 {
-Ельфійський капітан
+Elven Captain
 }
 
 STRING 321
 // Items: IL35 (WC2Human02ElvenArcher04), Tip (Tooltip - Basic)
 {
-Ельфійський капітан
+Elven Captain
 }
 
 STRING 322
 // Items: IL36 (WC2Human02ElvenCaptain01), Tip (Tooltip - Basic)
 {
-Ельфійський капітан
+Elven Captain
 }
 
 STRING 323
 // Items: IL37 (WC2Human02ElvenCaptain02), Tip (Tooltip - Basic)
 {
-Ельфійський капітан
+Elven Captain
 }
 
 STRING 324
 // Items: IL31 (WC2Human02Nobbel06), Tip (Tooltip - Basic)
 {
-Ноббел Благочестивий
+Nobbel the Pious
 }
 
 STRING 327
 // Items: IL52 (WC2Human02Peon03), Tip (Tooltip - Basic)
 {
-Батрак
+Peon
 }
 
 STRING 328
 // Items: IL52 (WC2Human02Peon03), Description (Description)
 {
-Будь ласка! Не треба насильства!
+Please! No hurt!
 }
 
 STRING 329
@@ -1489,31 +1489,31 @@ WC2Human02Peon03
 STRING 330
 // Items: IL50 (WC2Human02Peon01), Description (Description)
 {
-Заґ заґ заґ, аргх! Агов мені треба побути наодинці!
+Zug zug zug, Argh! Hey! Ow, me need alone time!
 }
 
 STRING 331
 // Items: IL51 (WC2Human02Peon02), Description (Description)
 {
-Агов! Не турбуйте мене, мені треба витертись витертись!
+Hey! Quit disturbing me, me need wipe wipe!
 }
 
 STRING 332
 // Items: IL22 (WC2Human02Gavinrad03), Description (Description)
 {
-Ми дізналися, що в лісах навколо Таррен-Млину утримують у полоні ще більше вцілілих. Орки використовують їх як робочу силу.
+We have learned there are more survivors held captive in the woods around Tarren Mill. The orcs are using them as forced labor.
 }
 
 STRING 333
 {
-|cff8080ffНОВИЙ НАПІВГЕРОЙ|r
-Ґавінрад — один із ветеранів Азероту, який став паладином ордену Срібної Десниці. Він здатний відновлювати здоров'я союзних одиниць за допомогою «Healing Word» та посилювати ближні атаки через «Vengeance Aura».
+|cff8080ffNEW SEMI HERO|r
+Gavinrad - is one of the Azerothien veterans, who became the paladin of the Silver Hand order. Able to restore friendly units health with "Healing Word" and boost their melee attack with "Vengeance Aura".
 }
 
 STRING 334
 {
-|cff8080ffНОВИЙ ГЕРОЙ|r
-Данат — капітан Андуїна Лотара та племінник короля Тораса Тролебоя. Славний воїн, який здатний приголомшувати ворогів своїм щитом та пришвидшувати атаки союзників бойовим кличем.
+|cff8080ffNEW HERO|r
+Danath - captain of Anduin Lothar and nephew of the king Thoras Trollbane. Excellent warrior that can bash enemies with his shield and boost friendly units attack rate with his shouts.
 }
 
 STRING 335
@@ -1674,44 +1674,44 @@ STRING 366
 
 STRING 367
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ ОНОВЛЕНО|r
-Ельфійські союзники
- - Зайдіть у коло сили та звільніть ельфійського літописця.
+|cffffcc00MAIN QUEST UPDATED|r
+Elven Allies
+ - Enter the Circle of Power and free Milan the Scribe
 }
 
 STRING 368
 {
-Зайдіть у коло сили та звільніть ельфійського літописця.
+Enter the Circle of Power and free Milan the Scribe.
 }
 
 STRING 376
 {
-Знищіть орочі корабельні
+Destroy orc shipyard
 }
 
 STRING 377
 {
-|cffffcc00ГОЛОВНЕ ЗАВДАННЯ ОНОВЛЕНО|r
-Підсилити флот
- - |cff808080Знищіть орочі корабельні (Виконано)|r
+|cffffcc00MAIN QUEST UPDATED|r
+Reinforce the Navy
+ - |cff808080Destroy orc shipyard (Completed)|r
 }
 
 STRING 379
 // Items: IL15 (WC2Human02Danath15), Description (Description)
 {
-Тоді ми мусимо їм допомогти. Ці бідолахи й так натерпілися занадто багато. Щойно дістанемося туди, ви про це подбаєте.
+Then we must help them. These poor fellows must have endured too much. Once we get there, you’ll see to it.
 }
 
 STRING 380
 // Items: IL36 (WC2Human02ElvenCaptain01), Description (Description)
 {
-Не можу не погодитися. Наші розвідники попередили нас про безліч оркських вартових веж, що височіють по обидва боки річки, а руйнівники тролів ніколи не втрачають пильності.
+I couldn’t agree more, our forward scouts have warned us of many orcish watch posts looming on both sides of the river, and the troll destroyers are ever vigilant.
 }
 
 STRING 381
 // Items: IL37 (WC2Human02ElvenCaptain02), Description (Description)
 {
-Ха! Не бійся, людино, ти не помреш у мою зміну. Не сьогодні.
+Ha! Fear not, human, you will not die on my watch. Not today.
 }
 
 STRING 382

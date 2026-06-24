@@ -79,10 +79,81 @@ function parseVoCSV(csvText) {
     results.push({
       key,
       type:         typeFromKey(key) || 'VO',
-      unit:         (row[1] || '').trim() || null,
+      unit_id:      (row[2] || '').trim() || null,
+      unit_name:    (row[1] || '').trim() || null,
       source,
       stringNumber: extractStringNumber(row[5]),
     });
+  }
+
+  return { results, warnings };
+}
+
+// ─── VO CSV → Translation only (7 columns, IMPLIMENTED rows) ────────────────
+function parseVoCSVTranslation(csvText) {
+  const allRows = parseCSVText(csvText);
+  if (!allRows.length) return { results: [], warnings: [] };
+
+  const headerCol1 = (allRows[0][1] || '').trim().toUpperCase();
+  if (headerCol1 === 'TYPE') {
+    return { results: [], warnings: ['⚠ Wrong file in VO zone: this looks like a Text CSV (6-col). Swap the drop zones.'] };
+  }
+
+  let dataStart = 0;
+  if ((allRows[0][0] || '').trim().toUpperCase() === 'STATUS') dataStart = 1;
+
+  const results = [], warnings = [];
+
+  for (let i = dataStart; i < allRows.length; i++) {
+    const row    = allRows[i];
+    const status = (row[0] || '').trim();
+    if (!status) continue;
+    if (status.toUpperCase().includes('SCENE')) continue;
+    if (!status.toUpperCase().includes('IMPLIMENTED')) continue;
+
+    const key         = (row[6] || '').trim();
+    const translation = (row[4] || '').trim();
+
+    if (!key && !translation) continue;
+    if (!key)         { warnings.push(`VO row ${i + 1}: missing VARIABLE NAME`); continue; }
+    if (!translation) { warnings.push(`VO row ${i + 1} (${key}): missing translation`); continue; }
+
+    results.push({ key, translation });
+  }
+
+  return { results, warnings };
+}
+
+// ─── Text CSV → Translation only (6 columns, IMPLIMENTED rows) ──────────────
+function parseTextCSVTranslation(csvText) {
+  const allRows = parseCSVText(csvText);
+  if (!allRows.length) return { results: [], warnings: [] };
+
+  const headerCol1 = (allRows[0][1] || '').trim().toUpperCase();
+  if (headerCol1 === 'UNIT') {
+    return { results: [], warnings: ['⚠ Wrong file in Text zone: this looks like a VO CSV (7-col). Swap the drop zones.'] };
+  }
+
+  let dataStart = 0;
+  if ((allRows[0][0] || '').trim().toUpperCase() === 'STATUS') dataStart = 1;
+
+  const results = [], warnings = [];
+
+  for (let i = dataStart; i < allRows.length; i++) {
+    const row    = allRows[i];
+    const status = (row[0] || '').trim();
+    if (!status) continue;
+    if (status.toUpperCase().includes('TEXT TYPE')) continue;
+    if (!status.toUpperCase().includes('IMPLIMENTED')) continue;
+
+    const key         = (row[5] || '').trim();
+    const translation = (row[3] || '').trim();
+
+    if (!key && !translation) continue;
+    if (!key)         { warnings.push(`Text row ${i + 1}: missing VARIABLE NAME`); continue; }
+    if (!translation) { warnings.push(`Text row ${i + 1} (${key}): missing translation`); continue; }
+
+    results.push({ key, translation });
   }
 
   return { results, warnings };
