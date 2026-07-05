@@ -212,7 +212,7 @@ function buildUnitsDB() {
   renderPreview(generatedJSON);
   document.getElementById('result-section').classList.remove('hidden');
   document.getElementById('download-hint').textContent =
-    `Save this file under database/translations/${currentLangCode()}/`;
+    `Save this file under database/translations/${currentLangCode()}/ — same filename every time, just overwrite the old one.`;
 }
 
 function colFor(role) {
@@ -255,11 +255,15 @@ function renderPreview(data) {
 }
 
 // ── Download ─────────────────────────────────────────────────────────────────
+// No timestamp in the filename on purpose: this is a single campaign-wide
+// glossary, not a versioned snapshot. Re-downloading always produces the same
+// name, so dropping the new file into database/translations/<lang>/ overwrites
+// the old one and build.html picks it up automatically — no manifest to edit.
 document.getElementById('btn-download').addEventListener('click', () => {
   if (!generatedJSON) return;
   const prefix = (document.getElementById('campaign-prefix').value.trim() || 'CAMPAIGN').replace(/[^A-Za-z0-9]/g, '');
   const lang   = currentLangCode();
-  const filename = `${prefix}_UNITS_${lang}_${Math.floor(Date.now() / 1000)}.json`;
+  const filename = `${prefix}_UNITS_${lang}.json`;
   const blob = new Blob([JSON.stringify(generatedJSON, null, 2)], { type: 'application/json' });
   const url  = URL.createObjectURL(blob);
   const a    = document.createElement('a');

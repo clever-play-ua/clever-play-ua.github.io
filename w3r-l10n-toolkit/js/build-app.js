@@ -1,7 +1,6 @@
 const LANG_STORAGE_KEY = 'wts-build-lang';
 
 let manifestList    = [];
-let unitsManifest    = {};
 let selectedEntry    = null;
 let sourceJSON       = null;
 let translationJSON  = null;
@@ -27,16 +26,19 @@ langSelect.addEventListener('change', () => {
   invalidateCheck();
 });
 
-// --- Load manifests ---
-Promise.all([
-  fetch('database/manifest.json').then(r => r.ok ? r.json() : []).catch(() => []),
-  fetch('database/units-manifest.json').then(r => r.ok ? r.json() : {}).catch(() => {}),
-]).then(([manifest, units]) => {
-  manifestList  = manifest;
-  unitsManifest = units || {};
+// --- Load manifest ---
+fetch('database/manifest.json').then(r => r.ok ? r.json() : []).catch(() => []).then(manifest => {
+  manifestList = manifest;
   dbSelect.innerHTML = '<option value="" disabled selected>— выбери базу —</option>' +
     manifest.map(e => `<option value="${e.file}">${e.label}</option>`).join('');
 });
+
+// Campaign prefix ("RoA" из "RoA_A01_M02_EN_...") — используется, чтобы найти
+// campaign-wide базу имён персонажей по предсказуемому имени файла, без
+// какого-либо отдельного манифеста.
+function campaignPrefix(entry) {
+  return entry.file.split('_')[0];
+}
 
 dbSelect.addEventListener('change', () => {
   selectedEntry = manifestList.find(e => e.file === dbSelect.value) || null;
@@ -129,32 +131,29 @@ btnCheck.addEventListener('click', async () => {
     }
   }
 
-  // 3. Campaign-wide character names DB (soft — does not block build)
-  const unitsName = unitsManifest[lang];
-  if (!unitsName) {
-    rows.push(row('warn', `База имён персонажей (${lang})`, 'нет базы для этого языка — сборка не заблокирована'));
-  } else {
-    try {
-      const res = await fetch(`./database/translations/${lang}/${unitsName}.json`);
-      if (!res.ok) throw new Error(String(res.status));
-      unitsJSON = await res.json();
+  // 3. Campaign-wide character names DB — fixed filename, no manifest needed
+  // (soft check: missing file does not block the build).
+  const unitsPath = `./database/translations/${lang}/${campaignPrefix(selectedEntry)}_UNITS_${lang}.json`;
+  try {
+    const res = await fetch(unitsPath);
+    if (!res.ok) throw new Error(String(res.status));
+    unitsJSON = await res.json();
 
-      const speakers = new Set();
-      if (sourceJSON) {
-        for (const entry of Object.values(sourceJSON.strings)) {
-          if (entry.type === 'VO' && entry.unit_id) speakers.add(entry.unit_id);
-        }
+    const speakers = new Set();
+    if (sourceJSON) {
+      for (const entry of Object.values(sourceJSON.strings)) {
+        if (entry.type === 'VO' && entry.unit_id) speakers.add(entry.unit_id);
       }
-      const missing = [...speakers].filter(id => unitsJSON[id] === undefined);
-      if (missing.length) {
-        rows.push(row('warn', `База имён персонажей (${lang})`,
-          `${speakers.size - missing.length} / ${speakers.size} персонажей этой карты переведено — нет перевода: ${missing.join(', ')}`));
-      } else {
-        rows.push(row('ok', `База имён персонажей (${lang})`, `${speakers.size} / ${speakers.size} персонажей этой карты переведено`));
-      }
-    } catch (e) {
-      rows.push(row('warn', `База имён персонажей (${lang})`, `не загрузилась (${e.message})`));
     }
+    const missing = [...speakers].filter(id => unitsJSON[id] === undefined);
+    if (missing.length) {
+      rows.push(row('warn', `База имён персонажей (${lang})`,
+        `${speakers.size - missing.length} / ${speakers.size} персонажей этой карты переведено — нет перевода: ${missing.join(', ')}`));
+    } else {
+      rows.push(row('ok', `База имён персонажей (${lang})`, `${speakers.size} / ${speakers.size} персонажей этой карты переведено`));
+    }
+  } catch (e) {
+    rows.push(row('warn', `База имён персонажей (${lang})`, `нет файла ${unitsPath.replace('./', '')} — сборка не заблокирована`));
   }
 
   // 4. .wts file
