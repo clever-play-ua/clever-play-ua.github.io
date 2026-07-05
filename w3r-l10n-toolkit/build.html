@@ -5,6 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Build .wts — WTS L10n Toolkit</title>
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    .check-report {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface);
+      padding: 14px 16px;
+      margin: 16px 0;
+      font-size: 13px;
+    }
+    .check-report .check-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 5px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .check-report .check-row:last-child { border-bottom: none; }
+    .check-ok   { color: var(--success); }
+    .check-warn { color: var(--warn); }
+    .check-err  { color: #ff6b6b; }
+  </style>
 </head>
 <body>
   <div class="container">
@@ -15,29 +36,43 @@
     </header>
 
     <nav class="page-nav">
-      <a href="index.html"  class="page-nav-link">Create DB</a>
-      <a href="update.html" class="page-nav-link">Update DB</a>
+      <a href="index.html"              class="page-nav-link">Create DB</a>
+      <a href="update.html"             class="page-nav-link">Update DB</a>
+      <a href="create-translation.html" class="page-nav-link">Create Translation DB</a>
+      <a href="update-translation.html" class="page-nav-link">Update Translation</a>
+      <a href="create-units.html"       class="page-nav-link">Character Names</a>
+      <a href="build.html"              class="page-nav-link active">Build .wts</a>
     </nav>
 
     <h2>Build localized .wts</h2>
 
     <div class="form-row">
       <div class="form-group">
-        <label>База данных <span class="required">*</span></label>
-        <select id="db-select">
-          <option value="" disabled selected>— выбери базу —</option>
-          <option value="RoA_A01_CNMC1">RoA · Act 1 · Cinematic 1</option>
+        <label>Язык <span class="required">*</span></label>
+        <select id="lang-select">
+          <option value="ukUA">ukUA — Українська</option>
+          <option value="enUS">enUS — English</option>
+          <option value="deDE">deDE — Deutsch</option>
+          <option value="esES">esES — Español (Spain)</option>
+          <option value="esMX">esMX — Español (LATAM)</option>
+          <option value="frFR">frFR — Français</option>
+          <option value="itIT">itIT — Italiano</option>
+          <option value="plPL">plPL — Polski</option>
+          <option value="ptBR">ptBR — Português (Brasil)</option>
+          <option value="ruRU">ruRU — Русский</option>
+          <option value="koKR">koKR — 한국어</option>
+          <option value="zhCN">zhCN — 简体中文</option>
+          <option value="zhTW">zhTW — 繁體中文</option>
+          <option value="csCZ">csCZ — Čeština</option>
         </select>
       </div>
       <div class="form-group">
-        <label>Язык <span class="required">*</span></label>
-        <select id="lang-select" disabled>
-          <option value="" disabled selected>— сначала выбери базу —</option>
+        <label>База данных <span class="required">*</span></label>
+        <select id="db-select">
+          <option value="" disabled selected>— загружаю... —</option>
         </select>
       </div>
     </div>
-
-    <div id="fetch-status" class="form-hint hidden"></div>
 
     <div class="form-group form-group--full" style="margin-bottom: 24px">
       <label>Файл .wts от разраба <span class="required">*</span></label>
@@ -49,10 +84,16 @@
       </div>
     </div>
 
+    <div class="textarea-actions">
+      <button id="btn-check" class="btn btn-ghost" disabled>Проверить</button>
+    </div>
+
+    <div id="check-report" class="check-report hidden"></div>
+
     <div id="form-hint" class="form-hint hidden"></div>
 
     <div class="textarea-actions">
-      <button id="btn-build" class="btn btn-primary" disabled>Build .wts</button>
+      <button id="btn-build" class="btn btn-primary" disabled>Собрать .wts</button>
     </div>
 
     <div id="result-section" class="hidden" style="margin-top: 28px">

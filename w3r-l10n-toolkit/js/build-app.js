@@ -1,80 +1,51 @@
-// Known databases and their available languages
-const DATABASES = {
-  'RoA_A01_CNMC1': ['ukUA'],
-};
+const LANG_STORAGE_KEY = 'wts-build-lang';
 
-let sourceJSON      = null;
-let translationJSON = null;
-let wtsText         = null;
-let wtsFilename     = '';
-let builtWTS        = null;
+let manifestList    = [];
+let unitsManifest    = {};
+let selectedEntry    = null;
+let sourceJSON       = null;
+let translationJSON  = null;
+let unitsJSON        = null;   // null = not attempted / not available for this language
+let wtsText          = null;
+let wtsFilename      = '';
+let builtWTS         = null;
+let checkPassed      = false;
 
-const dbSelect      = document.getElementById('db-select');
 const langSelect    = document.getElementById('lang-select');
-const fetchStatus   = document.getElementById('fetch-status');
+const dbSelect      = document.getElementById('db-select');
+const checkReport   = document.getElementById('check-report');
 const formHint      = document.getElementById('form-hint');
+const btnCheck      = document.getElementById('btn-check');
 const btnBuild      = document.getElementById('btn-build');
 
-// --- Database / language selection ---
-dbSelect.addEventListener('change', () => {
-  const db = dbSelect.value;
-  const langs = DATABASES[db] || [];
-
-  langSelect.innerHTML = langs.map(l => `<option value="${l}">${l}</option>`).join('');
-  langSelect.disabled = langs.length === 0;
-
-  sourceJSON = null;
-  translationJSON = null;
-  updateBuildButton();
-
-  if (langs.length === 1) {
-    langSelect.value = langs[0];
-    fetchJSONs(db, langs[0]);
-  }
-});
+// --- Language select: remember last choice ---
+const savedLang = localStorage.getItem(LANG_STORAGE_KEY);
+if (savedLang) langSelect.value = savedLang;
 
 langSelect.addEventListener('change', () => {
-  fetchJSONs(dbSelect.value, langSelect.value);
+  localStorage.setItem(LANG_STORAGE_KEY, langSelect.value);
+  invalidateCheck();
 });
 
-async function fetchJSONs(db, lang) {
-  sourceJSON = null;
-  translationJSON = null;
-  updateBuildButton();
+// --- Load manifests ---
+Promise.all([
+  fetch('database/manifest.json').then(r => r.ok ? r.json() : []).catch(() => []),
+  fetch('database/units-manifest.json').then(r => r.ok ? r.json() : {}).catch(() => {}),
+]).then(([manifest, units]) => {
+  manifestList  = manifest;
+  unitsManifest = units || {};
+  dbSelect.innerHTML = '<option value="" disabled selected>— выбери базу —</option>' +
+    manifest.map(e => `<option value="${e.file}">${e.label}</option>`).join('');
+});
 
-  showFetchStatus('Загружаю базу...', false);
-
-  try {
-    const [srcRes, trnRes] = await Promise.all([
-      fetch(`./database/${db}_EN.json`),
-      fetch(`./database/${db}_${lang}.json`),
-    ]);
-
-    if (!srcRes.ok)  throw new Error(`${db}_EN.json — ${srcRes.status}`);
-    if (!trnRes.ok)  throw new Error(`${db}_${lang}.json — ${trnRes.status}`);
-
-    sourceJSON      = await srcRes.json();
-    translationJSON = await trnRes.json();
-
-    const total = Object.keys(sourceJSON.strings).length;
-    const translated = Object.keys(translationJSON.strings).length;
-    showFetchStatus(`✓ База загружена — ${translated} / ${total} строк переведено`, false);
-  } catch(e) {
-    showFetchStatus(`Ошибка загрузки: ${e.message}`, true);
-  }
-
-  updateBuildButton();
-}
-
-function showFetchStatus(msg, isError) {
-  fetchStatus.textContent = msg;
-  fetchStatus.style.color = isError ? 'var(--warn)' : 'var(--success)';
-  fetchStatus.classList.remove('hidden');
-}
+dbSelect.addEventListener('change', () => {
+  selectedEntry = manifestList.find(e => e.file === dbSelect.value) || null;
+  invalidateCheck();
+});
 
 // --- .wts file picker ---
-const wtsInput    = document.getElementById('wts-input');
-const wtsDrop     = document.getElementById('wts-drop');
+const wtsInput      = document.getElementById('wts-input');
+const wtsDrop       = document.getElementById('wts-drop');
 const wtsFilenameEl = document.getElementById('wts-filename');
 
 wtsInput.addEventListener('change', () => {
@@ -96,18 +67,128 @@ function loadWTS(file) {
   const reader = new FileReader();
   reader.onload = e => {
     wtsText = e.target.result;
-    updateBuildButton();
+    invalidateCheck();
   };
   reader.readAsText(file, 'utf-8');
 }
 
-function updateBuildButton() {
-  btnBuild.disabled = !(sourceJSON && translationJSON && wtsText);
+function invalidateCheck() {
+  checkPassed = false;
+  builtWTS = null;
+  btnBuild.disabled = true;
+  checkReport.classList.add('hidden');
+  document.getElementById('result-section').classList.add('hidden');
+  btnCheck.disabled = !(selectedEntry && langSelect.value && wtsText);
 }
 
-// --- Build ---
-document.getElementById('btn-build').addEventListener('click', () => {
+invalidateCheck();
+
+// --- Проверить (integrity check) ---
+btnCheck.addEventListener('click', async () => {
   formHint.classList.add('hidden');
+  btnCheck.disabled = true;
+  btnCheck.textContent = 'Проверяю...';
+
+  const lang = langSelect.value;
+  const rows = [];
+  let hardFail = false;
+
+  sourceJSON = null;
+  translationJSON = null;
+  unitsJSON = null;
+
+  // 1. Source EN database
+  try {
+    const res = await fetch(`./database/${selectedEntry.file}.json`);
+    if (!res.ok) throw new Error(String(res.status));
+    sourceJSON = await res.json();
+    const total = Object.keys(sourceJSON.strings).length;
+    rows.push(row('ok', 'Исходная база (EN)', `${total} строк`));
+  } catch (e) {
+    rows.push(row('err', 'Исходная база (EN)', `не найдена (${e.message})`));
+    hardFail = true;
+  }
+
+  // 2. Translation for selected map + language
+  const transName = selectedEntry.translations && selectedEntry.translations[lang];
+  if (!transName) {
+    rows.push(row('err', `Перевод карты (${lang})`, 'нет записи в manifest.json'));
+    hardFail = true;
+  } else {
+    try {
+      const res = await fetch(`./database/translations/${lang}/${transName}.json`);
+      if (!res.ok) throw new Error(String(res.status));
+      translationJSON = await res.json();
+      const total      = sourceJSON ? Object.keys(sourceJSON.strings).length : 0;
+      const translated = Object.keys(translationJSON).length;
+      const pct = total ? Math.round((translated / total) * 100) : 0;
+      rows.push(row('ok', `Перевод карты (${lang})`, `${translated} / ${total} строк (${pct}%)`));
+    } catch (e) {
+      rows.push(row('err', `Перевод карты (${lang})`, `не загрузился (${e.message})`));
+      hardFail = true;
+    }
+  }
+
+  // 3. Campaign-wide character names DB (soft — does not block build)
+  const unitsName = unitsManifest[lang];
+  if (!unitsName) {
+    rows.push(row('warn', `База имён персонажей (${lang})`, 'нет базы для этого языка — сборка не заблокирована'));
+  } else {
+    try {
+      const res = await fetch(`./database/translations/${lang}/${unitsName}.json`);
+      if (!res.ok) throw new Error(String(res.status));
+      unitsJSON = await res.json();
+
+      const speakers = new Set();
+      if (sourceJSON) {
+        for (const entry of Object.values(sourceJSON.strings)) {
+          if (entry.type === 'VO' && entry.unit_id) speakers.add(entry.unit_id);
+        }
+      }
+      const missing = [...speakers].filter(id => unitsJSON[id] === undefined);
+      if (missing.length) {
+        rows.push(row('warn', `База имён персонажей (${lang})`,
+          `${speakers.size - missing.length} / ${speakers.size} персонажей этой карты переведено — нет перевода: ${missing.join(', ')}`));
+      } else {
+        rows.push(row('ok', `База имён персонажей (${lang})`, `${speakers.size} / ${speakers.size} персонажей этой карты переведено`));
+      }
+    } catch (e) {
+      rows.push(row('warn', `База имён персонажей (${lang})`, `не загрузилась (${e.message})`));
+    }
+  }
+
+  // 4. .wts file
+  if (wtsText) {
+    const total = parseWTS(wtsText).filter(s => s.type === 'string').length;
+    rows.push(row('ok', 'Файл .wts от разраба', `${total} STRING-блоков`));
+  } else {
+    rows.push(row('err', 'Файл .wts от разраба', 'не загружен'));
+    hardFail = true;
+  }
+
+  checkReport.innerHTML = rows.join('');
+  checkReport.classList.remove('hidden');
+
+  checkPassed = !hardFail;
+  btnBuild.disabled = !checkPassed;
+  btnCheck.disabled = false;
+  btnCheck.textContent = 'Проверить';
+});
+
+function row(status, label, detail) {
+  const icon = status === 'ok' ? '✓' : status === 'warn' ? '⚠' : '✗';
+  return `<div class="check-row"><span>${label}</span><span class="check-${status}">${icon} ${detail}</span></div>`;
+}
+
+// --- Собрать .wts ---
+btnBuild.addEventListener('click', () => {
+  formHint.classList.add('hidden');
+
+  if (!checkPassed || !sourceJSON || !translationJSON || !wtsText) {
+    formHint.textContent = 'Сначала нажми «Проверить» — не все данные загружены.';
+    formHint.classList.remove('hidden');
+    return;
+  }
 
   try {
     const result = buildLocalized(sourceJSON, translationJSON, wtsText);
@@ -165,21 +246,20 @@ function parseWTS(text) {
 }
 
 // --- Core build logic ---
+// src  = EN reference database ({ meta, strings: { key: { string_number, source, ... } } })
+// trn  = translation file (flat { key: "translated text" })
+// wtsRaw = developer's current .wts (source-language text, authoritative string numbers)
 function buildLocalized(src, trn, wtsRaw) {
-  // Build num → key lookup
+  // Build string_number → key lookup
   const numToKey = new Map();
   for (const [key, entry] of Object.entries(src.strings)) {
-    for (const num of entry.string_numbers) {
-      numToKey.set(num, key);
-    }
+    if (entry.string_number != null) numToKey.set(entry.string_number, key);
   }
 
-  // Build num → translation lookup
+  // Build string_number → translated text lookup
   const numToTranslation = new Map();
   for (const [num, key] of numToKey) {
-    if (trn.strings[key] !== undefined) {
-      numToTranslation.set(num, trn.strings[key]);
-    }
+    if (trn[key] !== undefined) numToTranslation.set(num, trn[key]);
   }
 
   const segments  = parseWTS(wtsRaw);

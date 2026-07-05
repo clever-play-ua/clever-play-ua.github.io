@@ -1,7 +1,7 @@
 [
-    { "file": "RoA_A01_CNMC1_EN_1782056201", "label": "RoA · Act 1 · Cinematic 1", "translations": { "ukUA": "RoA_A01_CNMC1_ukUA_1782325734" } },
-    { "file": "RoA_A01_M01_EN_1782056647",   "label": "RoA · Act 1 · Mission 01",  "translations": { "ukUA": "RoA_A01_M01_ukUA_1782325709" } },
-    { "file": "RoA_A01_M02_EN_1782056723",   "label": "RoA · Act 1 · Mission 02",  "translations": { "ukUA": "RoA_A01_M02_ukUA_1782325651" } },
-    { "file": "RoA_A01_M03_EN_1782325467",   "label": "RoA · Act 1 · Mission 03",  "translations": { "ukUA": "RoA_A01_M03_ukUA_1782325625" } },
-    { "file": "RoA_A01_M04_EN_1782325548",   "label": "RoA · Act 1 · Mission 04",  "translations": { "ukUA": "RoA_A01_M04_ukUA_1782325588" } }
+    { "file": "RoA_A01_CNMC1_EN_1782056201", "label": "RoA · Act 1 · Cinematic 1", "translations": { "ukUA": "RoA_A01_CNMC1_ukUA_1782325734", "esMX": "RoA_A01_CNMC1_esMX_1783259694" } },
+    { "file": "RoA_A01_M01_EN_1782056647",   "label": "RoA · Act 1 · Mission 01",  "translations": { "ukUA": "RoA_A01_M01_ukUA_1782325709",   "esMX": "RoA_A01_M01_esMX_1783260562" } },
+    { "file": "RoA_A01_M02_EN_1782056723",   "label": "RoA · Act 1 · Mission 02",  "translations": { "ukUA": "RoA_A01_M02_ukUA_1782325651",   "esMX": "RoA_A01_M02_esMX_1783260634" } },
+    { "file": "RoA_A01_M03_EN_1782325467",   "label": "RoA · Act 1 · Mission 03",  "translations": { "ukUA": "RoA_A01_M03_ukUA_1782325625",   "esMX": "RoA_A01_M03_esMX_1783260686" } },
+    { "file": "RoA_A01_M04_EN_1782325548",   "label": "RoA · Act 1 · Mission 04",  "translations": { "ukUA": "RoA_A01_M04_ukUA_1782325588",   "esMX": "RoA_A01_M04_esMX_1783260746" } }
 ]
