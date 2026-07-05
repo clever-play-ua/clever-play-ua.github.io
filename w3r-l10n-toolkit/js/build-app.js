@@ -191,7 +191,7 @@ btnBuild.addEventListener('click', () => {
   }
 
   try {
-    const result = buildLocalized(sourceJSON, translationJSON, wtsText);
+    const result = buildLocalized(sourceJSON, translationJSON, wtsText, unitsJSON);
     builtWTS = result.wts;
     showResult(result);
   } catch(e) {
@@ -246,10 +246,11 @@ function parseWTS(text) {
 }
 
 // --- Core build logic ---
-// src  = EN reference database ({ meta, strings: { key: { string_number, source, ... } } })
-// trn  = translation file (flat { key: "translated text" })
-// wtsRaw = developer's current .wts (source-language text, authoritative string numbers)
-function buildLocalized(src, trn, wtsRaw) {
+// src     = EN reference database ({ meta, strings: { key: { string_number, source, unit_id, unit_name, type, ... } } })
+// trn     = translation file (flat { key: "translated text" })
+// wtsRaw  = developer's current .wts (source-language text, authoritative string numbers)
+// unitsDB = campaign-wide character names translation (flat { unit_id: "translated name" }), or null
+function buildLocalized(src, trn, wtsRaw, unitsDB) {
   // Build string_number → key lookup
   const numToKey = new Map();
   for (const [key, entry] of Object.entries(src.strings)) {
@@ -262,9 +263,25 @@ function buildLocalized(src, trn, wtsRaw) {
     if (trn[key] !== undefined) numToTranslation.set(num, trn[key]);
   }
 
+  // Reverse lookup: exact English display name → unit_id (for standalone name
+  // strings — units/items sitting in the .wts completely separate from dialogue,
+  // with no reliable comment tag to identify them by). Also collect the set of
+  // speakers used in this map, so we can report characters whose name never
+  // turned up as a standalone string (renamed/removed on the dev's side).
+  const nameToUnitId = new Map();
+  const speakerIds   = new Set();
+  for (const entry of Object.values(src.strings)) {
+    if (entry.type !== 'VO' || !entry.unit_id) continue;
+    speakerIds.add(entry.unit_id);
+    if (entry.unit_name) nameToUnitId.set(entry.unit_name.trim(), entry.unit_id);
+  }
+
   const segments  = parseWTS(wtsRaw);
   const totalStrings = segments.filter(s => s.type === 'string').length;
-  let translated  = 0;
+  let translated    = 0;
+  let namesReplaced  = 0;
+  const matchedSpeakers          = new Set();
+  const namesMissingTranslation  = new Set(); // found in .wts, but no entry in unitsDB
 
   const output = segments.map(seg => {
     if (seg.type === 'raw') return seg.text;
@@ -274,22 +291,60 @@ function buildLocalized(src, trn, wtsRaw) {
       translated++;
       return [...seg.before, text, seg.closing].join('\n');
     }
+
+    // Not a tracked dialogue/text string — check if it's a standalone
+    // character name (exact match only, never a partial/contains match).
+    const contentTrimmed = seg.content.join('\n').trim();
+    const unitId = nameToUnitId.get(contentTrimmed);
+    if (unitId) {
+      matchedSpeakers.add(unitId);
+      const translatedName = unitsDB && unitsDB[unitId];
+      if (translatedName !== undefined) {
+        namesReplaced++;
+        return [...seg.before, translatedName, seg.closing].join('\n');
+      }
+      namesMissingTranslation.add(unitId);
+    }
+
     return [...seg.before, ...seg.content, seg.closing].join('\n');
   }).join('\n');
+
+  const namesNotFoundInWts = [...speakerIds].filter(id => !matchedSpeakers.has(id));
 
   return {
     wts: output,
     translated,
     untranslated: totalStrings - translated,
     total: totalStrings,
+    namesReplaced,
+    namesMissingTranslation: [...namesMissingTranslation],
+    namesNotFoundInWts,
   };
 }
 
 // --- Result UI ---
-function showResult({ translated, untranslated, total }) {
+function showResult({ translated, untranslated, total, namesReplaced, namesMissingTranslation, namesNotFoundInWts }) {
   document.getElementById('stat-translated').textContent  = `✓ ${translated} переведено`;
   document.getElementById('stat-untranslated').textContent = `${untranslated} без перевода`;
   document.getElementById('stat-total').textContent        = `${total} всего в .wts`;
+  document.getElementById('stat-names').textContent        = `✓ ${namesReplaced} имён персонажей заменено`;
+
+  const notes = [];
+  if (namesMissingTranslation.length) {
+    notes.push(`Имя найдено в .wts, но нет перевода в базе персонажей: ${namesMissingTranslation.join(', ')}`);
+  }
+  if (namesNotFoundInWts.length) {
+    notes.push(`Персонаж говорит в этой карте, но его имя нигде не найдено как отдельная строка (возможно, изменилось у разраба): ${namesNotFoundInWts.join(', ')}`);
+  }
+
+  const namesNoteEl = document.getElementById('names-note');
+  if (notes.length) {
+    namesNoteEl.innerHTML = notes.map(n => `<li>${n}</li>`).join('');
+    namesNoteEl.closest('.error-section').classList.remove('hidden');
+  } else {
+    namesNoteEl.closest('.error-section').classList.add('hidden');
+  }
+
   document.getElementById('result-section').classList.remove('hidden');
 }
 
