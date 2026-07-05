@@ -22,6 +22,10 @@ const langCustom    = document.getElementById('lang-custom');
 
 langSelect.addEventListener('change', () => {
   langCustomGrp.classList.toggle('hidden', langSelect.value !== '__custom__');
+  if (selectedEntry) loadBaseTranslation();
+});
+langCustom.addEventListener('change', () => {
+  if (selectedEntry) loadBaseTranslation();
 });
 
 function currentLangCode() {
@@ -29,24 +33,6 @@ function currentLangCode() {
     return (langCustom.value.trim().toUpperCase() || 'XX').replace(/[^A-Z0-9-]/g, '');
   }
   return langSelect.value;
-}
-
-// Best-effort: prefill the dropdown from the existing translation's language suffix
-// (…_{LANG}_{timestamp}), e.g. "RoA_A01_M01_UA_1782325709" → UA.
-function prefillLangFromTranslationFile(name) {
-  if (!name) return;
-  const m = name.match(/_([A-Za-z0-9-]+)_\d+$/);
-  if (!m) return;
-  const code = m[1].toUpperCase();
-  const known = [...langSelect.options].some(o => o.value === code);
-  if (known) {
-    langSelect.value = code;
-    langCustomGrp.classList.add('hidden');
-  } else {
-    langSelect.value = '__custom__';
-    langCustom.value = code;
-    langCustomGrp.classList.remove('hidden');
-  }
 }
 
 // ── Manifest ──────────────────────────────────────────────────────────────────
@@ -82,33 +68,40 @@ dbSelect.addEventListener('change', () => {
   }
 
   selectedEntry = manifestList.find(e => e.file === file) || null;
-  prefillLangFromTranslationFile(selectedEntry?.translation);
   setStatus('loading', 'Loading…');
 
   fetch(`database/${file}.json`)
     .then(r => r.ok ? r.json() : Promise.reject())
     .then(data => {
       dbMeta = data.meta || null;
-      if (selectedEntry?.translation) {
-        return fetch(`database/translations/${selectedEntry.translation}.json`)
-          .then(r => r.ok ? r.json() : null).catch(() => null);
-      }
-      return null;
-    })
-    .then(trans => {
-      baseTranslation = trans || {};
-      const count = Object.keys(baseTranslation).length;
-      setStatus('ok', count ? `Base: ${count} entries` : 'No existing translation');
-      renderBasePreview(baseTranslation);
-      resetCsvInputs();
-      document.getElementById('csv-section').classList.remove('hidden');
-      checkMergeReady();
+      loadBaseTranslation();
     })
     .catch(() => {
       setStatus('err', 'Load failed');
       showHint('Could not load the selected database.');
     });
 });
+
+// Fetches (or clears) the base translation for the currently selected DB entry
+// and language, from database/translations/{lang}/{name}.json.
+function loadBaseTranslation() {
+  const lang = currentLangCode();
+  const name = selectedEntry?.translations?.[lang];
+
+  const p = name
+    ? fetch(`database/translations/${lang}/${name}.json`).then(r => r.ok ? r.json() : null).catch(() => null)
+    : Promise.resolve(null);
+
+  p.then(trans => {
+    baseTranslation = trans || {};
+    const count = Object.keys(baseTranslation).length;
+    setStatus('ok', count ? `Base (${lang}): ${count} entries` : `No existing ${lang} translation`);
+    renderBasePreview(baseTranslation);
+    resetCsvInputs();
+    document.getElementById('csv-section').classList.remove('hidden');
+    checkMergeReady();
+  });
+}
 
 function renderBasePreview(trans) {
   const wrap  = document.getElementById('base-preview');
