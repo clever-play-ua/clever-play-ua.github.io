@@ -310,8 +310,15 @@ function buildLocalized(src, trn, wtsRaw, unitsDB) {
 
   const namesNotFoundInWts = [...speakerIds].filter(id => !matchedSpeakers.has(id));
 
+  // World Editor's own .wts reader expects the classic format: UTF-8 with a
+  // BOM and CRLF line endings. parseWTS() normalized everything to bare \n
+  // for easy processing — restore CRLF + BOM here, otherwise WE's parser can
+  // silently fail to recognize STRING blocks (reported as "missing string IDs"
+  // even though the text is present).
+  const finalWts = '﻿' + output.replace(/\n/g, '\r\n');
+
   return {
-    wts: output,
+    wts: finalWts,
     translated,
     untranslated: totalStrings - translated,
     total: totalStrings,
