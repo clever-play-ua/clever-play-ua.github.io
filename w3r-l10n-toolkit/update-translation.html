@@ -144,6 +144,23 @@
       </select>
     </div>
 
+    <div class="form-row" style="margin-bottom:16px;">
+      <div class="form-group" style="max-width:220px;">
+        <label>Translation language</label>
+        <select id="lang-select">
+          <option value="UA">UA — Ukrainian</option>
+          <option value="ES">ES — Spanish (LATAM)</option>
+          <option value="RU">RU — Russian</option>
+          <option value="EN">EN — English</option>
+          <option value="__custom__">Custom…</option>
+        </select>
+      </div>
+      <div class="form-group hidden" id="lang-custom-group" style="max-width:220px;">
+        <label>Custom code</label>
+        <input type="text" id="lang-custom" placeholder="e.g. ES-LATAM" maxlength="12">
+      </div>
+    </div>
+
     <!-- Base translation preview -->
     <div id="base-preview" class="src-preview hidden" style="margin-bottom:24px;">
       <div class="src-preview-title" id="base-preview-title">Current translation</div>
@@ -211,7 +228,7 @@
         ✓ Translation is up to date — nothing to download
       </div>
       <div class="actions" id="download-actions" style="display:none;">
-        <button id="btn-download" class="btn btn-primary">⬇ Download UA JSON</button>
+        <button id="btn-download" class="btn btn-primary">⬇ Download JSON</button>
       </div>
     </div>
 

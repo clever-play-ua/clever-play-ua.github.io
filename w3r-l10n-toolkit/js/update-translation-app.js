@@ -15,6 +15,40 @@ const dbSelect    = document.getElementById('db-select');
 const fetchStatus = document.getElementById('fetch-status');
 const formHint    = document.getElementById('form-hint');
 
+// ── Language select ──────────────────────────────────────────────────────────
+const langSelect    = document.getElementById('lang-select');
+const langCustomGrp = document.getElementById('lang-custom-group');
+const langCustom    = document.getElementById('lang-custom');
+
+langSelect.addEventListener('change', () => {
+  langCustomGrp.classList.toggle('hidden', langSelect.value !== '__custom__');
+});
+
+function currentLangCode() {
+  if (langSelect.value === '__custom__') {
+    return (langCustom.value.trim().toUpperCase() || 'XX').replace(/[^A-Z0-9-]/g, '');
+  }
+  return langSelect.value;
+}
+
+// Best-effort: prefill the dropdown from the existing translation's language suffix
+// (…_{LANG}_{timestamp}), e.g. "RoA_A01_M01_UA_1782325709" → UA.
+function prefillLangFromTranslationFile(name) {
+  if (!name) return;
+  const m = name.match(/_([A-Za-z0-9-]+)_\d+$/);
+  if (!m) return;
+  const code = m[1].toUpperCase();
+  const known = [...langSelect.options].some(o => o.value === code);
+  if (known) {
+    langSelect.value = code;
+    langCustomGrp.classList.add('hidden');
+  } else {
+    langSelect.value = '__custom__';
+    langCustom.value = code;
+    langCustomGrp.classList.remove('hidden');
+  }
+}
+
 // ── Manifest ──────────────────────────────────────────────────────────────────
 fetch('database/manifest.json')
   .then(r => r.ok ? r.json() : Promise.reject())
@@ -48,6 +82,7 @@ dbSelect.addEventListener('change', () => {
   }
 
   selectedEntry = manifestList.find(e => e.file === file) || null;
+  prefillLangFromTranslationFile(selectedEntry?.translation);
   setStatus('loading', 'Loading…');
 
   fetch(`database/${file}.json`)
@@ -357,7 +392,7 @@ document.getElementById('btn-download').addEventListener('click', () => {
   if (!generatedJSON) return;
   const meta = dbMeta || {};
   const ts   = Math.floor(Date.now() / 1000);
-  const parts = [meta.campaign, meta.act, meta.map, 'UA', ts].filter(Boolean);
+  const parts = [meta.campaign, meta.act, meta.map, currentLangCode(), ts].filter(Boolean);
   const filename = (parts.length > 1 ? parts : ['translation', ts]).join('_') + '.json';
   const blob = new Blob([JSON.stringify(generatedJSON, null, 2)], { type: 'application/json' });
   const url  = URL.createObjectURL(blob);

@@ -7,6 +7,22 @@ const formHint = document.getElementById('form-hint');
 setupDrop('drop-vo',   'file-vo',   'label-vo',   (content) => { rawVO   = content; });
 setupDrop('drop-text', 'file-text', 'label-text',  (content) => { rawText = content; });
 
+// ── Language select ──────────────────────────────────────────────────────────
+const langSelect     = document.getElementById('lang-select');
+const langCustomGrp  = document.getElementById('lang-custom-group');
+const langCustom     = document.getElementById('lang-custom');
+
+langSelect.addEventListener('change', () => {
+  langCustomGrp.classList.toggle('hidden', langSelect.value !== '__custom__');
+});
+
+function currentLangCode() {
+  if (langSelect.value === '__custom__') {
+    return (langCustom.value.trim().toUpperCase() || 'XX').replace(/[^A-Z0-9-]/g, '');
+  }
+  return langSelect.value;
+}
+
 function setupDrop(zoneId, inputId, labelId, onLoad) {
   const zone  = document.getElementById(zoneId);
   const input = document.getElementById(inputId);
@@ -128,7 +144,7 @@ document.getElementById('btn-download').addEventListener('click', () => {
   const act      = m ? m[2] : '?';
   const map      = m ? m[3] : '?';
   const ts = Math.floor(Date.now() / 1000);
-  const filename = `${campaign}_${act}_${map}_UA_${ts}.json`;
+  const filename = `${campaign}_${act}_${map}_${currentLangCode()}_${ts}.json`;
   const blob = new Blob([JSON.stringify(generatedJSON, null, 2)], { type: 'application/json' });
   const url  = URL.createObjectURL(blob);
   const a    = document.createElement('a');
