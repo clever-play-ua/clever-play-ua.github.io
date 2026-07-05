@@ -50,13 +50,14 @@ function processCSVs() {
   const allResults  = [...voRes.results,  ...textRes.results];
   const allWarnings = [...voRes.warnings, ...textRes.warnings];
 
+  if (allWarnings.length) showWarnings(allWarnings);
+
   if (allResults.length === 0) {
     showHint('No TRANSLATED / IMPLIMENTED rows with translations found.');
     return;
   }
 
   buildTranslation(allResults, voRes.results.length, textRes.results.length);
-  if (allWarnings.length) showWarnings(allWarnings);
 }
 
 function buildTranslation(rows, voCount, textCount) {
