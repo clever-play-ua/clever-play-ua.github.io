@@ -51,7 +51,7 @@ function processCSVs() {
   const allWarnings = [...voRes.warnings, ...textRes.warnings];
 
   if (allResults.length === 0) {
-    showHint('No IMPLIMENTED rows with translations found.');
+    showHint('No TRANSLATED / IMPLIMENTED rows with translations found.');
     return;
   }
 

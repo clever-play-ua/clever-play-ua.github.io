@@ -89,7 +89,15 @@ function parseVoCSV(csvText) {
   return { results, warnings };
 }
 
-// ─── VO CSV → Translation only (7 columns, IMPLIMENTED rows) ────────────────
+// Rows count as "ready to export" once translated, whether or not they've
+// since been implemented in-game (status progresses TRANSLATED → IMPLIMENTED).
+function isTranslatedStatus(status) {
+  const s = status.toUpperCase();
+  if (s.includes('NOT TRANSLATED')) return false;
+  return s.includes('TRANSLATED') || s.includes('IMPLIMENTED');
+}
+
+// ─── VO CSV → Translation only (7 columns, TRANSLATED/IMPLIMENTED rows) ─────
 function parseVoCSVTranslation(csvText) {
   const allRows = parseCSVText(csvText);
   if (!allRows.length) return { results: [], warnings: [] };
@@ -109,7 +117,7 @@ function parseVoCSVTranslation(csvText) {
     const status = (row[0] || '').trim();
     if (!status) continue;
     if (status.toUpperCase().includes('SCENE')) continue;
-    if (!status.toUpperCase().includes('IMPLIMENTED')) continue;
+    if (!isTranslatedStatus(status)) continue;
 
     const key         = (row[6] || '').trim();
     const translation = (row[4] || '').trim();
@@ -124,7 +132,7 @@ function parseVoCSVTranslation(csvText) {
   return { results, warnings };
 }
 
-// ─── Text CSV → Translation only (6 columns, IMPLIMENTED rows) ──────────────
+// ─── Text CSV → Translation only (6 columns, TRANSLATED/IMPLIMENTED rows) ───
 function parseTextCSVTranslation(csvText) {
   const allRows = parseCSVText(csvText);
   if (!allRows.length) return { results: [], warnings: [] };
@@ -144,7 +152,7 @@ function parseTextCSVTranslation(csvText) {
     const status = (row[0] || '').trim();
     if (!status) continue;
     if (status.toUpperCase().includes('TEXT TYPE')) continue;
-    if (!status.toUpperCase().includes('IMPLIMENTED')) continue;
+    if (!isTranslatedStatus(status)) continue;
 
     const key         = (row[5] || '').trim();
     const translation = (row[3] || '').trim();
