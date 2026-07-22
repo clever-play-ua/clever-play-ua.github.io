@@ -33,11 +33,10 @@ fetch('database/manifest.json').then(r => r.ok ? r.json() : []).catch(() => []).
     manifest.map(e => `<option value="${e.file}">${e.label}</option>`).join('');
 });
 
-// Campaign prefix ("RoA" из "RoA_A01_M02_EN_...") — используется, чтобы найти
-// campaign-wide базу имён персонажей по предсказуемому имени файла, без
-// какого-либо отдельного манифеста.
-function campaignPrefix(entry) {
-  return entry.file.split('_')[0];
+// Fixed, predictable filename — no manifest lookup, no timestamp. Matches what
+// Create/Update Translation always download: campaign_act_map_lang.json.
+function translationPath(meta, lang) {
+  return `./database/translations/${lang}/${meta.campaign}_${meta.act}_${meta.map}_${lang}.json`;
 }
 
 dbSelect.addEventListener('change', () => {
@@ -111,29 +110,30 @@ btnCheck.addEventListener('click', async () => {
     hardFail = true;
   }
 
-  // 2. Translation for selected map + language
-  const transName = selectedEntry.translations && selectedEntry.translations[lang];
-  if (!transName) {
-    rows.push(row('err', `Перевод карты (${lang})`, 'нет записи в manifest.json'));
+  // 2. Translation for selected map + language — fixed filename derived from
+  // the source DB's own meta (campaign_act_map_lang.json), no manifest needed.
+  if (!sourceJSON) {
+    rows.push(row('err', `Перевод карты (${lang})`, 'нет исходной базы — не могу определить путь'));
     hardFail = true;
   } else {
+    const transPath = translationPath(sourceJSON.meta, lang);
     try {
-      const res = await fetch(`./database/translations/${lang}/${transName}.json`);
+      const res = await fetch(transPath);
       if (!res.ok) throw new Error(String(res.status));
       translationJSON = await res.json();
-      const total      = sourceJSON ? Object.keys(sourceJSON.strings).length : 0;
+      const total      = Object.keys(sourceJSON.strings).length;
       const translated = Object.keys(translationJSON).length;
       const pct = total ? Math.round((translated / total) * 100) : 0;
       rows.push(row('ok', `Перевод карты (${lang})`, `${translated} / ${total} строк (${pct}%)`));
     } catch (e) {
-      rows.push(row('err', `Перевод карты (${lang})`, `не загрузился (${e.message})`));
+      rows.push(row('err', `Перевод карты (${lang})`, `нет файла ${transPath.replace('./', '')}`));
       hardFail = true;
     }
   }
 
   // 3. Campaign-wide character names DB — fixed filename, no manifest needed
   // (soft check: missing file does not block the build).
-  const unitsPath = `./database/translations/${lang}/${campaignPrefix(selectedEntry)}_UNITS_${lang}.json`;
+  const unitsPath = `./database/translations/${lang}/${sourceJSON ? sourceJSON.meta.campaign : '?'}_UNITS_${lang}.json`;
   try {
     const res = await fetch(unitsPath);
     if (!res.ok) throw new Error(String(res.status));

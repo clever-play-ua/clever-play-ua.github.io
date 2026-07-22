@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c ' *)",
+      "Bash(find . -iname \"*.wts\" -newer database/manifest.json)",
+      "Bash(ls database/translations/)",
+      "Bash(ls database/translations/enUS)",
+      "Bash(grep -l \"Southshore, one month\" *.wts)",
+      "Bash(grep -rl \"Southshore, one month\" .)",
+      "Bash(python \"C:\\\\Users\\\\UserM\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-UserM-Documents-GitHub-clever-play-ua-github-io-w3r-l10n-toolkit\\\\7055998d-d956-42e5-9df8-5f758f17ecb8\\\\scratchpad\\\\update_check.py\")",
+      "Bash(python \"C:\\\\Users\\\\UserM\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-UserM-Documents-GitHub-clever-play-ua-github-io-w3r-l10n-toolkit\\\\7055998d-d956-42e5-9df8-5f758f17ecb8\\\\scratchpad\\\\apply_update.py\")"
+    ]
+  }
+}

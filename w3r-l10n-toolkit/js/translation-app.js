@@ -136,6 +136,10 @@ function renderPreview(data) {
   document.getElementById('preview-section').classList.remove('hidden');
 }
 
+// No timestamp: this is the current translation for this map+language, not a
+// versioned snapshot. Re-downloading and overwriting the same file lets
+// build.html / update-translation.html find it at a predictable path with no
+// manifest entry to maintain — git history carries the version log instead.
 document.getElementById('btn-download').addEventListener('click', () => {
   if (!generatedJSON) return;
   const firstKey = Object.keys(generatedJSON)[0] || '';
@@ -143,8 +147,7 @@ document.getElementById('btn-download').addEventListener('click', () => {
   const campaign = m ? m[1] : 'UNKNOWN';
   const act      = m ? m[2] : '?';
   const map      = m ? m[3] : '?';
-  const ts = Math.floor(Date.now() / 1000);
-  const filename = `${campaign}_${act}_${map}_${currentLangCode()}_${ts}.json`;
+  const filename = `${campaign}_${act}_${map}_${currentLangCode()}.json`;
   const blob = new Blob([JSON.stringify(generatedJSON, null, 2)], { type: 'application/json' });
   const url  = URL.createObjectURL(blob);
   const a    = document.createElement('a');

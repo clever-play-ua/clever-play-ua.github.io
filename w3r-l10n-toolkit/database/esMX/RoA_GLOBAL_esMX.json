@@ -1,0 +1,19 @@
+{
+  "RoA_GLOBAL_HEROES_UTL_001": "Uther",
+  "RoA_GLOBAL_HEROES_UTL_002": "Ola Sagrada",
+  "RoA_GLOBAL_HEROES_UTL_003": "Aprender Ola Sagrada - [|cffffcc00Nivel %d|r]",
+  "RoA_GLOBAL_HEROES_UTL_004": "Ola Sagrada - [|cffffcc00Nivel 1|r]",
+  "RoA_GLOBAL_HEROES_UTL_005": "Ola Sagrada - [|cffffcc00Nivel 2|r]",
+  "RoA_GLOBAL_HEROES_UTL_006": "Ola Sagrada - [|cffffcc00Nivel 3|r]",
+  "RoA_GLOBAL_HEROES_UTL_007": "Invoca una ola de energía que cura a un objetivo y rebota hacia aliados cercanos. Cada rebote restaura menos puntos de vida. |n|n|cffffcc00Nivel 1|r - Cura <AUaW,DataA1> puntos de daño, salta <AUaW,DataB1> veces. |n|cffffcc00Nivel 2|r - Cura <AUaW,DataA2> puntos de daño, salta <AUaW,DataB2> veces. |n|cffffcc00Nivel 3|r - Cura <AUaW,DataA3> puntos de daño, salta <AUaW,DataB3> veces.",
+  "RoA_GLOBAL_HEROES_UTL_008": "Invoca una ola de energía curativa que rebota hasta <AUaW,DataB1> veces, curando <AUaW,DataA1> puntos de daño en el objetivo principal. Cada rebote restaura menos puntos de vida.",
+  "RoA_GLOBAL_HEROES_UTL_009": "Invoca una ola de energía curativa que rebota hasta <AUaW,DataB2> veces, curando <AUaW,DataA2> puntos de daño en el objetivo principal. Cada rebote restaura menos puntos de vida.",
+  "RoA_GLOBAL_HEROES_UTL_010": "Invoca una ola de energía curativa que rebota hasta <AUaW,DataB3> veces, curando <AUaW,DataA3> puntos de daño en el objetivo principal. Cada rebote restaura menos puntos de vida.",
+  "RoA_GLOBAL_HEROES_UTL_011": "Martillo de Justicia",
+  "RoA_GLOBAL_HEROES_UTL_012": "Aprender Martillo de Justicia",
+  "RoA_GLOBAL_HEROES_UTL_013": "Martillo de Justicia - [|cffffcc00Nivel 1|r]",
+  "RoA_GLOBAL_HEROES_UTL_014": "Martillo de Justicia - [|cffffcc00Nivel 2|r]",
+  "RoA_GLOBAL_HEROES_UTL_015": "Martillo de Justicia - [|cffffcc00Nivel 3|r]",
+  "RoA_GLOBAL_HEROES_UTL_016": "El Martillo de Luz aparece en el cielo y se estrella contra el suelo tras un breve instante. Los objetivos alcanzados por el impacto sufrirán un daño masivo.\r\n\r\nTiempo de lanzamiento: |cffffcc004s|r\r\nDaño: |cffffcc00250|r",
+  "RoA_GLOBAL_HEROES_UTL_017": "El Martillo de Luz aparece en el cielo y se estrella contra el suelo tras un breve instante. Los objetivos alcanzados por el impacto sufrirán un daño masivo.\r\n\r\nTiempo de lanzamiento: 5 s\r\nDaño: 150 / 200 / 250"
+}

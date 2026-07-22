@@ -82,14 +82,20 @@ dbSelect.addEventListener('change', () => {
     });
 });
 
+// Fixed, predictable filename — no manifest lookup, no timestamp. Matches what
+// Create/Update Translation always download: campaign_act_map_lang.json.
+function translationPath(lang) {
+  const meta = dbMeta || {};
+  return `database/translations/${lang}/${meta.campaign}_${meta.act}_${meta.map}_${lang}.json`;
+}
+
 // Fetches (or clears) the base translation for the currently selected DB entry
-// and language, from database/translations/{lang}/{name}.json.
+// and language, from database/translations/{lang}/{campaign}_{act}_{map}_{lang}.json.
 function loadBaseTranslation() {
   const lang = currentLangCode();
-  const name = selectedEntry?.translations?.[lang];
 
-  const p = name
-    ? fetch(`database/translations/${lang}/${name}.json`).then(r => r.ok ? r.json() : null).catch(() => null)
+  const p = dbMeta
+    ? fetch(translationPath(lang)).then(r => r.ok ? r.json() : null).catch(() => null)
     : Promise.resolve(null);
 
   p.then(trans => {
@@ -381,12 +387,13 @@ function renderPreview(changes) {
 }
 
 // ── Download ──────────────────────────────────────────────────────────────────
+// No timestamp — overwrites the same file loadBaseTranslation() reads from,
+// so the next Update Translation run (or Build .wts) just picks it up.
 document.getElementById('btn-download').addEventListener('click', () => {
   if (!generatedJSON) return;
   const meta = dbMeta || {};
-  const ts   = Math.floor(Date.now() / 1000);
-  const parts = [meta.campaign, meta.act, meta.map, currentLangCode(), ts].filter(Boolean);
-  const filename = (parts.length > 1 ? parts : ['translation', ts]).join('_') + '.json';
+  const parts = [meta.campaign, meta.act, meta.map, currentLangCode()].filter(Boolean);
+  const filename = (parts.length > 1 ? parts : ['translation']).join('_') + '.json';
   const blob = new Blob([JSON.stringify(generatedJSON, null, 2)], { type: 'application/json' });
   const url  = URL.createObjectURL(blob);
   const a    = document.createElement('a');

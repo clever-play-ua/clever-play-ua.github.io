@@ -1,0 +1,8 @@
+translations/ukUA/1.01/war3campaign_general.wts
+  total STRING blocks: 6392
+  translated: 325
+  fallback to EN: 6067
+translations/ukUA/1.01/WC2Human01.wts
+  total STRING blocks: 521
+  translated: 170
+  fallback to EN: 351
