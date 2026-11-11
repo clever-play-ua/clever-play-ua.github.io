@@ -6,6 +6,7 @@
 - [YouTube](https://www.youtube.com/@clever_play_ua)
 - [Telegram](https://t.me/clever_play_ua)
 - [Instagram](https://www.instagram.com/clever_play_ua/)
+- [GitHub](https://github.com/clever-play-ua): source code and project files
 
 ## Languages
 - [Ukrainian](https://clever-play-ua.github.io/): Маленька спілька з великою душею

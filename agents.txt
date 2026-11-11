@@ -7,6 +7,7 @@ Sitemap: https://clever-play-ua.github.io/sitemap.xml
 YouTube: https://www.youtube.com/@clever_play_ua
 Telegram: https://t.me/clever_play_ua
 Instagram: https://www.instagram.com/clever_play_ua/
+GitHub: https://github.com/clever-play-ua
 Languages: uk, en, zh-Hans, es, ar, fr, pt, id, de, ja, vi, tr, ko, it, th, pl, nl
 Default-Language: uk
 

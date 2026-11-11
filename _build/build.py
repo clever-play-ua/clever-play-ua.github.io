@@ -15,6 +15,7 @@ NAME = "Clever Play UA"
 YT = "https://www.youtube.com/@clever_play_ua"
 TG = "https://t.me/clever_play_ua"
 IG = "https://www.instagram.com/clever_play_ua/"
+GH = "https://github.com/clever-play-ua"
 
 # code = folder name ("" for the default language at the site root)
 # hl = hreflang / <html lang>, og = og:locale, short/nat = code + native name shown in the language menu
@@ -179,7 +180,8 @@ def page(l):
       "sameAs": [
         "{YT}",
         "{TG}",
-        "{IG}"
+        "{IG}",
+        "{GH}"
       ]
     }},
     {{
@@ -222,6 +224,7 @@ def page(l):
       <a href="{YT}" rel="me noopener" target="_blank">YouTube</a>
       <a href="{TG}" rel="me noopener" target="_blank">Telegram</a>
       <a href="{IG}" rel="me noopener" target="_blank">Instagram</a>
+      <a href="{GH}" rel="me noopener" target="_blank">GitHub</a>
     </nav>
   </main>
 
@@ -274,6 +277,7 @@ def llms():
 - [YouTube]({YT})
 - [Telegram]({TG})
 - [Instagram]({IG})
+- [GitHub]({GH}): source code and project files
 
 ## Languages
 {pages}
@@ -291,6 +295,7 @@ Sitemap: {BASE}/sitemap.xml
 YouTube: {YT}
 Telegram: {TG}
 Instagram: {IG}
+GitHub: {GH}
 Languages: {codes}
 Default-Language: uk
 
