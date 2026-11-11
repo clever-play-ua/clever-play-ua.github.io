@@ -22,9 +22,13 @@
 
   var lang = document.getElementById('lang');
   if (lang) {
-    lang.addEventListener('change', function () {
-      try { localStorage.setItem('lang', lang.value); } catch (e) {}
-      var u = lang.value; if (location.protocol === 'file:') u += 'index.html'; location.href = u;
-    });
+    // opened from disk: folder links would show a directory listing, so point at index.html
+    if (location.protocol === 'file:') {
+      lang.querySelectorAll('a').forEach(function (a) {
+        a.setAttribute('href', a.getAttribute('href') + 'index.html');
+      });
+    }
+    document.addEventListener('click', function (e) { if (!lang.contains(e.target)) lang.open = false; });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') lang.open = false; });
   }
 })();

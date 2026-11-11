@@ -1,10 +1,6 @@
 # Clever Play UA
 
-> Clever Play UA: a small community with a big heart. We translate and voice games in Ukrainian. (Маленька спілька з великою душею. Перекладаємо та озвучуємо українською.)
-
-## Main
-- [Головна](https://clever-play-ua.github.io/): головна сторінка
-- [Home](https://clever-play-ua.github.io/en/): home page
+> Clever Play UA: a small community with a big heart. We translate and voice into Ukrainian. (Маленька спілька з великою душею. Перекладаємо та озвучуємо українською.)
 
 ## Social
 - [YouTube](https://www.youtube.com/@clever_play_ua)
@@ -12,5 +8,20 @@
 - [Instagram](https://www.instagram.com/clever_play_ua/)
 
 ## Languages
-- uk: https://clever-play-ua.github.io/
-- en: https://clever-play-ua.github.io/en/
+- [Ukrainian](https://clever-play-ua.github.io/): Маленька спілька з великою душею
+- [English](https://clever-play-ua.github.io/en/): A small community with a big heart
+- [Chinese](https://clever-play-ua.github.io/zh/): 小小的团队，大大的热情
+- [Spanish](https://clever-play-ua.github.io/es/): Una pequeña comunidad con un gran corazón
+- [Arabic](https://clever-play-ua.github.io/ar/): مجتمع صغير بقلب كبير
+- [French](https://clever-play-ua.github.io/fr/): Une petite communauté au grand cœur
+- [Portuguese](https://clever-play-ua.github.io/pt/): Uma pequena comunidade com um grande coração
+- [Indonesian](https://clever-play-ua.github.io/id/): Komunitas kecil dengan hati yang besar
+- [German](https://clever-play-ua.github.io/de/): Eine kleine Gemeinschaft mit großem Herz
+- [Japanese](https://clever-play-ua.github.io/ja/): 小さくても心の大きなコミュニティ
+- [Vietnamese](https://clever-play-ua.github.io/vi/): Một cộng đồng nhỏ với trái tim lớn
+- [Turkish](https://clever-play-ua.github.io/tr/): Küçük ama kocaman yürekli bir topluluk
+- [Korean](https://clever-play-ua.github.io/ko/): 작지만 마음이 큰 커뮤니티
+- [Italian](https://clever-play-ua.github.io/it/): Una piccola comunità con un grande cuore
+- [Thai](https://clever-play-ua.github.io/th/): ชุมชนเล็ก ๆ ที่มีหัวใจยิ่งใหญ่
+- [Polish](https://clever-play-ua.github.io/pl/): Mała społeczność z wielkim sercem
+- [Dutch](https://clever-play-ua.github.io/nl/): Een kleine community met een groot hart
