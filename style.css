@@ -90,11 +90,11 @@ body { overflow-x: hidden; font-family: system-ui, -apple-system, "Segoe UI", Ro
 .lang summary::-webkit-details-marker { display: none; }
 .lang summary svg { width: 18px; height: 18px; }
 .lang-code { letter-spacing: .08em; font-weight: 600; }
-.lang-list { position: absolute; inset-inline-end: 0; top: calc(100% + 8px); width: 340px; max-width: calc(100vw - 24px); max-height: 80vh; overflow-y: auto;
+.lang-list { position: absolute; inset-inline-end: 0; top: calc(100% + 8px); width: 340px; max-width: calc(100vw - 24px); max-height: calc(100vh - 84px); overflow-y: auto; scrollbar-width: thin;
   margin: 0; padding: 6px; list-style: none; background: var(--panel); border: 1px solid var(--panel-border);
   border-radius: 14px; box-shadow: 0 18px 50px rgba(0, 0, 0, .45); }
-.lang-list a { display: flex; white-space: nowrap; align-items: center; gap: 16px; padding: 10px 14px; border-radius: 10px;
-  color: var(--text); text-decoration: none; font-size: 1.05rem; }
+.lang-list a { display: flex; white-space: nowrap; align-items: center; gap: 16px; padding: 7px 14px; border-radius: 10px;
+  color: var(--text); text-decoration: none; font-size: 1rem; line-height: 1.35; }
 .lang-list a:hover, .lang-list a:focus-visible { background: var(--item-hover); outline: none; }
 .lang-list .code { width: 2.2em; font-size: .8rem; letter-spacing: .14em; color: var(--code); }
 .lang-list a[aria-current="page"] { color: var(--accent); font-weight: 600; }
@@ -126,7 +126,7 @@ main { position: relative; z-index: 1; min-height: 72vh; display: flex; flex-dir
 .card::before { content: ""; position: absolute; inset: 0; background: url(projects/age-of-the-ring.jpg) right center / auto 100% no-repeat; }
 .card::after { content: ""; position: absolute; inset: 0;
   background: linear-gradient(90deg, #0a0f1a 0%, #0a0f1a 28%, rgba(10, 15, 26, .75) 45%, rgba(10, 15, 26, 0) 75%); }
-[dir="rtl"] .card::before { background-position: left center; transform: scaleX(-1); }
+[dir="rtl"] .card::before { background-image: url(projects/age-of-the-ring-rtl.jpg); background-position: left center; }
 [dir="rtl"] .card::after { background: linear-gradient(270deg, #0a0f1a 0%, #0a0f1a 28%, rgba(10, 15, 26, .75) 45%, rgba(10, 15, 26, 0) 75%); }
 .card-body { position: relative; z-index: 1; max-width: 340px; display: flex; flex-direction: column; align-items: flex-start; gap: 12px; }
 .card-title { font-size: clamp(1.3rem, 3vw, 1.7rem); font-weight: 700; }
