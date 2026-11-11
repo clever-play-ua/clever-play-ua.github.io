@@ -1,57 +1,54 @@
 <!doctype html>
-<html lang="uk">
+<html lang="uk" data-theme="dark">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Clever Play UA</title>
-<style>
-  :root {
-    --bg: #030406;
-    --bg-top: #0a0e1a;
-    --grid: rgba(120, 140, 190, 0.09);
-    --glow: #2a5298;
-    --glow-soft: rgba(42, 82, 152, 0.55);
-    --line: #b9c6ff;
-    --cell: 80px;
-  }
-  * { box-sizing: border-box; margin: 0; }
-  html, body { height: 100%; background: var(--bg); overflow: hidden; }
+<meta name="description" content="Clever Play UA — маленька спілька з великою душею. Перекладаємо та озвучуємо українською.">
+<link rel="canonical" href="https://clever-play-ua.github.io/">
+<link rel="alternate" hreflang="uk" href="https://clever-play-ua.github.io/">
+<link rel="alternate" hreflang="en" href="https://clever-play-ua.github.io/en/">
+<link rel="alternate" hreflang="x-default" href="https://clever-play-ua.github.io/">
+<meta name="theme-color" content="#030406">
+<link rel="icon" type="image/svg+xml" href="logo.svg">
+<link rel="stylesheet" href="style.css">
+<script>try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
 
-  .bg { position: fixed; inset: 0; overflow: hidden;
-        background: linear-gradient(180deg, var(--bg-top) 0%, var(--bg) 55%, #000 100%); }
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Clever Play UA">
+<meta property="og:title" content="Clever Play UA">
+<meta property="og:description" content="Маленька спілька з великою душею. Перекладаємо та озвучуємо українською.">
+<meta property="og:url" content="https://clever-play-ua.github.io/">
+<meta property="og:locale" content="uk_UA">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary">
 
-  /* медленно дрейфующая сетка */
-  .grid { position: absolute; inset: -160px;
-    background-image:
-      linear-gradient(var(--grid) 1px, transparent 1px),
-      linear-gradient(90deg, var(--grid) 1px, transparent 1px);
-    background-size: var(--cell) var(--cell);
-    animation: drift 24s linear infinite;
-    will-change: transform; }
-  @keyframes drift {
-    from { transform: translate3d(0, 0, 0); }
-    to   { transform: translate3d(calc(var(--cell) * -1), calc(var(--cell) * -1), 0); }
-  }
-
-  /* синее свечение снизу, «дышит» */
-  .glow { position: absolute; left: 50%; bottom: -22vh; width: 90vw; height: 50vh;
-    transform: translateX(-50%);
-    background: radial-gradient(ellipse 50% 60% at 50% 70%, var(--glow) 0%, var(--glow-soft) 30%, transparent 70%);
-    filter: blur(24px);
-    animation: breathe 9s ease-in-out infinite; }
-  @keyframes breathe {
-    0%, 100% { opacity: .75; transform: translateX(-50%) scale(1); }
-    50%      { opacity: 1;   transform: translateX(-50%) scale(1.08, 1.12); }
-  }
-
-  /* виньетка по краям */
-  .vignette { position: absolute; inset: 0; pointer-events: none;
-    background: radial-gradient(ellipse at 50% 55%, transparent 35%, rgba(0,0,0,.85) 100%); }
-
-  @media (prefers-reduced-motion: reduce) {
-    .grid, .glow { animation: none; }
-  }
-</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://clever-play-ua.github.io/#org",
+      "name": "Clever Play UA",
+      "url": "https://clever-play-ua.github.io/",
+      "sameAs": [
+        "https://www.youtube.com/@clever_play_ua",
+        "https://t.me/clever_play_ua",
+        "https://www.instagram.com/clever_play_ua/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://clever-play-ua.github.io/#site",
+      "url": "https://clever-play-ua.github.io/",
+      "name": "Clever Play UA",
+      "inLanguage": "uk",
+      "publisher": { "@id": "https://clever-play-ua.github.io/#org" }
+    }
+  ]
+}
+</script>
 </head>
 <body>
   <div class="bg" aria-hidden="true">
@@ -59,5 +56,25 @@
     <div class="glow"></div>
     <div class="vignette"></div>
   </div>
+
+  <div class="bar">
+    <select id="lang" class="ctl" aria-label="Мова / Language">
+      <option value="./" selected>Ukrainian (Українська)</option>
+      <option value="en/">English (Англійська)</option>
+    </select>
+    <button id="theme" class="ctl" type="button" data-dark="Темна тема" data-light="Світла тема">Світла тема</button>
+  </div>
+
+  <main>
+    <img class="logo" src="logo.svg" alt="Clever Play UA" width="400" height="240">
+    <h1 class="title">Clever Play UA</h1>
+    <p class="tagline">Маленька спілька з великою душею <span aria-hidden="true">•</span> Перекладаємо та озвучуємо українською</p>
+    <nav class="links" aria-label="Соцмережі">
+      <a href="https://www.youtube.com/@clever_play_ua" rel="me noopener" target="_blank">YouTube</a>
+      <a href="https://t.me/clever_play_ua" rel="me noopener" target="_blank">Telegram</a>
+      <a href="https://www.instagram.com/clever_play_ua/" rel="me noopener" target="_blank">Instagram</a>
+    </nav>
+  </main>
+  <script src="site.js" defer></script>
 </body>
 </html>

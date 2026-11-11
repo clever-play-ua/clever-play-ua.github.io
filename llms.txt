@@ -1,10 +1,15 @@
 # Clever Play UA
 
-> Short site description (1-2 sentences: what the project does, who it is for). To be filled in.
+> Clever Play UA: a small community with a big heart. We translate and voice games in Ukrainian. (Маленька спілька з великою душею. Перекладаємо та озвучуємо українською.)
 
 ## Main
 - [Головна](https://clever-play-ua.github.io/): головна сторінка
 - [Home](https://clever-play-ua.github.io/en/): home page
+
+## Social
+- [YouTube](https://www.youtube.com/@clever_play_ua)
+- [Telegram](https://t.me/clever_play_ua)
+- [Instagram](https://www.instagram.com/clever_play_ua/)
 
 ## Languages
 - uk: https://clever-play-ua.github.io/

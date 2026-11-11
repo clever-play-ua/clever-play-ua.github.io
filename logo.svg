@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" role="img" aria-label="Clever Play UA">
+  <title>Clever Play UA</title>
+  <defs>
+    <filter id="halo" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <path id="c" d="M183 78 A72 72 0 1 0 183 162"/>
+    <path id="p" d="M255 52 V192 M255 52 H298 A42 42 0 0 1 298 136 H255"/>
+  </defs>
+  <style>
+    .tube  { fill: none; stroke-linecap: round; stroke-linejoin: round; }
+    .off   { stroke-width: 22; stroke: #0b1424; }
+    .halo  { stroke-width: 26; opacity: .75; }
+    .body  { stroke-width: 14; }
+    .core  { stroke-width: 4; stroke: #fff; opacity: .95; }
+    .blue  { stroke: #1e90ff; }
+    .gold  { stroke: #ffc21a; }
+    .core.blue { stroke: #cfe8ff; }
+    .core.gold { stroke: #fff4c2; }
+    .lit-c { animation: hum 5s ease-in-out infinite; }
+    .lit-p { animation: hum 5s ease-in-out infinite, flick 9s steps(1, end) infinite; }
+    @keyframes hum   { 0%,100% { opacity: .88; } 50% { opacity: 1; } }
+    @keyframes flick {
+      0%, 58%, 62%, 66%, 100% { opacity: 1; }
+      60%, 64% { opacity: .35; }
+    }
+    @media (prefers-reduced-motion: reduce) { .lit-c, .lit-p { animation: none; } }
+  </style>
+
+  <!-- unlit glass tubes -->
+  <use href="#c" class="tube off"/>
+  <use href="#p" class="tube off"/>
+
+  <!-- C (blue) -->
+  <g class="lit-c">
+    <use href="#c" class="tube halo blue" filter="url(#halo)"/>
+    <use href="#c" class="tube body blue" filter="url(#glow)"/>
+    <use href="#c" class="tube core blue"/>
+  </g>
+
+  <!-- P (gold) -->
+  <g class="lit-p">
+    <use href="#p" class="tube halo gold" filter="url(#halo)"/>
+    <use href="#p" class="tube body gold" filter="url(#glow)"/>
+    <use href="#p" class="tube core gold"/>
+  </g>
+</svg>
