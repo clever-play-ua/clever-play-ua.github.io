@@ -118,9 +118,9 @@ main { position: relative; z-index: 1; min-height: 72vh; display: flex; flex-dir
 @media (prefers-reduced-motion: reduce) { .grid, .glow { animation: none; } }
 
 /* ---------- projects ---------- */
-.projects { position: relative; z-index: 1; width: min(100% - 32px, 920px); margin: 0 auto; padding: 24px 0 72px; }
-.projects h2 { margin-bottom: 18px; font-size: clamp(1.4rem, 3vw, 1.9rem); font-weight: 700; color: var(--text); }
-.card { position: relative; display: flex; align-items: center; min-height: 260px; padding: 32px 36px; overflow: hidden;
+.projects { position: relative; z-index: 1; width: min(100% - 32px, 720px); margin: 0 auto; padding: 24px 0 72px; }
+.projects h2 { margin-bottom: 18px; text-align: center; font-size: clamp(1.4rem, 3vw, 1.9rem); font-weight: 700; color: var(--text); }
+.card { position: relative; display: flex; align-items: center; min-height: 220px; padding: 28px 32px; overflow: hidden;
   border-radius: 20px; background: #0a0f1a; border: 1px solid rgba(255, 255, 255, .08); color: #fff;
   box-shadow: 0 18px 50px rgba(0, 0, 0, .35); }
 .card::before { content: ""; position: absolute; inset: 0; background: url(projects/age-of-the-ring.jpg) right center / auto 100% no-repeat; }
@@ -138,4 +138,19 @@ main { position: relative; z-index: 1; min-height: 72vh; display: flex; flex-dir
   .card { padding: 24px 20px; min-height: 300px; align-items: flex-end; }
   .card::before { background-size: cover; background-position: 70% center; }
   .card::after { background: linear-gradient(0deg, #0a0f1a 0%, #0a0f1a 35%, rgba(10, 15, 26, 0) 90%); }
+}
+
+/* ---------- mobile ---------- */
+@media (max-width: 600px) {
+  .bar { padding: 10px 12px; gap: 8px; background: linear-gradient(180deg, var(--bg) 40%, transparent); }
+  .ctl { font-size: .85rem; padding: 7px 12px; }
+  .lang-list { position: fixed; inset-inline: 12px; top: 58px; width: auto; max-width: none;
+    max-height: calc(100vh - 70px); max-height: calc(100dvh - 70px); }
+  .lang-list a { padding: 11px 14px; }
+  main { min-height: auto; padding: 84px 16px 24px; gap: 18px; }
+  .logo { width: min(78vw, 340px); }
+  .tagline span { display: block; height: 0; overflow: hidden; margin: 0; }
+  .links a { padding: 9px 16px; }
+  .projects { padding: 16px 0 48px; }
+  .projects h2 { font-size: 1.35rem; }
 }
