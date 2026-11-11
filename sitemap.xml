@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Home page. Each language version: its own <url> + the full set of alternates (including itself).
+       When adding a language, add its <xhtml:link> to ALL blocks of this page. -->
+  <url>
+    <loc>https://clever-play-ua.github.io/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://clever-play-ua.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clever-play-ua.github.io/"/>
+  </url>
+
+  <!-- English version (uncomment when /en/ exists, and add the "en" alternate to the block above):
+  <url>
+    <loc>https://clever-play-ua.github.io/en/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://clever-play-ua.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clever-play-ua.github.io/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clever-play-ua.github.io/"/>
+  </url>
+  -->
+</urlset>

@@ -1,0 +1,11 @@
+# Clever Play UA
+
+> Short site description (1-2 sentences: what the project does, who it is for). To be filled in.
+
+## Main
+- [Головна](https://clever-play-ua.github.io/): головна сторінка
+- [Home](https://clever-play-ua.github.io/en/): home page
+
+## Languages
+- uk: https://clever-play-ua.github.io/
+- en: https://clever-play-ua.github.io/en/

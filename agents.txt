@@ -1,0 +1,11 @@
+# agents.txt: instructions for AI agents
+# Site content is open for reading and citation with attribution.
+
+Site: https://clever-play-ua.github.io/
+Summary: https://clever-play-ua.github.io/llms.txt
+Sitemap: https://clever-play-ua.github.io/sitemap.xml
+Languages: uk, en
+Default-Language: uk
+
+Allow: /
+# No actions on behalf of the user (forms, authentication) are provided on this site.

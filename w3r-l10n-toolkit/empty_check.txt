@@ -1,3 +1,0 @@
-OCA | uk: '' | es: 'Capitán orco' | pt: 'Capitão Orc'
-KOG | uk: '' | es: "Guardia Ogro Kor'kron" | pt: "Guarda-Ogro Kor'kron"
-ECA | uk: '' | es: 'Capitán elfo' | pt: 'Capitão Elfico'
