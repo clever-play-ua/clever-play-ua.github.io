@@ -90,6 +90,30 @@ LANGS = [
 ]
 
 
+PROJECT_TITLE = "The Age of the Ring"
+PROJECT_LINK = TG  # TODO: replace with the project's own page/video when it exists
+# code -> (section heading, card description, button)
+PROJ = {
+    "":   ("Наші останні проєкти", "Українська локалізація", "Дізнатися більше"),
+    "en": ("Our latest projects", "Ukrainian localization", "Learn more"),
+    "zh": ("我们的最新项目", "乌克兰语本地化", "了解更多"),
+    "es": ("Nuestros últimos proyectos", "Localización al ucraniano", "Más información"),
+    "ar": ("أحدث مشاريعنا", "التوطين باللغة الأوكرانية", "اعرف المزيد"),
+    "fr": ("Nos derniers projets", "Localisation en ukrainien", "En savoir plus"),
+    "pt": ("Nossos projetos mais recentes", "Localização em ucraniano", "Saiba mais"),
+    "id": ("Proyek terbaru kami", "Lokalisasi ke bahasa Ukraina", "Selengkapnya"),
+    "de": ("Unsere neuesten Projekte", "Ukrainische Lokalisierung", "Mehr erfahren"),
+    "ja": ("最新のプロジェクト", "ウクライナ語ローカライズ", "詳しく見る"),
+    "vi": ("Dự án mới nhất của chúng tôi", "Bản địa hóa tiếng Ukraina", "Tìm hiểu thêm"),
+    "tr": ("Son projelerimiz", "Ukraynaca yerelleştirme", "Daha fazla bilgi"),
+    "ko": ("최근 프로젝트", "우크라이나어 현지화", "자세히 보기"),
+    "it": ("I nostri ultimi progetti", "Localizzazione in ucraino", "Scopri di più"),
+    "th": ("โปรเจกต์ล่าสุดของเรา", "การแปลเป็นภาษายูเครน", "ดูเพิ่มเติม"),
+    "pl": ("Nasze najnowsze projekty", "Ukraińska lokalizacja", "Dowiedz się więcej"),
+    "nl": ("Onze nieuwste projecten", "Oekraïense lokalisatie", "Meer info"),
+}
+
+
 def url(l):
     return BASE + "/" + (l["code"] + "/" if l["code"] else "")
 
@@ -115,9 +139,10 @@ def page(l):
     cur = ' aria-current="page"'
     items = "\n".join(
         f'        <li><a href="{rel(l, o)}" hreflang="{o["hl"]}" lang="{o["hl"]}"{cur if o is l else ""}>'
-        f'<span class="code">{o["short"]}</span>{o["nat"] if o["nat"] == o["en"] else o["nat"] + " (" + o["en"] + ")"}</a></li>'
+        f'<span class="code">{o["short"]}</span>{o["nat"]}</a></li>'
         for o in LANGS
     )
+    ph, pd, pb = PROJ[l["code"]]
     d = ' dir="rtl"' if l.get("rtl") else ""
     return f'''<!doctype html>
 <html lang="{l["hl"]}"{d} data-theme="dark">
@@ -199,6 +224,17 @@ def page(l):
       <a href="{IG}" rel="me noopener" target="_blank">Instagram</a>
     </nav>
   </main>
+
+  <section class="projects">
+    <h2>{ph}</h2>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">{PROJECT_TITLE}</h3>
+        <p class="card-desc">{pd}</p>
+        <a class="card-btn" href="{PROJECT_LINK}" rel="noopener" target="_blank">{pb}</a>
+      </div>
+    </div>
+  </section>
   <script src="{pre}site.js" defer></script>
 </body>
 </html>

@@ -102,7 +102,7 @@ body { overflow-x: hidden; font-family: system-ui, -apple-system, "Segoe UI", Ro
   border: solid currentColor; border-width: 0 2px 2px 0; transform: rotate(45deg) translateY(-2px); }
 
 /* ---------- content ---------- */
-main { position: relative; z-index: 1; min-height: 100vh; display: flex; flex-direction: column;
+main { position: relative; z-index: 1; min-height: 72vh; display: flex; flex-direction: column;
   align-items: center; justify-content: center; gap: 24px; padding: 72px 16px 32px; text-align: center; }
 .logo { width: min(70vw, 460px); height: auto; border-radius: 28px; }
 .title { margin-top: -8px; font-size: clamp(1.8rem, 5vw, 3rem); font-weight: 700; letter-spacing: .12em;
@@ -116,3 +116,26 @@ main { position: relative; z-index: 1; min-height: 100vh; display: flex; flex-di
 .links a:hover, .links a:focus-visible { background: var(--ctl-bg-hover); border-color: var(--ctl-border-hover); outline: none; }
 
 @media (prefers-reduced-motion: reduce) { .grid, .glow { animation: none; } }
+
+/* ---------- projects ---------- */
+.projects { position: relative; z-index: 1; width: min(100% - 32px, 920px); margin: 0 auto; padding: 24px 0 72px; }
+.projects h2 { margin-bottom: 18px; font-size: clamp(1.4rem, 3vw, 1.9rem); font-weight: 700; color: var(--text); }
+.card { position: relative; display: flex; align-items: center; min-height: 260px; padding: 32px 36px; overflow: hidden;
+  border-radius: 20px; background: #0a0f1a; border: 1px solid rgba(255, 255, 255, .08); color: #fff;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, .35); }
+.card::before { content: ""; position: absolute; inset: 0; background: url(projects/age-of-the-ring.jpg) right center / auto 100% no-repeat; }
+.card::after { content: ""; position: absolute; inset: 0;
+  background: linear-gradient(90deg, #0a0f1a 0%, #0a0f1a 28%, rgba(10, 15, 26, .75) 45%, rgba(10, 15, 26, 0) 75%); }
+[dir="rtl"] .card::before { background-position: left center; transform: scaleX(-1); }
+[dir="rtl"] .card::after { background: linear-gradient(270deg, #0a0f1a 0%, #0a0f1a 28%, rgba(10, 15, 26, .75) 45%, rgba(10, 15, 26, 0) 75%); }
+.card-body { position: relative; z-index: 1; max-width: 340px; display: flex; flex-direction: column; align-items: flex-start; gap: 12px; }
+.card-title { font-size: clamp(1.3rem, 3vw, 1.7rem); font-weight: 700; }
+.card-desc { color: #c3cce4; line-height: 1.5; }
+.card-btn { margin-top: 8px; display: inline-block; padding: 10px 22px; border-radius: 10px; background: #fff; color: #0a0f1a;
+  font-weight: 600; text-decoration: none; transition: transform .2s, box-shadow .2s; }
+.card-btn:hover, .card-btn:focus-visible { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(255, 255, 255, .25); outline: none; }
+@media (max-width: 600px) {
+  .card { padding: 24px 20px; min-height: 300px; align-items: flex-end; }
+  .card::before { background-size: cover; background-position: 70% center; }
+  .card::after { background: linear-gradient(0deg, #0a0f1a 0%, #0a0f1a 35%, rgba(10, 15, 26, 0) 90%); }
+}
